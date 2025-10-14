@@ -1,0 +1,42 @@
+\changetocdepth {4}
+\babel@toc {brazil}{}\relax 
+\babel@toc {brazil}{}\relax 
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{7}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Objetivos}{7}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Objetivo Geral}{7}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Objetivos Específicos}{7}{subsection.1.1.2}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação teórica}}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}PISCINAS e sua manutenção}{9}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}HISTÓRICO E POPULARIZAÇÃO DAS PISCINAS}{9}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}COMPONENTES BÁSICOS DE UMA PISCINA}{10}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}NORMAS E PROCEDIMENTOS TÉCNICOS DE LIMPEZA MANUAL}{11}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}PRODUTOS QUÍMICOS E ACESSÓRIOS USADOS NA LIMPEZA DE PISCINAS}{13}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}FUNDAMENTOS DA AUTOMAÇÃO}{16}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO}{17}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO}{19}{subsection.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.1}SENSORES}{19}{subsubsection.2.2.2.1}%
+\contentsline {subsubsection}{\numberline {2.2.2.2}ATUADORES}{19}{subsubsection.2.2.2.2}%
+\contentsline {subsubsection}{\numberline {2.2.2.3}CONTROLADORES}{20}{subsubsection.2.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.2.4}SOFTWARES E INTERFACE}{20}{subsubsection.2.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.3}ARQUITETURA DE AUTOMAÇÃO RESIDENCIAL}{20}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}APLICAÇÃO DA AUTOMAÇÃO RESIDENCIAL}{20}{subsection.2.2.4}%
+\contentsline {section}{\numberline {2.3}AUTOMAÇÃO DE PISCINAS}{21}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}CONCEITO E FUNCIONAMENTO GERAL}{21}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}{21}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}{21}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.4}ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}{21}{subsection.2.3.4}%
+\contentsline {subsection}{\numberline {2.3.5}ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}{21}{subsection.2.3.5}%
+\contentsline {section}{\numberline {2.4}INTERNET DAS COISAS (IoT) APLICADA A AUTOMAÇÃO RESIDENCIAL}{21}{section.2.4}%
+\contentsline {section}{\numberline {2.5}SUSTENTABILIDADE E EFICIÊNCIA NA AUTOMAÇÃO DE PISCINAS}{22}{section.2.5}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{23}{chapter.3}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{24}{chapter.4}%
+\vspace {\cftbeforechapterskip }
+\vspace {\cftbeforechapterskip }
+\setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{25}{section*.18}%
+\vspace {\cftbeforechapterskip }
