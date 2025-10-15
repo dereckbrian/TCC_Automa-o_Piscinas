@@ -11,28 +11,6 @@
 [S.l.], 2021. Disponível em:
   \url{https://atcllor.com.br/download/Guia-do-Tratamento.pdf}.}
 
-\bibitem[Barros, Souza e Teixeira 2023]{adventoMidias}
-\abntrefinfo{Barros, Souza e Teixeira}{BARROS; SOUZA; TEIXEIRA}{2023}
-{BARROS Álvaro Gonçalves~de; SOUZA, C. H.~M. de; TEIXEIRA, R. EvoluÇÃo das
-  comunicaÇÕes atÉ a internet das coisas: A passagem para uma nova era da
-  comunicaÇÃo humana.
-2023.
-Accessed: 09/07/2025.
-Dispon{\'\i}vel em:
-  \url{https://pdfs.semanticscholar.org/fc9e/86ed78a37d3bf92717d7561ee6f1f964c801.pdf}.}
-
-\bibitem[BRQ 2024]{guiaAutomacao}
-\abntrefinfo{BRQ}{BRQ}{2024}
-{BRQ, R. \emph{Automação: o Guia Completo sobre esse assunto}. 2024.
-Accessed: 11/07/2025.
-Dispon{\'\i}vel em: \url{https://blog.brq.com/automacao}.}
-
-\bibitem[Camargo 2014]{atuadoresOutros}
-\abntrefinfo{Camargo}{CAMARGO}{2014}
-{CAMARGO, V. L.~A. de. \emph{Elementos de Automação}. Editora Érica, 2014.
-  Accessed: 18/07/2025. Dispon{\'\i}vel em:
-  \url{https://pt.scribd.com/document/439690722/Elementos-de-Automacao-pdf}.}
-
 \bibitem[CNI 2022]{CNI}
 \abntrefinfo{CNI}{CNI}{2022}
 {CNI. \emph{INDÚSTRIA 4.0 CINCO ANOS DEPOIS}. 2022.
@@ -40,20 +18,13 @@ Accessed: 27/05/2025.
 Dispon{\'\i}vel em:
   \url{https://static.portaldaindustria.com.br/media/filer\_public/cd/a2/cda22223-5c33-4a5f-af4e-f5a5d64b3d85/sondespecial\_industria40\_cincoanosdepois\_abril2022.pdf?utm\_source=chatgpt.com}.}
 
-\bibitem[Cook 2022]{automacaoAntiga}
-\abntrefinfo{Cook}{COOK}{2022}
-{COOK, J.~S. \emph{A history of autonomous robots and early automation
-  milestones}. 2022.
-Accessed: 09/07/2025.
+\bibitem[DAGOSTIM e JORGE 2022]{automacaoTecnologiaPraticidade}
+\abntrefinfo{DAGOSTIM e JORGE}{DAGOSTIM; JORGE}{2022}
+{DAGOSTIM, N.~E.; JORGE, G.~B. AutomaÇÃo residencial: Aliando tecnologia e
+  praticidade.
+2022.
 Dispon{\'\i}vel em:
-  \url{https://www.arrow.com/en/research-and-events/articles/a-history-of-autonomous-robots-and-early-automation-milestones}.}
-
-\bibitem[dgtcom 2020]{maisSobreXX}
-\abntrefinfo{dgtcom}{DGTCOM}{2020}
-{DGTCOM. \emph{Uma breve história da automação.} 2020.
-Accessed: 10/07/2025.
-Dispon{\'\i}vel em:
-  \url{https://avextechnology.com.br/uma-breve-historia-da-automacao}.}
+  \url{https://www4.fag.edu.br/anais-2022/Anais-2022-53.pdf}.}
 
 \bibitem[ELÉTRICO 2023]{aumentoAosAnos}
 \abntrefinfo{ELÉTRICO}{ELÉTRICO}{2023}
@@ -76,12 +47,6 @@ Dispon{\'\i}vel em:
 Accessed: 02/10/2025.
 Dispon{\'\i}vel em: \url{https://www.genco.com.br/estojo-ot}.}
 
-\bibitem[GENTILIN 2020]{livroAutomacao}
-\abntrefinfo{GENTILIN}{GENTILIN}{2020}
-{GENTILIN, F.~A. \emph{Automação Industrial}. Unicesumar, 2020. Accessed:
-  11/07/2025. Dispon{\'\i}vel em:
-  \url{https://pt.scribd.com/document/552418173/livro-automacao}.}
-
 \bibitem[Genyo 2024]{automacao}
 \abntrefinfo{Genyo}{GENYO}{2024}
 {GENYO. \emph{O que é e como colher os benefícios na sua empresa}. 2024.
@@ -94,14 +59,6 @@ Dispon{\'\i}vel em:
 {HARRIS, T. \emph{Como funcionam as Piscinas}.
 Accessed: 12/09/2025.
 Dispon{\'\i}vel em: \url{https://home.howstuffworks.com/swimming-pool.htm}.}
-
-\bibitem[Hermini e Anibal 2007]{atuadoresAutomacao}
-\abntrefinfo{Hermini e Anibal}{HERMINI; ANIBAL}{2007}
-{HERMINI; ANIBAL, H. Enegnheiro elÉtrico/instumentaÇÃo atuadores.
-2007.
-Accessed: 18/07/2025.
-Dispon{\'\i}vel em:
-  \url{http://ftp.demec.ufpr.br/disciplinas/EngMec\_NOTURNO/TM372/Conte\%FAdos/3\%20Atuadores/Eng\%20Eletrico\%20instrumenta\%20o\_Atuadores\_\%20UNICAMP.pdf}.}
 
 \bibitem[Ideia]{piscineiroProfissional}
 \abntrefinfo{Ideia}{IDEIA}{}
@@ -120,14 +77,6 @@ Accessed: 28/06/2025.
 Dispon{\'\i}vel em:
   \url{https://www.fortunebusinessinsights.com/pt/industry-reports/home-automation-market-100074}.}
 
-\bibitem[Macrotec]{clps}
-\abntrefinfo{Macrotec}{MACROTEC}{}
-{MACROTEC, B. \emph{O que é CLP e qual sua importância na automação
-  industrial?}
-Accessed: 11/07/2025.
-Dispon{\'\i}vel em:
-  \url{https://macrotec.ind.br/o-que-e-clp-e-qual-sua-importancia-na-automacao-industrial}.}
-
 \bibitem[Martins 2023]{automacaoCovid}
 \abntrefinfo{Martins}{MARTINS}{2023}
 {MARTINS, P. \emph{Smart home no Brasil deve crescer 91,06\% ate 2026}. 2023.
@@ -135,13 +84,13 @@ Accessed: 27/06/2025.
 Dispon{\'\i}vel em:
   \url{https://www.trendsce.com.br/2023/01/18/smart-home-no-brasil-deve-crescer-9106-ate-2026/}.}
 
-\bibitem[Moreira e Righetti]{sensor}
-\abntrefinfo{Moreira e Righetti}{MOREIRA; RIGHETTI}{}
-{MOREIRA, C.~A. da S.; RIGHETTI, M. Sensores industriais: Finalidade e
-  aplica{\c{c}}{\~o}es dos sensores industriais.
-Accessed: 13/07/2025.
+\bibitem[Muratori e B{\'o} 2011]{automacaoResidencialCap1}
+\abntrefinfo{Muratori e B{\'o}}{MURATORI; B{\'O}}{2011}
+{MURATORI, J.~R.; B{\'O}, P.~H. D. Cap{\'\i}tulo i automa{\c{c}}{\~a}o
+  residencial: hist{\'o}rico, defini{\c{c}}{\~o}es e conceitos.
+\emph{O Setor el{\'e}trico}, p. 70--77, 2011.
 Dispon{\'\i}vel em:
-  \url{https://repositorio.pgsscogna.com.br/bitstream/123456789/66244/1/CARLOS\_ADOLFO\_DA\_SILVA\_MOREIRA.pdf}.}
+  \url{https://www.osetoreletrico.com.br/wp-content/uploads/2011/04/Ed62\_fasc\_automacao\_capI.pdf}.}
 
 \bibitem[PISCINAS]{piscinaOquee}
 \abntrefinfo{PISCINAS}{PISCINAS}{}
@@ -165,12 +114,6 @@ Accessed: 25/06/2025.
 Dispon{\'\i}vel em:
   \url{https://casadigitaloficial.com/��blog/f/como-a-automação-residencial-pode-facilitar-meu-dia-a-dia}.}
 
-\bibitem[Roggia e Fuentes 2016]{historiaAutomacao}
-\abntrefinfo{Roggia e Fuentes}{ROGGIA; FUENTES}{2016}
-{ROGGIA, L.; FUENTES, R.~C. \emph{Automação Industrial}.
-[S.l.], 2016. Disponível em:
-  \url{https://professor.pucgoias.edu.br/SiteDocente/admin/arquivosUpload/18451/material/arte_automacao_industrial.pdf}.}
-
 \bibitem[Silva 2021]{tccSilva}
 \abntrefinfo{Silva}{SILVA}{2021}
 {SILVA, S.~M. Estudo de caso sobre o processo de tratamento de {\'a}gua em uma
@@ -181,14 +124,11 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://pantheon.ufrj.br/bitstream/11422/16271/1/TCCSMSilva.pdf}.}
 
-\bibitem[Silv{\'e}rio et al. 2022]{automacaoComercial}
-\abntrefinfo{Silv{\'e}rio et al.}{SILV{\'E}RIO et al.}{2022}
-{SILV{\'E}RIO, A.~N. et al. I7-gestor: uma ferramenta de automa{\c{c}}{\~a}o
-  comercial para pequenos com{\'e}rcios no munic{\'\i}pio de
-  itacoatiara-amazonas.
-Brasil, 2022.
-Accessed: 13/07/2025.
-Dispon{\'\i}vel em:
-  \url{https://riu.ufam.edu.br/bitstream/prefix/6165/2/TCC\_AndersonSilvério.pdf}.}
+\bibitem[Teza et al. 2002]{algunsAspectos}
+\abntrefinfo{Teza et al.}{TEZA et al.}{2002}
+{TEZA, V.~R. et al. Alguns aspectos sobre a automa{\c{c}}{\~a}o residencial:
+  dom{\'o}tica.
+Florian{\'o}polis, SC, 2002.
+Dispon{\'\i}vel em: \url{https://repositorio.ufsc.br/handle/123456789/83015}.}
 
 \end{thebibliography}

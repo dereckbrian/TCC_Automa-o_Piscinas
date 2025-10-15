@@ -24,52 +24,51 @@ Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
 Warning--campo year vazio ou faltando em refComponents
 Warning--campo year vazio ou faltando em piscineiroProfissional
-Warning--campo year vazio ou faltando em clps
 Warning--campo year vazio ou faltando em piscinaOquee
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 26 entries,
+You've used 18 entries,
             6714 wiz_defined-function locations,
-            1345 strings with 14504 characters,
-and the built_in function-call counts, 52260 in all, are:
-= -- 7004
-> -- 479
-< -- 1872
-+ -- 2087
-- -- 155
-* -- 2901
-:= -- 6236
-add.period$ -- 116
-call.type$ -- 26
-change.case$ -- 206
-chr.to.int$ -- 26
-cite$ -- 29
-duplicate$ -- 6341
-empty$ -- 1423
-format.name$ -- 718
-if$ -- 9617
+            1300 strings with 12907 characters,
+and the built_in function-call counts, 35303 in all, are:
+= -- 4748
+> -- 306
+< -- 1254
++ -- 1406
+- -- 100
+* -- 1953
+:= -- 4246
+add.period$ -- 76
+call.type$ -- 18
+change.case$ -- 134
+chr.to.int$ -- 18
+cite$ -- 20
+duplicate$ -- 4235
+empty$ -- 982
+format.name$ -- 463
+if$ -- 6509
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 438
-newline$ -- 155
-num.names$ -- 125
-pop$ -- 624
+missing$ -- 294
+newline$ -- 109
+num.names$ -- 85
+pop$ -- 418
 preamble$ -- 1
-purify$ -- 84
+purify$ -- 57
 quote$ -- 0
-skip$ -- 6471
+skip$ -- 4370
 stack$ -- 1
-substring$ -- 2406
-swap$ -- 2142
-text.length$ -- 23
+substring$ -- 1670
+swap$ -- 1431
+text.length$ -- 17
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
-warning$ -- 4
-while$ -- 170
+warning$ -- 3
+while$ -- 120
 width$ -- 0
-write$ -- 380
-(There were 5 warnings)
+write$ -- 259
+(There were 4 warnings)
