@@ -16,13 +16,13 @@
 \contentsline {subsection}{\numberline {2.1.4}PRODUTOS QUÍMICOS E ACESSÓRIOS USADOS NA LIMPEZA DE PISCINAS}{12}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}FUNDAMENTOS DA AUTOMAÇÃO RESIDENCIAL}{15}{section.2.2}%
 \contentsline {subsection}{\numberline {2.2.1}HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}{16}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO}{16}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}ARQUITETURA DE AUTOMAÇÃO RESIDENCIAL}{16}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}ARQUITETURA DE AUTOMAÇÃO RESIDENCIAL}{17}{subsection.2.2.3}%
 \contentsline {subsection}{\numberline {2.2.4}APLICAÇÃO DA AUTOMAÇÃO RESIDENCIAL}{17}{subsection.2.2.4}%
 \contentsline {section}{\numberline {2.3}AUTOMAÇÃO DE PISCINAS}{17}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}CONCEITO E FUNCIONAMENTO GERAL}{17}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}{17}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}{17}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.2}DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}{18}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}{18}{subsection.2.3.3}%
 \contentsline {subsection}{\numberline {2.3.4}ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}{18}{subsection.2.3.4}%
 \contentsline {subsection}{\numberline {2.3.5}ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}{18}{subsection.2.3.5}%
 \contentsline {section}{\numberline {2.4}INTERNET DAS COISAS (IoT) APLICADA A AUTOMAÇÃO RESIDENCIAL}{18}{section.2.4}%
