@@ -571,6 +571,8 @@ INPUT .\imagens\estojoMedidor.png
 INPUT .\imagens\estojoMedidor.png
 INPUT .\imagens\estojoMedidor.png
 INPUT .\imagens\estojoMedidor.png
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\capitulos\metodologia.tex
 INPUT .\capitulos\metodologia.tex
 INPUT .\capitulos\metodologia.tex
@@ -633,6 +635,8 @@ OUTPUT principal.toc
 INPUT principal.aux
 INPUT .\principal.brf
 INPUT .\principal.brf
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb

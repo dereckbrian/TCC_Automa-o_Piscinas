@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  17 OCT 2025 14:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  17 OCT 2025 16:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1283,21 +1283,21 @@ File: imagens/estojoMedidor.png Graphic file (type png)
 <use imagens/estojoMedidor.png>
 Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 197.
 (pdftex.def)             Requested size: 218.39806pt x 218.39151pt.
- [14 <./imagens/estojoMedidor.png>] [15] [16] [17]) (capitulos/metodologia.tex [18]) (capitulos/desenvolvimento.tex) (capitulos/conclusao.tex [19
+ [14 <./imagens/estojoMedidor.png>] [15] [16] [17] [18]) (capitulos/metodologia.tex [19]) (capitulos/desenvolvimento.tex) (capitulos/conclusao.tex [20
 
 ])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
 \tf@brf=\write6
 \openout6 = `principal.brf'.
 
- [20
+ [21
 
 ]
 bibitemlist
-[21
+[22
 
 ])) (pos-textual/glossario.tex) (pos-textual/apendices.tex) (pos-textual/anexos.tex) (pos-textual/indices.tex) (principal.ind)) 
 AED: lastpage setting LastPage
-[22]
+[23]
 \tf@toc=\write7
 \openout7 = `principal.toc'.
 
@@ -1311,20 +1311,20 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.brf' has not changed.
-(rerunfilecheck)             Checksum: 5E45C210B6A141BE953CEE690AFCB08D;1467.
+(rerunfilecheck)             Checksum: 0B1F5515B660BE1E25C49F25C4FA6162;1599.
  ) 
 Here is how much of TeX's memory you used:
- 36244 strings out of 474486
- 717914 string characters out of 5741867
- 1943542 words of memory out of 5000000
- 57582 multiletter control sequences out of 15000+600000
- 614932 words of font info for 149 fonts, out of 8000000 for 9000
+ 36268 strings out of 474486
+ 718320 string characters out of 5741867
+ 1944542 words of memory out of 5000000
+ 57595 multiletter control sequences out of 15000+600000
+ 621271 words of font info for 155 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,13n,111p,1210b,708s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (23 pages, 3523308 bytes).
+<C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on principal.pdf (24 pages, 3550814 bytes).
 PDF statistics:
- 506 PDF objects out of 1000 (max. 8388607)
- 92 named destinations out of 1000 (max. 500000)
- 31011 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 522 PDF objects out of 1000 (max. 8388607)
+ 94 named destinations out of 1000 (max. 500000)
+ 35107 words of extra memory for PDF output out of 35830 (max. 10000000)
 
