@@ -1,9 +1,9 @@
-PWD /home/dereck/Documentos/GarotoDePrograma/TCC/tcc-derecl/estrutura
+PWD /home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/estrutura
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/dereck/Documentos/GarotoDePrograma/TCC/tcc-derecl/estrutura/preambulo-abntex.tex
+INPUT /home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/estrutura/preambulo-abntex.tex
 OUTPUT preambulo-abntex.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls

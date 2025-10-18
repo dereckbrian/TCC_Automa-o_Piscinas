@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.10.7)  7 OCT 2025 10:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.10.7)  17 OCT 2025 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/dereck/Documentos/GarotoDePrograma/TCC/tcc-derecl/estrutura/preambulo-abntex.tex
-(/home/dereck/Documentos/GarotoDePrograma/TCC/tcc-derecl/estrutura/preambulo-abntex.tex
+**/home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/estrutura/preambulo-abntex.tex
+(/home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/estrutura/preambulo-abntex.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
@@ -691,7 +691,7 @@ Type X to quit or <RETURN> to proceed,
 or enter new name. (Default extension: sty)
 
 Enter file name: 
-/home/dereck/Documentos/GarotoDePrograma/TCC/tcc-derecl/estrutura/preambulo-abntex.tex:73: Emergency stop.
+/home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/estrutura/preambulo-abntex.tex:73: Emergency stop.
 <read *> 
          
 l.73 ^^M
@@ -701,10 +701,10 @@ l.73 ^^M
  
 Here is how much of TeX's memory you used:
  17263 strings out of 476091
- 284686 string characters out of 5794081
+ 284752 string characters out of 5794081
  1850330 words of memory out of 5000000
  37470 multiletter control sequences out of 15000+600000
  515884 words of font info for 35 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,1n,90p,387b,106s stack positions out of 10000i,1000n,20000p,200000b,200000s
-/home/dereck/Documentos/GarotoDePrograma/TCC/tcc-derecl/estrutura/preambulo-abntex.tex:73:  ==> Fatal error occurred, no output PDF file produced!
+ 90i,1n,90p,409b,106s stack positions out of 10000i,1000n,20000p,200000b,200000s
+/home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/estrutura/preambulo-abntex.tex:73:  ==> Fatal error occurred, no output PDF file produced!
