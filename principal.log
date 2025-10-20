@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  17 OCT 2025 16:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  20 OCT 2025 12:46
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1233,7 +1233,7 @@ l.35
 
 Package hyperref Warning: Suppressing empty link on input line 9.
 
-<imagens/primeiraPiscina.png, id=128, 1027.84pt x 682.55pt>
+<imagens/primeiraPiscina.png, id=130, 1027.84pt x 682.55pt>
 File: imagens/primeiraPiscina.png Graphic file (type png)
 <use imagens/primeiraPiscina.png>
 Package pdftex.def Info: imagens/primeiraPiscina.png  used on input line 15.
@@ -1244,7 +1244,13 @@ Package pdftex.def Info: imagens/primeiraPiscina.png  used on input line 15.
 
 Package hyperref Warning: Suppressing empty link on input line 28.
 
-<imagens/componentesPiscina.png, id=140, 291.0875pt x 217.81375pt>
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 30.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 30.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 30.
+<imagens/componentesPiscina.png, id=143, 291.0875pt x 217.81375pt>
 File: imagens/componentesPiscina.png Graphic file (type png)
 <use imagens/componentesPiscina.png>
 Package pdftex.def Info: imagens/componentesPiscina.png  used on input line 60.
@@ -1259,45 +1265,39 @@ Package hyperref Warning: Suppressing empty link on input line 62.
 
 Package hyperref Warning: Suppressing empty link on input line 74.
 
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 80.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 80.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 80.
 [10 <./imagens/componentesPiscina.png>]
-<imagens/medidorPh.png, id=163, 925.4575pt x 406.51875pt>
+<imagens/medidorPh.png, id=171, 925.4575pt x 406.51875pt>
 File: imagens/medidorPh.png Graphic file (type png)
 <use imagens/medidorPh.png>
 Package pdftex.def Info: imagens/medidorPh.png  used on input line 96.
 (pdftex.def)             Requested size: 218.39806pt x 95.9289pt.
  [11{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./imagens/medidorPh.png>] [12]
-<imagens/tabelaProdutos.png, id=195, 813.0375pt x 490.08093pt>
+<imagens/tabelaProdutos.png, id=201, 813.0375pt x 490.08093pt>
 File: imagens/tabelaProdutos.png Graphic file (type png)
 <use imagens/tabelaProdutos.png>
 Package pdftex.def Info: imagens/tabelaProdutos.png  used on input line 167.
 (pdftex.def)             Requested size: 455.0pt x 274.26398pt.
  [13 <./imagens/tabelaProdutos.png>]
-<imagens/estojoMedidor.png, id=206, 1089.06876pt x 1089.06876pt>
+<imagens/estojoMedidor.png, id=212, 1089.06876pt x 1089.06876pt>
 File: imagens/estojoMedidor.png Graphic file (type png)
 <use imagens/estojoMedidor.png>
 Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 197.
 (pdftex.def)             Requested size: 218.39806pt x 218.39151pt.
- [14 <./imagens/estojoMedidor.png>] [15] [16] [17] [18]) (capitulos/metodologia.tex [19]) (capitulos/desenvolvimento.tex) (capitulos/conclusao.tex [20
+ [14] [15 <./imagens/estojoMedidor.png>] [16] [17] [18] [19]) (capitulos/metodologia.tex [20]) (capitulos/desenvolvimento.tex) (capitulos/conclusao.tex [21
 
 ])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
 \tf@brf=\write6
 \openout6 = `principal.brf'.
 
- [21
+ [22
 
 ]
 bibitemlist
-[22
+[23
 
 ])) (pos-textual/glossario.tex) (pos-textual/apendices.tex) (pos-textual/anexos.tex) (pos-textual/indices.tex) (principal.ind)) 
 AED: lastpage setting LastPage
-[23]
+[24]
 \tf@toc=\write7
 \openout7 = `principal.toc'.
 
@@ -1311,20 +1311,20 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.brf' has not changed.
-(rerunfilecheck)             Checksum: 0B1F5515B660BE1E25C49F25C4FA6162;1599.
+(rerunfilecheck)             Checksum: AB4F230B1A40640B9ACE255AA52B738D;1667.
  ) 
 Here is how much of TeX's memory you used:
- 36268 strings out of 474486
- 718320 string characters out of 5741867
- 1944542 words of memory out of 5000000
- 57595 multiletter control sequences out of 15000+600000
- 621271 words of font info for 155 fonts, out of 8000000 for 9000
+ 36282 strings out of 474486
+ 718483 string characters out of 5741867
+ 1943542 words of memory out of 5000000
+ 57598 multiletter control sequences out of 15000+600000
+ 621520 words of font info for 158 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,13n,111p,1210b,708s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (24 pages, 3550814 bytes).
+Output written on principal.pdf (25 pages, 3561776 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 94 named destinations out of 1000 (max. 500000)
- 35107 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 540 PDF objects out of 1000 (max. 8388607)
+ 99 named destinations out of 1000 (max. 500000)
+ 35115 words of extra memory for PDF output out of 35830 (max. 10000000)
 
