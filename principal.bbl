@@ -5,6 +5,12 @@
 \providecommand{\abntbstabout}[1]{}
 \abntbstabout{v-1.9.7 }
 
+\bibitem[Accardi e Dodonov 2012]{accardi2012automaccao}
+\abntrefinfo{Accardi e Dodonov}{ACCARDI; DODONOV}{2012}
+{ACCARDI, A.; DODONOV, E. Automa{\c{c}}{\~a}o residencial: elementos
+  b{\'a}sicos, arquiteturas, setores, aplica{\c{c}}{\~o}es e protocolos.
+\emph{Revista TIS}, v.~1, n.~2, 2012.}
+
 \bibitem[ATcllor 2021]{guiaTratamento}
 \abntrefinfo{ATcllor}{ATCLLOR}{2021}
 {ATCLLOR. \emph{Guia de Tratamento de Piscinas}.
@@ -60,29 +66,20 @@ Dispon{\'\i}vel em:
 Accessed: 12/09/2025.
 Dispon{\'\i}vel em: \url{https://home.howstuffworks.com/swimming-pool.htm}.}
 
+\bibitem[Hip{\'o}lito e SILVA 2018]{hipolito2018automaccao}
+\abntrefinfo{Hip{\'o}lito e SILVA}{HIP{\'O}LITO; SILVA}{2018}
+{HIP{\'O}LITO, J.~G.; SILVA, M. d. J.~d. Automa{\c{c}}{\~a}o residencial com
+  arduino.
+Centro Universit{\'a}rio UNIFAFIBE, 2018.
+Dispon{\'\i}vel em:
+  \url{https://unifafibe.com.br/revistasonline/arquivos/revistaeletrica/sumario/69/06022019135904.pdf}.}
+
 \bibitem[Ideia]{piscineiroProfissional}
 \abntrefinfo{Ideia}{IDEIA}{}
 {IDEIA, P. \emph{Limpeza e Manutenção de Piscinas}.
 Acessado em: 24 jul. 2025.
 Dispon{\'\i}vel em:
   \url{https://portalidea.com.br/cursos/e643d94d6e685cffa352bd7370bf84a7.pdf}.}
-
-\bibitem[Insights 2025]{automacaoDepoisCovid}
-\abntrefinfo{Insights}{INSIGHTS}{2025}
-{INSIGHTS, F.~B. \emph{Tamanho do mercado de automação residencial,
-  participação e análise da indústria, por componente (produtos e
-  serviços), por tecnologia de rede (com fio, sem fio e baseada em linha de
-  energia) e previsão regional, 2024-2032}. 2025.
-Accessed: 28/06/2025.
-Dispon{\'\i}vel em:
-  \url{https://www.fortunebusinessinsights.com/pt/industry-reports/home-automation-market-100074}.}
-
-\bibitem[Martins 2023]{automacaoCovid}
-\abntrefinfo{Martins}{MARTINS}{2023}
-{MARTINS, P. \emph{Smart home no Brasil deve crescer 91,06\% ate 2026}. 2023.
-Accessed: 27/06/2025.
-Dispon{\'\i}vel em:
-  \url{https://www.trendsce.com.br/2023/01/18/smart-home-no-brasil-deve-crescer-9106-ate-2026/}.}
 
 \bibitem[Muratori e B{\'o} 2011]{automacaoResidencialCap1}
 \abntrefinfo{Muratori e B{\'o}}{MURATORI; B{\'O}}{2011}
@@ -114,14 +111,6 @@ Dispon{\'\i}vel em:
 Accessed: 27/05/2025.
 Dispon{\'\i}vel em:
   \url{https://www.moneyreport.com.br/negocios/automacao-residencial-cresceu-218/}.}
-
-\bibitem[Residencial 2024]{automacaoResidencial}
-\abntrefinfo{Residencial}{RESIDENCIAL}{2024}
-{RESIDENCIAL, C. D.~A. \emph{Como a Automação Residencial Pode Facilitar Meu
-  Dia a Dia?} 2024.
-Accessed: 25/06/2025.
-Dispon{\'\i}vel em:
-  \url{https://casadigitaloficial.com/��blog/f/como-a-automação-residencial-pode-facilitar-meu-dia-a-dia}.}
 
 \bibitem[Silva 2021]{tccSilva}
 \abntrefinfo{Silva}{SILVA}{2021}

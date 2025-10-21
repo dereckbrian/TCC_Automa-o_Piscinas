@@ -265,15 +265,51 @@
 
     \subsection{CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}
     
-       \textcolor{blue}{Sendo tecnicamente denominada de Domótica\footnote{tem como origem a união do latim domus (casa) com a palavra "robótica", referindo-se à automatização e ao controle de ambientes domésticos.}, a automação residencial tem como principal objetivo movimentar, acionar, monitorar e até integrar diferentes tipos de variaveis ou cargas de uma residencia (iluminação, climatização, áudio e vídeo) com o intuito de gerar eficiência, comodidade e segurança para o usuário \cite{oliveira2019domotica}.}
+       \textcolor{blue}{Sendo tecnicamente denominada de Domótica\footnote{Tem como origem a união do latim domus (casa) com a palavra "robótica", referindo-se à automatização e ao controle de ambientes domésticos.}, a automação residencial tem como principal objetivo movimentar, acionar, monitorar e até integrar diferentes tipos de variaveis ou cargas de uma residencia (iluminação, climatização, áudio e vídeo) com o intuito de gerar eficiência, comodidade e segurança para o usuário \cite{oliveira2019domotica}.}
 
-       \textcolor{blue}{Para que toda a integração dos sistemas aconteca, alguns conceitos técnicos são fundamentais para que tudo seja executado com exito. Nas subseções seguintes sertão mostradas tais conceitos.}
+       \textcolor{blue}{Contudo, no Brasil a forma mais comumente utilizada é atumação residencial,traduzida diretamente do termo americano \textit{home automation}, porém, essa tradução não é tão abrangente quanto o termo domótica. No Brasil o uso de novas tecnologias vem crescendo exponencialmente, entretanto, o mercado de contrução civil não acompanha tanto o crecimento tecnologico quanto o mercado de veiculos que utiliza tecnologias embarcadas\footnote{Computador especializado, composto por hardware e software, que executa uma função dedicada dentro de um sistema maior} \cite{hipolito2018automaccao}.}
 
-       \subsubsection{ARQUITETURA E COMPONENTES BÁSICOS}
+       \textcolor{blue}{De acordo com \cite{accardi2012automaccao}, a forma com que os componentes se comunicam, está intrínseca a arquitetura utilizada, podendo ser centralizada ou descentralizada. Em uma arquitetura centralizada, todos os componentes do sistema respondem a um único dispositivo, que por sua vez, deve ter uma alta inteligência e desempenho.}
 
-        \textcolor{blue}{Os sistemas automatizados tem como estrutura alguns componentes fundamentais: }
-    
+        \begin{figure}[H]
+                \centering
+                \caption{ }  
+                \centering
+                \label{fig:cont}
+                \includegraphics[width=0.53\textwidth]{imagens/arquiteturaCentralizada.png}
+                \caption*{Arquitetura centralizada}
+                \caption*{Fonte: \cite{hipolito2018automaccao}}
+        \end{figure}
+
+       \textcolor{blue}{Já em uma arquitetura descentralizada, varios controladores podem coexistir que, ligados por um barramento\footnote{Refere-se a um sistema onde a comunicação e a coordenação entre os componentes são distribuídas, sem depender de uma autoridade ou ponto central}, podem compartilhar o controle dos demais dispositivos ligados aos controladores.}
+
+        \begin{figure}[H]
+                \centering
+                \caption{ }  
+                \centering
+                \label{fig:cont}
+                \includegraphics[width=0.53\textwidth]{imagens/arquiteturaDescentralizada.png}
+                \caption*{Arquitetura descentralizada}
+                \caption*{Fonte: \cite{hipolito2018automaccao}}
+         \end{figure}
+
+       \textcolor{blue}{Para que toda a integração dos sistemas aconteca, alguns conceitos técnicos são fundamentais para que tudo seja executado com exito. Nas seções seguintes serão mostradas tais conceitos.}
+
+       \subsubsection{COMPONENTES BÁSICOS}
+
+        \textcolor{blue}{A automação residencial, tem seu funcionamento constituido por diversos componentes, como sensores mais simples ou centrais complexas de automação. Segue abaixo alguns deles:}
+
+            \begin{itemize}
+                \item \textbf{\textcolor{blue}{Camadas de dispositivos:}} \textcolor{blue}{(1)~Sensores: Segundo \cite{hipolito2018automaccao} um sensor pode ser definido como dispositivos sensiveis ao ambiente no qual estão inseridos, como sensor de temperatura ou luminosidade. (2)~Atuadores: São componentes eletro-mecânicos, que pelo sistema, é acionado para executar sua função, podendo ser ela uma sirene, lampada, fechadura magnética, motor ou ma válvula. (3)~Controladores: Tem como função, manitorar parâmetros dos sensores e de acordo com o que for monitorado, acionar o respectivo atuador ligado a o sensor monitorado. Podendo ter interfaces próprias ou ter grandes centrais de controlamento. (4)~Interfaces: Disposivos que dão a capacidade do usuário interagir com o sistema automatizado, como: Aplicativos ou sites \cite{accardi2012automaccao}.}
+                
+                \item \textbf{\textcolor{blue}{Camada de comunicação/rede:}} \textcolor{blue}{Segundo \cite{accardi2012automaccao}, a camada de comunicação, também denomidade de protocolo, ''é um acordo entre as partes que se comunicam, estabelecendo como se dará a comunicação''. Diante disso, se entende que protocolo é em resumo, regras utilizadas para diferentes dispositvos se comunicarem. Dentre todos os protoclos, alguns foram desenvolvidos especificamente para automação residencial já outros foram adaptados, seguem alguns dos mais utilizados na automação: Ethernet, X-10, HOmePHA e Wi-Fi.}
+                
+                \item \textbf{\textcolor{blue}{Camada de controle/automação lógica:}} \textcolor{blue}{A camada de controle ou central de automação, pode ser definida como o cérebro da automação, sendo responsável por todo o controle dos dispositivos ligados a ela, controlando as informações de entrada e saída. Sua configuração pode ser feita através de um dispositivo, por meio de um software. A central de automação é escalável\footnote{Descreve algo que pode crescer ou ser aumentado em magnitude, seja física ou figurativamente}, assim novos dispositivos podem ser adicionandos constantemente.}
         
+            \end{itemize}
+
+        \textcolor{blue}{Visando garantir a eficiência da automação residencial, é de extrema necessidade a correta aplicação e integração dos conceitos e componentes técnicos, visando sempre a melhoria na eficiência, conforto e segurança. }
+     
 \section{AUTOMAÇÃO DE PISCINAS}
 
     Contexto mais geral sobre a automação de piscinas, como ela funciona e como surgiu as ideias e as primeiras e como se encontra o mercado hoje
