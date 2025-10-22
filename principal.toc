@@ -18,16 +18,16 @@
 \contentsline {subsection}{\numberline {2.2.1}HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}{18}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}{19}{subsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.2.1}COMPONENTES BÁSICOS}{20}{subsubsection.2.2.2.1}%
-\contentsline {section}{\numberline {2.3}AUTOMAÇÃO DE PISCINAS}{21}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}CONCEITO E FUNCIONAMENTO GERAL}{21}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}{21}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}{22}{subsection.2.3.3}%
-\contentsline {subsection}{\numberline {2.3.4}ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}{22}{subsection.2.3.4}%
-\contentsline {subsection}{\numberline {2.3.5}ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}{22}{subsection.2.3.5}%
-\contentsline {section}{\numberline {2.4}INTERNET DAS COISAS (IoT) APLICADA A AUTOMAÇÃO RESIDENCIAL}{22}{section.2.4}%
-\contentsline {section}{\numberline {2.5}SUSTENTABILIDADE E EFICIÊNCIA NA AUTOMAÇÃO DE PISCINAS}{22}{section.2.5}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{23}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Metodologia}}{22}{chapter.3}%
+\contentsline {section}{\numberline {3.1}AUTOMAÇÃO DE PISCINAS}{22}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}CONCEITO E FUNCIONAMENTO GERAL}{22}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}{22}{subsection.3.1.2}%
+\contentsline {subsection}{\numberline {3.1.3}TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}{22}{subsection.3.1.3}%
+\contentsline {subsection}{\numberline {3.1.4}ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}{22}{subsection.3.1.4}%
+\contentsline {subsection}{\numberline {3.1.5}ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}{23}{subsection.3.1.5}%
+\contentsline {section}{\numberline {3.2}INTERNET DAS COISAS (IoT) APLICADA A AUTOMAÇÃO RESIDENCIAL}{23}{section.3.2}%
+\contentsline {section}{\numberline {3.3}SUSTENTABILIDADE E EFICIÊNCIA NA AUTOMAÇÃO DE PISCINAS}{23}{section.3.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{24}{chapter.4}%
 \vspace {\cftbeforechapterskip }
