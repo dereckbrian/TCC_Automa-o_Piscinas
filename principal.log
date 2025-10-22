@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  22 OCT 2025 20:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  22 OCT 2025 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1292,43 +1292,42 @@ File: imagens/cabo.png Graphic file (type png)
 <use imagens/cabo.png>
 Package pdftex.def Info: imagens/cabo.png  used on input line 113.
 (pdftex.def)             Requested size: 273.00278pt x 146.73132pt.
+ [11 <./imagens/escova.png> <./imagens/cabo.png>]
 
+Package hyperref Warning: Suppressing empty link on input line 123.
 
-Package hyperref Warning: Suppressing empty link on input line 121.
-
-[11 <./imagens/escova.png> <./imagens/cabo.png>]
 <imagens/medidorPh.png, id=212, 925.4575pt x 406.51875pt>
 File: imagens/medidorPh.png Graphic file (type png)
 <use imagens/medidorPh.png>
-Package pdftex.def Info: imagens/medidorPh.png  used on input line 143.
+Package pdftex.def Info: imagens/medidorPh.png  used on input line 145.
 (pdftex.def)             Requested size: 218.39806pt x 95.9289pt.
- [12] [13{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./imagens/medidorPh.png>]
+[12] [13{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./imagens/medidorPh.png>]
 <imagens/tabelaProdutos.png, id=245, 813.0375pt x 490.08093pt>
 File: imagens/tabelaProdutos.png Graphic file (type png)
 <use imagens/tabelaProdutos.png>
-Package pdftex.def Info: imagens/tabelaProdutos.png  used on input line 214.
+Package pdftex.def Info: imagens/tabelaProdutos.png  used on input line 216.
 (pdftex.def)             Requested size: 455.0pt x 274.26398pt.
  [14] [15 <./imagens/tabelaProdutos.png>]
 <imagens/estojoMedidor.png, id=260, 1089.06876pt x 1089.06876pt>
 File: imagens/estojoMedidor.png Graphic file (type png)
 <use imagens/estojoMedidor.png>
-Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 244.
+Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 246.
 (pdftex.def)             Requested size: 218.39806pt x 218.39151pt.
  [16 <./imagens/estojoMedidor.png>] [17] [18]
-Overfull \hbox (12.03767pt too wide) in paragraph at lines 319--320
+Overfull \hbox (12.03767pt too wide) in paragraph at lines 321--322
 [][]\T1/lmr/m/n/12 (-20) Contudo, no Bra-sil a forma mais co-mu-mente uti-li-zada щ atu-ma-чуo re-si-den-cial,traduzida
  []
 
 <imagens/arquiteturaCentralizada.png, id=319, 341.77687pt x 152.06813pt>
 File: imagens/arquiteturaCentralizada.png Graphic file (type png)
 <use imagens/arquiteturaCentralizada.png>
-Package pdftex.def Info: imagens/arquiteturaCentralizada.png  used on input line 328.
+Package pdftex.def Info: imagens/arquiteturaCentralizada.png  used on input line 330.
 (pdftex.def)             Requested size: 241.14944pt x 107.29852pt.
 [19 <./imagens/arquiteturaCentralizada.png>]
 <imagens/arquiteturaDescentralizada.png, id=337, 584.1825pt x 383.93437pt>
 File: imagens/arquiteturaDescentralizada.png Graphic file (type png)
 <use imagens/arquiteturaDescentralizada.png>
-Package pdftex.def Info: imagens/arquiteturaDescentralizada.png  used on input line 340.
+Package pdftex.def Info: imagens/arquiteturaDescentralizada.png  used on input line 342.
 (pdftex.def)             Requested size: 241.14944pt x 158.48618pt.
  [20 <./imagens/arquiteturaDescentralizada.png>]) (capitulos/metodologia.tex [21]) (capitulos/desenvolvimento.tex [22
 
@@ -1369,7 +1368,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  109i,12n,111p,1210b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (27 pages, 4362489 bytes).
+Output written on principal.pdf (27 pages, 4363653 bytes).
 PDF statistics:
  617 PDF objects out of 1000 (max. 8388607)
  113 named destinations out of 1000 (max. 500000)
