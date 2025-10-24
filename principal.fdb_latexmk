@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex principal"] 1761174835.63363 "principal.aux" "principal.bbl" "principal" 1761174838.43652 0
+["bibtex principal"] 1761302764.05135 "principal.aux" "principal.bbl" "principal" 1761318688.15399 0
   "./bibliografia.bib" 1761079759 12106 1547c467804dbab90360ea443dc0dfeb ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/bibtex/bib/abntex2/abntex2-options.bib" 1543103229 5396 4eb260dac60f150ae608d45252853090 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/bibtex/bst/abntex2/abntex2-alf.bst" 1543103230 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "principal.aux" 1761174837 27095 edaf33517fce5103cc208a46782b2786 "pdflatex"
+  "principal.aux" 1761318687 27095 d4bbb9dfadc2e4e8abb9edebead1fb05 "pdflatex"
   (generated)
   "principal.bbl"
   "principal.blg"
   (rewritten before read)
-["makeindex principal.idx"] 1761174049.57321 "principal.idx" "principal.ind" "principal" 1761174838.43619 0
-  "principal.idx" 1761174836 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex principal.idx"] 1761174049.57321 "principal.idx" "principal.ind" "principal" 1761318688.15362 0
+  "principal.idx" 1761318686 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "principal.ilg"
   "principal.ind"
   (rewritten before read)
-["pdflatex"] 1761174835.83485 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" "principal.pdf" "principal" 1761174838.43689 0
+["pdflatex"] 1761318685.71745 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" "principal.pdf" "principal" 1761318688.15435 0
   "C:/Users/voluciano/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1760048723 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/voluciano/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760048588 24226934 7b1f61a276975ef1f89b4a2e371078b7 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -257,7 +257,7 @@
   "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" 1760047597 785 9b746d28aed595b0c0c1aafb4450c78e ""
   "capitulos/conclusao.tex" 1760047598 151 da91e627a17873f1d734a4907de69af9 ""
   "capitulos/desenvolvimento.tex" 1761174079 2516 abb3887d02dea5eaa70676d7bc18bd7c ""
-  "capitulos/fundamentacao-teorica.tex" 1761174834 32796 412dc76f87a70a6aefeb50c125322fe8 ""
+  "capitulos/fundamentacao-teorica.tex" 1761318685 33190 13627838c496687a0623cd1c67e3753b ""
   "capitulos/introducao.tex" 1760047598 3311 86f226d3bfd8efc57d3ce50e5de09c1c ""
   "capitulos/metodologia.tex" 1760047598 25 8c8006f7c84ca820f63185dab4829713 ""
   "config/abntex-ifg.sty" 1760047598 10274 528168763df0bfd056e5b75903d82b86 ""
@@ -299,12 +299,12 @@
   "pre-textual/resumo.tex" 1760047597 1135 4d0c4383167d31beba7b7f8d7a9689cd ""
   "pre-textual/siglas.tex" 1760047597 11 5ac80352bcf42c5f3bf15ba6c6fb7c25 ""
   "pre-textual/sumario.tex" 1760047597 70 0a3a7f68c05f1630d37e27c5092179e8 ""
-  "principal.aux" 1761174837 27095 edaf33517fce5103cc208a46782b2786 "pdflatex"
-  "principal.bbl" 1761174835 6050 f1667640b8c630802164b273689b38c6 "bibtex principal"
-  "principal.brf" 1761174837 2492 6b4cc202aa5051b0ea08981e3856b080 "pdflatex"
+  "principal.aux" 1761318687 27095 d4bbb9dfadc2e4e8abb9edebead1fb05 "pdflatex"
+  "principal.bbl" 1761302764 6050 f1667640b8c630802164b273689b38c6 "bibtex principal"
+  "principal.brf" 1761318687 2492 6b4cc202aa5051b0ea08981e3856b080 "pdflatex"
   "principal.ind" 1761174049 0 d41d8cd98f00b204e9800998ecf8427e "makeindex principal.idx"
   "principal.tex" 1760047597 785 9b746d28aed595b0c0c1aafb4450c78e ""
-  "principal.toc" 1761174837 3356 6b5b67d6e06c3d00fcae669cfc90ff3f "pdflatex"
+  "principal.toc" 1761318687 3356 6b5b67d6e06c3d00fcae669cfc90ff3f "pdflatex"
   (generated)
   "principal.aux"
   "principal.brf"
