@@ -3,9 +3,17 @@
 % ----------------------------------------------------------
 \chapter{Introdução}
 
-\textcolor{blue}{Com o avanço da tecnologia, a automação se tornou de extrema importância no aprimoramento de processos produtivos. Surgindo durante século XVIII, na 1ª Revolução Industrial e se seguindo até hoje na 4ª revolução, comumente conhecida como Indústria 4.0 \cite{automacao}. A automação integra atividades humanas desde os primórdios da civilização, evoluindo junto às necessidades sociais e tecnológicas. Dentro do setor industrial, esse avanço é bastante evidente. De acordo com a Confederação Nacional da Indústria (CNI), 72\% das empresas que adotaram a utilização de tecnologias digitais, relataram aumento da produtividade, enquanto 60\% indicaram redução dos custos operacionais como benefício direto da automação \cite{CNI}. Tais informações são de extrema importância para comprovar o impacto positivo da automação em eficiência e economia dos processos produtivos.}
+\textcolor{black}{O avanço tecnológico consolidou a automação como elemento essencial na otimização de processos produtivos. Originada na Primeira Revolução Industrial, no século XVIII, essa prática evoluiu até o atual paradigma da Indústria 4.0, marcado pela integração entre sistemas ciberfísicos e soluções digitais \cite{automacao}. O avanço tecnológico consolidou a automação como elemento essencial na otimização de processos produtivos. Originada na Primeira Revolução Industrial, no século XVIII, essa prática evoluiu até o atual paradigma da Indústria 4.0, marcado pela integração entre sistemas ciberfísicos e soluções digitais \cite{CNI}, 72\% das empresas que implementaram tecnologias digitais registraram aumento de produtividade, e 60\% relataram redução de custos operacionais, o que confirma o impacto positivo da automação na eficiência e na economia de recursos.}
 
-Além de estar muito presente na indústria, a automação também é amplamente utilizada em tarefas do dia a dia, como em casas inteligentes com o uso de assistentes virtuais, sistemas de iluminação automatizada, controle de temperatura por termostatos, robôs aspiradores e dentre outras diversas situações que podem ser automatizadas. A automação residencial expandiu-se para além de um público especializado, consolidando-se como alternativa acessível a um número crescente de usuários, fazendo com que o mercado de automação residencial no Brasil crescesse de forma drástica, dados mostram que houveram um aumento de 21,8\% comparando o segundo trimestre de 2024 e o mesmo período em 2023 \cite{cresceuBR}. As projeções apontam para um crescimento contínuo e significativo do setor de automação residencial nos próximos anos, mostrando que o mercado global de automação residencial está crescendo cerca de 27,93\% de 2023 até 2032 \cite{aumentoAosAnos}.
+A automação extrapolou o ambiente industrial e passou a integrar o cotidiano doméstico, por meio de dispositivos inteligentes, assistentes virtuais, sistemas de iluminação e controle de temperatura, além de equipamentos autônomos para limpeza e monitoramento. Essa ampliação resultou no conceito de automação residencial, que visa promover conforto, segurança e eficiência energética. O setor apresenta crescimento acelerado: no Brasil, o mercado de automação residencial expandiu-se 21,8\% entre 2023 e 2024 \cite{cresceuBR}, e, em escala global, estima-se um aumento médio anual de 27,9\% até 2032 \cite{aumentoAosAnos}.
+
+%Ver as fontes disso
+
+Apesar do avanço no campo da automação doméstica, a limpeza e manutenção de piscinas residenciais ainda dependem predominantemente de processos manuais. Essa limitação acarreta desperdício de água e energia, uso inadequado de produtos químicos e aumento dos custos de manutenção. Além disso, o manejo incorreto dessas substâncias pode gerar riscos à saúde humana e ao meio ambiente.
+
+Nesse contexto, identifica-se o seguinte problema de pesquisa: como desenvolver um sistema automatizado que realize a limpeza e a manutenção de piscinas residenciais, reduzindo a necessidade de intervenção manual e promovendo eficiência, segurança e sustentabilidade no processo?
+
+Assim, este trabalho propõe o desenvolvimento de um sistema automatizado de limpeza e manutenção de piscinas residenciais, fundamentado em princípios de automação e tecnologias da Internet das Coisas (IoT). A proposta busca demonstrar que a integração entre sensores, atuadores e controladores inteligentes pode tornar o processo de manutenção mais eficiente, sustentável e economicamente viável.
 
 
 
@@ -15,16 +23,18 @@ Além de estar muito presente na indústria, a automação também é amplamente
 
 \subsection{Objetivo Geral}
 
-Desenvolver um sistema automatizado de limpeza e manutenção de piscinas residenciais, que visa reduzir drasticamente a necessidade de intervenção manual em grande parte dos processos e gerar uma economia monetária na manutenção de piscinas residenciais. 
+Desenvolver um sistema automatizado para limpeza e manutenção de piscinas residenciais, com capacidade de reduzir a intervenção manual, otimizar o uso de produtos químicos e promover economia de água e energia. 
   
 \subsection{Objetivos Específicos}
 
 \begin{itemize}
-\item Diminuir a quantidade de erros durante alguns processos de limpeza, gerando uma economia de produtos químicos e consequentemente de dinheiro.
-\item Proporcionar maior praticidade nas etapas de limpeza e monitoramento da piscina.
-\item Oferecer uma opção mais barata de automação para pessoas com renda mais baixa.
-\item Automatizar os processos de filtragem, aquecimento, coleta de PH, verificação da temperatura e análise de turbidez.
-\item Diminuição da necessidade de contratação de profissionais para realização da limpeza.
-\item Desenvolver um modulo de monitoramento de pH utilizando sensores IoT.
-\item Implementar algoritmo de acionamente de bomba de filtragem.
+\item Minimizar erros operacionais durante o processo de limpeza por meio da automação e do controle preciso de dosagem química.
+\item Proporcionar maior praticidade e segurança nas etapas de limpeza e monitoramento da piscina.
+\item Desenvolver uma solução de baixo custo que viabilize o acesso à automação para diferentes perfis socioeconômicos.
+\item Implementar a automação dos processos de filtragem, aquecimento, medição de pH, verificação de temperatura e análise de turbidez da água.
+\item Reduzir a dependência de serviços terceirizados de manutenção por meio da automação residencial inteligente.
+\item Projetar e testar um módulo de monitoramento de pH com sensores IoT integrados ao sistema de controle.
+\item Desenvolver e implementar um algoritmo de acionamento automático da bomba de filtragem com base nas variáveis de qualidade da água.
 \end{itemize}
+
+Com base nessa contextualização, observa-se que a automação aplicada à manutenção de piscinas representa uma área em expansão, mas ainda pouco explorada no campo acadêmico. A seguir, apresenta-se a fundamentação teórica, que aborda os princípios técnicos relacionados à manutenção de piscinas, aos processos de automação residencial e às tecnologias envolvidas na integração de sensores e controladores inteligentes. Essa base conceitual é essencial para compreender as etapas metodológicas e o desenvolvimento do sistema proposto.

@@ -1,6 +1,10 @@
 \chapter{Fundamentação teórica}
 
+    Este capítulo apresenta os fundamentos teóricos que embasam o desenvolvimento do sistema automatizado proposto. São abordados inicialmente aspectos conceituais e técnicos sobre piscinas e seus processos de manutenção, contemplando histórico, estrutura e procedimentos de limpeza manual e química. Em seguida, discorrem-se os princípios da automação residencial, destacando sua evolução, principais componentes e tecnologias aplicáveis. Essa base teórica é essencial para compreender as decisões tomadas para a construção do trabalho e a metodologia de implementação adotada nos capítulos seguintes.
+
 \section{PISCINAS e sua manutenção}
+
+    A compreensão dos processos de automação voltados à limpeza e manutenção de piscinas requer, primeiramente, o entendimento de sua estrutura física, funcionamento e métodos tradicionais de conservação da qualidade da água. Este tópico apresenta um panorama sobre o surgimento e a popularização das piscinas, seus componentes essenciais, bem como as técnicas manuais e químicas de limpeza empregadas para assegurar a salubridade e o equilíbrio químico da água. Essas informações fornecem o suporte técnico necessário para fundamentar a proposta de automação apresentada posteriormente.
 
     \subsection{HISTÓRICO E POPULARIZAÇÃO DAS PISCINAS}
     
@@ -277,11 +281,12 @@
          
    
 \section{FUNDAMENTOS DA AUTOMAÇÃO RESIDENCIAL}
-    \textcolor{black}{A automação residencial é um conceito que se baseia no conjunto de serviços voltados para a satisfação de necessidades básicas com o uso da tecnologia em uma residência, como: segurança, comunicação, etc. Tais necessidades são atendidas por meio da integração de sistemas que permitem a realização de tarefas de forma programada, promovendo praticidade e eficiência.}
 
-    \textcolor{black}{O que realmente define uma instalação residencial automatizada é a forma como os sistemas se integram, aliada à capacidade de executar tarefas mediante instruções programáveis. Essa integração deve abranger todos os sistemas da residência, como a instalação elétrica, segurança, multimídia, comunicação e utilidades \cite{automacaoResidencialCap1}.}
+    Após compreender os aspectos estruturais e os métodos tradicionais de manutenção de piscinas, torna-se necessário examinar os princípios da automação residencial, uma vez que o sistema proposto se insere nesse contexto tecnológico. Este tópico aborda a evolução histórica da automação aplicada ao ambiente doméstico, seus conceitos técnicos, componentes essenciais e protocolos de comunicação, que viabilizam o controle remoto e inteligente de diferentes dispositivos. Essa fundamentação permite compreender como as tecnologias emergentes podem ser aplicadas para aprimorar processos cotidianos, incluindo a manutenção automatizada de piscinas.
 
-    \textcolor{black}{Um dos principais objetivos da automação residencial é porporcionar comodidade e segurança ininterrupta aos moradores, com o constante auxílio dos computadores e sistemas inteligentes. Alguns exemplos incluem satélites que controlam o trânsito e sistemas automatizados presente em residências \cite{algunsAspectos}. Além disso, existem outras denominações que se referem à automação residencial, como domótica, casas conectadas e casas inteligentes. O termo domótica tem origem no latim domus (“casa”), combinado com a palavra “robótica”, representando a união entre o lar e a tecnologia \cite{automacaoTecnologiaPraticidade}}
+    \textcolor{black}{A automação residencial consiste na integração de sistemas tecnológicos voltados ao controle e à otimização de funções domésticas, como segurança, iluminação, climatização e comunicação. Essa integração, também conhecida como domótica, tem como propósito aprimorar o conforto, a segurança e a eficiência energética das residências \cite{automacaoResidencialCap1}.}
+
+    \textcolor{black}{O principal objetivo da automação residencial é proporcionar comodidade e segurança aos usuários, por meio da operação remota e da integração de dispositivos inteligentes \cite{automacaoTecnologiaPraticidade}}
 
     \textcolor{black}{A automação residencial é composta por um conjunto de benefícios fundamentais que estruturam o conceito de casa inteligente. Entre seus principais pilares, destacam-se:}
 
@@ -299,9 +304,10 @@
     Praticamente todos os aparelhos eletrônicos que possuem algum tipo de acionamento podem ser automatizados, como sistemas de iluminação, portões, climatização e segurança. Esses dispositivos são conectados a uma central de controle, que pode ser acessada por meio de um display touch\footnote{O display touch é uma superfície sensível ao toque que permite a interação direta do usuário}, localizado na própria central, aplicativos para smartphones ou comandos de voz \cite{automacaoTecnologiaPraticidade}.
 
     \subsection{HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}
-        \textcolor{black}{é uma tecnologia relativamente recente no mercado, mas que se encontra em constante evolução. Por volta de 1970, nos Estados Unidos, surgiram os primeiros módulos inteligentes, cujos comandos eram transmitidos pela rede elétrica da residência por meio da tecnologia PLC\footnote{Controlador Lógico Programável. Consiste em um tipo de computador industrial para automação e controle de processos.}. Contudo, seu funcionamento era bastante simples, permitindo apenas ligar e desligar remotamente alguns equipamentos e sistemas de iluminação \cite{automacaoResidencialCap1}.}
 
-        \textcolor{black}{De acordo com \cite{automacaoResidencialCap1}, o surgimento de tecnologias como os computadores pessoais e a internet impulsionou significativamente o avanço das soluções residenciais inteligentes, tornando-as mais aceitas e utilizadas. Em países com economias mais desenvolvidas, o conceito de casa inteligente apresentou grande crescimento e sofisticação nos últimos anos.}
+        \textcolor{black}{Embora recente, a automação residencial tem evoluído rapidamente. Na década de 1970, surgiram nos Estados Unidos os primeiros módulos inteligentes baseados em transmissão de dados pela rede elétrica doméstica, utilizando a tecnologia PLC \textit{(Power Line Communication)} \cite{automacaoResidencialCap1}.}
+
+        \textcolor{black}{O avanço da informática e da internet possibilitou a criação de sistemas residenciais inteligentes, capazes de monitorar e controlar equipamentos à distância, consolidando o conceito moderno de casa conectada.}
 
         A seguir, apresenta-se uma tabela que ilustra a evolução de algumas das principais tecnologias utilizadas na automação residencial:
 
@@ -392,3 +398,5 @@
     \textcolor{black}{Diante de todos os dados e fundamentos apresentados, fica evidente que a automação residencial encontra-se em constante evolução, impulsionada pela integração de sensores, controladores, motores e protocolos de comunicação. Esses elementos, quando aplicados corretamente, possibilitam o desenvolvimento de sistemas inteligentes, capazes de automatizar e otimizar tarefas rotineiras.}
 
     Nesse contexto, o próximo capítulo abordará o desenvolvimento de um sistema automatizado de limpeza de piscinas, aplicando na prática os conceitos estudados e demonstrando como a integração entre hardware e software pode oferecer uma solução segura, eficiente e inovadora para a manutenção de piscinas residenciais.
+
+\section{FERRAMENTAS UTILZIADAS PARA AUTOMAÇÃO}
