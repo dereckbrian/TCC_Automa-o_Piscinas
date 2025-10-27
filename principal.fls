@@ -486,11 +486,17 @@ INPUT .\pre-textual\lista-ilustracoes.tex
 INPUT .\pre-textual\lista-ilustracoes.tex
 INPUT .\pre-textual\lista-ilustracoes.tex
 INPUT pre-textual\lista-ilustracoes.tex
+INPUT .\principal.lof
+INPUT .\principal.lof
+INPUT principal.lof
 INPUT .\pre-textual\lista-tabelas.tex
 INPUT .\pre-textual\lista-tabelas.tex
 INPUT .\pre-textual\lista-tabelas.tex
 INPUT .\pre-textual\lista-tabelas.tex
 INPUT pre-textual\lista-tabelas.tex
+INPUT .\principal.lot
+INPUT .\principal.lot
+INPUT principal.lot
 INPUT .\pre-textual\siglas.tex
 INPUT .\pre-textual\siglas.tex
 INPUT .\pre-textual\siglas.tex
@@ -672,6 +678,8 @@ INPUT pos-textual\indices.tex
 INPUT .\principal.ind
 INPUT .\principal.ind
 INPUT principal.ind
+OUTPUT principal.lof
+OUTPUT principal.lot
 OUTPUT principal.toc
 INPUT principal.aux
 INPUT .\principal.brf
