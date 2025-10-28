@@ -25,6 +25,12 @@
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/28057/1/Empresa\%20prestadora\%20de\%20serviços\%20em\%20tratamento\%20e\%20limpeza\%20de\%20piscinas\%20-\%20Expansão.pdf}.}
 
+\bibitem[Cardoso 2011]{cardoso2011sensor}
+\abntrefinfo{Cardoso}{CARDOSO}{2011}
+{CARDOSO, T.~G. Sensor de turbidez para an{\'a}lise de amostras de {\'a}gua.
+2011.
+Dispon{\'\i}vel em: \url{https://files.core.ac.uk/download/pdf/185254372.pdf}.}
+
 \bibitem[CNI 2022]{CNI}
 \abntrefinfo{CNI}{CNI}{2022}
 {CNI. \emph{INDÚSTRIA 4.0 CINCO ANOS DEPOIS}. 2022.
@@ -93,7 +99,17 @@ Dispon{\'\i}vel em:
 \abntrefinfo{Juc{\'a} e Pereira}{JUC{\'A}; PEREIRA}{2018}
 {JUC{\'A}, S.; PEREIRA, R. Aplica{\c{c}}{\~o}es pr{\'a}ticas de sistemas
   embarcados linux utilizando raspberry pi.
-\emph{PoD Editoria}, 2018.}
+\emph{PoD Editoria}, 2018.
+Dispon{\'\i}vel em:
+  \url{https://d1wqtxts1xzle7.cloudfront.net/60918451/Livro-Aplicacoes-Praticas-Rpi20191016-13857-1jp2kma-libre.pdf?1571223807=&response-content-disposition=inline\%3B+filename\%3DAplicacoes\_Praticas\_de\_sistemas\_embarcad.pdf&Expires=1761677643&Signature=SzVXRH-SUaodC0J119Zq1x6j6e-Uq80w~Cy4~QxiSVJDWVM5YgOx-fOYdLwFyDu7mZLRtSB6XC7krw--Kw1TKN9THps~flL65lPt7tUssYl3w-rWQbMPN6M5vNg75dc0-g2CzlVvXfnEBljOr5A4WStb4JK8Lww4k86xCXyCoX3PA-D5eU0wCg~5Sp0~h~wJBFWFx5YwaQ5HNEijADHE1hxFFBimYjA5h7CySXlcf5gt~CTJ8hCT5MvASY-HgneijPnIsA2k3AxZKXMTotzHPRVG36TTHsnJS8P3aLN3w9qh~FgYOA8Pd2nx-rHYhh~6pT25z-bDS-tZpxT-54yfZg\_\_&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA}.}
+
+\bibitem[Leite 2020]{leite2020plataforma}
+\abntrefinfo{Leite}{LEITE}{2020}
+{LEITE, M. Y.~F. Plataforma de monitoramento da qualidade d{\'a} {\'a}gua
+  utilizando sistemas embarcados.
+2020.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufersa.edu.br/server/api/core/bitstreams/7313f04b-7ce8-4c36-b737-bd7e64caab7d/content}.}
 
 \bibitem[Muratori e B{\'o} 2011]{automacaoResidencialCap1}
 \abntrefinfo{Muratori e B{\'o}}{MURATORI; B{\'O}}{2011}
@@ -135,5 +151,13 @@ Dispon{\'\i}vel em:
   Janeiro, Maca{\'e}}, 2021.
 Dispon{\'\i}vel em:
   \url{https://pantheon.ufrj.br/bitstream/11422/16271/1/TCCSMSilva.pdf}.}
+
+\bibitem[Souza 2018]{souza2018sensor}
+\abntrefinfo{Souza}{SOUZA}{2018}
+{SOUZA, M.~O. Sensor de n{\'\i}vel tipo deslocador com
+  autocompensa{\c{c}}{\~a}o da densidade do l{\'\i}quido.
+P{\'o}s-Gradua{\c{c}}{\~a}o em Engenharia El{\'e}trica, 2018.
+Dispon{\'\i}vel em:
+  \url{https://ri.ufs.br/bitstream/riufs/9568/2/MATHEUS\_OLIVEIRA\_SOUZA.pdf}.}
 
 \end{thebibliography}

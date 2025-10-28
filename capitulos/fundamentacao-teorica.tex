@@ -20,6 +20,9 @@
         
         Com o avanço da tecnologia no século XX, as piscinas passaram a incorporar novos sistemas, como os de cloração e filtração, que permitiram manter a água limpa sem a necessidade de trocas completas, prática que antes era essencial. No Ocidente, as piscinas começaram a se popularizar com a invenção do gunite (mistura de cimento, areia e água), um material que facilitava a instalação, possibilitava projetos mais flexíveis e reduzia consideravelmente o custo de construção\cite{piscinaHistoria}.
 
+    \subsection{POTÊNCIAL HIDROGÊNICO (pH)}
+        Segundo \cite{leite2020plataforma}, o pH tem como objetivo mostrar o nível de neutralidade, alcalinidade ou acidez de um fluído, sendo 7 neuto e quanto maior mais será alcalino e quanto menor for mais ácido será o fluído.
+
     \subsection{COMPONENTES BÁSICOS DE UMA PISCINA}
         
         \textcolor{black}{De acordo com \cite{refComponents}, as piscinas podem ser compreendidas, de forma conceitual, como estruturas simples destinadas ao armazenamento de grandes volumes de água para uso recreativo. Podem apresentar diferentes tipologias, como piscinas de ondas em parques aquáticos, particulares ou públicas, entre outras. No entanto, de modo geral, todas compartilham componentes fundamentais que asseguram o adequado processo de filtração e tratamento químico da água.}
@@ -127,7 +130,9 @@
 
        \textcolor{black}{Segundo \cite{piscineiroProfissional}, a falta de um procedimento correto de limpeza pode acarretar sérios problemas de saúde para os usuários da piscina, como dermatite, micose e outras infecções. O tratamento deve ser constante e realizado de forma eficiente, de modo que os resultados estejam sempre em conformidade com as normas estabelecidas pela Associação Brasileira de Normas Técnicas ABNT\footnote{Associação Brasileira de Normas Técnicas, responsável por estabelecer as diretrizes de padronização para trabalhos acadêmicos no Brasil.}. De acordo com \cite{guiaTratamento}, existem diversos fatores poluentes presentes em uma piscina, como suor e urina, pelos e cabelos, óleos da pele, insetos, folhas, formação de algas, entre outros.}
 
-       \textcolor{black}{Esses poluentes podem comprometer diretamente os parâmetros químicos da piscina, como o pH e o nível de cloro. Segundo o mesmo autor, ao realizar apenas a limpeza física, por meio de escovas ou redes, é possível remover somente a parte visível dos resíduos, como folhas, insetos e lodo. Por essa razão, torna-se necessária a aplicação de um tratamento químico eficaz, uma vez que poluentes como suor e urina se misturam à água, e os sistemas de filtragem são incapazes de removê-los completamente.}
+       \textcolor{black}{Esses poluentes podem comprometer diretamente os parâmetros químicos da piscina, como o pH, e o nível de cloro. O pH, conforme definido por LEITE (2020), é um parâmetro que indica o nível de acidez ou alcalinidade de um fluido, com pH 7 sendo considerado neutro. Quanto maior o valor do pH, mais alcalino será o fluido, enquanto valores menores indicam uma maior acidez.}
+
+       Segundo \cite{guiaTratamento}, ao realizar apenas a limpeza física, por meio de escovas ou redes, é possível remover somente a parte visível dos resíduos, como folhas, insetos e lodo. Por essa razão, torna-se necessária a aplicação de um tratamento químico eficaz, uma vez que poluentes como suor e urina se misturam à água, e os sistemas de filtragem são incapazes de removê-los completamente.
 
        %Tentar inserir alguma imagem no final de algum desses três paragrafos pois esta tudo muito grande
 
@@ -379,19 +384,30 @@
 
         \textcolor{black}{A automação residencial tem seu funcionamento composto por diversos componentes, que variam desde sensores simples até centrais complexas de automação. A seguir, são apresentados alguns dos principais elementos que compõem essa estrutura:}
 
-            \begin{itemize}
-                \item \textbf{\textcolor{black}{Camadas de dispositivos:}} \textcolor{black}{(1)~Sensores: Segundo \cite{hipolito2018automaccao}, um sensor pode ser definido como um dispositivo sensível ao ambiente no qual está inserido, capaz de detectar alterações em variáveis como temperatura, luminosidade ou movimento. (2)~Atuadores: são componentes eletromecânicos acionados pelo sistema para executar uma função específica, como ativar uma sirene, lâmpada, fechadura magnética, motor ou válvula. (3)~Controladores: têm como função monitorar os parâmetros coletados pelos sensores e, de acordo com os dados obtidos, acionar o respectivo atuador vinculado. Podem possuir interfaces próprias ou fazer parte de grandes centrais de controle. (4)~Interfaces: dispositivos que permitem ao usuário interagir com o sistema automatizado, como aplicativos móveis, painéis digitais ou páginas web \cite{accardi2012automaccao}.}
+        \begin{itemize}
+            \item \textbf{Camadas de dispositivos:} 
+
+            \begin{enumerate}
+                \item \textbf{Sensores:} Segundo \cite{leite2020plataforma}, um sensor pode ser definido como um dispositivo sensível ao ambiente no qual está inserido, capaz de detectar alterações em variáveis como temperatura, luminosidade ou movimento. Sua principal função é transmitir um sinal a fim de ser convertido por outro dispositivo a fim de tranformar grandezas fisicas em grandezas elétricas no qual pode ser lido por uma rede de dados.
                 
-                \item \textbf{\textcolor{black}{Camada de comunicação/rede:}} \textcolor{black}{Segundo \cite{accardi2012automaccao}, a camada de comunicação, também chamada de protocolo, “é um acordo entre as partes que se comunicam, estabelecendo como se dará a comunicação”. Assim, entende-se que um protocolo é, em resumo, o conjunto de regras e padrões utilizados para que diferentes dispositivos possam se comunicar entre si.}
+                \item \textbf{Atuadores:} São componentes eletromecânicos acionados pelo sistema para executar uma função específica, como ativar uma sirene, lâmpada, fechadura magnética, motor ou válvula \cite{hipolito2018automaccao}.
                 
-                Entre os principais protocolos empregados na automação residencial, destacam-se: Ethernet, X-10, HomePNA e Wi-Fi. Alguns desses protocolos foram desenvolvidos especificamente para a automação residencial, enquanto outros foram adaptados de aplicações industriais e comerciais.
+                \item \textbf{Controladores:} Têm como função monitorar os parâmetros coletados pelos sensores e, de acordo com os dados obtidos, acionar o respectivo atuador vinculado. Podem possuir interfaces próprias ou fazer parte de grandes centrais de controle\cite{hipolito2018automaccao}.
                 
-                \item \textbf{\textcolor{black}{Camada de controle/automação lógica:}} \textcolor{black}{A camada de controle, também chamada de central de automação, pode ser considerada o “cérebro” do sistema, sendo responsável por gerenciar todos os dispositivos conectados. Ela processa as informações de entrada e saída e executa as ações necessárias conforme as instruções programadas.}
-                
-                A configuração da central pode ser realizada por meio de um software dedicado, acessado através de um computador ou dispositivo móvel. Essa central é escalável\footnote{Descreve algo que pode crescer ou ser aumentado em magnitude, seja física ou figurativamente}, permitindo que novos dispositivos sejam adicionados ao sistema de forma contínua, conforme a necessidade de expansão.
-        
-            \end{itemize}
+                \item \textbf{Interfaces:} Dispositivos que permitem ao usuário interagir com o sistema automatizado, como aplicativos móveis, painéis digitais ou páginas web \cite{accardi2012automaccao}.
+            \end{enumerate}
     
+            \item \textbf{Camada de comunicação/rede:} 
+                Segundo \cite{accardi2012automaccao}, a camada de comunicação, também chamada de protocolo, “é um acordo entre as partes que se comunicam, estabelecendo como se dará a comunicação”. Assim, entende-se que um protocolo é, em resumo, o conjunto de regras e padrões utilizados para que diferentes dispositivos possam se comunicar entre si.
+            
+                Entre os principais protocolos empregados na automação residencial, destacam-se: Ethernet, X-10, HomePNA e Wi-Fi. Alguns desses protocolos foram desenvolvidos especificamente para a automação residencial, enquanto outros foram adaptados de aplicações industriais e comerciais.
+            
+            \item \textbf{Camada de controle/automação lógica:} 
+                A camada de controle, também chamada de central de automação, pode ser considerada o “cérebro” do sistema, sendo responsável por gerenciar todos os dispositivos conectados. Ela processa as informações de entrada e saída e executa as ações necessárias conforme as instruções programadas.
+            
+                A configuração da central pode ser realizada por meio de um software dedicado, acessado através de um computador ou dispositivo móvel. Essa central é escalável\footnote{Descreve algo que pode crescer ou ser aumentado em magnitude, seja física ou figurativamente}, permitindo que novos dispositivos sejam adicionados ao sistema de forma contínua, conforme a necessidade de expansão.
+ 
+        \end{itemize}
 
     \textcolor{black}{Diante de todos os dados e fundamentos apresentados, fica evidente que a automação residencial encontra-se em constante evolução, impulsionada pela integração de sensores, controladores, motores e protocolos de comunicação. Esses elementos, quando aplicados corretamente, possibilitam o desenvolvimento de sistemas inteligentes, capazes de automatizar e otimizar tarefas rotineiras.}
 
@@ -424,6 +440,25 @@
             Além disso, o dispositivo pode interagir com o ambiente externo por meio de sensores conectados aos pinos GPIO, possibilitando aplicações em automação e sistemas embarcados.
 
         \subsubsection*{Sensores Específicos}
+            Como descrito em seções anteriores, os sensores são dispositivos sensíveis ao ambiente, capazes de detectar variações físicas ou químicas e convertê-las em sinais elétricos. Um exemplo simples é o sensor de luminosidade, que aciona automaticamente lâmpadas externas ao detectar a redução da luz natural ao anoitecer. 
+            
+            Entre os sensores utilizados no sistema proposto, destacam-se:
+
+            \begin{itemize}
+
+                \item \textbf{Sensor de Temperatura:} 
+                    segundo \cite{leite2020plataforma}, tem como função identificar a variação de temperatura em um equipamento ou processo, permitindo o controle adequado do funcionamento do sistema.
+
+                \item \textbf{Sensor de pH:} 
+                    utilizado para medir o nível de acidez ou alcalinidade de recipientes contendo água, como piscinas, lagos ou reservatórios \cite{leite2020plataforma}.
+                
+                \item \textbf{Sensor de Turbidez:}
+                    responsável pela avaliação do grau de turbidez de um líquido. A medição ocorre por meio de um feixe de luz que atravessa a amostra coletada, sendo comparado com outro feixe de intensidade conhecida, que passa por uma suspensão padrão \cite{cardoso2011sensor}.
+                
+                \item \textbf{Sensor de Nível:}
+                    de acordo com \cite{souza2018sensor} é utilizado para verificar a altura ou volume de substâncias líquidas, granuladas ou em pó dentro de um reservatório. O sensor é instalado em uma posição fixa e, conforme o nível do material sobe ou desce, ele emite um sinal elétrico indicando a variação. 
+                
+            \end{itemize}
 
         \subsubsection*{Atuadores (Motores)} 
     
