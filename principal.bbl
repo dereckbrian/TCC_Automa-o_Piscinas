@@ -61,6 +61,15 @@ Accessed: 01/07/2025.
 Dispon{\'\i}vel em:
   \url{https://fibratecpiscinas.com.br/blog/historia-das-piscinas}.}
 
+\bibitem[Flor{\^e}ncio 2015]{florencio2015central}
+\abntrefinfo{Flor{\^e}ncio}{FLOR{\^E}NCIO}{2015}
+{FLOR{\^E}NCIO, G. Central microcontrolada para automa{\c{c}}{\~a}o
+  residencial: controle sem fio para sensores e atuadores.
+Instituto Federal de Educa{\c{c}}{\~a}o, Ci{\^e}ncia e Tecnologia de S{\~a}o
+  Paulo (IFSP), 2015.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ifsp.edu.br/server/api/core/bitstreams/d3970e46-37d0-4aac-a5c6-57b8db1952d4/content}.}
+
 \bibitem[GENCO® Accessed: 02/10/2025]{gencoEmpresa}
 \abntrefinfo{GENCO®}{GENCO®}{Accessed: 02/10/2025}
 {GENCO®. Accessed: 02/10/2025.
@@ -95,6 +104,12 @@ Acessado em: 24 jul. 2025.
 Dispon{\'\i}vel em:
   \url{https://portalidea.com.br/cursos/e643d94d6e685cffa352bd7370bf84a7.pdf}.}
 
+\bibitem[Jesus Acessado em: 2025]{linguagemProgramacao}
+\abntrefinfo{Jesus}{JESUS}{Acessado em: 2025}
+{JESUS, W. S.~C. de. Introdução a lógica e a linguagem de programação.
+Universidade do Vale do Paraíba, Acessado em: 2025.
+Dispon{\'\i}vel em: \url{https://www1.univap.br/wagner/Logica\_Prog-1.pdf}.}
+
 \bibitem[Juc{\'a} e Pereira 2018]{juca2018aplicaccoes}
 \abntrefinfo{Juc{\'a} e Pereira}{JUC{\'A}; PEREIRA}{2018}
 {JUC{\'A}, S.; PEREIRA, R. Aplica{\c{c}}{\~o}es pr{\'a}ticas de sistemas
@@ -103,6 +118,14 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://d1wqtxts1xzle7.cloudfront.net/60918451/Livro-Aplicacoes-Praticas-Rpi20191016-13857-1jp2kma-libre.pdf?1571223807=&response-content-disposition=inline\%3B+filename\%3DAplicacoes\_Praticas\_de\_sistemas\_embarcad.pdf&Expires=1761677643&Signature=SzVXRH-SUaodC0J119Zq1x6j6e-Uq80w~Cy4~QxiSVJDWVM5YgOx-fOYdLwFyDu7mZLRtSB6XC7krw--Kw1TKN9THps~flL65lPt7tUssYl3w-rWQbMPN6M5vNg75dc0-g2CzlVvXfnEBljOr5A4WStb4JK8Lww4k86xCXyCoX3PA-D5eU0wCg~5Sp0~h~wJBFWFx5YwaQ5HNEijADHE1hxFFBimYjA5h7CySXlcf5gt~CTJ8hCT5MvASY-HgneijPnIsA2k3AxZKXMTotzHPRVG36TTHsnJS8P3aLN3w9qh~FgYOA8Pd2nx-rHYhh~6pT25z-bDS-tZpxT-54yfZg\_\_&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA}.}
 
+\bibitem[J{\'u}nior et al. Acessado em: 2025]{dadesenvolvimento}
+\abntrefinfo{J{\'u}nior et al.}{J{\'U}NIOR et al.}{Acessado em: 2025}
+{J{\'U}NIOR, P.~F. da S. et al. Desenvolvimento de front-end e back-end para
+  n{\'o}s sensores sem fio.
+Acessado em: 2025.
+Dispon{\'\i}vel em:
+  \url{https://www.researchgate.net/profile/Paulo-Silva-Junior/publication/376763873\_DESENVOLVIMENTO\_DE\_FRONT-END\_E\_BACK-END\_PARA\_NOS\_SENSORES\_SEM\_FIO/links/6592aede6f6e450f19bc87af/DESENVOLVIMENTO-DE-FRONT-END-E-BACK-END-PARA-NOS-SENSORES-SEM-FIO.pdf}.}
+
 \bibitem[Leite 2020]{leite2020plataforma}
 \abntrefinfo{Leite}{LEITE}{2020}
 {LEITE, M. Y.~F. Plataforma de monitoramento da qualidade d{\'a} {\'a}gua
@@ -110,6 +133,13 @@ Dispon{\'\i}vel em:
 2020.
 Dispon{\'\i}vel em:
   \url{https://repositorio.ufersa.edu.br/server/api/core/bitstreams/7313f04b-7ce8-4c36-b737-bd7e64caab7d/content}.}
+
+\bibitem[LUCIFABIO et al. 2023]{lucifabio2023aquario}
+\abntrefinfo{LUCIFABIO et al.}{LUCIFABIO et al.}{2023}
+{LUCIFABIO, E.~M. et al. Aqu{\'a}rio automatizado.
+091, 2023.
+Dispon{\'\i}vel em:
+  \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/13360/1/TCC\%20-\%20AQUÁRIO\%20AUTOMATIZADO-2023.pdf}.}
 
 \bibitem[Muratori e B{\'o} 2011]{automacaoResidencialCap1}
 \abntrefinfo{Muratori e B{\'o}}{MURATORI; B{\'O}}{2011}
