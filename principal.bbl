@@ -25,6 +25,14 @@
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/28057/1/Empresa\%20prestadora\%20de\%20serviços\%20em\%20tratamento\%20e\%20limpeza\%20de\%20piscinas\%20-\%20Expansão.pdf}.}
 
+\bibitem[Cal{\c{c}}a 2022]{calcca2022analise}
+\abntrefinfo{Cal{\c{c}}a}{CAL{\c{C}}A}{2022}
+{CAL{\c{C}}A, J. V.~J. An{\'a}lise comparativa entre os frameworks django e
+  spring boot.
+121, 2022.
+Dispon{\'\i}vel em:
+  \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/24770/1/informaticanegocios\_2022\_2\_joaovictorjustocalca\_analisecomparativaentreosframeworksdjangoesprin.pdf}.}
+
 \bibitem[Cardoso 2011]{cardoso2011sensor}
 \abntrefinfo{Cardoso}{CARDOSO}{2011}
 {CARDOSO, T.~G. Sensor de turbidez para an{\'a}lise de amostras de {\'a}gua.
@@ -45,6 +53,12 @@ Dispon{\'\i}vel em:
 2022.
 Dispon{\'\i}vel em:
   \url{https://www4.fag.edu.br/anais-2022/Anais-2022-53.pdf}.}
+
+\bibitem[Date 2004]{date2004introduccao}
+\abntrefinfo{Date}{DATE}{2004}
+{DATE, C.~J. \emph{Introdu{\c{c}}{\~a}o a sistemas de bancos de dados}.
+  Elsevier Brasil, 2004. Dispon{\'\i}vel em:
+  \url{https://books.google.com.br/books?hl=pt-PT&lr=lang\_pt&id=xBeO9LSlK7UC&oi=fnd&pg=PP23&dq=banco+de+dados&ots=xdRymZv99M&sig=BOK0UOyvoOOC1r7LymdCUFDFiEM\#v=onepage&q&f=false}.}
 
 \bibitem[ELÉTRICO 2023]{aumentoAosAnos}
 \abntrefinfo{ELÉTRICO}{ELÉTRICO}{2023}
@@ -181,6 +195,14 @@ Dispon{\'\i}vel em:
   Janeiro, Maca{\'e}}, 2021.
 Dispon{\'\i}vel em:
   \url{https://pantheon.ufrj.br/bitstream/11422/16271/1/TCCSMSilva.pdf}.}
+
+\bibitem[Sousa 2025]{sousa2025desenvolvimento}
+\abntrefinfo{Sousa}{SOUSA}{2025}
+{SOUSA, M. V. A.~d. Desenvolvimento em react: a influ{\^e}ncia de clean code e
+  design patterns na vis{\~a}o dos desenvolvedores.
+2025.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufc.br/bitstream/riufc/80355/1/2025\_tcc\_mvasousa.pdf}.}
 
 \bibitem[Souza 2018]{souza2018sensor}
 \abntrefinfo{Souza}{SOUZA}{2018}
