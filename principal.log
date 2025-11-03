@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  30 OCT 2025 12:36
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  30 OCT 2025 19:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1339,13 +1339,13 @@ Package pdftex.def Info: imagens/arquiteturaDescentralizada.png  used on input l
 <imagens/raspberry.png, id=419, 779.16093pt x 431.36156pt>
 File: imagens/raspberry.png Graphic file (type png)
 <use imagens/raspberry.png>
-Package pdftex.def Info: imagens/raspberry.png  used on input line 433.
+Package pdftex.def Info: imagens/raspberry.png  used on input line 431.
 (pdftex.def)             Requested size: 250.25139pt x 138.54533pt.
  [26] [27 <./imagens/raspberry.png>]
 <imagens/bombaAgua.png, id=451, 479.54156pt x 306.39468pt>
 File: imagens/bombaAgua.png Graphic file (type png)
 <use imagens/bombaAgua.png>
-Package pdftex.def Info: imagens/bombaAgua.png  used on input line 473.
+Package pdftex.def Info: imagens/bombaAgua.png  used on input line 471.
 (pdftex.def)             Requested size: 250.25139pt x 159.89653pt.
  [28 <./imagens/bombaAgua.png>] [29]) (capitulos/metodologia.tex [30]) (capitulos/desenvolvimento.tex [31
 
@@ -1391,20 +1391,20 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.brf' has not changed.
-(rerunfilecheck)             Checksum: D062EECD18443FE35671B429150CC811;3490.
+(rerunfilecheck)             Checksum: F97286FE7CC9B1D724EA91165CDFBFFE;3551.
  ) 
 Here is how much of TeX's memory you used:
- 36519 strings out of 474486
- 723982 string characters out of 5741867
- 1950542 words of memory out of 5000000
- 57765 multiletter control sequences out of 15000+600000
+ 36535 strings out of 474486
+ 724289 string characters out of 5741867
+ 1949542 words of memory out of 5000000
+ 57781 multiletter control sequences out of 15000+600000
  622088 words of font info for 162 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,12n,111p,1210b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (37 pages, 5316285 bytes).
+Output written on principal.pdf (37 pages, 5318711 bytes).
 PDF statistics:
- 835 PDF objects out of 1000 (max. 8388607)
+ 840 PDF objects out of 1000 (max. 8388607)
  155 named destinations out of 1000 (max. 500000)
  35203 words of extra memory for PDF output out of 35830 (max. 10000000)
 
