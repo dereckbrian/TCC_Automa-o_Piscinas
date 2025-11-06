@@ -1,39 +1,126 @@
-\section{AUTOMAÇÃO DE PISCINAS}
+\section{Tipo de Pesquisa e Etapas de Construção}
+       A pesquisa caracteriza-se como aplicada, de abordagem mista, com natureza exploratória e experimental. Inicialmente, foi conduzido um estudo teórico sobre os princípios da automação residencial, sensores e controladores IoT, buscando embasar a proposta de automação de piscinas. As informações foram coletadas em artigos científicos, manuais técnicos e normas da ABNT e ANVISA, possibilitando compreender os processos de tratamento e manutenção da água, bem como os requisitos técnicos para integração de hardware e software.
 
-    Contexto mais geral sobre a automação de piscinas, como ela funciona e como surgiu as ideias e as primeiras e como se encontra o mercado hoje
+    % \subsection{CONCEITO E FUNCIONAMENTO GERAL}
+    %     Aqui eu colo o processo de limpeza de uma piscina automatizada, listando vários tipo de automação e incluindo o do meu projeto(talvez).
 
-    \subsection{CONCEITO E FUNCIONAMENTO GERAL}
-        Aqui eu colo o processo de limpeza de uma piscina automatizada, listando vários tipo de automação e incluindo o do meu projeto(talvez).
+    % \subsection{DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}
 
-    \subsection{DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}
-
-        \textcolor{red}{Desenvolver com base em estudos técnicos (aprodutos existentes como sodramar, nautilus, etc.) Citar exemplos de bombas inteligentes, ozonizadores, sensores de pH automatizados.}
+    %     \textcolor{red}{Desenvolver com base em estudos técnicos (aprodutos existentes como sodramar, nautilus, etc.) Citar exemplos de bombas inteligentes, ozonizadores, sensores de pH automatizados.}
     
-        Aqui como mais acima eu já expliquei sobre a automação manual e automatizada, eu rapidamente relembro e depois discorro pontos positivos e negativos de ambas com o fim de comparação, sempre tentando enaltecer a automatizar, afinal é de fato melhor e é isso que eu pretendo provar.
+    %     Aqui como mais acima eu já expliquei sobre a automação manual e automatizada, eu rapidamente relembro e depois discorro pontos positivos e negativos de ambas com o fim de comparação, sempre tentando enaltecer a automatizar, afinal é de fato melhor e é isso que eu pretendo provar.
     
-    \subsection{TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}
-        \textcolor{red}{Novo subtópico importante, aqui o aluno pode falar sobre: 
-        Sensores de ph e orp
-        medidores de turbidez
-        bombas peristalticas para dosagem automática
-        controladores (espn32, raspberry Pi, etc...)}
+    % \subsection{TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}
+    %     \textcolor{red}{Novo subtópico importante, aqui o aluno pode falar sobre: 
+    %     Sensores de ph e orp
+    %     medidores de turbidez
+    %     bombas peristalticas para dosagem automática
+    %     controladores (espn32, raspberry Pi, etc...)}
 
-    \subsection{ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}
-        \textcolor{red}{Ampliar com base na vigilância sanitária e riscos da má manutenção de piscinas. Sugestão: normas ANVISA ou artigos sobre dermatites, otites, doenças bacterianas e parasitárias}
+    % \subsection{ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}
+    %     \textcolor{red}{Ampliar com base na vigilância sanitária e riscos da má manutenção de piscinas. Sugestão: normas ANVISA ou artigos sobre dermatites, otites, doenças bacterianas e parasitárias}
 
-    \subsection{ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}
-       %\textcolor{red}{Reescrever com liguagme técnica e respeitosa. Sugerir expressões como: "Viabilidade técnica e econômica para população com menor poder aquisitivo", "proposta de custo acessível para residências de médio padrão"}
+    % \subsection{ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}
+    %    %\textcolor{red}{Reescrever com liguagme técnica e respeitosa. Sugerir expressões como: "Viabilidade técnica e econômica para população com menor poder aquisitivo", "proposta de custo acessível para residências de médio padrão"}
 
 
-\section{INTERNET DAS COISAS (IoT) APLICADA A AUTOMAÇÃO RESIDENCIAL}
-    \textcolor{red}{Justificativa: se o projeto utiliza sensores e dados monitoráveis remotamente, é essencial explicar conceitos como:
-        comunicação wifi ou blacktooth
-        sensores inteligentes
-        integração com aplicativos
-        segurança de dados}
+\section{Processo de Desenvolvimento de Software}
+    Apresentar o RUP:
 
-\section{SUSTENTABILIDADE E EFICIÊNCIA NA AUTOMAÇÃO DE PISCINAS}
-    \textcolor{red}{justificativa: reforça o benefícios a automação, incluindo:
-        economia de água e energia
-        dosagem precisa de químicos
-        redução de impacto ambiental}
+    Explicar que o RUP é um processo de engenharia de software estruturado em fases iterativas e incrementais;
+
+    Justificar o uso: o RUP favorece documentação clara, validação de requisitos, prototipagem contínua e testes progressivos — ideal para projetos acadêmicos.
+
+    As quatro fases do RUP:
+
+    Concepção (Inception) – definição do problema e dos requisitos gerais;
+
+    Elaboração (Elaboration) – modelagem do sistema, arquitetura e protótipos;
+
+    Construção (Construction) – codificação e integração dos módulos;
+
+    Transição (Transition) – implantação, testes e ajustes finais.
+
+\section{Fase de Concepção (\textit{Inception})}
+    Identificação do problema: dificuldade de limpeza manual, desperdício de água e produtos químicos. Objetivo do sistema: automatizar o processo de filtragem e tratamento químico com sensores inteligentes.
+
+    Requisitos iniciais:
+
+    Monitoramento de pH, turbidez e temperatura da água;
+
+    Acionamento automático da bomba;
+
+    Interface web para visualização dos parâmetros;
+
+    Comunicação entre sensores e Raspberry Pi.
+
+    Ferramentas e tecnologias selecionadas: Raspberry Pi, sensores de pH, turbidez e temperatura, Node.js, React, e banco de dados SQLite.
+
+    Lá encima é o que é. Aqui é o como
+
+\section{Fase de Elaboração (\textit{Elaboration})}
+    Modelagem dos casos de uso:
+    Criar um diagrama simples mostrando as interações — Usuário → Interface Web → Controlador → Sensores e Atuadores.
+
+    Arquitetura do sistema:
+    Explicar o fluxo de dados:
+
+    Sensores capturam informações (pH, turbidez, temperatura);
+
+    Raspberry Pi processa e envia dados ao banco;
+
+    Interface web exibe os resultados e permite comandos manuais.
+
+    Afranio Furtado de Oliveira Neto
+    19:25
+    Prototipagem inicial:
+    Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
+
+    Prototipagem inicial:
+    Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
+
+\section{Fase de contrução (\textit{Construction})}
+    Codificação e integração:
+
+    Implementação dos scripts em Python para leitura dos sensores no Raspberry Pi;
+
+    Comunicação com o servidor via API (HTTP/MQTT);
+
+    Interface web em React para monitoramento em tempo real.
+
+    Testes unitários e integração:
+    Explicar que foram realizados testes de calibração dos sensores e de resposta dos atuadores.
+
+    Documentação:
+    Inserir diagramas e trechos de código comentados.
+
+\section{Fase de Transição (\textit{Transition})}
+    Implantação e testes práticos:
+    Teste do sistema em uma piscina real ou simulação controlada;
+
+    Avaliação de desempenho:
+    Medir tempo de resposta, precisão dos sensores e consumo elétrico;
+
+    Ajustes finais:
+    Calibração dos sensores e correção de erros observados.
+
+
+\section{Integração entre o Raspberry Pi e os Sensores}
+    Esquema de ligação física:
+    Apresentar diagrama elétrico mostrando conexões GPIO → sensores → relés → atuadores.
+
+    Descrição técnica:
+
+    Sensor de pH (entrada analógica via ADC);
+
+    Sensor de temperatura (protocolo 1-Wire);
+
+    Sensor de turbidez (entrada analógica);
+
+    Módulo de relé (saída digital para controle da bomba).
+
+    Comunicação de dados:
+    Explicar como o Raspberry Pi coleta os valores, processa e envia via rede Wi-Fi para a aplicação web.
+
+    Segurança:
+    Isolamento elétrico e uso de fontes separadas.

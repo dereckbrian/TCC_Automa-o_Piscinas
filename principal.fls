@@ -510,6 +510,7 @@ INPUT pre-textual\sumario.tex
 INPUT .\principal.toc
 INPUT .\principal.toc
 INPUT principal.toc
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\estrutura\textual.tex
 INPUT .\estrutura\textual.tex
 INPUT .\estrutura\textual.tex
@@ -604,7 +605,6 @@ INPUT .\imagens\estojoMedidor.png
 INPUT .\imagens\estojoMedidor.png
 INPUT .\imagens\estojoMedidor.png
 INPUT .\imagens\estojoMedidor.png
-INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx10.tfm
 INPUT .\imagens\arquiteturaCentralizada.png
@@ -635,6 +635,11 @@ INPUT .\imagens\bombaAgua.png
 INPUT .\imagens\bombaAgua.png
 INPUT .\imagens\bombaAgua.png
 INPUT .\imagens\bombaAgua.png
+INPUT .\capitulos\correlatos.tex
+INPUT .\capitulos\correlatos.tex
+INPUT .\capitulos\correlatos.tex
+INPUT .\capitulos\correlatos.tex
+INPUT capitulos\correlatos.tex
 INPUT .\capitulos\metodologia.tex
 INPUT .\capitulos\metodologia.tex
 INPUT .\capitulos\metodologia.tex
@@ -645,6 +650,7 @@ INPUT .\capitulos\desenvolvimento.tex
 INPUT .\capitulos\desenvolvimento.tex
 INPUT .\capitulos\desenvolvimento.tex
 INPUT capitulos\desenvolvimento.tex
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\capitulos\conclusao.tex
 INPUT .\capitulos\conclusao.tex
 INPUT .\capitulos\conclusao.tex
@@ -702,6 +708,8 @@ INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx10.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbx12.pfb
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbxi10.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi12.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmmi8.pfb
