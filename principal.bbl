@@ -11,6 +11,13 @@
   b{\'a}sicos, arquiteturas, setores, aplica{\c{c}}{\~o}es e protocolos.
 \emph{Revista TIS}, v.~1, n.~2, 2012.}
 
+\bibitem[ALLEBRANDT 2004]{tccPaulo}
+\abntrefinfo{ALLEBRANDT}{ALLEBRANDT}{2004}
+{ALLEBRANDT, P.~C. Reengenharia de sistemas com rup estudo de caso: Apufsc.
+2004.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufsc.br/bitstream/handle/123456789/183849/TCC-PauloCesarAllebrandt.pdf?sequence=-1&isAllowed=y}.}
+
 \bibitem[ATcllor 2021]{guiaTratamento}
 \abntrefinfo{ATcllor}{ATCLLOR}{2021}
 {ATCLLOR. \emph{Guia de Tratamento de Piscinas}.
@@ -178,6 +185,14 @@ Dispon{\'\i}vel em:
 Accessed: 01/07/2025.
 Dispon{\'\i}vel em:
   \url{https://www.engevilpiscinas.com.br/historia-da-piscina/}.}
+
+\bibitem[Piske 2003]{piske2003rup}
+\abntrefinfo{Piske}{PISKE}{2003}
+{PISKE, O.~R. Rup-rational unified process.
+\emph{http://www. angusyoung. org/arquivos/artigos/trabalho\_rup. pdf.
+  {\'U}ltimo acesso em}, v.~16, n.~11, p.~2009, 2003.
+Dispon{\'\i}vel em:
+  \url{https://www.angusyoung.org/arquivos/artigos/trabalho\_rup.pdf}.}
 
 \bibitem[REPORT 2024]{cresceuBR}
 \abntrefinfo{REPORT}{REPORT}{2024}

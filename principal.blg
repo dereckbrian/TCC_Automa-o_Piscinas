@@ -29,45 +29,45 @@ Warning--campo year vazio ou faltando em piscinaOquee
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 30 entries,
+You've used 32 entries,
             6714 wiz_defined-function locations,
-            1360 strings with 17273 characters,
-and the built_in function-call counts, 79314 in all, are:
-= -- 10931
-> -- 643
-< -- 3138
-+ -- 3408
-- -- 203
-* -- 4461
-:= -- 9248
-add.period$ -- 121
-call.type$ -- 30
-change.case$ -- 257
-chr.to.int$ -- 36
-cite$ -- 31
-duplicate$ -- 10248
-empty$ -- 1575
-format.name$ -- 963
-if$ -- 14039
+            1374 strings with 17702 characters,
+and the built_in function-call counts, 83872 in all, are:
+= -- 11539
+> -- 674
+< -- 3318
++ -- 3594
+- -- 213
+* -- 4714
+:= -- 9780
+add.period$ -- 129
+call.type$ -- 32
+change.case$ -- 271
+chr.to.int$ -- 41
+cite$ -- 33
+duplicate$ -- 10845
+empty$ -- 1674
+format.name$ -- 1009
+if$ -- 14851
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 495
-newline$ -- 178
-num.names$ -- 145
-pop$ -- 738
+missing$ -- 528
+newline$ -- 190
+num.names$ -- 155
+pop$ -- 780
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 110
 quote$ -- 0
-skip$ -- 10341
+skip$ -- 10932
 stack$ -- 1
-substring$ -- 3876
-swap$ -- 3421
-text.length$ -- 33
+substring$ -- 4097
+swap$ -- 3627
+text.length$ -- 38
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 2
-while$ -- 207
+while$ -- 222
 width$ -- 0
-write$ -- 440
+write$ -- 472
 (There were 3 warnings)
