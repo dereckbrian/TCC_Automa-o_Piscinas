@@ -11,13 +11,6 @@
   b{\'a}sicos, arquiteturas, setores, aplica{\c{c}}{\~o}es e protocolos.
 \emph{Revista TIS}, v.~1, n.~2, 2012.}
 
-\bibitem[ALLEBRANDT 2004]{tccPaulo}
-\abntrefinfo{ALLEBRANDT}{ALLEBRANDT}{2004}
-{ALLEBRANDT, P.~C. Reengenharia de sistemas com rup estudo de caso: Apufsc.
-2004.
-Dispon{\'\i}vel em:
-  \url{https://repositorio.ufsc.br/bitstream/handle/123456789/183849/TCC-PauloCesarAllebrandt.pdf?sequence=-1&isAllowed=y}.}
-
 \bibitem[ATcllor 2021]{guiaTratamento}
 \abntrefinfo{ATcllor}{ATCLLOR}{2021}
 {ATCLLOR. \emph{Guia de Tratamento de Piscinas}.
@@ -104,6 +97,15 @@ Accessed: 25/05/2025.
 Dispon{\'\i}vel em:
   \url{https://genyo.com.br/automacao/?utm\_source=chatgpt.com}.}
 
+\bibitem[GOMES 2009]{RUPo_quee}
+\abntrefinfo{GOMES}{GOMES}{2009}
+{GOMES, A. L.~S. Proposta de integraÇÃo rup + pmbok na gerÊncia de escopo no
+  processo de desenvolvimento de software.
+\emph{http://www. angusyoung. org/arquivos/artigos/trabalho\_rup. pdf.
+  {\'U}ltimo acesso em}, 2009.
+Dispon{\'\i}vel em:
+  \url{https://tede2.pucrs.br/tede2/bitstream/tede/5199/1/444180.pdf}.}
+
 \bibitem[Harris 2025]{refComponents}
 \abntrefinfo{Harris}{HARRIS}{2025}
 {HARRIS, T. \emph{Como funcionam as Piscinas}. 2025.
@@ -161,6 +163,13 @@ Dispon{\'\i}vel em:
 091, 2023.
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/13360/1/TCC\%20-\%20AQUÁRIO\%20AUTOMATIZADO-2023.pdf}.}
+
+\bibitem[Moreira Acessado em: 2025]{moreiraprocessos}
+\abntrefinfo{Moreira}{MOREIRA}{Acessado em: 2025}
+{MOREIRA, W.~A. Processos tradicionais de desenvolvimento de software.
+Acessado em: 2025.
+Dispon{\'\i}vel em:
+  \url{https://www.cin.ufpe.br/~processos/TAES3/Livro/00-LIVRO/01-PTDS-v7\_CORRIGIDO\_Versao\_Final\_OK.pdf}.}
 
 \bibitem[Muratori e B{\'o} 2011]{automacaoResidencialCap1}
 \abntrefinfo{Muratori e B{\'o}}{MURATORI; B{\'O}}{2011}

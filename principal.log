@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  6 NOV 2025 20:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  8 NOV 2025 18:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1350,7 +1350,7 @@ File: imagens/bombaAgua.png Graphic file (type png)
 <use imagens/bombaAgua.png>
 Package pdftex.def Info: imagens/bombaAgua.png  used on input line 470.
 (pdftex.def)             Requested size: 250.25139pt x 159.89653pt.
- [28 <./imagens/bombaAgua.png>] [29] [30]) (capitulos/correlatos.tex [31]) (capitulos/metodologia.tex [32
+ [28 <./imagens/bombaAgua.png>] [29]) (capitulos/correlatos.tex [30] [31]) (capitulos/metodologia.tex [32
 
 ]) (capitulos/desenvolvimento.tex [33
 
@@ -1365,12 +1365,12 @@ bibitemlist
 [37
 
 ]
-Overfull \hbox (1830.2921pt too wide) in paragraph at lines 141--141
+Overfull \hbox (1830.2921pt too wide) in paragraph at lines 143--143
 \T1/lmr/m/n/12 (-20) SzVXRH-[]SUaodC0J119Zq1x6j6e-[]Uq80w~Cy4~QxiSVJDWVM5YgOx-[]fOYdLwFyDu7mZLRtSB6XC7krw-[]-[]Kw1TKN9THps~^^]L65lPt7tUssYl3w-[]rWQbMPN6M5vNg75dc0-[]g2CzlVvXfnEBljOr5A4WStb4JK8Lww4k86xCXyCoX3PA-[]D5eU0wCg~5Sp0~h~wJBFWFx5YwaQ5HNEijADHE1hxFFBimYjA5h7CySXlcf5gt~CTJ8hCT5MvASY-[]HgneijPnIsA2k3AxZKXMTotzHPRVG36TTHsnJS8P3aLN3w9qh~FgYOA8Pd2nx-[]rHYhh~6pT25z-[]bDS-[]tZpxT-[]54yfZg _ 
  []
 
 
-Overfull \hbox (26.55319pt too wide) in paragraph at lines 149--149
+Overfull \hbox (26.55319pt too wide) in paragraph at lines 151--151
 \T1/lmr/m/n/12 (-20) DESENVOLVIMENTO-[]DE-[]FRONT-[]END-[]E-[]BACK-[]END-[]PARA-[]NOS-[]SENSORES-[]SEM-[]FIO . 
  []
 
@@ -1396,20 +1396,20 @@ L3 programming layer <2020/03/25>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.brf' has not changed.
-(rerunfilecheck)             Checksum: 27EB13B7AC2DE71BC6AF62B313369AD9;3723.
+(rerunfilecheck)             Checksum: DC38F120A0D8955F90E3BF230E1876AD;3784.
  ) 
 Here is how much of TeX's memory you used:
- 36580 strings out of 474486
- 725059 string characters out of 5741867
- 1949542 words of memory out of 5000000
- 57807 multiletter control sequences out of 15000+600000
- 626786 words of font info for 166 fonts, out of 8000000 for 9000
+ 36582 strings out of 474486
+ 725211 string characters out of 5741867
+ 1948542 words of memory out of 5000000
+ 57816 multiletter control sequences out of 15000+600000
+ 626560 words of font info for 164 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,12n,111p,1210b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (40 pages, 5341162 bytes).
+Output written on principal.pdf (40 pages, 5341074 bytes).
 PDF statistics:
  875 PDF objects out of 1000 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
+ 161 named destinations out of 1000 (max. 500000)
  37251 words of extra memory for PDF output out of 42996 (max. 10000000)
 
