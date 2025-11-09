@@ -25,100 +25,150 @@
 
 
 \section{Processo de Desenvolvimento de Software}
-    Apresentar o RUP:
+    % Apresentar o RUP:
 
-    Explicar que o RUP é um processo de engenharia de software estruturado em fases iterativas e incrementais;
+    % Explicar que o RUP é um processo de engenharia de software estruturado em fases iterativas e incrementais;
 
-    Justificar o uso: o RUP favorece documentação clara, validação de requisitos, prototipagem contínua e testes progressivos — ideal para projetos acadêmicos.
+    % Justificar o uso: o RUP favorece documentação clara, validação de requisitos, prototipagem contínua e testes progressivos — ideal para projetos acadêmicos.
 
-    As quatro fases do RUP:
+    % As quatro fases do RUP:
 
-    Concepção (Inception) – definição do problema e dos requisitos gerais;
+    % Concepção (Inception) – definição do problema e dos requisitos gerais;
 
-    Elaboração (Elaboration) – modelagem do sistema, arquitetura e protótipos;
+    % Elaboração (Elaboration) – modelagem do sistema, arquitetura e protótipos;
 
-    Construção (Construction) – codificação e integração dos módulos;
+    % Construção (Construction) – codificação e integração dos módulos;
 
-    Transição (Transition) – implantação, testes e ajustes finais.
+    % Transição (Transition) – implantação, testes e ajustes finais.
+
+    No desenvolvimento deste projeto, foi utilizada a metodologia de desenvolvimento RUP (Rational Unified Process), que, conforme descrito nas seções anteriores, trata-se de um processo de engenharia de software com estrutura bem definida, cujo objetivo é reduzir riscos e tornar o desenvolvimento do projeto mais eficiente, por meio de sua abordagem iterativa e incremental.
+
+    A escolha do RUP deve-se à sua documentação clara, à validação contínua de requisitos, à prototipagem incremental e aos testes progressivos, características ideais para projetos acadêmicos. O modelo é composto por quatro etapas principais: Fase de Concepção, Fase de Elaboração, Fase de Construção e Fase de Transição, que serão detalhadas nas seções subsequentes.
 
 \section{Fase de Concepção (\textit{Inception})}
-    Identificação do problema: dificuldade de limpeza manual, desperdício de água e produtos químicos. Objetivo do sistema: automatizar o processo de filtragem e tratamento químico com sensores inteligentes.
+    % Identificação do problema: dificuldade de limpeza manual, desperdício de água e produtos químicos. Objetivo do sistema: automatizar o processo de filtragem e tratamento químico com sensores inteligentes.
 
-    Requisitos iniciais:
+    % Requisitos iniciais:
 
-    Monitoramento de pH, turbidez e temperatura da água;
+    % Monitoramento de pH, turbidez e temperatura da água;
 
-    Acionamento automático da bomba;
+    % Acionamento automático da bomba;
 
-    Interface web para visualização dos parâmetros;
+    % Interface web para visualização dos parâmetros;
 
-    Comunicação entre sensores e Raspberry Pi.
+    % Comunicação entre sensores e Raspberry Pi.
 
-    Ferramentas e tecnologias selecionadas: Raspberry Pi, sensores de pH, turbidez e temperatura, Node.js, React, e banco de dados SQLite.
+    % Ferramentas e tecnologias selecionadas: Raspberry Pi, sensores de pH, turbidez e temperatura, Node.js, React, e banco de dados SQLite.
 
-    Lá encima é o que é. Aqui é o como
+    % Lá encima é o que é. Aqui é o como
+
+    Foi identificada uma dificuldade na limpeza e manutenção manual de piscinas. O problema ocorre devido à complexidade na coleta das informações sobre a qualidade da água e na identificação dos produtos adequados para o tratamento, exigindo do usuário um conhecimento prévio sobre diversos parâmetros e cálculos. Além disso, há o risco de desperdício de produtos químicos, decorrente da falta de precisão nas dosagens e da ausência de um controle automatizado.
+
+    O sistema de automação para limpeza e manutenção de piscinas surge como uma solução para esses desafios, possibilitando a coleta automatizada dos dados, a análise das informações e a indicação precisa dos produtos e quantidades adequadas. Dessa forma, o sistema busca facilitar o processo, otimizar o uso de recursos e reduzir o desperdício de insumos.
+
+    Diante do exposto, foi realizado o levantamento dos requisitos iniciais para o desenvolvimento do sistema. São eles: monitoramento automático de pH, turbidez, temperatura e nível da água; acionamento automático da bomba; e uma interface web integrada aos componentes, permitindo a visualização dos parâmetros coletados. 
+    
+    As ferramentas e tecnologias utilizadas incluem o Raspberry Pi como microcontrolador, os sensores mencionados, o React como framework front-end, o PostgreSQL para armazenamento de dados, e o Spring Boot para o desenvolvimento do back-end da aplicação. Logo após foi definido os requisitos funcionais e não funcionais do sistemas:
+
+    \begin{table}[H]
+        \centering
+        \caption{Requisitos Funcionais do Sistema de Automação de Piscinas.}
+        \label{tab:req_funcionais}
+        \begin{tabular}{|p{1.5cm}|p{11cm}|}
+        \hline
+        \textbf{Código} & \textbf{Descrição} \\ \hline
+        \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\ \hline
+        \textbf{RF02} & O sistema deve acionar automaticamente a bomba de filtragem e o aquecedor conforme os parâmetros definidos ou coletados pelos sensores. \\ \hline
+        \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\ \hline
+        \textbf{RF04} & O sistema deve permitir o cadastro e armazenamento dos dados coletados no banco de dados. \\ \hline
+        \textbf{RF05} & O sistema deve permitir o cadastro de piscinas vinculadas a usuários. \\ \hline
+        \textbf{RF06} & O sistema deve emitir alertas quando algum parâmetro ultrapassar o limite ideal. \\ \hline
+        \textbf{RF06} & O sistema deve emitir gráficos de acordo com os ultimos dados de determinadas parâmetros coletados. \\ \hline
+        \end{tabular}
+    \end{table}
+
+        \vspace{0.5cm}
+
+    \begin{table}[H]
+        \centering
+        \caption{Requisitos Não Funcionais do Sistema de Automação de Piscinas.}
+        \label{tab:req_nao_funcionais}
+        \begin{tabular}{|p{1.5cm}|p{11cm}|}
+        \hline
+        \textbf{Código} & \textbf{Descrição} \\ \hline
+        \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\ \hline
+        \textbf{RNF03} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ \hline
+        \textbf{RNF04} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP. \\ \hline
+        \textbf{RNF05} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ \hline
+        \end{tabular}
+    \end{table}
+
+
+
 
 \section{Fase de Elaboração (\textit{Elaboration})}
-    Modelagem dos casos de uso:
-    Criar um diagrama simples mostrando as interações — Usuário → Interface Web → Controlador → Sensores e Atuadores.
 
-    Arquitetura do sistema:
-    Explicar o fluxo de dados:
 
-    Sensores capturam informações (pH, turbidez, temperatura);
+    % Modelagem dos casos de uso:
+    % Criar um diagrama simples mostrando as interações — Usuário → Interface Web → Controlador → Sensores e Atuadores.
 
-    Raspberry Pi processa e envia dados ao banco;
+    % Arquitetura do sistema:
+    % Explicar o fluxo de dados:
 
-    Interface web exibe os resultados e permite comandos manuais.
-    
-    Prototipagem inicial:
-    Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
+    % Sensores capturam informações (pH, turbidez, temperatura);
 
-    Prototipagem inicial:
-    Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
+    % Raspberry Pi processa e envia dados ao banco;
+
+    % Interface web exibe os resultados e permite comandos manuais.
+
+    % Prototipagem inicial:
+    % Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
+
+    % Prototipagem inicial:
+    % Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
 
 \section{Fase de contrução (\textit{Construction})}
-    Codificação e integração:
+    % Codificação e integração:
 
-    Implementação dos scripts em Python para leitura dos sensores no Raspberry Pi;
+    % Implementação dos scripts em Python para leitura dos sensores no Raspberry Pi;
 
-    Comunicação com o servidor via API (HTTP/MQTT);
+    % Comunicação com o servidor via API (HTTP/MQTT);
 
-    Interface web em React para monitoramento em tempo real.
+    % Interface web em React para monitoramento em tempo real.
 
-    Testes unitários e integração:
-    Explicar que foram realizados testes de calibração dos sensores e de resposta dos atuadores.
+    % Testes unitários e integração:
+    % Explicar que foram realizados testes de calibração dos sensores e de resposta dos atuadores.
 
-    Documentação:
-    Inserir diagramas e trechos de código comentados.
+    % Documentação:
+    % Inserir diagramas e trechos de código comentados.
 
 \section{Fase de Transição (\textit{Transition})}
-    Implantação e testes práticos:
-    Teste do sistema em uma piscina real ou simulação controlada;
+    % Implantação e testes práticos:
+    % Teste do sistema em uma piscina real ou simulação controlada;
 
-    Avaliação de desempenho:
-    Medir tempo de resposta, precisão dos sensores e consumo elétrico;
+    % Avaliação de desempenho:
+    % Medir tempo de resposta, precisão dos sensores e consumo elétrico;
 
-    Ajustes finais:
-    Calibração dos sensores e correção de erros observados.
+    % Ajustes finais:
+    % Calibração dos sensores e correção de erros observados.
 
 
 \section{Integração entre o Raspberry Pi e os Sensores}
-    Esquema de ligação física:
-    Apresentar diagrama elétrico mostrando conexões GPIO → sensores → relés → atuadores.
+    % Esquema de ligação física:
+    % Apresentar diagrama elétrico mostrando conexões GPIO → sensores → relés → atuadores.
 
-    Descrição técnica:
+    % Descrição técnica:
 
-    Sensor de pH (entrada analógica via ADC);
+    % Sensor de pH (entrada analógica via ADC);
 
-    Sensor de temperatura (protocolo 1-Wire);
+    % Sensor de temperatura (protocolo 1-Wire);
 
-    Sensor de turbidez (entrada analógica);
+    % Sensor de turbidez (entrada analógica);
 
-    Módulo de relé (saída digital para controle da bomba).
+    % Módulo de relé (saída digital para controle da bomba).
 
-    Comunicação de dados:
-    Explicar como o Raspberry Pi coleta os valores, processa e envia via rede Wi-Fi para a aplicação web.
+    % Comunicação de dados:
+    % Explicar como o Raspberry Pi coleta os valores, processa e envia via rede Wi-Fi para a aplicação web.
 
-    Segurança:
-    Isolamento elétrico e uso de fontes separadas.
+    % Segurança:
+    % Isolamento elétrico e uso de fontes separadas.
