@@ -34,13 +34,13 @@
 \contentsline {section}{\numberline {4.2}Processo de Desenvolvimento de Software}{33}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Fase de Concepção (\textit {Inception})}{34}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Fase de Elaboração (\textit {Elaboration})}{35}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Fase de contrução (\textit {Construction})}{35}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Fase de Transição (\textit {Transition})}{35}{section.4.6}%
-\contentsline {section}{\numberline {4.7}Integração entre o Raspberry Pi e os Sensores}{35}{section.4.7}%
+\contentsline {section}{\numberline {4.5}Fase de contrução (\textit {Construction})}{36}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Fase de Transição (\textit {Transition})}{36}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Integração entre o Raspberry Pi e os Sensores}{36}{section.4.7}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e discussão}}{36}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e discussão}}{37}{chapter.5}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{37}{section*.42}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{38}{section*.43}%
 \vspace {\cftbeforechapterskip }
