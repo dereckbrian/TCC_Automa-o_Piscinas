@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.10.7)  15 OCT 2025 09:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022/Debian) (preloaded format=pdflatex 2025.10.7)  28 NOV 2025 13:56
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/abntex2-modelos/abntex2-modelo-trabalho-academico.tex
-(/home/dereck/Documentos/GarotoDePrograma/TCC/tccOficial/TCC_Automa-o_Piscinas/abntex2-modelos/abntex2-modelo-trabalho-academico.tex
+**/home/dereck/Documentos/GarotoDePrograma/TCC/tccSite/TCC_Automa-o_Piscinas/abntex2-modelos/abntex2-modelo-trabalho-academico.tex
+(/home/dereck/Documentos/GarotoDePrograma/TCC/tccSite/TCC_Automa-o_Piscinas/abntex2-modelos/abntex2-modelo-trabalho-academico.tex
 LaTeX2e <2022-11-01> patch level 1
 L3 programming layer <2023-01-16> (/usr/share/texlive/texmf-dist/tex/latex/abntex2/abntex2.cls
 Document Class: abntex2 2018/11/24 v-1.9.7 abnTeX2
@@ -1081,12 +1081,12 @@ Package rerunfilecheck Info: File `abntex2-modelo-trabalho-academico.brf' has no
  ) 
 Here is how much of TeX's memory you used:
  19385 strings out of 476091
- 314412 string characters out of 5794081
+ 314403 string characters out of 5794081
  1871330 words of memory out of 5000000
  38976 multiletter control sequences out of 15000+600000
  623479 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,13n,90p,2132b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,13n,90p,2129b,791s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/latxfont/line10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr/share/texmf/fonts/type1/public/lm/lmex10.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi12.pfb></usr/share/texmf/fonts/type1/public/lm/lmmi8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/fonts/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/public/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss10.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso12.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt12.pfb>
 Output written on abntex2-modelo-trabalho-academico.pdf (83 pages, 736740 bytes).
 PDF statistics:
