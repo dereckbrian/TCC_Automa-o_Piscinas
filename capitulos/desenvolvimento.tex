@@ -117,26 +117,19 @@
         \caption*{Fonte: Autor}
     \end{figure}
 
+    Logo após, iniciou-se o processo de definição do fluxo de dados do sistema. Todo o funcionamento começa na coleta de informações realizada pelos sensores instalados na piscina. Esses sensores são conectados a um Arduino, responsável pela leitura inicial dos dados e pelo envio dessas informações ao Raspberry Pi. O Raspberry, por sua vez, mantém a comunicação constante com o back-end por meio de requisições HTTP, enviando periodicamente os valores coletados, como a temperatura medida a cada cinco minutos ou alterações no nível da água, e também recebendo comandos vindos do servidor, como a instrução para ligar a bomba.
 
-    % Modelagem dos casos de uso:
-    % Criar um diagrama simples mostrando as interações — Usuário → Interface Web → Controlador → Sensores e Atuadores.
+    Além disso, o sistema conta com um front-end que permite ao usuário acompanhar os dados coletados pelos sensores. A interface oferece, por exemplo, gráficos que exibem a média de temperatura diária ou cartões que são atualizados automaticamente conforme novas leituras são realizadas. O usuário também pode enviar comandos pelo front-end, como: ligar a bomba d’água, acionar o filtro, ativar o aquecedor ou a cascata.
 
-    % Arquitetura do sistema:
-    % Explicar o fluxo de dados:
+    Os sensores utilizados no sistema incluem um sensor de temperatura, um sensor de nível e um sensor de pH. Além disso, duas bombas submersas de 5cv \footnote{É uma unidade de medida de potência para motores} serão responsáveis pelas funções de enchimento, filtragem e acionamento da cascata.
 
-    % Sensores capturam informações (pH, turbidez, temperatura);
+    Para complementar a compreensão do funcionamento do sistema, será inserido um fluxograma do fluxo de dados, ilustrando desde a coleta pelo Arduino até a comunicação final com o back-end e a visualização pelo usuário.
 
-    % Raspberry Pi processa e envia dados ao banco;
-
-    % Interface web exibe os resultados e permite comandos manuais.
+    Também serão apresentadas fotos dos componentes utilizados, cada uma acompanhada de uma breve explicação sobre sua função e sobre como se conecta ao Arduino. A estrutura sugerida é a seguinte:
 
     % Prototipagem inicial:
     % Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
 
-    % Prototipagem inicial:
-    % Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
-
-    
 
 \section{Fase de contrução (\textit{Construction})}
     % Codificação e integração:
