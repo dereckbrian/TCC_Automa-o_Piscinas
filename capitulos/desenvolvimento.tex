@@ -127,6 +127,36 @@
 
     Também serão apresentadas fotos dos componentes utilizados, cada uma acompanhada de uma breve explicação sobre sua função e sobre como se conecta ao Arduino. A estrutura sugerida é a seguinte:
 
+    \subsection*{Sensor de Temperatura}
+
+    Foto do sensor:
+    Este sensor é responsável por medir a temperatura da água da piscina. Ele é conectado ao Arduino, que realiza a leitura periódica e envia o valor obtido ao Raspberry Pi, que repassa a informação ao back-end.
+
+    \subsection*{Sensor de Nível}
+
+    Foto do sensor:
+    O sensor de nível detecta se a água está acima ou abaixo do limite desejado. Assim como o sensor de temperatura, ele transmite sua leitura ao Arduino, que a encaminha ao Raspberry para processamento e registro.
+
+    \subsection*{Sensor de pH}
+
+    Foto do sensor:
+    Este sensor mede o nível de acidez da água. Os dados coletados são tratados inicialmente pelo Arduino e, em seguida, enviados ao back-end para que o sistema avalie possíveis recomendações químicas.
+
+    \subsection*{Bombas Submersas (5 cv)}
+
+    Foto das bombas:
+    As bombas são utilizadas para as funções de enchimento, filtragem e acionamento da cascata. A ativação pode ocorrer automaticamente, conforme regras definidas no back-end, ou manualmente por meio da interface web.
+
+    \subsection*{Arduino}
+
+    Foto do Arduino:
+    É o microcontrolador responsável pela coleta direta dos dados dos sensores. Ele atua como intermediário entre os sensores e o Raspberry Pi.
+
+    \subsection*{Raspberry Pi}
+
+    Foto do Raspberry:
+    Recebe as informações enviadas pelo Arduino, processa o que for necessário e mantém a comunicação com o servidor. Também executa comandos enviados pelo back-end, como ligar bombas ou acionar dispositivos.
+
     % Prototipagem inicial:
     % Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
 
