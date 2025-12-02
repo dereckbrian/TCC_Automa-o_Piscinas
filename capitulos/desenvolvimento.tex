@@ -117,32 +117,55 @@
         \caption*{Fonte: Autor}
     \end{figure}
 
-    Logo após, iniciou-se o processo de definição do fluxo de dados do sistema. Todo o funcionamento começa na coleta de informações realizada pelos sensores instalados na piscina. Esses sensores são conectados a um Arduino, responsável pela leitura inicial dos dados e pelo envio dessas informações ao Raspberry Pi. O Raspberry, por sua vez, mantém a comunicação constante com o back-end por meio de requisições HTTP, enviando periodicamente os valores coletados, como a temperatura medida a cada cinco minutos ou alterações no nível da água, e também recebendo comandos vindos do servidor, como a instrução para ligar a bomba.
+    Logo após, iniciou-se o processo de definição do fluxo de dados do sistema. Todo o funcionamento começa na coleta de informações realizada pelos sensores instalados na piscina. Esses sensores são conectados a um Arduino, responsável pela leitura inicial dos dados e pelo envio dessas informações ao Raspberry Pi. O Raspberry, por sua vez, mantém a comunicação constante com o \textit{back-end} por meio de requisições HTTP, enviando periodicamente os valores coletados, como a temperatura medida a cada cinco minutos ou alterações no nível da água, e também recebendo comandos vindos do servidor, como a instrução para ligar a bomba.
 
-    Além disso, o sistema conta com um front-end que permite ao usuário acompanhar os dados coletados pelos sensores. A interface oferece, por exemplo, gráficos que exibem a média de temperatura diária ou cartões que são atualizados automaticamente conforme novas leituras são realizadas. O usuário também pode enviar comandos pelo front-end, como: ligar a bomba d’água, acionar o filtro, ativar o aquecedor ou a cascata.
+    Além disso, o sistema conta com um front-end que permite ao usuário acompanhar os dados coletados pelos sensores. A interface oferece, por exemplo, gráficos que exibem a média de temperatura diária ou cartões que são atualizados automaticamente conforme novas leituras são realizadas. O usuário também pode enviar comandos pelo \textit{front-end}, como: ligar a bomba d’água, acionar o filtro, ativar o aquecedor ou a cascata.
 
     Os sensores utilizados no sistema incluem um sensor de temperatura, um sensor de nível e um sensor de pH. Além disso, duas bombas submersas de 5cv \footnote{É uma unidade de medida de potência para motores} serão responsáveis pelas funções de enchimento, filtragem e acionamento da cascata.
 
-    Para complementar a compreensão do funcionamento do sistema, será inserido um fluxograma do fluxo de dados, ilustrando desde a coleta pelo Arduino até a comunicação final com o back-end e a visualização pelo usuário.
+    Para complementar a compreensão do funcionamento do sistema, será inserido um fluxograma do fluxo de dados, ilustrando desde a coleta pelo Arduino até a comunicação final com o \textit{back-end} e a visualização pelo usuário.
 
     Também serão apresentadas fotos dos componentes utilizados, cada uma acompanhada de uma breve explicação sobre sua função e sobre como se conecta ao Arduino. A estrutura sugerida é a seguinte:
 
     \subsection*{Sensor de Temperatura}
 
-    Foto do sensor:
-    Este sensor é responsável por medir a temperatura da água da piscina. Ele é conectado ao Arduino, que realiza a leitura periódica e envia o valor obtido ao Raspberry Pi, que repassa a informação ao back-end.
+    \begin{figure}[H]
+        \centering
+        \caption{ }  
+        \centering
+        \label{fig:cont}
+        \includegraphics[width=0.80\textwidth]{imagens/sensorTemperatura.png}
+        \caption*{Sensor de Temperatura}
+        \caption*{Fonte: \cite{siteComprei}}
+    \end{figure}
+    O sensor utilizado para a medição da temperatura da água foi o modelo MF58 (NTC 10K à prova d'água). Trata-se de um termistor do tipo NTC (\textit{Negative Temperature Coefficient}), cuja resistência elétrica diminui à medida que a temperatura aumenta.
+
+    A interface com o microcontrolador é realizada de forma analógica. O sensor é conectado em uma configuração de divisor de tensão em série com um resistor de 10k$\Omega$. Dessa forma, a variação de resistência do sensor gera uma variação de tensão correspondente, que é lida por uma das portas de conversão analógico-digital (ADC) do sistema.
 
     \subsection*{Sensor de Nível}
 
-    Foto do sensor:
-    O sensor de nível detecta se a água está acima ou abaixo do limite desejado. Assim como o sensor de temperatura, ele transmite sua leitura ao Arduino, que a encaminha ao Raspberry para processamento e registro.
+    \begin{figure}[H]
+        \centering
+        \caption{ }  
+        \centering
+        \label{fig:cont}
+        \includegraphics[width=0.70\textwidth]{imagens/sensorNive.png}
+        \caption*{Sensor de Nível}
+        \caption*{Fonte: \cite{siteComprei2}}
+    \end{figure}
+
+    Para a detecção do nível de líquido no reservatório, foi selecionado o sensor modelo LC26M-40 da fabricante Eicos. O dispositivo é fabricado em Polipropileno (PP) e opera na vertical, sendo instalado através de um orifício de 16mm.
+
+    O princípio de funcionamento baseia-se na interação entre um flutuador magnético e um contato elétrico interno (\textit{Reed Switch}). Conforme o nível da água movimenta o flutuador, o campo magnético atua sobre o contato, alterando seu estado lógico.
+
+    Ele atua como uma chave elétrica do tipo SPST (\textit{Single Pole Single Throw}), fornecendo um sinal digital binário (\textit{ON/OFF}) ao microcontrolador, indicando se o nível de líquido atingiu o ponto de montagem do sensor.
 
     \subsection*{Sensor de pH}
 
     Foto do sensor:
     Este sensor mede o nível de acidez da água. Os dados coletados são tratados inicialmente pelo Arduino e, em seguida, enviados ao back-end para que o sistema avalie possíveis recomendações químicas.
 
-    \subsection*{Bombas Submersas (5 cv)}
+    \subsection*{Bombas Submersas}
 
     Foto das bombas:
     As bombas são utilizadas para as funções de enchimento, filtragem e acionamento da cascata. A ativação pode ocorrer automaticamente, conforme regras definidas no back-end, ou manualmente por meio da interface web.
