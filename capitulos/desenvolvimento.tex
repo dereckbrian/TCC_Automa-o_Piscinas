@@ -167,18 +167,56 @@
 
     \subsection*{Bombas Submersas}
 
-    Foto das bombas:
-    As bombas são utilizadas para as funções de enchimento, filtragem e acionamento da cascata. A ativação pode ocorrer automaticamente, conforme regras definidas no back-end, ou manualmente por meio da interface web.
+    \begin{figure}[H]
+        \centering
+        \caption{ }  
+        \centering
+        \label{fig:cont}
+        \includegraphics[width=0.60\textwidth]{imagens/bombaSubmersa.png}
+        \caption*{Bomba Submersa}
+        \caption*{Fonte: \cite{siteComprei}}
+    \end{figure}
+    
+    Foram utilizadas duas bombas submersas de 3 a 5 cv, modelo JT100, para transportar a água até a piscina, realizar a filtragem e conduzir a água até a cascata. Essas bombas possuem a capacidade de impulsionar de 1000 ml a 1500 ml por minuto e têm um alcance de impulso de até 1 metro de altura. A escolha dessa bomba se deu pela sua facilidade de montagem e integração direta com o Arduino, o que facilita a implementação no sistema de automação.
 
+    A entrada de água ocorre pela frente da bomba, e a saída ocorre por cima, geralmente conectada a uma mangueira de silicone que transporta a água até o local desejado. A entrada possui um diâmetro de 5,5 mm, enquanto a saída tem 4,5 mm. A bomba também conta com um fio à prova d'água, que pode ser ligado a uma fonte externa para fornecer energia.
     \subsection*{Arduino}
 
-    Foto do Arduino:
-    É o microcontrolador responsável pela coleta direta dos dados dos sensores. Ele atua como intermediário entre os sensores e o Raspberry Pi.
+    \begin{figure}[H]
+        \centering
+        \caption{ }  
+        \centering
+        \label{fig:cont}
+        \includegraphics[width=0.60\textwidth]{imagens/arduino.png}
+        \caption*{Arduino}
+        \caption*{Fonte: \cite{siteComprei4}}
+    \end{figure}
 
-    \subsection*{Raspberry Pi}
+    A utilização do Arduino Uno R3 (Modelo ATmega328 e Atmega16U2) como controlador central do sistema se justifica pela sua facilidade de montagem, baixo custo e grande capacidade de integração com sensores e atuadores. Esse modelo foi escolhido para a automação do sistema de manutenção da piscina, pois oferece a robustez necessária para garantir um funcionamento contínuo e eficiente, além de ser altamente compatível com as bibliotecas open source e sistemas de controle que facilitam o desenvolvimento do projeto.
 
-    Foto do Raspberry:
-    Recebe as informações enviadas pelo Arduino, processa o que for necessário e mantém a comunicação com o servidor. Também executa comandos enviados pelo back-end, como ligar bombas ou acionar dispositivos.
+    A Placa Arduino Uno R3, equipada com o microcontrolador Atmega328 (tipo DIP) e o \textit{chip} de interface serial Atmega16U2, opera com uma tensão de 5V e é recomendada para uma tensão de entrada entre 7V e 12V. Possui um total de 14 pinos de entrada/saída, dos quais 6 são PWM, e 6 pinos de entrada analógica, proporcionando flexibilidade para interagir com uma ampla gama de sensores e atuadores. A placa também oferece uma corrente DC de 20mA por pino I/O e uma corrente de 50mA para o pino 3,3V.
+
+    Em termos de memória, o Arduino Uno R3 conta com 32KB de memória \textit{flash}, sendo que 0,5KB são utilizados pelo bootloader. A placa possui 2KB de SRAM e 1KB de EEPROM, o que proporciona um bom espaço para armazenar variáveis temporárias e dados importantes do sistema. O \textit{clock} da placa opera a 16MHz, garantindo um processamento eficiente para executar as funções de controle da automação.
+
+    \subsection*{\textit{Raspberry Pi}}
+
+    \begin{figure}[H]
+        \centering
+        \caption{ }  
+        \centering
+        \label{fig:cont}
+        \includegraphics[width=0.60\textwidth]{imagens/raspBerryQeuUso.png}
+        \caption*{\textit{Raspberry Pi}}
+        \caption*{Fonte: \cite{siteComprei3}}
+    \end{figure}
+
+    Foi tomada a decisão de utilizar o \textit{Raspberry Pi 3 Model B} como o microcontrolador responsável por tranferir as infomações coletadas pelo arduino para o \textit{back-end}. Esse modelo foi escolhido devido à sua eficiência e custo-benefício, atendendo bem às necessidades do projeto sem comprometer o desempenho.
+
+    Com um processador \textit{Quad-core} de 1.2 GHz e 1 GB de RAM, o \textit{Raspberry Pi} é capaz de executar os processos necessários para coletar dados dos sensores, realizar requisições HTTP e comunicar-se com o \textit{back-end}. Embora não seja um modelo de alta performance, sua capacidade de processar dados em tempo real e interagir com o sistema é adequada ao escopo do projeto, atendendo aos requisitos da fase de construção.
+
+    Além disso, sua compatibilidade com o sistema operacional Linux e a linguagem de programação Python são recursos essenciais que facilitam a implementação das funcionalidades necessárias, como o controle de parâmetros da água e a interação com dispositivos como bombas e aquecedores.
+
+    A escolha do \textit{Raspberry Pi} também reflete uma estratégia de otimização de custos, já que ele oferece baixa manutenção e alta flexibilidade para o desenvolvimento do sistema de automação da piscina.
 
     % Prototipagem inicial:
     % Descrever testes iniciais dos sensores em bancada para validação da leitura de dados.
