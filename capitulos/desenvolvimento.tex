@@ -225,7 +225,13 @@
     O código responsável pelo funcionamento dos sensores e atuadores foi desenvolvido utilizando a IDE do Arduino, que é altamente compatível com a linguagem C-like reconhecida pela plataforma. O Arduino foi conectado a uma das portas USB do Raspberry Pi, que, por meio de um código em Python, captura as informações dos sensores e atuadores. Em seguida, essas informações são enviadas ao back-end através de requisições HTTP, para serem salvas no banco de dados e exibidas no front-end. A seção subsequente detalhará melhor o funcionamento do código.
 
     As linguagens e frameworks escolhidos para o desenvolvimento deste projeto foram selecionados por sua curva de aprendizado rápida. Para o front-end, foi utilizado React, e para o back-end, SpringBoot. A aplicação funciona de maneira que o front-end faz requisições ao back-end via HTTP, e o back-end responde com as informações solicitadas. Em termos práticos, o fluxo de dados funciona da seguinte forma: a temperatura é coletada e enviada ao back-end a cada 5 minutos, sendo salva no banco de dados. Um card no front-end, responsável por exibir essa informação, faz requisições constantes ao back-end para obter a temperatura mais recente, e o back-end responde com os dados atualizados.
+
+    % --- PARÁGRAFO NOVO (Atendendo ao seu comentário de Testes) ---
+    Paralelamente à codificação, foram executados testes unitários e de integração. Foi realizada a calibração do sensor de temperatura comparando-o com um termômetro de mercúrio padrão para ajustar o \textit{offset} no código. Além disso, foram conduzidos testes de estresse no acionamento da bomba para validar a resposta do sistema frente a variações rápidas no nível da água, garantindo a confiabilidade do atuador antes da implantação final.
     
+    % --- REFERÊNCIA À DOCUMENTAÇÃO ---
+    A documentação técnica, incluindo os diagramas de classe, esquemáticos de ligação e trechos detalhados do código-fonte comentado, encontra-se detalhada na seção de Resultados e no Apêndice A deste trabalho.
+
     % Codificação e integração:
 
     % Implementação dos scripts em Python para leitura dos sensores no Raspberry Pi;
