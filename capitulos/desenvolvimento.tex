@@ -121,7 +121,7 @@
 
     Além disso, o sistema conta com um front-end que permite ao usuário acompanhar os dados coletados pelos sensores. A interface oferece, por exemplo, gráficos que exibem a média de temperatura diária ou cartões que são atualizados automaticamente conforme novas leituras são realizadas. O usuário também pode enviar comandos pelo \textit{front-end}, como: ligar a bomba d’água, acionar o filtro, ativar o aquecedor ou a cascata.
 
-    Os sensores utilizados no sistema incluem um sensor de temperatura, um sensor de nível e um sensor de pH. Além disso, duas bombas submersas de 5cv \footnote{É uma unidade de medida de potência para motores} serão responsáveis pelas funções de enchimento, filtragem e acionamento da cascata.
+    Os sensores utilizados no sistema incluem um sensor de temperatura, um sensor de nível e um sensor de pH. Além disso, duas bombas submersas de 5v \footnote{É uma unidade de medida de potência para motores} serão responsáveis pelas funções de enchimento, filtragem e acionamento da cascata.
 
     Para complementar a compreensão do funcionamento do sistema, será inserido um fluxograma do fluxo de dados, ilustrando desde a coleta pelo Arduino até a comunicação final com o \textit{back-end} e a visualização pelo usuário.
 
@@ -177,7 +177,7 @@
         \caption*{Fonte: \cite{siteComprei}}
     \end{figure}
     
-    Foram utilizadas duas bombas submersas de 3 a 5 cv, modelo JT100, para transportar a água até a piscina, realizar a filtragem e conduzir a água até a cascata. Essas bombas possuem a capacidade de impulsionar de 1000 ml a 1500 ml por minuto e têm um alcance de impulso de até 1 metro de altura. A escolha dessa bomba se deu pela sua facilidade de montagem e integração direta com o Arduino, o que facilita a implementação no sistema de automação.
+    Foram utilizadas duas bombas submersas de 3 a 5v, modelo JT100, para transportar a água até a piscina, realizar a filtragem e conduzir a água até a cascata. Essas bombas possuem a capacidade de impulsionar de 1000 ml a 1500 ml por minuto e têm um alcance de impulso de até 1 metro de altura. A escolha dessa bomba se deu pela sua facilidade de montagem e integração direta com o Arduino, o que facilita a implementação no sistema de automação.
 
     A entrada de água ocorre pela frente da bomba, e a saída ocorre por cima, geralmente conectada a uma mangueira de silicone que transporta a água até o local desejado. A entrada possui um diâmetro de 5,5 mm, enquanto a saída tem 4,5 mm. A bomba também conta com um fio à prova d'água, que pode ser ligado a uma fonte externa para fornecer energia.
     \subsection*{Arduino}
@@ -226,11 +226,12 @@
 
     As linguagens e frameworks escolhidos para o desenvolvimento deste projeto foram selecionados por sua curva de aprendizado rápida. Para o front-end, foi utilizado React, e para o back-end, SpringBoot. A aplicação funciona de maneira que o front-end faz requisições ao back-end via HTTP, e o back-end responde com as informações solicitadas. Em termos práticos, o fluxo de dados funciona da seguinte forma: a temperatura é coletada e enviada ao back-end a cada 5 minutos, sendo salva no banco de dados. Um card no front-end, responsável por exibir essa informação, faz requisições constantes ao back-end para obter a temperatura mais recente, e o back-end responde com os dados atualizados.
 
-    % --- PARÁGRAFO NOVO (Atendendo ao seu comentário de Testes) ---
-    Paralelamente à codificação, foram executados testes unitários e de integração. Foi realizada a calibração do sensor de temperatura comparando-o com um termômetro de mercúrio padrão para ajustar o \textit{offset} no código. Além disso, foram conduzidos testes de estresse no acionamento da bomba para validar a resposta do sistema frente a variações rápidas no nível da água, garantindo a confiabilidade do atuador antes da implantação final.
+    Paralelamente à codificação, foram realizados testes unitários e de integração para validar a confiabilidade dos componentes do sistema. Para o sensor de temperatura (NTC), foi feita uma calibração cruzada, comparando suas leituras com um termômetro digital. Isso permitiu ajustar o parâmetro de \textit{offset} no algoritmo de conversão de resistência para graus Celsius, garantindo maior precisão nas medições.
+
+    No caso do sensor de nível, os testes envolveram a movimentação controlada do flutuador magnético para verificar a precisão da chave Reed Switch. O objetivo foi garantir que a transição entre os estados lógicos (nível baixo/alto) ocorresse de maneira estável, sem variações inesperadas que pudessem causar falsos positivos no sistema.
+
+    Simultaneamente, testes de estresse foram realizados com as bombas submersas para validar a lógica de segurança do sistema. Foi simulado o esvaziamento rápido do reservatório para garantir que o microcontrolador interrompesse imediatamente o funcionamento da bomba ao detectar o nível crítico, prevenindo o funcionamento a seco (\textit{dry-run}) e protegendo o equipamento contra superaquecimento.
     
-    % --- REFERÊNCIA À DOCUMENTAÇÃO ---
-    A documentação técnica, incluindo os diagramas de classe, esquemáticos de ligação e trechos detalhados do código-fonte comentado, encontra-se detalhada na seção de Resultados e no Apêndice A deste trabalho.
 
     % Codificação e integração:
 
