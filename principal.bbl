@@ -25,6 +25,13 @@
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/28057/1/Empresa\%20prestadora\%20de\%20serviços\%20em\%20tratamento\%20e\%20limpeza\%20de\%20piscinas\%20-\%20Expansão.pdf}.}
 
+\bibitem[Brockveld, TEIXEIRA e Silva 2017]{brockveld2017cultura}
+\abntrefinfo{Brockveld, TEIXEIRA e Silva}{BROCKVELD; TEIXEIRA; SILVA}{2017}
+{BROCKVELD, M. V.~V.; TEIXEIRA, C.~S.; SILVA, M.~d. A cultura maker em prol da
+  inova{\c{c}}{\~a}o: boas pr{\'a}ticas voltadas a sistemas educacionais. In:
+  \emph{Anais da Confer{\^e}ncia ANPROTEC}. [s.n.], 2017. Dispon{\'\i}vel em:
+  \url{https://via.ufsc.br/wp-content/uploads/2017/11/maker.pdf}.}
+
 \bibitem[Cal{\c{c}}a 2022]{calcca2022analise}
 \abntrefinfo{Cal{\c{c}}a}{CAL{\c{C}}A}{2022}
 {CAL{\c{C}}A, J. V.~J. An{\'a}lise comparativa entre os frameworks django e
@@ -244,6 +251,15 @@ Dispon{\'\i}vel em:
 Accessed: 27/05/2025.
 Dispon{\'\i}vel em:
   \url{https://www.moneyreport.com.br/negocios/automacao-residencial-cresceu-218/}.}
+
+\bibitem[Silva e Fernandes 2025]{silva2025automacao}
+\abntrefinfo{Silva e Fernandes}{SILVA; FERNANDES}{2025}
+{SILVA, E. L.~S.; FERNANDES, S.~C.
+\emph{Automação de telescópio dobsoniano para a democratização do ensino
+  da astronomia}.
+104~p. Monografia (Trabalho de Conclusão de Curso (Tecnólogo em Análise e
+  Desenvolvimento de Sistemas)) --- Instituto Federal de Educação, Ciência e
+  Tecnologia de Goiás, Formosa, 2025. Departamento de Áreas Acadêmicas.}
 
 \bibitem[Silva 2021]{tccSilva}
 \abntrefinfo{Silva}{SILVA}{2021}

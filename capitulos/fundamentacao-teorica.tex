@@ -418,6 +418,24 @@
 
         O sistema de automação requer hardware dedicado tanto para o processamento central quanto para a interação com o ambiente físico.
 
+        \subsubsection*{Arduino}
+
+            Segundo \cite{silva2025automacao}, o Arduino é uma plataforma de prototipagem eletrônica de código aberto que permite a criação de diversos tipos de projetos, desde os mais simples até os mais complexos. O grande diferencial da plataforma é sua característica open-source, que possibilitou o surgimento de uma comunidade global de desenvolvedores. Essa característica impulsiona a constante evolução do Arduino, tornando-o um dos principais pilares da cultura maker. Esta cultura, por sua vez, é uma extensão do movimento "faça você mesmo" (\textit{Do It Yourself - DIY}), que busca incentivar pessoas de diferentes idades, especialmente crianças e adolescentes, a criar seus próprios projetos com o uso de ferramentas como impressoras 3D e o próprio Arduino, estimulando a criatividade e a inovação \cite{brockveld2017cultura}.
+
+            Para entender melhor o funcionamento do Arduino, é essencial compreender o seu hardware. O Arduino é, essencialmente, o coração do projeto, composto por diversos componentes, sendo o microcontrolador o principal deles. Segundo Massimo Banzi, um dos criadores do Arduino, “este computador é pelo menos mil vezes menos potente que o MacBook que estou usando para escrever isso, mas é muito mais barato e muito útil para construir dispositivos interessantes”. Toda essa versatilidade e acessibilidade do Arduino é possível graças à modularidade de sua placa, que pode ser utilizada tanto por profissionais quanto por amadores, proporcionando uma plataforma de fácil acesso e amplamente aplicável.
+
+            \begin{figure}[H]
+                \centering
+                \caption{ }  
+                \centering
+                \label{fig:cont}
+                \includegraphics[width=0.65\textwidth]{imagens/arduinoDesenho.png}
+                \caption*{Placa arduino}
+                \caption*{Fonte: \cite{silva2025automacao}}
+            \end{figure}
+
+            A figura acima apresenta um arduino uno com 14 pinos digitais e 6 pinos analógicos, possibilitando a conexão com uma variedade de sensores e disposivos como atuadores, criando toda a conexão com o mundo físico. 
+
         \subsubsection*{Raspberry Pi}
 
             Segundo \cite{juca2018aplicaccoes}, o Raspberry Pi, com dimensões semelhantes às de um cartão de crédito, é considerado um dos menores computadores do mundo. Possui uma porta HDMI\footnote{Interface digital que permite a transmissão de áudio e vídeo em alta definição entre dispositivos eletrônicos.} para conexão com monitores e televisores, além de portas USB, pinos de conexão (GPIO), entrada Ethernet, conector P2 para saída de áudio, placa de rede para conexões Wi-Fi e módulo Bluetooth para comunicação sem fio.
@@ -474,7 +492,7 @@
 
 
     
-    \subsection{LINGUAGENS E FRAMEWORKS DE PROGRAMAÇÃO}
+    \subsection{FERRAMENTAS DE SOFTWARE E METODOLOGIAS DE DESENVOLVIMENTO}
         Linguagens de programação, segundo \cite{linguagemProgramacao}, podem ser definidas como uma forma de padronizar a comunicação de instruções para um computador. Elas são compostas por um conjunto de regras semânticas e sintáticas, que permitem o desenvolvimento de programas de computador, sites ou aplicações móveis. Essas linguagens possibilitam que o desenvolvedor especifique quais dados o computador deve utilizar, onde e como esses dados serão armazenados, e quais ações o computador deve executar, dependendo das condições e situações apresentadas.
 
         Nos cenários mais comuns de desenvolvimento, destacam-se dois tipos principais: front-end e back-end. O front-end refere-se à parte visual com a qual o usuário interage diretamente no programa. Pode ser desenvolvido utilizando linguagens como HTML, CSS e JavaScript, além de frameworks como o React, que têm como objetivo facilitar e agilizar o desenvolvimento \cite{dadesenvolvimento}. Segundo \cite{calcca2022analise} o back-end é responsável por toda a infraestrutura da aplicação, ou seja, tudo o que sustenta as ações realizadas pelo usuário no front-end, como logins, registros, interação com bancos de dados e outras funcionalidades.
@@ -489,28 +507,35 @@
             
         \subsubsection*{React}
             Segundo Sousa \cite{sousa2025desenvolvimento}, React é uma biblioteca JavaScript desenvolvida pelo Facebook, projetada para ser utilizada no front-end de aplicações web. Assim como o Spring, o React visa otimizar o processo de desenvolvimento, utilizando módulos reutilizáveis, partes do código que podem ser reaproveitadas ao longo do projeto, eliminando a necessidade de reescrever código previamente desenvolvido.
+            
+        
+        \subsubsection*{Ambiente de Desenvolvimento Integrado do Arduino}
+            O Ambiente de Desenvolvimento Integrado (IDE) do Arduino é o cérebro de toda a placa, sendo responsável pela programação da mesma e permitindo que ela funcione de acordo com as instruções do usuário. Isso pode variar desde acionar um LED até controlar uma bomba de água com base nas medições de um sensor de nível. Sua interface é extremamente intuitiva, possibilitando que usuários com diferentes níveis de conhecimento na área consigam desenvolver seus projetos de forma simples e eficiente.
+            
+            O funcionamento da IDE do Arduino, assim como o de outras IDEs, é traduzir o código escrito em uma linguagem de alto nível para uma linguagem compreensível pelo microcontrolador. No caso do Arduino, isso significa transformar o código em instruções que o microcontrolador possa executar diretamente. Em outros contextos, como no Java, seria equivalente a traduzir o código para uma linguagem que o computador consiga entender, como o binário. Com a IDE, o usuário é capaz de escrever, compilar e enviar o código para o Arduino, que se conecta a uma das portas USB, criando uma ponte entre o mundo digital e o físico \cite{silva2025automacao}.
 
-    \subsection{BANCO DE DADOS}
-        Um banco de dados pode ser definido como um sistema responsável pela manutenção de registros computacionais, funcionando como um guarda-roupa eletrônico, ou seja, tendo a função de armazenar diversos tipos de informações geradas pelo sistema. O utilitário do sistema pode fazer uso do banco de dados de diversas formas, como recuperar informações salvas, salvar novas informações e atualizar ou excluir dados previamente adicionados \cite{date2004introduccao}.
+        \subsubsection*{BANCO DE DADOS}
+            Um banco de dados pode ser definido como um sistema responsável pela manutenção de registros computacionais, funcionando como um guarda-roupa eletrônico, ou seja, tendo a função de armazenar diversos tipos de informações geradas pelo sistema. O utilitário do sistema pode fazer uso do banco de dados de diversas formas, como recuperar informações salvas, salvar novas informações e atualizar ou excluir dados previamente adicionados \cite{date2004introduccao}.
 
 
-    \subsection{ENGENHARIA DE SOFTWARE}
-        A engenharia de software tem como objetivo produzir softwares de alta qualidade, de maneira eficaz e econômica, utilizando princípios de engenharia. A engenharia de software não abrange apenas o desenvolvimento do software, mas também toda a documentação necessária para a instalação, manutenção e uso. Esse processo envolve diversas etapas, denominadas "ciclo de vida do software", que englobam todas as fases do projeto, desde a concepção inicial até a implementação.
+        \subsubsection*{ENGENHARIA DE SOFTWARE}
+            A engenharia de software tem como objetivo produzir softwares de alta qualidade, de maneira eficaz e econômica, utilizando princípios de engenharia. A engenharia de software não abrange apenas o desenvolvimento do software, mas também toda a documentação necessária para a instalação, manutenção e uso. Esse processo envolve diversas etapas, denominadas "ciclo de vida do software", que englobam todas as fases do projeto, desde a concepção inicial até a implementação.
 
-        Os engenheiros de software devem adotar abordagens sistemáticas e organizadas, utilizando as ferramentas apropriadas de acordo com o problema a ser resolvido, as restrições do desenvolvimento e os recursos disponíveis. Além disso, é essencial que os engenheiros possuam conhecimento em técnicas variadas, como gestão de software, a fim de aumentar as probabilidades de produzir um software que atenda às necessidades do usuário, dentro do prazo e do orçamento estabelecidos \cite{de2006introduccao}.
+            Os engenheiros de software devem adotar abordagens sistemáticas e organizadas, utilizando as ferramentas apropriadas de acordo com o problema a ser resolvido, as restrições do desenvolvimento e os recursos disponíveis. Além disso, é essencial que os engenheiros possuam conhecimento em técnicas variadas, como gestão de software, a fim de aumentar as probabilidades de produzir um software que atenda às necessidades do usuário, dentro do prazo e do orçamento estabelecidos \cite{de2006introduccao}.
 
-    \subsection{RUP}
-        Segundo \cite{piske2003rup}, o Rational Unified Process (RUP) é uma metodologia voltada ao desenvolvimento de software, caracterizada por uma estrutura bem definida, composta por conceitos, práticas e regras específicas. Um de seus principais pilares é o conceito de best practices (melhores práticas), que tem como objetivo reduzir riscos e tornar o desenvolvimento do projeto mais eficiente, por meio da aplicação de regras e métodos sistemáticos.
+        \subsubsection*{RUP}
+            Segundo \cite{piske2003rup}, o Rational Unified Process (RUP) é uma metodologia voltada ao desenvolvimento de software, caracterizada por uma estrutura bem definida, composta por conceitos, práticas e regras específicas. Um de seus principais pilares é o conceito de best practices (melhores práticas), que tem como objetivo reduzir riscos e tornar o desenvolvimento do projeto mais eficiente, por meio da aplicação de regras e métodos sistemáticos.
 
-        Em síntese, o RUP é um processo de software disciplinado, que busca garantir alta qualidade no desenvolvimento por meio da padronização e do controle de suas etapas \cite{RUPo_quee}. Além disso, segundo \cite{moreiraprocessos}, o RUP é considerado iterativo, pois o produto pode ser desenvolvido em várias iterações, e incremental, já que a cada iteração novas funcionalidades são adicionadas ao sistema.
+            Em síntese, o RUP é um processo de software disciplinado, que busca garantir alta qualidade no desenvolvimento por meio da padronização e do controle de suas etapas \cite{RUPo_quee}. Além disso, segundo \cite{moreiraprocessos}, o RUP é considerado iterativo, pois o produto pode ser desenvolvido em várias iterações, e incremental, já que a cada iteração novas funcionalidades são adicionadas ao sistema.
 
-        De acordo com \cite{vasconcelosconcepccao}, o RUP é composto por etapas bem definidas, sendo elas: Concepção, em que ocorre a identificação do problema e a definição dos objetivos do sistema; Elaboração, etapa em que é realizada a modelagem dos casos de uso;
-        Construção, que consiste na fase de codificação e integração; e, por fim, a Transição, momento em que são conduzidos testes práticos em ambiente simulado ou controlado, bem como a avaliação de desempenho e os ajustes finais.
+            De acordo com \cite{vasconcelosconcepccao}, o RUP é composto por etapas bem definidas, sendo elas: Concepção, em que ocorre a identificação do problema e a definição dos objetivos do sistema; Elaboração, etapa em que é realizada a modelagem dos casos de uso;
+            Construção, que consiste na fase de codificação e integração; e, por fim, a Transição, momento em que são conduzidos testes práticos em ambiente simulado ou controlado, bem como a avaliação de desempenho e os ajustes finais.
 
-    \subsection{Linguagem UML}
-        Segundo \cite{castro2013paradigma}, a UML (\textit{Unified Modeling Language} ou Linguagem de Modelagem Unificada) pode ser definida como uma linguagem desenvolvida para a modelagem de softwares. Sua principal função é auxiliar os engenheiros de software no momento de definir as características do sistema, como, por exemplo, sua estrutura lógica. A utilização da UML no desenvolvimento de softwares torna-se necessária, pois algumas aplicações podem se tornar bastante complexas.
+        \subsubsection*{Linguagem UML}
+            Segundo \cite{castro2013paradigma}, a UML (\textit{Unified Modeling Language} ou Linguagem de Modelagem Unificada) pode ser definida como uma linguagem desenvolvida para a modelagem de softwares. Sua principal função é auxiliar os engenheiros de software no momento de definir as características do sistema, como, por exemplo, sua estrutura lógica. A utilização da UML no desenvolvimento de softwares torna-se necessária, pois algumas aplicações podem se tornar bastante complexas.
 
-        O uso dessa modelagem serve como um intermediário de comunicação entre analistas e usuários, facilitando o entendimento do sistema para ambas as partes. Dentre as diversas formas de modelagem, o Diagrama de Casos de Uso é a mais utilizada, especialmente nas fases iniciais de levantamento e análise de requisitos.
+            O uso dessa modelagem serve como um intermediário de comunicação entre analistas e usuários, facilitando o entendimento do sistema para ambas as partes. Dentre as diversas formas de modelagem, o Diagrama de Casos de Uso é a mais utilizada, especialmente nas fases iniciais de levantamento e análise de requisitos.
+
 
         \vspace{2em}
 
