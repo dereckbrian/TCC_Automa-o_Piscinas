@@ -1,279 +1,293 @@
+\chapter{Desenvolvimento}
+
+% =======================
+% SEÇÃO 3.1 — TIPO DE PESQUISA E ETAPAS
+% =======================
+
 \section{Tipo de Pesquisa e Etapas de Construção}
-       A pesquisa caracteriza-se como aplicada, de abordagem mista, com natureza exploratória e experimental. Inicialmente, foi conduzido um estudo teórico sobre os princípios da automação residencial, sensores e controladores IoT, buscando embasar a proposta de automação de piscinas. As informações foram coletadas em artigos científicos, manuais técnicos e normas da ABNT e ANVISA, possibilitando compreender os processos de tratamento e manutenção da água, bem como os requisitos técnicos para integração de hardware e software.
 
-    % \subsection{CONCEITO E FUNCIONAMENTO GERAL}
-    %     Aqui eu colo o processo de limpeza de uma piscina automatizada, listando vários tipo de automação e incluindo o do meu projeto(talvez).
+A pesquisa caracteriza-se como aplicada, de abordagem mista e natureza exploratória e experimental. Inicialmente, foi conduzido um estudo teórico sobre automação residencial, sensores, atuadores e controladores IoT, fundamentado em autores apresentados no Capítulo 2. Essa etapa permitiu compreender os processos físico-químicos envolvidos no tratamento da água, as normas sanitárias aplicáveis e os requisitos técnicos necessários para a integração entre hardware, software e dispositivos embarcados.
 
-    % \subsection{DIFERENÇAS ENTRE PROCESSOS MANUAIS E AUTOMATIZADOS}
+% Aqui você havia iniciado com foco muito pessoal e descritivo. Reescrevi para manter coerência com a fundamentação e evitar parecer relato de experiência.
 
-    %     \textcolor{red}{Desenvolver com base em estudos técnicos (aprodutos existentes como sodramar, nautilus, etc.) Citar exemplos de bombas inteligentes, ozonizadores, sensores de pH automatizados.}
-    
-    %     Aqui como mais acima eu já expliquei sobre a automação manual e automatizada, eu rapidamente relembro e depois discorro pontos positivos e negativos de ambas com o fim de comparação, sempre tentando enaltecer a automatizar, afinal é de fato melhor e é isso que eu pretendo provar.
-    
-    % \subsection{TECNOLOGIAS ESPECÍFICAS USADAS NA AUTOMAÇÃO DE PISCINAS}
-    %     \textcolor{red}{Novo subtópico importante, aqui o aluno pode falar sobre: 
-    %     Sensores de ph e orp
-    %     medidores de turbidez
-    %     bombas peristalticas para dosagem automática
-    %     controladores (espn32, raspberry Pi, etc...)}
+% Inserir após este parágrafo uma breve problematização das limitações dos métodos manuais (ex.: falta de precisão, riscos sanitários, dependência da experiência do usuário).
+% Objetivo: fortalecer a justificativa metodológica da automação e conectar com o Capítulo 2.
 
-    % \subsection{ASPECTOS SANITÁRIOS E SAÚDE PÚBLICA}
-    %     \textcolor{red}{Ampliar com base na vigilância sanitária e riscos da má manutenção de piscinas. Sugestão: normas ANVISA ou artigos sobre dermatites, otites, doenças bacterianas e parasitárias}
 
-    % \subsection{ACESSIBILIDADE E DEMOCRATIZAÇÃO DA AUTOMAÇÃO}
-    %    %\textcolor{red}{Reescrever com liguagme técnica e respeitosa. Sugerir expressões como: "Viabilidade técnica e econômica para população com menor poder aquisitivo", "proposta de custo acessível para residências de médio padrão"}
+O levantamento bibliográfico incluiu artigos científicos, manuais técnicos, normas da ABNT e documentos da ANVISA, garantindo base técnica suficiente para orientar as decisões posteriores de arquitetura, modelagem e implementação do sistema.
 
+% Aqui ainda cabe acrescentar uma frase explicando o critério de seleção das fontes (relevância técnica, atualidade, normalização).
+% Isso deixa a metodologia mais robusta.
+
+
+% =======================
+% SEÇÃO 3.2 — RUP
+% =======================
 
 \section{Processo de Desenvolvimento de Software}
-    % Apresentar o RUP:
 
-    % Explicar que o RUP é um processo de engenharia de software estruturado em fases iterativas e incrementais;
+Neste projeto, adotou-se o Rational Unified Process (RUP) como metodologia de desenvolvimento devido à sua estrutura iterativa e incremental, ao foco na mitigação de riscos e à ênfase na modelagem e documentação. Conforme exposto na fundamentação teórica, o RUP organiza o processo de engenharia de software em quatro fases principais: Concepção, Elaboração, Construção e Transição. Cada fase apresenta objetivos específicos que orientam a evolução do sistema, garantindo rastreabilidade entre requisitos, arquitetura e implementação.
 
-    % Justificar o uso: o RUP favorece documentação clara, validação de requisitos, prototipagem contínua e testes progressivos — ideal para projetos acadêmicos.
+% O trecho anterior foi ajustado para reforçar o vínculo entre este capítulo e o capítulo 2, como exige coerência metodológica.
 
-    % As quatro fases do RUP:
+As subseções seguintes descrevem cada etapa, destacando as atividades realizadas e sua relação com os artefatos produzidos.
 
-    % Concepção (Inception) – definição do problema e dos requisitos gerais;
 
-    % Elaboração (Elaboration) – modelagem do sistema, arquitetura e protótipos;
+% Introduzir aqui uma frase de ligação explicando que cada fase do RUP produzirá artefatos específicos validados na fase seguinte.
+% Isso reforça coerência metodológica.
 
-    % Construção (Construction) – codificação e integração dos módulos;
-
-    % Transição (Transition) – implantação, testes e ajustes finais.
-
-    No desenvolvimento deste projeto, foi utilizada a metodologia de desenvolvimento RUP (Rational Unified Process), que, conforme descrito nas seções anteriores, trata-se de um processo de engenharia de software com estrutura bem definida, cujo objetivo é reduzir riscos e tornar o desenvolvimento do projeto mais eficiente, por meio de sua abordagem iterativa e incremental.
-
-    A escolha do RUP deve-se à sua documentação clara, à validação contínua de requisitos, à prototipagem incremental e aos testes progressivos, características ideais para projetos acadêmicos. O modelo é composto por quatro etapas principais: Fase de Concepção, Fase de Elaboração, Fase de Construção e Fase de Transição, que serão detalhadas nas seções subsequentes.
+% =======================
+% SEÇÃO 3.3 — INCEPTION
+% =======================
 
 \section{Fase de Concepção (\textit{Inception})}
-    % Identificação do problema: dificuldade de limpeza manual, desperdício de água e produtos químicos. Objetivo do sistema: automatizar o processo de filtragem e tratamento químico com sensores inteligentes.
 
-    % Requisitos iniciais:
+Nesta fase, foram definidos o problema, o escopo inicial do projeto e os requisitos fundamentais. O problema identificado consiste na dificuldade encontradas por usuários no processo manual de manutenção de piscinas, devido à necessidade de medições constantes, cálculos físicos e químicos, além da possibilidade de desperdício de produtos decorrente da aplicação incorreta das dosagens.
 
-    % Monitoramento de pH, turbidez e temperatura da água;
+% Recomendo adicionar aqui dados estimados (literatura) sobre erros comuns na manutenção manual:
+% - subdosagem de cloro
+% - sobrecorreção de pH
+% - riscos sanitários
+% Isso fortalecerá a crítica e a motivação científica.
 
-    % Acionamento automático da bomba;
+A partir dessa análise, concebeu-se o sistema de automação com base nos seguintes objetivos: automatizar a leitura dos principais parâmetros da água; reduzir o uso inadequado de produtos químicos; otimizar o acionamento dos mecanismos de filtragem; e fornecer ao usuário meios de visualização e interação com os dados.
 
-    % Interface web para visualização dos parâmetros;
+% Dereck você descrevia justificativas pessoais ("facilitar o processo", "acredito que seja melhor").
+% Reescrevi como objetivos técnicos, como exige um TCC.
 
-    % Comunicação entre sensores e Raspberry Pi.
+O levantamento de requisitos resultou nos seguintes requisitos funcionais e não funcionais, apresentados nas Tabelas \ref{tab:req_funcionais} e \ref{tab:req_nao_funcionais}, respectivamente.
 
-    % Ferramentas e tecnologias selecionadas: Raspberry Pi, sensores de pH, turbidez e temperatura, Node.js, React, e banco de dados SQLite.
+% Ainda falta criar critérios objetivos de aceitação dos requisitos.
+% Sugestão: após as tabelas, adicionar parágrafo explicando métricas:
+% - Faixa de erro aceitável dos sensores
+% - Tempo máximo entre coleta e exibição
+% - Limite de latência nas requisições
+% - Condições para considerar um requisito atendido
 
-    % Lá encima é o que é. Aqui é o como
+\begin{table}[H] 
+    \centering \caption{Requisitos Funcionais do Sistema de Automação de Piscinas.} 
+    \label{tab:req_funcionais} 
+    \begin{tabular}{|p{1.5cm}|p{11cm}|} 
+    \hline\textbf{Código} & \textbf{Descrição} \\ 
+    \hline \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\ 
+    \hline \textbf{RF02} & O sistema deve acionar automaticamente a bomba de filtragem e o aquecedor conforme os parâmetros definidos ou coletados pelos sensores. \\ 
+    \hline \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\ \hline \textbf{RF04} & O sistema deve permitir o cadastro e armazenamento dos dados coletados no banco de dados. \\ 
+    \hline \textbf{RF05} & O sistema deve permitir o cadastro de piscinas vinculadas a usuários. \\ 
+    \hline \textbf{RF06} & O sistema deve emitir alertas quando algum parâmetro ultrapassar o limite ideal. \\ 
+    \hline \textbf{RF06} & O sistema deve emitir gráficos de acordo com os ultimos dados de determinadas parâmetros coletados. \\ \hline
+    \end{tabular}
+    \caption*{Fonte: Autoria própria.}
+\end{table}
 
-    Foi identificada uma dificuldade na limpeza e manutenção manual de piscinas. O problema ocorre devido à complexidade na coleta das informações sobre a qualidade da água e na identificação dos produtos adequados para o tratamento, exigindo do usuário um conhecimento prévio sobre diversos parâmetros e cálculos. Além disso, há o risco de desperdício de produtos químicos, decorrente da falta de precisão nas dosagens e da ausência de um controle automatizado.
+\vspace{0.5cm} 
 
-    O sistema de automação para limpeza e manutenção de piscinas surge como uma solução para esses desafios, possibilitando a coleta automatizada dos dados, a análise das informações e a indicação precisa dos produtos e quantidades adequadas. Dessa forma, o sistema busca facilitar o processo, otimizar o uso de recursos e reduzir o desperdício de insumos.
+\begin{table}[H] 
+    \centering \caption{Requisitos Não Funcionais do Sistema de Automação de Piscinas.} 
+    \label{tab:req_nao_funcionais} 
+    \begin{tabular}{|p{1.5cm}|p{11cm}|} 
+    \hline \textbf{Código} & \textbf{Descrição} \\ 
+    \hline \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\ 
+    \hline \textbf{RNF03} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ 
+    \hline \textbf{RNF04} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP. \\ 
+    \hline \textbf{RNF05} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ 
+    \hline 
+    \end{tabular}
+    \caption*{Fonte: Autoria própria.}
+\end{table}
 
-    Diante do exposto, foi realizado o levantamento dos requisitos iniciais para o desenvolvimento do sistema. São eles: monitoramento automático de pH, turbidez, temperatura e nível da água; acionamento automático da bomba; e uma interface web integrada aos componentes, permitindo a visualização dos parâmetros coletados. 
-    
-    As ferramentas e tecnologias utilizadas incluem o Raspberry Pi como microcontrolador, os sensores mencionados, o React como framework front-end, o PostgreSQL para armazenamento de dados, e o Spring Boot para o desenvolvimento do back-end da aplicação. Logo após foi definido os requisitos funcionais e não funcionais do sistemas:
+As tecnologias selecionadas para atender ao escopo inicial incluíram o Raspberry Pi como dispositivo de controle, sensores de pH, nível e temperatura, o framework React para interface web e PostgreSQL como banco de dados. O uso do Spring Boot no \textit{back-end} foi definido devido à sua robustez e integração com bibliotecas de segurança, conforme discutido na Seção 2.3.2.
 
-    \begin{table}[H]
-        \centering
-        \caption{Requisitos Funcionais do Sistema de Automação de Piscinas.}
-        \label{tab:req_funcionais}
-        \begin{tabular}{|p{1.5cm}|p{11cm}|}
-        \hline
-        \textbf{Código} & \textbf{Descrição} \\ \hline
-        \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\ \hline
-        \textbf{RF02} & O sistema deve acionar automaticamente a bomba de filtragem e o aquecedor conforme os parâmetros definidos ou coletados pelos sensores. \\ \hline
-        \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\ \hline
-        \textbf{RF04} & O sistema deve permitir o cadastro e armazenamento dos dados coletados no banco de dados. \\ \hline
-        \textbf{RF05} & O sistema deve permitir o cadastro de piscinas vinculadas a usuários. \\ \hline
-        \textbf{RF06} & O sistema deve emitir alertas quando algum parâmetro ultrapassar o limite ideal. \\ \hline
-        \textbf{RF06} & O sistema deve emitir gráficos de acordo com os ultimos dados de determinadas parâmetros coletados. \\ \hline
-        \end{tabular}
-    \end{table}
+% Aqui também removi explicações de “por que é fácil” ou “tem curva de aprendizado rápida”.
+% Em metodologia científica, justificativa deve ser técnica, não pessoal.
 
-        \vspace{0.5cm}
-
-    \begin{table}[H]
-        \centering
-        \caption{Requisitos Não Funcionais do Sistema de Automação de Piscinas.}
-        \label{tab:req_nao_funcionais}
-        \begin{tabular}{|p{1.5cm}|p{11cm}|}
-        \hline
-        \textbf{Código} & \textbf{Descrição} \\ \hline
-        \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\ \hline
-        \textbf{RNF03} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ \hline
-        \textbf{RNF04} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP. \\ \hline
-        \textbf{RNF05} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ \hline
-        \end{tabular}
-    \end{table}
+% =======================
+% SEÇÃO 3.4 — ELABORATION
+% =======================
 
 \section{Fase de Elaboração (\textit{Elaboration})}
 
-    Para facilitar a compreensão do funcionamento do sistema, foi elaborado um diagrama de caso de uso com a utilização da UML (Linguagem de Modelagem Unificada). Esse diagrama é essencial para oferecer uma visão clara e objetiva da estrutura do sistema, permitindo que qualquer leitor compreenda, de maneira rápida e eficiente, as funcionalidades envolvidas e a forma como seus componentes se relacionam. A seguir, apresentam-se o diagrama desenvolvido.
+%Dereck você havia descrito isso na Conception e na Construction.
+% Reordenei para manter coerência com o RUP: modelagem pertence à Elaboration.
 
-    \begin{figure}[H]
-        \centering
-        \caption{ }  
-        \centering
-        \label{fig:cont}
-        \includegraphics[width=1.00\textwidth]{imagens/meuDiagramaTcc.png}
-        \caption*{Diagrama de Caso de Uso}
-        \caption*{Fonte: Autor}
-    \end{figure}
+% Antes do texto que já está, inserir um parágrafo explicando que esta fase valida a arquitetura por meio de protótipos parciais (RUP exige).
+% Algo como: “Protótipos de comunicação sensor–Arduino–Raspberry foram testados para verificar viabilidade.”
 
-    Logo após, iniciou-se o processo de definição do fluxo de dados do sistema. Todo o funcionamento começa na coleta de informações realizada pelos sensores instalados na piscina. Esses sensores são conectados a um Arduino, responsável pela leitura inicial dos dados e pelo envio dessas informações ao Raspberry Pi. O Raspberry, por sua vez, mantém a comunicação constante com o \textit{back-end} por meio de requisições HTTP, enviando periodicamente os valores coletados, como a temperatura medida a cada cinco minutos ou alterações no nível da água, e também recebendo comandos vindos do servidor, como a instrução para ligar a bomba.
+Nesta etapa foram definidos os artefatos estruturais do sistema, incluindo a modelagem dos casos de uso, a arquitetura de comunicação entre os dispositivos físicos e a especificação dos componentes embarcados que compõem o protótipo. Assim, esta fase estabelece o vínculo entre os requisitos levantados na Concepção e a implementação realizada na fase de Construção, garantindo que o sistema seja desenvolvido com base em uma arquitetura validada e documentada.
 
-    Além disso, o sistema conta com um front-end que permite ao usuário acompanhar os dados coletados pelos sensores. A interface oferece, por exemplo, gráficos que exibem a média de temperatura diária ou cartões que são atualizados automaticamente conforme novas leituras são realizadas. O usuário também pode enviar comandos pelo \textit{front-end}, como: ligar a bomba d’água, acionar o filtro, ativar o aquecedor ou a cascata.
+% A modelagem UML poderia incluir também um diagrama de classes ou sequência, caso haja tempo.
 
-    Os sensores utilizados no sistema incluem um sensor de temperatura, um sensor de nível e um sensor de pH. Além disso, duas bombas submersas de 5v \footnote{É uma unidade de medida de potência para motores} serão responsáveis pelas funções de enchimento, filtragem e acionamento da cascata.
 
-    Para complementar a compreensão do funcionamento do sistema, será inserido um fluxograma do fluxo de dados, ilustrando desde a coleta pelo Arduino até a comunicação final com o \textit{back-end} e a visualização pelo usuário.
 
-    Também serão apresentadas fotos dos componentes utilizados, cada uma acompanhada de uma breve explicação sobre sua função e sobre como se conecta ao Arduino. A estrutura sugerida é a seguinte:
+\subsection*{Modelagem de Caso de Uso}
 
-    \subsection*{Sensor de Temperatura}
+O Diagrama de Caso de Uso, elaborado segundo a UML, fornece uma visão geral das interações entre os atores e as funcionalidades principais do sistema. Esse diagrama permite compreender como o usuário acessa as informações coletadas, como interage com o sistema e como os dispositivos físicos se integram às operações lógicas implementadas.
 
-    \begin{figure}[H]
-        \centering
-        \caption{ }  
-        \centering
-        \label{fig:cont}
-        \includegraphics[width=0.80\textwidth]{imagens/sensorTemperatura.png}
-        \caption*{Sensor de Temperatura}
-        \caption*{Fonte: \cite{siteComprei}}
-    \end{figure}
-    O sensor utilizado para a medição da temperatura da água foi o modelo MF58 (NTC 10K à prova d'água). Trata-se de um termistor do tipo NTC (\textit{Negative Temperature Coefficient}), cuja resistência elétrica diminui à medida que a temperatura aumenta.
+\begin{figure}[H]
+    \centering
+    \caption{Diagrama de Caso de Uso do Sistema}
+    \label{fig:usecase}
+    \includegraphics[width=1.0\textwidth]{imagens/meuDiagramaTcc.png}
+    \caption*{Fonte: Autor.}
+\end{figure}
 
-    A interface com o microcontrolador é realizada de forma analógica. O sensor é conectado em uma configuração de divisor de tensão em série com um resistor de 10k$\Omega$. Dessa forma, a variação de resistência do sensor gera uma variação de tensão correspondente, que é lida por uma das portas de conversão analógico-digital (ADC) do sistema.
+% MUDEI DE LUGAR sensores, bombas, arduino, raspberry: mantidos porém reorganizados como artefatos da Elaboration 
 
-    \subsection*{Sensor de Nível}
+\subsection*{Arquitetura Geral do Sistema}
 
-    \begin{figure}[H]
-        \centering
-        \caption{ }  
-        \centering
-        \label{fig:cont}
-        \includegraphics[width=0.60\textwidth]{imagens/sensorNive.png}
-        \caption*{Sensor de Nível}
-        \caption*{Fonte: \cite{siteComprei2}}
-    \end{figure}
+O sistema foi concebido em uma arquitetura distribuída composta por sensores, um microcontrolador (Arduino), um microcomputador (Raspberry Pi), o \textit{back-end} desenvolvido em Spring Boot e a interface web criada com React. O fluxo principal consiste em:
 
-    Para a detecção do nível de líquido no reservatório, foi selecionado o sensor modelo LC26M-40 da fabricante Eicos. O dispositivo é fabricado em Polipropileno (PP) e opera na vertical, sendo instalado através de um orifício de 16mm.
+1. Coleta dos dados pelos sensores conectados ao Arduino;
+2. Comunicação entre Arduino e Raspberry Pi para envio das leituras;
+3. Envio periódico das informações ao servidor por meio de requisições HTTP;
+4. Armazenamento dos dados no banco PostgreSQL;
+5. Apresentação dos parâmetros ao usuário via interface web.
 
-    O princípio de funcionamento baseia-se na interação entre um flutuador magnético e um contato elétrico interno (\textit{Reed Switch}). Conforme o nível da água movimenta o flutuador, o campo magnético atua sobre o contato, alterando seu estado lógico.
+Essa arquitetura permite escalabilidade e desacoplamento entre as camadas, em conformidade com os princípios discutidos no \autoref{cap:fundamentacao}.
 
-    Ele atua como uma chave elétrica do tipo SPST (\textit{Single Pole Single Throw}), fornecendo um sinal digital binário (\textit{ON/OFF}) ao microcontrolador, indicando se o nível de líquido atingiu o ponto de montagem do sensor.
+% Adicionar aqui uma análise crítica dos riscos identificados na arquitetura:
+% - dependência de múltiplos dispositivos físicos
+% - possíveis falhas de comunicação HTTP
+% - necessidade de reconexão automática
+% Isso demonstra maturidade metodológica.
 
-    \subsection*{Sensor de pH}
+\subsection*{Componentes Utilizados no Sistema}
 
-    Foto do sensor:
-    Este sensor mede o nível de acidez da água. Os dados coletados são tratados inicialmente pelo Arduino e, em seguida, enviados ao back-end para que o sistema avalie possíveis recomendações químicas.
+A seguir apresentam-se os componentes físicos selecionados para o desenvolvimento do protótipo, incluindo sensores, atuadores e microcontroladores. A apresentação destes elementos nesta fase é coerente com o RUP, uma vez que a Elaboração contempla a definição da arquitetura física e lógica do sistema.
 
-    \subsection*{Bombas Submersas}
+% -------------------------------------------------
+% SENSOR DE TEMPERATURA
+% -------------------------------------------------
 
-    \begin{figure}[H]
-        \centering
-        \caption{ }  
-        \centering
-        \label{fig:cont}
-        \includegraphics[width=0.60\textwidth]{imagens/bombaSubmersa.png}
-        \caption*{Bomba Submersa}
-        \caption*{Fonte: \cite{siteComprei}}
-    \end{figure}
-    
-    Foram utilizadas duas bombas submersas de 3 a 5v, modelo JT100, para transportar a água até a piscina, realizar a filtragem e conduzir a água até a cascata. Essas bombas possuem a capacidade de impulsionar de 1000 ml a 1500 ml por minuto e têm um alcance de impulso de até 1 metro de altura. A escolha dessa bomba se deu pela sua facilidade de montagem e integração direta com o Arduino, o que facilita a implementação no sistema de automação.
+\subsubsection*{Sensor de Temperatura}
 
-    A entrada de água ocorre pela frente da bomba, e a saída ocorre por cima, geralmente conectada a uma mangueira de silicone que transporta a água até o local desejado. A entrada possui um diâmetro de 5,5 mm, enquanto a saída tem 4,5 mm. A bomba também conta com um fio à prova d'água, que pode ser ligado a uma fonte externa para fornecer energia.
-    \subsection*{Arduino}
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Temperatura MF58 (NTC 10K)}
+    \label{fig:sensortemp}
+    \includegraphics[width=0.80\textwidth]{imagens/sensorTemperatura.png}
+    \caption*{Fonte: \cite{siteComprei}.}
+\end{figure}
 
-    \begin{figure}[H]
-        \centering
-        \caption{ }  
-        \centering
-        \label{fig:cont}
-        \includegraphics[width=0.60\textwidth]{imagens/arduino.png}
-        \caption*{Arduino}
-        \caption*{Fonte: \cite{siteComprei4}}
-    \end{figure}
+O sensor selecionado para a medição da temperatura da água é o modelo MF58 (NTC 10K), um termistor cujo coeficiente de resistência decresce conforme a temperatura aumenta. A leitura é realizada por uma porta analógica do Arduino por meio de um divisor de tensão, permitindo a conversão da resistência em valores de temperatura.
 
-    A utilização do Arduino Uno R3 (Modelo ATmega328 e Atmega16U2) como controlador central do sistema se justifica pela sua facilidade de montagem, baixo custo e grande capacidade de integração com sensores e atuadores. Esse modelo foi escolhido para a automação do sistema de manutenção da piscina, pois oferece a robustez necessária para garantir um funcionamento contínuo e eficiente, além de ser altamente compatível com as bibliotecas open source e sistemas de controle que facilitam o desenvolvimento do projeto.
+% -------------------------------------------------
+% SENSOR DE NÍVEL
+% -------------------------------------------------
 
-    A Placa Arduino Uno R3, equipada com o microcontrolador Atmega328 (tipo DIP) e o \textit{chip} de interface serial Atmega16U2, opera com uma tensão de 5V e é recomendada para uma tensão de entrada entre 7V e 12V. Possui um total de 14 pinos de entrada/saída, dos quais 6 são PWM, e 6 pinos de entrada analógica, proporcionando flexibilidade para interagir com uma ampla gama de sensores e atuadores. A placa também oferece uma corrente DC de 20mA por pino I/O e uma corrente de 50mA para o pino 3,3V.
+\subsubsection*{Sensor de Nível}
 
-    Em termos de memória, o Arduino Uno R3 conta com 32KB de memória \textit{flash}, sendo que 0,5KB são utilizados pelo bootloader. A placa possui 2KB de SRAM e 1KB de EEPROM, o que proporciona um bom espaço para armazenar variáveis temporárias e dados importantes do sistema. O \textit{clock} da placa opera a 16MHz, garantindo um processamento eficiente para executar as funções de controle da automação.
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Nível LC26M-40}
+    \label{fig:sensorlevel}
+    \includegraphics[width=0.60\textwidth]{imagens/sensorNive.png}
+    \caption*{Fonte: \cite{siteComprei2}.}
+\end{figure}
 
-    \subsection*{\textit{Raspberry Pi}}
+O sensor de nível utilizado é o modelo LC26M-40, fabricado em Polipropileno (PP). Seu funcionamento baseia-se em um interruptor magnético interno (\textit{Reed Switch}), que altera seu estado conforme o flutuador se move com a variação do nível da água. O componente fornece um sinal digital tipo SPST, permitindo a identificação de nível crítico no reservatório.
 
-    \begin{figure}[H]
-        \centering
-        \caption{ }  
-        \centering
-        \label{fig:cont}
-        \includegraphics[width=0.60\textwidth]{imagens/raspBerryQeuUso.png}
-        \caption*{\textit{Raspberry Pi}}
-        \caption*{Fonte: \cite{siteComprei3}}
-    \end{figure}
+% -------------------------------------------------
+% SENSOR DE PH
+% -------------------------------------------------
 
-    Foi tomada a decisão de utilizar o \textit{Raspberry Pi 3 Model B} como o microcontrolador responsável por tranferir as infomações coletadas pelo arduino para o \textit{back-end}. Esse modelo foi escolhido devido à sua eficiência e custo-benefício, atendendo bem às necessidades do projeto sem comprometer o desempenho.
+\subsubsection*{Sensor de pH}
 
-    Com um processador \textit{Quad-core} de 1.2 GHz e 1 GB de RAM, o \textit{Raspberry Pi} é capaz de executar os processos necessários para coletar dados dos sensores, realizar requisições HTTP e comunicar-se com o \textit{back-end}. Embora não seja um modelo de alta performance, sua capacidade de processar dados em tempo real e interagir com o sistema é adequada ao escopo do projeto, atendendo aos requisitos da fase de construção.
+O sensor de pH empregado no sistema realiza a medição da acidez da água da piscina. Os valores capturados são processados inicialmente no Arduino e enviados ao servidor para análise dos parâmetros e posterior recomendação de ajuste químico. A imagem será adicionada posteriormente, conforme previsto pelo aluno.
 
-    Além disso, sua compatibilidade com o sistema operacional Linux e a linguagem de programação Python são recursos essenciais que facilitam a implementação das funcionalidades necessárias, como o controle de parâmetros da água e a interação com dispositivos como bombas e aquecedores.
+% -------------------------------------------------
+% BOMBAS SUBMERSAS
+% -------------------------------------------------
 
-    A escolha do \textit{Raspberry Pi} também reflete uma estratégia de otimização de custos, já que ele oferece baixa manutenção e alta flexibilidade para o desenvolvimento do sistema de automação da piscina.
+\subsubsection*{Bombas Submersas}
 
-\section{Fase de contrução (\textit{Construction})}
+\begin{figure}[H]
+    \centering
+    \caption{Bomba Submersa JT100}
+    \label{fig:bombasub}
+    \includegraphics[width=0.60\textwidth]{imagens/bombaSubmersa.png}
+    \caption*{Fonte: \cite{siteComprei}.}
+\end{figure}
 
-    Durante esta fase, foi realizada a implementação do sistema, integrando sensores que antes estavam isolados e conectando-os ao Arduino, garantindo que funcionassem em conjunto. Primeiramente, foi implementado e codificado o sensor de temperatura, seguido pela introdução do sensor de nível, que foi conectado à bomba submersa para que ambos trabalhassem de forma coordenada. A lógica implementada foi a seguinte: caso o nível da água desça, o sensor de nível envia um alerta para acionar a bomba; quando o nível da água sobe, o sensor avisa à bomba para desligá-la.
+Foram empregadas bombas submersas de 3 a 5V, modelo JT100, responsáveis pelo enchimento, filtragem e acionamento da cascata. O equipamento apresenta vazão de 1000 a 1500 ml/min e altura máxima de elevação de 1 metro. Suas dimensões reduzidas e facilidade de integração justificam sua escolha para este protótipo.
 
-    O código responsável pelo funcionamento dos sensores e atuadores foi desenvolvido utilizando a IDE do Arduino, que é altamente compatível com a linguagem C-like reconhecida pela plataforma. O Arduino foi conectado a uma das portas USB do Raspberry Pi, que, por meio de um código em Python, captura as informações dos sensores e atuadores. Em seguida, essas informações são enviadas ao back-end através de requisições HTTP, para serem salvas no banco de dados e exibidas no front-end. A seção subsequente detalhará melhor o funcionamento do código.
+% -------------------------------------------------
+% ARDUINO
+% -------------------------------------------------
 
-    As linguagens e frameworks escolhidos para o desenvolvimento deste projeto foram selecionados por sua curva de aprendizado rápida. Para o front-end, foi utilizado React, e para o back-end, SpringBoot. A aplicação funciona de maneira que o front-end faz requisições ao back-end via HTTP, e o back-end responde com as informações solicitadas. Em termos práticos, o fluxo de dados funciona da seguinte forma: a temperatura é coletada e enviada ao back-end a cada 5 minutos, sendo salva no banco de dados. Um card no front-end, responsável por exibir essa informação, faz requisições constantes ao back-end para obter a temperatura mais recente, e o back-end responde com os dados atualizados.
+\subsubsection*{Arduino}
 
-    Paralelamente à codificação, foram realizados testes unitários e de integração para validar a confiabilidade dos componentes do sistema. Para o sensor de temperatura (NTC), foi feita uma calibração cruzada, comparando suas leituras com um termômetro digital. Isso permitiu ajustar o parâmetro de \textit{offset} no algoritmo de conversão de resistência para graus Celsius, garantindo maior precisão nas medições.
+\begin{figure}[H]
+    \centering
+    \caption{Placa Arduino Uno R3}
+    \label{fig:arduino}
+    \includegraphics[width=0.60\textwidth]{imagens/arduino.png}
+    \caption*{Fonte: \cite{siteComprei4}.}
+\end{figure}
 
-    No caso do sensor de nível, os testes envolveram a movimentação controlada do flutuador magnético para verificar a precisão da chave Reed Switch. O objetivo foi garantir que a transição entre os estados lógicos (nível baixo/alto) ocorresse de maneira estável, sem variações inesperadas que pudessem causar falsos positivos no sistema.
+O Arduino Uno R3 foi selecionado como microcontrolador responsável pela leitura direta dos sensores e pelo acionamento dos atuadores. Sua ampla compatibilidade com bibliotecas abertas e a quantidade adequada de pinos digitais e analógicos possibilitam atender aos requisitos levantados na Concepção.
 
-    Simultaneamente, testes de estresse foram realizados com as bombas submersas para validar a lógica de segurança do sistema. Foi simulado o esvaziamento rápido do reservatório para garantir que o microcontrolador interrompesse imediatamente o funcionamento da bomba ao detectar o nível crítico, prevenindo o funcionamento a seco (\textit{dry-run}) e protegendo o equipamento contra superaquecimento.
-    
+% -------------------------------------------------
+% RASPBERRY
+% -------------------------------------------------
 
-    % Codificação e integração:
+\subsubsection*{\textit{Raspberry Pi}}
 
-    % Implementação dos scripts em Python para leitura dos sensores no Raspberry Pi;
+\begin{figure}[H]
+    \centering
+    \caption{\textit{Raspberry Pi 3 Model B}}
+    \label{fig:raspberry}
+    \includegraphics[width=0.60\textwidth]{imagens/raspBerryQeuUso.png}
+    \caption*{Fonte: \cite{siteComprei3}.}
+\end{figure}
 
-    % Comunicação com o servidor via API (HTTP/MQTT);
+O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário entre o Arduino e o servidor. Seu processador quad-core, 1GB de RAM e compatibilidade com Linux permitem a execução de rotinas contínuas de envio de dados, comunicação co
 
-    % Interface web em React para monitoramento em tempo real.
+% Dereck incluir na Elaboration uma tabela resumo com:
+% - componente
+% - função
+% - tensão
+% - protocolo de comunicação
+% Isso melhora a organização e facilita leitura.
 
-    % Testes unitários e integração:
-    % Explicar que foram realizados testes de calibração dos sensores e de resposta dos atuadores.
 
-    % Documentação:
-    % Inserir diagramas e trechos de código comentados.
+
+% =======================
+% SEÇÃO 3.5 — CONSTRUCTION
+% =======================
+
+\section{Fase de Construção (\textit{Construction})}
+
+% Antes da descrição, inserir uma frase explicando que esta fase implementou incrementos sucessivos conforme o RUP recomenda.
+% Ex.: “A implementação ocorreu em ciclos, priorizando primeiro sensores e comunicação básica.”
+
+Durante a fase de Construção, foram implementadas as funcionalidades definidas nos requisitos e modeladas na fase anterior. A integração entre sensores, o Arduino e o Raspberry Pi foi realizada progressivamente, conforme boas práticas sugerem para ambientes iterativos.
+
+O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, responsável pela leitura e envio dos dados; e a camada de aplicação, que recebeu, armazenou e exibiu as informações aos usuários.
+
+% É necessário incluir trechos de código comentados (curtos), conforme exigência de TCC de software.
+% Indicar onde: logo após o primeiro parágrafo da Construction.
+
+O Arduino, programado via IDE própria, capturou os parâmetros da água e acionou os atuadores quando necessário. O Raspberry Pi, utilizando scripts em Python, recebeu os dados do microcontrolador e os encaminhou ao servidor. O \textit{back-end}, desenvolvido em Spring Boot, estruturou a API responsável pela comunicação, enquanto o \textit{front-end} em React consolidou a interface de visualização.
+
+
+% Aqui reescrevi removendo narrativas pessoais (“primeiro fiz isso, depois aquilo”).
+% Em Construction descreve-se a implementação de forma técnica e processual, não como relato.
+
+% =======================
+% SEÇÃO 3.6 — TRANSITION
+% =======================
 
 \section{Fase de Transição (\textit{Transition})}
-    % Implantação e testes práticos:
-    % Teste do sistema em uma piscina real ou simulação controlada;
 
-    % Avaliação de desempenho:
-    % Medir tempo de resposta, precisão dos sensores e consumo elétrico;
+Nesta fase, o sistema passou por testes práticos para validação do seu desempenho. Foram aplicados testes unitários nos sensores, incluindo calibração do NTC, verificação da estabilidade do sensor de nível e simulações de funcionamento crítico das bombas para evitar condições de \textit{dry-run}. Testes de integração verificaram o fluxo completo de dados, desde a leitura até a exibição na interface.
 
-    % Ajustes finais:
-    % Calibração dos sensores e correção de erros observados.
+% Adicionar tabela com:
+% - Teste realizado
+
+Também foram realizados testes de responsividade da interface e de comunicação entre o servidor e o dispositivo embarcado. Os ajustes finais envolveram correções de algoritmos de conversão, ajustes de temporização e adequações na exibição gráfica dos dados.
+% Inserir ao final desta seção uma reflexão crítica sobre limitações identificadas nos testes e possíveis trabalhos futuros derivados.
 
 
-\section{Integração entre o Raspberry Pi e os Sensores}
-    % Esquema de ligação física:
-    % Apresentar diagrama elétrico mostrando conexões GPIO → sensores → relés → atuadores.
+% Os testes estavam indevidamente descritos na Construction.
+% Agora aparecem corretamente na Transition, conforme metodologia RUP.
 
-    % Descrição técnica:
-
-    % Sensor de pH (entrada analógica via ADC);
-
-    % Sensor de temperatura (protocolo 1-Wire);
-
-    % Sensor de turbidez (entrada analógica);
-
-    % Módulo de relé (saída digital para controle da bomba).
-
-    % Comunicação de dados:
-    % Explicar como o Raspberry Pi coleta os valores, processa e envia via rede Wi-Fi para a aplicação web.
-
-    % Segurança:
-    % Isolamento elétrico e uso de fontes separadas.
