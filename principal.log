@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  7 DEC 2025 00:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  8 DEC 2025 19:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1387,13 +1387,13 @@ Package rerunfilecheck Info: File `principal.brf' has not changed.
 Here is how much of TeX's memory you used:
  36704 strings out of 474486
  728198 string characters out of 5741867
- 1954542 words of memory out of 5000000
+ 1953542 words of memory out of 5000000
  57907 multiletter control sequences out of 15000+600000
  627161 words of font info for 168 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,13n,111p,1459b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,13n,111p,1483b,710s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (44 pages, 6273697 bytes).
+Output written on principal.pdf (44 pages, 6273689 bytes).
 PDF statistics:
  966 PDF objects out of 1000 (max. 8388607)
  184 named destinations out of 1000 (max. 500000)
