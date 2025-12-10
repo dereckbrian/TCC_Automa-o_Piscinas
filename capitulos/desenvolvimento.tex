@@ -133,7 +133,7 @@ O sistema foi concebido em uma arquitetura distribuída composta por sensores, u
 4. Armazenamento dos dados no banco PostgreSQL;
 5. Apresentação dos parâmetros ao usuário via interface web.
 
-Essa arquitetura permite escalabilidade e desacoplamento entre as camadas, em conformidade com os princípios discutidos no \autoref{cap:fundamentacao}.
+Essa arquitetura permite escalabilidade e desacoplamento entre as camadas, em conformidade com os princípios discutidos no \autoref{cap:fundamentacao}. Contudo, alguns problemas podem ser encontrados nessa arquitetura, como a dependência de multiplos dipositivos físicos, que, qualquer falaha pode fazer com que o sistema pare de funcionar. Possiveis falhas nas requisições HTTP que já foram encontradas nas dependencias do IFG, podem interromper completamente a comunicação da aplicação no geral.
 
 % Adicionar aqui uma análise crítica dos riscos identificados na arquitetura:
 % - dependência de múltiplos dispositivos físicos
@@ -248,12 +248,53 @@ O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário
 \section{Fase de Construção (\textit{Construction})}
 
 % Antes da descrição, inserir uma frase explicando que esta fase implementou incrementos sucessivos conforme o RUP recomenda.
-% Ex.: “A implementação ocorreu em ciclos, priorizando primeiro sensores e comunicação básica.”
+% Ex.: “A implementação ocorreu em ciclos, priorizando primeiro sensores e comunicação básica.”     (FEITO)
 
-Durante a fase de Construção, foram implementadas as funcionalidades definidas nos requisitos e modeladas na fase anterior. A integração entre sensores, o Arduino e o Raspberry Pi foi realizada progressivamente, conforme boas práticas sugerem para ambientes iterativos.
+Em conformidade com a metodologia RUP, a fase de Construção foi executada por meio de ciclos iterativos e incrementais. O desenvolvimento iniciou-se pela camada física, com a implementação e validação individual dos sensores e atuadores no microcontrolador. Após garantir a estabilidade da leitura dos dados, iniciou-se a codificação da camada lógica, abrangendo o back-end (Spring Boot), o banco de dados e o front-end (React). A etapa final consistiu na integração completa entre o hardware e o software, validando o fluxo de transmissão das informações desde a coleta no ambiente físico até a visualização na interface web.
 
 O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, responsável pela leitura e envio dos dados; e a camada de aplicação, que recebeu, armazenou e exibiu as informações aos usuários.
+O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, responsável pela leitura e envio dos dados; e a camada de aplicação, que recebeu, armazenou e exibiu as informações aos usuários.
 
+Na camada embarcada, o Arduino foi programado via IDE própria para realizar a leitura dos sensores analógicos e digitais. A Figura \ref{fig:cod_arduino} demonstra a função de coleta dos parâmetros da água e o acionamento condicional dos atuadores.
+
+\begin{figure}[H]
+    \centering
+    \caption{Trecho de código do Arduino: Leitura de sensores e controle}
+    \label{fig:cod_arduino}
+    \includegraphics[width=0.9\textwidth]{imagens/codigo_arduino.png} 
+    % Ou use o ambiente lstlisting se for texto
+    \caption*{Fonte: Autoria própria.}
+\end{figure}
+
+Em seguida, o Raspberry Pi atua como \textit{gateway}, utilizando scripts em Python para receber os dados via serial e encaminhá-los à nuvem. A Figura \ref{fig:cod_raspberry} ilustra a requisição HTTP POST realizada para enviar as leituras ao servidor.
+
+\begin{figure}[H]
+    \centering
+    \caption{Script Python no Raspberry Pi: Envio de dados via HTTP}
+    \label{fig:cod_raspberry}
+    \includegraphics[width=0.9\textwidth]{imagens/codigo_python.png}
+    \caption*{Fonte: Autoria própria.}
+\end{figure}
+
+Na camada de aplicação, o \textit{back-end} desenvolvido em Spring Boot recebe essas requisições, persiste os dados no banco PostgreSQL e gerencia a lógica de negócios. A Figura \ref{fig:cod_backend} apresenta o \textit{Controller} responsável por receber os dados do sensor e o método para processar o comando de acionamento vindo da interface.
+
+\begin{figure}[H]
+    \centering
+    \caption{Controller Spring Boot: Recepção de dados e endpoints de controle}
+    \label{fig:cod_backend}
+    \includegraphics[width=0.9\textwidth]{imagens/codigo_backend.png}
+    \caption*{Fonte: Autoria própria.}
+\end{figure}
+
+Por fim, o \textit{front-end} em React consome essa API para consolidar a interface de visualização. A Figura \ref{fig:cod_frontend} exibe a função de resgate de dados (\textit{fetch}) para atualização dos gráficos e o componente de \textit{toggle} utilizado para enviar comandos manuais ao sistema.
+
+\begin{figure}[H]
+    \centering
+    \caption{Componente React: Consumo de API e controle de estado}
+    \label{fig:cod_frontend}
+    \includegraphics[width=0.9\textwidth]{imagens/codigo_frontend.png}
+    \caption*{Fonte: Autoria própria.}
+\end{figure}
 % É necessário incluir trechos de código comentados (curtos), conforme exigência de TCC de software.
 % Indicar onde: logo após o primeiro parágrafo da Construction.
 
