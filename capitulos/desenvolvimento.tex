@@ -276,13 +276,13 @@ Em seguida, o Raspberry Pi atua como \textit{gateway}, utilizando scripts em Pyt
     \caption*{Fonte: Autoria própria.}
 \end{figure}
 
-Na camada de aplicação, o \textit{back-end} desenvolvido em Spring Boot recebe essas requisições, persiste os dados no banco PostgreSQL e gerencia a lógica de negócios. A Figura \ref{fig:cod_backend} apresenta o \textit{Controller} responsável por receber os dados do sensor e o método para processar o comando de acionamento vindo da interface.
+Na camada de aplicação, o \textit{back-end} desenvolvido em Spring Boot recebe essas requisições, persiste os dados no banco PostgreSQL e gerencia a lógica de negócios. A Figura \ref{fig:cod_backend} e a \ref{fig:cod_backend2} apresenta o \textit{Controller} responsável por receber os dados do sensor e o método para processar o comando de acionamento vindo da interface.
 
 \begin{figure}[H]
     \centering
     \caption{Controller Spring Boot: Recepção de dados e endpoints de controle}
     \label{fig:cod_backend}
-    \includegraphics[width=0.9\textwidth]{imagens/codigo_backend.png}
+    \includegraphics[width=0.9\textwidth]{imagens/back_end_code.jpg}
     \caption*{Fonte: Autoria própria.}
 \end{figure}
 
@@ -291,7 +291,7 @@ Por fim, o \textit{front-end} em React consome essa API para consolidar a interf
 \begin{figure}[H]
     \centering
     \caption{Componente React: Consumo de API e controle de estado}
-    \label{fig:cod_frontend}
+    \label{fig:cod_frontend2}
     \includegraphics[width=0.9\textwidth]{imagens/frontEnd_resgatarBack.jpeg}
     \caption*{Fonte: Autoria própria.}
 \end{figure}
