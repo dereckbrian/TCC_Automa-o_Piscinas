@@ -29,11 +29,11 @@
 \contentsline {section}{\numberline {3.3}Fase de Concepção (\textit {Inception})}{33}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Fase de Elaboração (\textit {Elaboration})}{35}{section.3.4}%
 \contentsline {section}{\numberline {3.5}Fase de Construção (\textit {Construction})}{41}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Fase de Transição (\textit {Transition})}{41}{section.3.6}%
+\contentsline {section}{\numberline {3.6}Fase de Transição (\textit {Transition})}{46}{section.3.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{42}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{47}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{43}{section*.56}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{48}{section*.61}%
 \vspace {\cftbeforechapterskip }
