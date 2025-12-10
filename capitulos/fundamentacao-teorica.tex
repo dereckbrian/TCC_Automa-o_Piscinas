@@ -30,7 +30,7 @@ Segundo \citeonline{refComponents}, as piscinas residenciais e públicas, apesar
 \begin{figure}[H]
     \centering
     \caption{Componentes estruturais básicos de uma piscina.}
-    \includegraphics[width=0.78\textwidth]{imagens/componentesPiscina.png}
+    \includegraphics[width=0.78\textwidth]{imagens/componentesPiscina.jpg}
     \label{fig:componentesPiscina}
     \caption*{Fonte: \cite{refComponents}.}
 \end{figure}
@@ -45,17 +45,17 @@ Além desses elementos fixos, a manutenção cotidiana envolve equipamentos manu
     \caption{Principais acessórios utilizados na limpeza física de piscinas.}
     \includegraphics[width=0.92\textwidth]{imagens/acessoriosPiscina.jpg}
     \label{fig:acessoriosPiscina}
-    \caption*{Fonte: Adaptado de Benedito et al. (2024).}
+    \caption*{Fonte: Adaptado de \cite{benedito2024projeto}.}
 \end{figure}
 
 
-A compreensão desses componentes, tanto estruturais quanto acessórios, é fundamental para o desenvolvimento de sistemas automatizados, uma vez que muitos dos processos realizados manualmente — como circulação, remoção de impurezas e monitoramento da qualidade da água — podem ser otimizados por meio de sensores, atuadores e controladores eletrônicos, tema aprofundado nos tópicos subsequentes.
+A compreensão desses componentes, tanto estruturais quanto acessórios, é fundamental para o desenvolvimento de sistemas automatizados, uma vez que muitos dos processos realizados manualmente, como circulação, remoção de impurezas e monitoramento da qualidade da água, podem ser otimizados por meio de sensores, atuadores e controladores eletrônicos, tema aprofundado nos tópicos subsequentes.
 
 
 \subsection{NORMAS E PROCEDIMENTOS TÉCNICOS DE LIMPEZA MANUAL}
 A manutenção adequada de uma piscina não depende apenas dos equipamentos estruturais apresentados na seção anterior, mas também da aplicação criteriosa de normas e procedimentos técnicos que asseguram a qualidade sanitária da água. Conforme destaca \citeonline{piscineiroProfissional}, a ausência de práticas corretas de limpeza pode resultar em diversos problemas de saúde, como dermatites, micoses e outras infecções, o que reforça a importância de um tratamento contínuo e devidamente monitorado. Para prevenir tais riscos, a Associação Brasileira de Normas Técnicas (ABNT) estabelece parâmetros essenciais que orientam o controle físico e químico da água. 
 
-Diversos poluentes influenciam diretamente esses parâmetros, incluindo suor, urina, cabelos, óleos naturais da pele, insetos, folhas e formação de algas, conforme observa \citeonline{guiaTratamento}. Esses elementos alteram, sobretudo, o pH da água e a concentração de cloro — variáveis fundamentais para garantir segurança aos usuários. Segundo Leite (2020), o pH é um indicador que expressa a acidez ou alcalinidade do fluido, variando entre valores menores que 7 (ácidos) e maiores que 7 (alcalinos). A \autoref{fig:phNivel} apresenta a faixa recomendada para piscinas, entre 7,2 e 7,8, parâmetro indispensável para prevenir irritações e preservar a integridade dos equipamentos.
+Diversos poluentes influenciam diretamente esses parâmetros, incluindo suor, urina, cabelos, óleos naturais da pele, insetos, folhas e formação de algas, conforme observa \citeonline{guiaTratamento}. Esses elementos alteram, sobretudo, o pH da água e a concentração de cloro, variáveis fundamentais para garantir segurança aos usuários. Segundo \citeonline{leite2020plataforma}, o pH é um indicador que expressa a acidez ou alcalinidade do fluido, variando entre valores menores que 7 (ácidos) e maiores que 7 (alcalinos). A \autoref{fig:phNivel} apresenta a faixa recomendada para piscinas, entre 7,2 e 7,8, parâmetro indispensável para prevenir irritações e preservar a integridade dos equipamentos.
 
         \begin{figure}[H]
                 \centering
@@ -65,7 +65,7 @@ Diversos poluentes influenciam diretamente esses parâmetros, incluindo suor, ur
             	\caption*{Fonte: \cite{guiaTratamento}}
         \end{figure}
 
-Embora a limpeza física — obtida por escovas, redes ou aspiradores — remova apenas impurezas visíveis, ela é insuficiente para eliminar substâncias dissolvidas, como suor, urina e óleos, que permanecem em suspensão ou solução e ultrapassam a capacidade de retenção dos filtros \citeonline{guiaTratamento}.Por esse motivo, a manutenção adequada deve integrar procedimentos químicos eficazes, de modo a combater microrganismos e restabelecer o equilíbrio da água.
+Embora a limpeza física, obtida por escovas, redes ou aspiradores, remova apenas impurezas visíveis, ela é insuficiente para eliminar substâncias dissolvidas, como suor, urina e óleos, que permanecem em suspensão ou solução e ultrapassam a capacidade de retenção dos filtros \citeonline{guiaTratamento}.Por esse motivo, a manutenção adequada deve integrar procedimentos químicos eficazes, de modo a combater microrganismos e restabelecer o equilíbrio da água.
 
 Além disso, uma piscina considerada limpa precisa atender a critérios objetivos, como a ausência de bactérias do grupo coliforme ou \textit{Staphylococcus aureus}\footnote{Bactéria coco Gram-positiva, frequentemente encontrada na pele e nas fossas nasais humanas, responsável por infecções de gravidade variável.}
 , boa visibilidade do fundo e superfície livre de sujeiras, conforme determinado por \citeonline{guiaTratamento} e pelas normas sanitárias vigentes. Esses requisitos reforçam que a manutenção envolve mais do que a aparência da água, exigindo uma análise sistemática dos parâmetros fisicoquímicos.
@@ -177,7 +177,7 @@ Praticamente todos os aparelhos eletrônicos que possuem algum tipo de acionamen
 
 \subsection{HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}
 
-A automação residencial, embora recente quando comparada a outras áreas tecnológicas, apresenta avanços significativos ao longo das últimas décadas. Na década de 1970, surgiram nos Estados Unidos os primeiros módulos inteligentes baseados na transmissão de dados pela rede elétrica doméstica, utilizando a tecnologia PLC \textit{(Power Line Communication)} \cite{automacaoResidencialCap1}. Essa inovação marcou o início da integração entre dispositivos elétricos e sistemas de comunicação, permitindo que comandos simples fossem enviados por meio da fiação já existente.
+A automação residencial, embora recente quando comparada a outras áreas tecnológicas, apresenta avanços significativos ao longo das últimas décadas. Na década de 1970, surgiram nos Estados Unidos os primeiros módulos inteligentes baseados na transmissão de dados pela rede elétrica doméstica, utilizando a tecnologia PLC \textit{(Power Line Communication)} \citeonline{automacaoResidencialCap1}. Essa inovação marcou o início da integração entre dispositivos elétricos e sistemas de comunicação, permitindo que comandos simples fossem enviados por meio da fiação já existente.
 
 Com o avanço da informática, o aprimoramento dos sistemas embarcados e a popularização da internet, a automação residencial passou a incorporar dispositivos capazes de monitorar e controlar equipamentos à distância, consolidando o conceito contemporâneo de residência conectada. Esse movimento possibilitou o desenvolvimento de soluções cada vez mais acessíveis e eficientes, ampliando o uso de sistemas inteligentes em diferentes ambientes domésticos.
 
@@ -215,9 +215,9 @@ No próximo tópico, são apresentados os principais conceitos e componentes que
 
 \subsection{CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}
 
-Tecnicamente denominada domótica\footnote{\textit{Domótica}: termo que designa a integração de tecnologias destinadas ao controle inteligente de ambientes residenciais.}, a automação residencial tem como principal objetivo acionar, monitorar, integrar e controlar diferentes variáveis de uma residência — como iluminação, climatização, áudio e vídeo — a fim de promover eficiência, comodidade e segurança ao usuário \cite{oliveira2019domotica}. No Brasil, o termo mais utilizado é automação residencial, uma tradução derivada da expressão americana \textit{home automation}. Apesar disso, essa tradução não abrange plenamente a concepção de domótica, que envolve não apenas o controle remoto, mas a integração inteligente de sistemas.
+Tecnicamente denominada domótica\footnote{\textit{Domótica}: termo que designa a integração de tecnologias destinadas ao controle inteligente de ambientes residenciais.}, a automação residencial tem como principal objetivo acionar, monitorar, integrar e controlar diferentes variáveis de uma residência, como iluminação, climatização, áudio e vídeo, a fim de promover eficiência, comodidade e segurança ao usuário \citeonline{oliveira2019domotica}. No Brasil, o termo mais utilizado é automação residencial, uma tradução derivada da expressão americana \textit{home automation}. Apesar disso, essa tradução não abrange plenamente a concepção de domótica, que envolve não apenas o controle remoto, mas a integração inteligente de sistemas.
 
-O uso de tecnologias residenciais tem crescido de maneira expressiva no país; entretanto, o setor da construção civil ainda não acompanha plenamente o ritmo de evolução observado em áreas como a indústria automotiva, que já emprega amplamente \textit{tecnologias embarcadas}\footnote{\textit{Tecnologia embarcada}: computador especializado, composto por hardware e software dedicados, integrados a um sistema maior para execução de funções específicas.} \cite{hipolito2018automaccao}. Essa diferença evidencia a necessidade de maior disseminação dos conceitos técnicos que sustentam a automação no ambiente doméstico.
+O uso de tecnologias residenciais tem crescido de maneira expressiva no país; entretanto, o setor da construção civil ainda não acompanha plenamente o ritmo de evolução observado em áreas como a indústria automotiva, que já emprega amplamente \textit{tecnologias embarcadas}\footnote{\textit{Tecnologia embarcada}: computador especializado, composto por hardware e software dedicados, integrados a um sistema maior para execução de funções específicas.} \citeonline{hipolito2018automaccao}. Essa diferença evidencia a necessidade de maior disseminação dos conceitos técnicos que sustentam a automação no ambiente doméstico.
 
 De acordo com \citeonline{accardi2012automaccao}, a forma como os componentes de um sistema residencial se comunicam depende diretamente da arquitetura adotada, que pode ser centralizada ou descentralizada. Em uma arquitetura centralizada, todos os dispositivos se conectam a um único controlador principal, responsável por processar e executar todas as ações do sistema; esse arranjo é ilustrado na \autoref{fig:arquiteturaCentralizada}. Essa configuração exige que o controlador possua alta capacidade de processamento e confiabilidade operacional.
 

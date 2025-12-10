@@ -8,18 +8,15 @@
 
 A pesquisa caracteriza-se como aplicada, de abordagem mista e natureza exploratória e experimental. Inicialmente, foi conduzido um estudo teórico sobre automação residencial, sensores, atuadores e controladores IoT, fundamentado em autores apresentados no Capítulo 2. Essa etapa permitiu compreender os processos físico-químicos envolvidos no tratamento da água, as normas sanitárias aplicáveis e os requisitos técnicos necessários para a integração entre hardware, software e dispositivos embarcados.
 
-% Aqui você havia iniciado com foco muito pessoal e descritivo. Reescrevi para manter coerência com a fundamentação e evitar parecer relato de experiência.
-
 % Inserir após este parágrafo uma breve problematização das limitações dos métodos manuais (ex.: falta de precisão, riscos sanitários, dependência da experiência do usuário).
-% Objetivo: fortalecer a justificativa metodológica da automação e conectar com o Capítulo 2.
+% Objetivo: fortalecer a justificativa metodológica da automação e conectar com o Capítulo 2.        (FEITO)
 
-A motivação principal da pesquisa é o grande problema das limitação de limpezas manuais que abrangem a piscina, como, riscos a saúde do usário que podem ocorrer caso a psicina seja limpa de forma erronea, falta de precisão no momento de despejar os produtos dentro da psicina causando um desperdício dos produtos, por fim
+A motivação principal desta pesquisa surge das limitações significativas associadas à limpeza manual de piscinas, que envolvem uma série de desafios e riscos. Primeiramente, há o risco à saúde dos usuários, uma vez que a limpeza inadequada pode comprometer a qualidade da água, criando condições propícias para o crescimento de microrganismos prejudiciais à saúde. Além disso, a falta de precisão no momento de adicionar produtos químicos à piscina pode resultar no desperdício desses produtos, prejudicando tanto a eficácia do tratamento quanto gerando custos desnecessários. Por fim, a limpeza de piscinas ainda depende fortemente do conhecimento de quem realiza o processo, o que cria uma dependência de profissionais qualificados. Isso significa que, em muitas situações, indivíduos sem a experiência necessária precisam contar com a ajuda de outros, o que pode gerar dificuldades operacionais e inconsistências na qualidade da manutenção.
 
-
-O levantamento bibliográfico incluiu artigos científicos, manuais técnicos, normas da ABNT e documentos da ANVISA, garantindo base técnica suficiente para orientar as decisões posteriores de arquitetura, modelagem e implementação do sistema.
+O levantamento bibliográfico incluiu artigos científicos, manuais técnicos, normas da ABNT e documentos da ANVISA, garantindo base técnica suficiente para orientar as decisões posteriores de arquitetura, modelagem e implementação do sistema. Os critérios escolhidos para seleção das fontes bibliográficas foram: a atualidade das informações, priorizando-se publicações dos últimos cinco anos para temas relacionados à tecnologia, mercado de automação e Internet das Coisas (\textit{IoT}); a relevância técnica, com o uso de manuais de fabricantes e guias especializados para fundamentar os processos físico-químicos de tratamento da água; e a robustez teórica, buscando-se autores consolidados e trabalhos acadêmicos reconhecidos para embasar as metodologias de Engenharia de Software e arquitetura de sistemas.
 
 % Aqui ainda cabe acrescentar uma frase explicando o critério de seleção das fontes (relevância técnica, atualidade, normalização).
-% Isso deixa a metodologia mais robusta.
+% Isso deixa a metodologia mais robusta.       (FEITO)
 
 
 % =======================
@@ -30,21 +27,23 @@ O levantamento bibliográfico incluiu artigos científicos, manuais técnicos, n
 
 Neste projeto, adotou-se o Rational Unified Process (RUP) como metodologia de desenvolvimento devido à sua estrutura iterativa e incremental, ao foco na mitigação de riscos e à ênfase na modelagem e documentação. Conforme exposto na fundamentação teórica, o RUP organiza o processo de engenharia de software em quatro fases principais: Concepção, Elaboração, Construção e Transição. Cada fase apresenta objetivos específicos que orientam a evolução do sistema, garantindo rastreabilidade entre requisitos, arquitetura e implementação.
 
-% O trecho anterior foi ajustado para reforçar o vínculo entre este capítulo e o capítulo 2, como exige coerência metodológica.
+A escolha dessa metodologia consolida um fluxo contínuo durante o desenvolvimento, no qual cada artefato produzido em uma fase é responsável por validar a etapa seguinte. Dessa forma, o levantamento de requisitos realizado na fase de Concepção serve como base para a modelagem arquitetural na fase de Elaboração, com os diagramas orientando o desenvolvimento do sistema na fase de Construção. Por fim, a conformidade do software desenvolvido é verificada durante a fase de Transição.
 
 As subseções seguintes descrevem cada etapa, destacando as atividades realizadas e sua relação com os artefatos produzidos.
 
-
 % Introduzir aqui uma frase de ligação explicando que cada fase do RUP produzirá artefatos específicos validados na fase seguinte.
-% Isso reforça coerência metodológica.
+% Isso reforça coerência metodológica.       (FEITO)
+
 
 % =======================
-% SEÇÃO 3.3 — INCEPTION
+% SEÇÃO 3.3 — INCEPTION 
 % =======================
 
 \section{Fase de Concepção (\textit{Inception})}
 
 Nesta fase, foram definidos o problema, o escopo inicial do projeto e os requisitos fundamentais. O problema identificado consiste na dificuldade encontradas por usuários no processo manual de manutenção de piscinas, devido à necessidade de medições constantes, cálculos físicos e químicos, além da possibilidade de desperdício de produtos decorrente da aplicação incorreta das dosagens.
+
+% Essa ineficiência é corroborada por estudos de campo que demonstram as limitações da intervenção humana. Segundo \citeonline{moreira348}, o manejo manual da piscina gera um impacto ambiental severo devido ao método tradicional de aspiração (drenagem): em testes comparativos, a limpeza manual resultou no descarte de 59,3 m³ de água por dia de operação. Em contrapartida, o uso de sistemas automatizados de limpeza permitiu manter a turbidez da água consistentemente abaixo de 2 NTU , superando os picos de 10,82 NTU observados no controle manual, comprovando que a automação dos ciclos de filtragem e monitoramento físico é superior à manutenção empírica.
 
 % Recomendo adicionar aqui dados estimados (literatura) sobre erros comuns na manutenção manual:
 % - subdosagem de cloro
@@ -54,8 +53,6 @@ Nesta fase, foram definidos o problema, o escopo inicial do projeto e os requisi
 
 A partir dessa análise, concebeu-se o sistema de automação com base nos seguintes objetivos: automatizar a leitura dos principais parâmetros da água; reduzir o uso inadequado de produtos químicos; otimizar o acionamento dos mecanismos de filtragem; e fornecer ao usuário meios de visualização e interação com os dados.
 
-% Dereck você descrevia justificativas pessoais ("facilitar o processo", "acredito que seja melhor").
-% Reescrevi como objetivos técnicos, como exige um TCC.
 
 O levantamento de requisitos resultou nos seguintes requisitos funcionais e não funcionais, apresentados nas Tabelas \ref{tab:req_funcionais} e \ref{tab:req_nao_funcionais}, respectivamente.
 
@@ -99,17 +96,11 @@ O levantamento de requisitos resultou nos seguintes requisitos funcionais e não
 
 As tecnologias selecionadas para atender ao escopo inicial incluíram o Raspberry Pi como dispositivo de controle, sensores de pH, nível e temperatura, o framework React para interface web e PostgreSQL como banco de dados. O uso do Spring Boot no \textit{back-end} foi definido devido à sua robustez e integração com bibliotecas de segurança, conforme discutido na Seção 2.3.2.
 
-% Aqui também removi explicações de “por que é fácil” ou “tem curva de aprendizado rápida”.
-% Em metodologia científica, justificativa deve ser técnica, não pessoal.
-
 % =======================
 % SEÇÃO 3.4 — ELABORATION
 % =======================
 
 \section{Fase de Elaboração (\textit{Elaboration})}
-
-%Dereck você havia descrito isso na Conception e na Construction.
-% Reordenei para manter coerência com o RUP: modelagem pertence à Elaboration.
 
 % Antes do texto que já está, inserir um parágrafo explicando que esta fase valida a arquitetura por meio de protótipos parciais (RUP exige).
 % Algo como: “Protótipos de comunicação sensor–Arduino–Raspberry foram testados para verificar viabilidade.”
@@ -117,8 +108,6 @@ As tecnologias selecionadas para atender ao escopo inicial incluíram o Raspberr
 Nesta etapa foram definidos os artefatos estruturais do sistema, incluindo a modelagem dos casos de uso, a arquitetura de comunicação entre os dispositivos físicos e a especificação dos componentes embarcados que compõem o protótipo. Assim, esta fase estabelece o vínculo entre os requisitos levantados na Concepção e a implementação realizada na fase de Construção, garantindo que o sistema seja desenvolvido com base em uma arquitetura validada e documentada.
 
 % A modelagem UML poderia incluir também um diagrama de classes ou sequência, caso haja tempo.
-
-
 
 \subsection*{Modelagem de Caso de Uso}
 
@@ -131,8 +120,6 @@ O Diagrama de Caso de Uso, elaborado segundo a UML, fornece uma visão geral das
     \includegraphics[width=1.0\textwidth]{imagens/meuDiagramaTcc.png}
     \caption*{Fonte: Autor.}
 \end{figure}
-
-% MUDEI DE LUGAR sensores, bombas, arduino, raspberry: mantidos porém reorganizados como artefatos da Elaboration 
 
 \subsection*{Arquitetura Geral do Sistema}
 
@@ -252,7 +239,6 @@ O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário
 % Isso melhora a organização e facilita leitura.
 
 
-
 % =======================
 % SEÇÃO 3.5 — CONSTRUCTION
 % =======================
@@ -271,10 +257,6 @@ O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, 
 
 O Arduino, programado via IDE própria, capturou os parâmetros da água e acionou os atuadores quando necessário. O Raspberry Pi, utilizando scripts em Python, recebeu os dados do microcontrolador e os encaminhou ao servidor. O \textit{back-end}, desenvolvido em Spring Boot, estruturou a API responsável pela comunicação, enquanto o \textit{front-end} em React consolidou a interface de visualização.
 
-
-% Aqui reescrevi removendo narrativas pessoais (“primeiro fiz isso, depois aquilo”).
-% Em Construction descreve-se a implementação de forma técnica e processual, não como relato.
-
 % =======================
 % SEÇÃO 3.6 — TRANSITION
 % =======================
@@ -288,8 +270,3 @@ Nesta fase, o sistema passou por testes práticos para validação do seu desemp
 
 Também foram realizados testes de responsividade da interface e de comunicação entre o servidor e o dispositivo embarcado. Os ajustes finais envolveram correções de algoritmos de conversão, ajustes de temporização e adequações na exibição gráfica dos dados.
 % Inserir ao final desta seção uma reflexão crítica sobre limitações identificadas nos testes e possíveis trabalhos futuros derivados.
-
-
-% Os testes estavam indevidamente descritos na Construction.
-% Agora aparecem corretamente na Transition, conforme metodologia RUP.
-
