@@ -16,24 +16,24 @@
 \contentsline {subsection}{\numberline {2.1.3}NORMAS E PROCEDIMENTOS TÉCNICOS DE LIMPEZA MANUAL}{14}{subsection.2.1.3}%
 \contentsline {subsection}{\numberline {2.1.4}PRODUTOS QUÍMICOS E ACESSÓRIOS USADOS NA LIMPEZA DE PISCINAS}{17}{subsection.2.1.4}%
 \contentsline {section}{\numberline {2.2}FUNDAMENTOS DA AUTOMAÇÃO RESIDENCIAL}{19}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}{20}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}{21}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}{21}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}{22}{subsection.2.2.2}%
 \contentsline {subsubsection}{\numberline {2.2.2.1}COMPONENTES BÁSICOS}{23}{subsubsection.2.2.2.1}%
 \contentsline {section}{\numberline {2.3}FERRAMENTAS UTILIZADAS PARA AUTOMAÇÃO}{24}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}COMPONENTES FÍSICOS E DE CONTROLE (HARDWARE)}{24}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}FERRAMENTAS DE SOFTWARE E METODOLOGIAS DE DESENVOLVIMENTO}{27}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.1}COMPONENTES FÍSICOS E DE CONTROLE (HARDWARE)}{25}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}FERRAMENTAS DE SOFTWARE E METODOLOGIAS DE DESENVOLVIMENTO}{28}{subsection.2.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Desenvolvimento}}{31}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Tipo de Pesquisa e Etapas de Construção}{31}{section.3.1}%
-\contentsline {section}{\numberline {3.2}Processo de Desenvolvimento de Software}{31}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Fase de Concepção (\textit {Inception})}{32}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Fase de Elaboração (\textit {Elaboration})}{33}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Fase de Construção (\textit {Construction})}{39}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Fase de Transição (\textit {Transition})}{39}{section.3.6}%
+\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Desenvolvimento}}{32}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Tipo de Pesquisa e Etapas de Construção}{32}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Processo de Desenvolvimento de Software}{32}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Fase de Concepção (\textit {Inception})}{33}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Fase de Elaboração (\textit {Elaboration})}{35}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Fase de Construção (\textit {Construction})}{41}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Fase de Transição (\textit {Transition})}{41}{section.3.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{40}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{42}{chapter.4}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{41}{section*.56}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{43}{section*.56}%
 \vspace {\cftbeforechapterskip }

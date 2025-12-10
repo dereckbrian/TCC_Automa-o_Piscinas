@@ -43,13 +43,13 @@ As subseções seguintes descrevem cada etapa, destacando as atividades realizad
 
 Nesta fase, foram definidos o problema, o escopo inicial do projeto e os requisitos fundamentais. O problema identificado consiste na dificuldade encontradas por usuários no processo manual de manutenção de piscinas, devido à necessidade de medições constantes, cálculos físicos e químicos, além da possibilidade de desperdício de produtos decorrente da aplicação incorreta das dosagens.
 
-% Essa ineficiência é corroborada por estudos de campo que demonstram as limitações da intervenção humana. Segundo \citeonline{moreira348}, o manejo manual da piscina gera um impacto ambiental severo devido ao método tradicional de aspiração (drenagem): em testes comparativos, a limpeza manual resultou no descarte de 59,3 m³ de água por dia de operação. Em contrapartida, o uso de sistemas automatizados de limpeza permitiu manter a turbidez da água consistentemente abaixo de 2 NTU , superando os picos de 10,82 NTU observados no controle manual, comprovando que a automação dos ciclos de filtragem e monitoramento físico é superior à manutenção empírica.
+Diante disso, a execução inadequada dos processos de limpeza acarreta riscos diretos à integridade dos usuários e dos equipamentos. Segundo a literatura técnica, a falha no controle do pH é crítica: valores abaixo de 7,2 provocam irritações imediatas na pele e nos olhos dos banhistas, além de acelerar a corrosão de tubulações e componentes metálicos. Já a manutenção de um pH acima de 7,8, comum em correções manuais imprecisas, reduz drasticamente a eficácia dos agentes sanitizantes, comprometendo a desinfecção da água.
 
 % Recomendo adicionar aqui dados estimados (literatura) sobre erros comuns na manutenção manual:
 % - subdosagem de cloro
 % - sobrecorreção de pH
 % - riscos sanitários
-% Isso fortalecerá a crítica e a motivação científica.
+% Isso fortalecerá a crítica e a motivação científica.      (FEITO)
 
 A partir dessa análise, concebeu-se o sistema de automação com base nos seguintes objetivos: automatizar a leitura dos principais parâmetros da água; reduzir o uso inadequado de produtos químicos; otimizar o acionamento dos mecanismos de filtragem; e fornecer ao usuário meios de visualização e interação com os dados.
 
@@ -61,7 +61,7 @@ O levantamento de requisitos resultou nos seguintes requisitos funcionais e não
 % - Faixa de erro aceitável dos sensores
 % - Tempo máximo entre coleta e exibição
 % - Limite de latência nas requisições
-% - Condições para considerar um requisito atendido
+% - Condições para considerar um requisito atendido     (FEITO)
 
 \begin{table}[H] 
     \centering \caption{Requisitos Funcionais do Sistema de Automação de Piscinas.} 
@@ -78,6 +78,8 @@ O levantamento de requisitos resultou nos seguintes requisitos funcionais e não
     \caption*{Fonte: Autoria própria.}
 \end{table}
 
+Para a validação dos requisitos elencados, foram estabelecidos critérios quantitativos de aceitação baseados no desempenho esperado para um protótipo IoT. Determinou-se que a precisão dos sensores (RF01) deve operar com margem de erro inferior a ±5\% em comparação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder 5 segundos, garantindo a monitoração em tempo quase real. No que tange à comunicação (RNF04), considera-se o sistema estável se as requisições HTTP apresentarem taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a 4 segundo por requisição. Por fim, o requisito de automação (RF02) será considerado atendido se o acionamento dos atuadores (bombas) ocorrer em até 2 segundos após a detecção de uma condição crítica parametrizada no sistema.
+
 \vspace{0.5cm} 
 
 \begin{table}[H] 
@@ -86,9 +88,9 @@ O levantamento de requisitos resultou nos seguintes requisitos funcionais e não
     \begin{tabular}{|p{1.5cm}|p{11cm}|} 
     \hline \textbf{Código} & \textbf{Descrição} \\ 
     \hline \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\ 
-    \hline \textbf{RNF03} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ 
-    \hline \textbf{RNF04} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP. \\ 
-    \hline \textbf{RNF05} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ 
+    \hline \textbf{RNF02} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ 
+    \hline \textbf{RNF03} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP. \\ 
+    \hline \textbf{RNF04} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ 
     \hline 
     \end{tabular}
     \caption*{Fonte: Autoria própria.}
