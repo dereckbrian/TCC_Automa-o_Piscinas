@@ -105,7 +105,9 @@ As tecnologias selecionadas para atender ao escopo inicial incluíram o Raspberr
 \section{Fase de Elaboração (\textit{Elaboration})}
 
 % Antes do texto que já está, inserir um parágrafo explicando que esta fase valida a arquitetura por meio de protótipos parciais (RUP exige).
-% Algo como: “Protótipos de comunicação sensor–Arduino–Raspberry foram testados para verificar viabilidade.”
+% Algo como: “Protótipos de comunicação sensor–Arduino–Raspberry foram testados para verificar viabilidade.”    (FEITO)
+
+Visando a mitigação de riscos técnicos, foram desenvolvidos protótipos funcionais com o intuito de validar a estabilidade da arquitetura proposta. Testes preliminares de integração entre os sensores, o microcontrolador Arduino e o Raspberry Pi foram executados para verificar a capacidade da comunicação serial e a latência no envio de dados, garantindo que a infraestrutura de hardware escolhida suportaria os requisitos de desempenho do sistema.
 
 Nesta etapa foram definidos os artefatos estruturais do sistema, incluindo a modelagem dos casos de uso, a arquitetura de comunicação entre os dispositivos físicos e a especificação dos componentes embarcados que compõem o protótipo. Assim, esta fase estabelece o vínculo entre os requisitos levantados na Concepção e a implementação realizada na fase de Construção, garantindo que o sistema seja desenvolvido com base em uma arquitetura validada e documentada.
 
@@ -133,13 +135,13 @@ O sistema foi concebido em uma arquitetura distribuída composta por sensores, u
 4. Armazenamento dos dados no banco PostgreSQL;
 5. Apresentação dos parâmetros ao usuário via interface web.
 
-Essa arquitetura permite escalabilidade e desacoplamento entre as camadas, em conformidade com os princípios discutidos no \autoref{cap:fundamentacao}. Contudo, alguns problemas podem ser encontrados nessa arquitetura, como a dependência de multiplos dipositivos físicos, que, qualquer falaha pode fazer com que o sistema pare de funcionar. Possiveis falhas nas requisições HTTP que já foram encontradas nas dependencias do IFG, podem interromper completamente a comunicação da aplicação no geral.
+Essa arquitetura permite escalabilidade e desacoplamento entre as camadas, em conformidade com os princípios discutidos no \autoref{cap:fundamentacao}. Contudo, a distribuição dos componentes introduz riscos operacionais, como a dependência crítica da integridade física de múltiplos dispositivos, onde a falha em um nó (sensor ou controlador) pode interromper o fluxo de dados. Adicionalmente, a comunicação via protocolos HTTP está sujeita a latências e instabilidades de rede, como as observadas na infraestrutura local, o que impõe a necessidade de implementar mecanismos de tratamento de exceções e reconexão automática. Tais medidas são essenciais para garantir que o sistema recupere sua operabilidade sem intervenção humana após falhas momentâneas de conectividade.
 
 % Adicionar aqui uma análise crítica dos riscos identificados na arquitetura:
 % - dependência de múltiplos dispositivos físicos
 % - possíveis falhas de comunicação HTTP
 % - necessidade de reconexão automática
-% Isso demonstra maturidade metodológica.
+% Isso demonstra maturidade metodológica.   (FEITO)
 
 \subsection*{Componentes Utilizados no Sistema}
 
