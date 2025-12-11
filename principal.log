@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  10 DEC 2025 18:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  10 DEC 2025 21:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1224,446 +1224,202 @@ l.35
 
 ]) (pre-textual/siglas.tex) (pre-textual/sumario.tex (principal.toc) [7
 
-])) (estrutura/textual.tex (capitulos/introducao.tex
-
-LaTeX Warning: Citation `automacao' on page 8 undefined on input line 6.
+])) (estrutura/textual.tex (capitulos/introducao.tex [8
 
 
-LaTeX Warning: Citation `CNI' on page 8 undefined on input line 6.
-
-
-LaTeX Warning: Citation `cresceuBR' on page 8 undefined on input line 6.
-
-
-LaTeX Warning: Citation `aumentoAosAnos' on page 8 undefined on input line 6.
-
-[8
-
-
-]) [9] (capitulos/fundamentacao-teorica.tex [10]
-
-LaTeX Warning: Citation `piscinaOquee' on page 11 undefined on input line 10.
-
-
-LaTeX Warning: Citation `piscinaHistoria' on page 11 undefined on input line 12.
-
-[11
+]) [9] (capitulos/fundamentacao-teorica.tex [10] [11
 
 ]
-<imagens/primeiraPiscina.png, id=181, 1027.84pt x 682.55pt>
+<imagens/primeiraPiscina.png, id=202, 1027.84pt x 682.55pt>
 File: imagens/primeiraPiscina.png Graphic file (type png)
 <use imagens/primeiraPiscina.png>
 Package pdftex.def Info: imagens/primeiraPiscina.png  used on input line 18.
 (pdftex.def)             Requested size: 354.89944pt x 235.67789pt.
-
-
-LaTeX Warning: Citation `piscinaHistoria' on page 12 undefined on input line 19.
-
-
-LaTeX Warning: Citation `piscinaHistoria' on page 12 undefined on input line 19.
-
-
-LaTeX Warning: Citation `refComponents' on page 12 undefined on input line 28.
-
-<imagens/componentesPiscina.jpg, id=184, 401.5pt x 301.125pt>
+<imagens/componentesPiscina.jpg, id=211, 401.5pt x 301.125pt>
 File: imagens/componentesPiscina.jpg Graphic file (type jpg)
 <use imagens/componentesPiscina.jpg>
 Package pdftex.def Info: imagens/componentesPiscina.jpg  used on input line 33.
 (pdftex.def)             Requested size: 354.89944pt x 266.19005pt.
-
-LaTeX Warning: Citation `refComponents' on page 12 undefined on input line 35.
-
-
-LaTeX Warning: Citation `refComponents' on page 12 undefined on input line 35.
-
-[12 <./imagens/primeiraPiscina.png>]
+ [12 <./imagens/primeiraPiscina.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <10> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <7> on input line 38.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 38.
-
-
-LaTeX Warning: Citation `benedito2024projeto' on page 13 undefined on input line 40.
-
-<imagens/acessoriosPiscina.jpg, id=193, 763.35187pt x 410.2828pt>
+<imagens/acessoriosPiscina.jpg, id=228, 763.35187pt x 410.2828pt>
 File: imagens/acessoriosPiscina.jpg Graphic file (type jpg)
 <use imagens/acessoriosPiscina.jpg>
 Package pdftex.def Info: imagens/acessoriosPiscina.jpg  used on input line 46.
 (pdftex.def)             Requested size: 418.59917pt x 224.98637pt.
-
-LaTeX Warning: Citation `benedito2024projeto' on page 13 undefined on input line 48.
-
-
-LaTeX Warning: Citation `benedito2024projeto' on page 13 undefined on input line 48.
-
-[13 <./imagens/componentesPiscina.jpg>]
-
-LaTeX Warning: Citation `piscineiroProfissional' on page 14 undefined on input line 56.
-
-
-LaTeX Warning: Citation `guiaTratamento' on page 14 undefined on input line 58.
-
-
-LaTeX Warning: Citation `leite2020plataforma' on page 14 undefined on input line 58.
-
-[14 <./imagens/acessoriosPiscina.jpg>]
-<imagens/medidorPh.png, id=206, 925.4575pt x 406.51875pt>
+ [13 <./imagens/componentesPiscina.jpg>] [14 <./imagens/acessoriosPiscina.jpg>]
+<imagens/medidorPh.png, id=255, 925.4575pt x 406.51875pt>
 File: imagens/medidorPh.png Graphic file (type png)
 <use imagens/medidorPh.png>
 Package pdftex.def Info: imagens/medidorPh.png  used on input line 63.
 (pdftex.def)             Requested size: 218.39806pt x 95.9289pt.
-
-
-LaTeX Warning: Citation `guiaTratamento' on page 15 undefined on input line 65.
-
-
-LaTeX Warning: Citation `guiaTratamento' on page 15 undefined on input line 65.
-
-
-LaTeX Warning: Citation `guiaTratamento' on page 15 undefined on input line 68.
-
-
-LaTeX Warning: Citation `guiaTratamento' on page 15 undefined on input line 71.
-
-[15{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <./imagens/medidorPh.png>]
-
-LaTeX Warning: Citation `tccSilva' on page 16 undefined on input line 105.
-
-
-LaTeX Warning: Citation `genco2004' on page 16 undefined on input line 107.
-
-[16]
-
-LaTeX Warning: Citation `guiaTratamento' on page 17 undefined on input line 120.
-
-<imagens/tabelaProdutos.png, id=228, 813.0375pt x 490.08093pt>
+ [15 <./imagens/medidorPh.png>] [16{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
+<imagens/tabelaProdutos.png, id=293, 813.0375pt x 490.08093pt>
 File: imagens/tabelaProdutos.png Graphic file (type png)
 <use imagens/tabelaProdutos.png>
 Package pdftex.def Info: imagens/tabelaProdutos.png  used on input line 126.
 (pdftex.def)             Requested size: 455.0pt x 274.26398pt.
-
-LaTeX Warning: Citation `guiaTratamento' on page 17 undefined on input line 127.
-
-
-LaTeX Warning: Citation `guiaTratamento' on page 17 undefined on input line 127.
-
-[17]
-<imagens/estojoMedidor.png, id=234, 1089.06876pt x 1089.06876pt>
+ [17]
+<imagens/estojoMedidor.png, id=303, 1089.06876pt x 1089.06876pt>
 File: imagens/estojoMedidor.png Graphic file (type png)
 <use imagens/estojoMedidor.png>
 Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 148.
 (pdftex.def)             Requested size: 218.39806pt x 218.39151pt.
-
-
-LaTeX Warning: Citation `gencoEmpresa' on page 18 undefined on input line 149.
-
-
-LaTeX Warning: Citation `gencoEmpresa' on page 18 undefined on input line 149.
-
-[18 <./imagens/tabelaProdutos.png>] [19 <./imagens/estojoMedidor.png>]
-
-LaTeX Warning: Citation `automacaoResidencialCap1' on page 20 undefined on input line 164.
-
-
-LaTeX Warning: Citation `automacaoTecnologiaPraticidade' on page 20 undefined on input line 166.
-
-
-LaTeX Warning: Citation `automacaoTecnologiaPraticidade' on page 20 undefined on input line 171.
-
-
-LaTeX Warning: Citation `automacaoTecnologiaPraticidade' on page 20 undefined on input line 173.
-
-
-LaTeX Warning: Citation `automacaoTecnologiaPraticidade' on page 20 undefined on input line 175.
-
-
-LaTeX Warning: Citation `automacaoTecnologiaPraticidade' on page 20 undefined on input line 180.
-
-
-LaTeX Warning: Citation `automacaoResidencialCap1' on page 20 undefined on input line 185.
-
-[20]
-
-LaTeX Warning: Citation `automacaoResidencialCap1' on page 21 undefined on input line 213.
-
-[21]
-
-LaTeX Warning: Citation `oliveira2019domotica' on page 22 undefined on input line 223.
-
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 22 undefined on input line 225.
-
-
-LaTeX Warning: Citation `accardi2012automaccao' on page 22 undefined on input line 227.
-
-<imagens/arquiteturaCentralizada.png, id=263, 341.77687pt x 152.06813pt>
+ [18 <./imagens/tabelaProdutos.png>] [19 <./imagens/estojoMedidor.png>] [20] [21]
+<imagens/arquiteturaCentralizada.png, id=363, 341.77687pt x 152.06813pt>
 File: imagens/arquiteturaCentralizada.png Graphic file (type png)
 <use imagens/arquiteturaCentralizada.png>
 Package pdftex.def Info: imagens/arquiteturaCentralizada.png  used on input line 233.
 (pdftex.def)             Requested size: 241.14944pt x 107.29852pt.
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 22 undefined on input line 234.
-
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 22 undefined on input line 234.
-
-[22 <./imagens/arquiteturaCentralizada.png>]
-<imagens/arquiteturaDescentralizada.png, id=273, 584.1825pt x 383.93437pt>
+ [22 <./imagens/arquiteturaCentralizada.png>]
+<imagens/arquiteturaDescentralizada.png, id=380, 584.1825pt x 383.93437pt>
 File: imagens/arquiteturaDescentralizada.png Graphic file (type png)
 <use imagens/arquiteturaDescentralizada.png>
 Package pdftex.def Info: imagens/arquiteturaDescentralizada.png  used on input line 243.
 (pdftex.def)             Requested size: 241.14944pt x 158.48618pt.
-
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 23 undefined on input line 244.
-
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 23 undefined on input line 244.
-
-
-LaTeX Warning: Citation `leite2020plataforma' on page 23 undefined on input line 260.
-
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 23 undefined on input line 263.
-
-[23 <./imagens/arquiteturaDescentralizada.png>]
-
-LaTeX Warning: Citation `hipolito2018automaccao' on page 24 undefined on input line 266.
-
-
-LaTeX Warning: Citation `accardi2012automaccao' on page 24 undefined on input line 269.
-
-
-LaTeX Warning: Citation `accardi2012automaccao' on page 24 undefined on input line 273.
-
-[24]
-
-LaTeX Warning: Citation `silva2025automacao' on page 25 undefined on input line 295.
-
-
-LaTeX Warning: Citation `brockveld2017cultura' on page 25 undefined on input line 295.
-
-
-LaTeX Warning: Citation `silva2025automacao' on page 25 undefined on input line 297.
-
-<imagens/arduinoDesenho.png, id=291, 444.91219pt x 338.76563pt>
+ [23 <./imagens/arquiteturaDescentralizada.png>] [24]
+<imagens/arduinoDesenho.png, id=418, 444.91219pt x 338.76563pt>
 File: imagens/arduinoDesenho.png Graphic file (type png)
 <use imagens/arduinoDesenho.png>
 Package pdftex.def Info: imagens/arduinoDesenho.png  used on input line 303.
 (pdftex.def)             Requested size: 295.74722pt x 225.18843pt.
-
-LaTeX Warning: Citation `silva2025automacao' on page 25 undefined on input line 304.
-
-
-LaTeX Warning: Citation `silva2025automacao' on page 25 undefined on input line 304.
-
-[25 <./imagens/arduinoDesenho.png>]
-
-LaTeX Warning: Citation `juca2018aplicaccoes' on page 26 undefined on input line 311.
-
-<imagens/raspberry.png, id=300, 779.16093pt x 431.36156pt>
+ [25]
+<imagens/raspberry.png, id=434, 779.16093pt x 431.36156pt>
 File: imagens/raspberry.png Graphic file (type png)
 <use imagens/raspberry.png>
 Package pdftex.def Info: imagens/raspberry.png  used on input line 317.
 (pdftex.def)             Requested size: 250.25139pt x 138.54533pt.
-
-LaTeX Warning: Citation `juca2018aplicaccoes' on page 26 undefined on input line 318.
-
-
-LaTeX Warning: Citation `juca2018aplicaccoes' on page 26 undefined on input line 318.
-
-
-LaTeX Warning: Citation `leite2020plataforma' on page 26 undefined on input line 330.
-
-
-LaTeX Warning: Citation `leite2020plataforma' on page 26 undefined on input line 333.
-
-
-LaTeX Warning: Citation `cardoso2011sensor' on page 26 undefined on input line 336.
-
-[26 <./imagens/raspberry.png>]
-
-LaTeX Warning: Citation `souza2018sensor' on page 27 undefined on input line 339.
-
-
-LaTeX Warning: Citation `florencio2015central' on page 27 undefined on input line 345.
-
-
-LaTeX Warning: Citation `lucifabio2023aquario' on page 27 undefined on input line 349.
-
-<imagens/bombaAgua.png, id=309, 479.54156pt x 306.39468pt>
+ [26 <./imagens/arduinoDesenho.png> <./imagens/raspberry.png>]
+<imagens/bombaAgua.png, id=460, 479.54156pt x 306.39468pt>
 File: imagens/bombaAgua.png Graphic file (type png)
 <use imagens/bombaAgua.png>
 Package pdftex.def Info: imagens/bombaAgua.png  used on input line 355.
 (pdftex.def)             Requested size: 250.25139pt x 159.89653pt.
+ [27] [28 <./imagens/bombaAgua.png>] [29] [30]) (capitulos/correlatos.tex) (capitulos/metodologia.tex) (capitulos/desenvolvimento.tex [31] [32
 
-LaTeX Warning: Citation `lucifabio2023aquario' on page 27 undefined on input line 356.
-
-
-LaTeX Warning: Citation `lucifabio2023aquario' on page 27 undefined on input line 356.
-
-
-LaTeX Warning: Citation `linguagemProgramacao' on page 27 undefined on input line 366.
-
-[27 <./imagens/bombaAgua.png>]
-
-LaTeX Warning: Citation `dadesenvolvimento' on page 28 undefined on input line 368.
-
-
-LaTeX Warning: Citation `calcca2022analise' on page 28 undefined on input line 368.
-
-
-LaTeX Warning: Citation `calcca2022analise' on page 28 undefined on input line 372.
-
-
-LaTeX Warning: Citation `calcca2022analise' on page 28 undefined on input line 376.
-
-
-LaTeX Warning: Citation `sousa2025desenvolvimento' on page 28 undefined on input line 380.
-
-
-LaTeX Warning: Citation `silva2025automacao' on page 28 undefined on input line 384.
-
-[28]
-
-LaTeX Warning: Citation `date2004introduccao' on page 29 undefined on input line 390.
-
-
-LaTeX Warning: Citation `de2006introduccao' on page 29 undefined on input line 394.
-
-
-LaTeX Warning: Citation `piske2003rup' on page 29 undefined on input line 400.
-
-
-LaTeX Warning: Citation `moreiraprocessos' on page 29 undefined on input line 400.
-
-
-LaTeX Warning: Citation `vasconcelosconcepccao' on page 29 undefined on input line 402.
-
-[29]
-
-LaTeX Warning: Citation `castro2013paradigma' on page 30 undefined on input line 412.
-
-) (capitulos/correlatos.tex) (capitulos/metodologia.tex) (capitulos/desenvolvimento.tex [30] [31
-
-] [32] [33]
-<imagens/meuDiagramaTcc.png, id=352, 1039.885pt x 690.58pt>
+] [33] [34]
+<imagens/meuDiagramaTcc.png, id=552, 1039.885pt x 690.58pt>
 File: imagens/meuDiagramaTcc.png Graphic file (type png)
 <use imagens/meuDiagramaTcc.png>
 Package pdftex.def Info: imagens/meuDiagramaTcc.png  used on input line 122.
 (pdftex.def)             Requested size: 455.0pt x 302.1596pt.
- [34] [35 <./imagens/meuDiagramaTcc.png>]
-<imagens/sensorTemperatura.png, id=365, 413.29407pt x 284.56313pt>
+ [35] [36 <./imagens/meuDiagramaTcc.png>]
+<imagens/sensorTemperatura.png, id=566, 413.29407pt x 284.56313pt>
 File: imagens/sensorTemperatura.png Graphic file (type png)
 <use imagens/sensorTemperatura.png>
 Package pdftex.def Info: imagens/sensorTemperatura.png  used on input line 158.
 (pdftex.def)             Requested size: 364.00139pt x 250.62907pt.
-
-
-LaTeX Warning: Citation `siteComprei' on page 36 undefined on input line 159.
-
-
-LaTeX Warning: Citation `siteComprei' on page 36 undefined on input line 159.
-
-<imagens/sensorNive.png, id=366, 291.33844pt x 377.91188pt>
+<imagens/sensorNive.png, id=571, 291.33844pt x 377.91188pt>
 File: imagens/sensorNive.png Graphic file (type png)
 <use imagens/sensorNive.png>
 Package pdftex.def Info: imagens/sensorNive.png  used on input line 174.
 (pdftex.def)             Requested size: 273.00278pt x 354.1531pt.
-
-LaTeX Warning: Citation `siteComprei2' on page 36 undefined on input line 175.
-
-
-LaTeX Warning: Citation `siteComprei2' on page 36 undefined on input line 175.
-
-[36 <./imagens/sensorTemperatura.png>]
-<imagens/bombaSubmersa.png, id=375, 607.51968pt x 556.32843pt>
+ [37 <./imagens/sensorTemperatura.png>]
+<imagens/bombaSubmersa.png, id=584, 607.51968pt x 556.32843pt>
 File: imagens/bombaSubmersa.png Graphic file (type png)
 <use imagens/bombaSubmersa.png>
 Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 198.
 (pdftex.def)             Requested size: 273.00278pt x 250.00592pt.
-
-
-LaTeX Warning: Citation `siteComprei' on page 37 undefined on input line 199.
-
-
-LaTeX Warning: Citation `siteComprei' on page 37 undefined on input line 199.
-
-[37 <./imagens/sensorNive.png>]
-<imagens/arduino.png, id=383, 267.24844pt x 240.14719pt>
+ [38 <./imagens/sensorNive.png>]
+<imagens/arduino.png, id=597, 267.24844pt x 240.14719pt>
 File: imagens/arduino.png Graphic file (type png)
 <use imagens/arduino.png>
 Package pdftex.def Info: imagens/arduino.png  used on input line 214.
 (pdftex.def)             Requested size: 273.00278pt x 245.3426pt.
-
-
-LaTeX Warning: Citation `siteComprei4' on page 38 undefined on input line 215.
-
-
-LaTeX Warning: Citation `siteComprei4' on page 38 undefined on input line 215.
-
-[38 <./imagens/bombaSubmersa.png>]
-<imagens/raspBerryQeuUso.png, id=390, 422.32782pt x 283.0575pt>
+ [39 <./imagens/bombaSubmersa.png>]
+<imagens/raspBerryQeuUso.png, id=608, 1445.4pt x 813.0375pt>
 File: imagens/raspBerryQeuUso.png Graphic file (type png)
 <use imagens/raspBerryQeuUso.png>
 Package pdftex.def Info: imagens/raspBerryQeuUso.png  used on input line 230.
-(pdftex.def)             Requested size: 273.00278pt x 182.97884pt.
+(pdftex.def)             Requested size: 455.0pt x 255.93448pt.
+ [40 <./imagens/arduino.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 249--249
+[]|\T1/lmr/bx/n/12 (+20) Comunicação /
+ []
 
 
-LaTeX Warning: Citation `siteComprei3' on page 39 undefined on input line 231.
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]|\T1/lmr/m/n/12 (+20) Sensor Temp.
+ []
 
 
-LaTeX Warning: Citation `siteComprei3' on page 39 undefined on input line 231.
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\T1/lmr/m/n/12 (+20) Acionamento via
+ []
 
-[39 <./imagens/arduino.png> <./imagens/raspBerryQeuUso.png>]
-<imagens/arduino_code.jpeg, id=400, 1606.0pt x 968.61874pt>
+[41 <./imagens/raspBerryQeuUso.png>]
+<imagens/arduino_code.jpeg, id=628, 1088.56688pt x 607.51968pt>
 File: imagens/arduino_code.jpeg Graphic file (type jpg)
 <use imagens/arduino_code.jpeg>
-Package pdftex.def Info: imagens/arduino_code.jpeg  used on input line 264.
-(pdftex.def)             Requested size: 409.49722pt x 246.97234pt.
- [40 <./imagens/arduino_code.jpeg>]
+Package pdftex.def Info: imagens/arduino_code.jpeg  used on input line 282.
+(pdftex.def)             Requested size: 409.49722pt x 228.5331pt.
+ [42]
 File: imagens/bombaSubmersa.png Graphic file (type png)
 <use imagens/bombaSubmersa.png>
-Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 275.
+Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 293.
 (pdftex.def)             Requested size: 409.49722pt x 374.99615pt.
+ [43 <./imagens/arduino_code.jpeg>]
 
+LaTeX Warning: Reference `fig:cod_backend2' on page 44 undefined on input line 297.
 
-LaTeX Warning: Reference `fig:cod_backend2' on page 41 undefined on input line 279.
-
-<imagens/back_end_code.jpeg, id=407, 1355.0625pt x 1606.0pt>
+<imagens/back_end_code.jpeg, id=640, 913.91437pt x 1092.33093pt>
 File: imagens/back_end_code.jpeg Graphic file (type jpg)
 <use imagens/back_end_code.jpeg>
-Package pdftex.def Info: imagens/back_end_code.jpeg  used on input line 285.
-(pdftex.def)             Requested size: 409.49722pt x 485.33252pt.
-[41]
-<imagens/frontEnd_resgatarBack.jpeg, id=413, 1238.6275pt x 1055.945pt>
+Package pdftex.def Info: imagens/back_end_code.jpeg  used on input line 303.
+(pdftex.def)             Requested size: 409.49722pt x 489.4276pt.
+[44]
+<imagens/frontEnd_resgatarBack.jpeg, id=646, 804.00375pt x 669.2503pt>
 File: imagens/frontEnd_resgatarBack.jpeg Graphic file (type jpg)
 <use imagens/frontEnd_resgatarBack.jpeg>
-Package pdftex.def Info: imagens/frontEnd_resgatarBack.jpeg  used on input line 295.
-(pdftex.def)             Requested size: 409.49722pt x 349.10742pt.
- [42 <./imagens/back_end_code.jpeg>]
-<imagens/frontEnd_enviarBack.jpeg, id=419, 1330.9725pt x 865.2325pt>
+Package pdftex.def Info: imagens/frontEnd_resgatarBack.jpeg  used on input line 313.
+(pdftex.def)             Requested size: 409.49722pt x 340.86382pt.
+ [45 <./imagens/back_end_code.jpeg>]
+<imagens/frontEnd_enviarBack.jpeg, id=651, 873.2625pt x 522.45187pt>
 File: imagens/frontEnd_enviarBack.jpeg Graphic file (type jpg)
 <use imagens/frontEnd_enviarBack.jpeg>
-Package pdftex.def Info: imagens/frontEnd_enviarBack.jpeg  used on input line 303.
-(pdftex.def)             Requested size: 409.49722pt x 266.19934pt.
- [43 <./imagens/frontEnd_resgatarBack.jpeg>]) (capitulos/conclusao.tex [44 <./imagens/frontEnd_enviarBack.jpeg>])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl)) (pos-textual/glossario.tex) (pos-textual/apendices.tex) (pos-textual/anexos.tex) (pos-textual/indices.tex)
-No file principal.ind.
-) 
-AED: lastpage setting LastPage
-[45
+Package pdftex.def Info: imagens/frontEnd_enviarBack.jpeg  used on input line 321.
+(pdftex.def)             Requested size: 409.49722pt x 244.99437pt.
+ [46 <./imagens/frontEnd_resgatarBack.jpeg> <./imagens/frontEnd_enviarBack.jpeg>]) (capitulos/conclusao.tex [47])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
+\tf@brf=\write6
+\openout6 = `principal.brf'.
+
+ [48
 
 ]
-\tf@lof=\write6
-\openout6 = `principal.lof'.
+bibitemlist
+[49
 
-\tf@lot=\write7
-\openout7 = `principal.lot'.
+]
+Overfull \hbox (1830.2921pt too wide) in paragraph at lines 164--164
+\T1/lmr/m/n/12 (-20) SzVXRH-[]SUaodC0J119Zq1x6j6e-[]Uq80w~Cy4~QxiSVJDWVM5YgOx-[]fOYdLwFyDu7mZLRtSB6XC7krw-[]-[]Kw1TKN9THps~^^]L65lPt7tUssYl3w-[]rWQbMPN6M5vNg75dc0-[]g2CzlVvXfnEBljOr5A4WStb4JK8Lww4k86xCXyCoX3PA-[]D5eU0wCg~5Sp0~h~wJBFWFx5YwaQ5HNEijADHE1hxFFBimYjA5h7CySXlcf5gt~CTJ8hCT5MvASY-[]HgneijPnIsA2k3AxZKXMTotzHPRVG36TTHsnJS8P3aLN3w9qh~FgYOA8Pd2nx-[]rHYhh~6pT25z-[]bDS-[]tZpxT-[]54yfZg _ 
+ []
 
-\tf@toc=\write8
-\openout8 = `principal.toc'.
+
+Overfull \hbox (26.55319pt too wide) in paragraph at lines 172--172
+\T1/lmr/m/n/12 (-20) DESENVOLVIMENTO-[]DE-[]FRONT-[]END-[]E-[]BACK-[]END-[]PARA-[]NOS-[]SENSORES-[]SEM-[]FIO . 
+ []
+
+[50]
+Overfull \hbox (101.45631pt too wide) in paragraph at lines 186--186
+\T1/lmr/m/n/12 (-20) 8TJBhDNARIsAPX5qxTFFrnFSaupCXUFPgzABkacpcXV8KTq2u-[]UvU-[]H4bR6HVldZO6Xbd4aAndsEALw _ 
+ []
+
+[51])) (pos-textual/glossario.tex) (pos-textual/apendices.tex) (pos-textual/anexos.tex) (pos-textual/indices.tex) (principal.ind)) 
+AED: lastpage setting LastPage
+[52]
+\tf@lof=\write7
+\openout7 = `principal.lof'.
+
+\tf@lot=\write8
+\openout8 = `principal.lot'.
+
+\tf@toc=\write9
+\openout9 = `principal.toc'.
 
  (principal.aux)
  ***********
@@ -1677,19 +1433,21 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
+Package rerunfilecheck Info: File `principal.brf' has not changed.
+(rerunfilecheck)             Checksum: 9C1D9F470C0E0A4C2E6633EEA8051479;4078.
  ) 
 Here is how much of TeX's memory you used:
- 36434 strings out of 474486
- 722758 string characters out of 5741867
- 1939542 words of memory out of 5000000
- 57669 multiletter control sequences out of 15000+600000
- 627404 words of font info for 172 fonts, out of 8000000 for 9000
+ 36773 strings out of 474486
+ 729745 string characters out of 5741867
+ 1954542 words of memory out of 5000000
+ 57952 multiletter control sequences out of 15000+600000
+ 627622 words of font info for 172 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 109i,13n,111p,1488b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 109i,13n,111p,1483b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (46 pages, 6815471 bytes).
+Output written on principal.pdf (53 pages, 7477063 bytes).
 PDF statistics:
- 624 PDF objects out of 1000 (max. 8388607)
- 150 named destinations out of 1000 (max. 500000)
- 37235 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1034 PDF objects out of 1200 (max. 8388607)
+ 200 named destinations out of 1000 (max. 500000)
+ 37243 words of extra memory for PDF output out of 42996 (max. 10000000)
 

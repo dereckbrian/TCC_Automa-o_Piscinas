@@ -227,7 +227,7 @@ O Arduino Uno R3 foi selecionado como microcontrolador responsável pela leitura
     \centering
     \caption{\textit{Raspberry Pi 3 Model B}}
     \label{fig:raspberry}
-    \includegraphics[width=0.60\textwidth]{imagens/raspBerryQeuUso.png}
+    \includegraphics[width=1.00\textwidth]{imagens/raspBerryQeuUso.png}
     \caption*{Fonte: \cite{siteComprei3}.}
 \end{figure}
 
@@ -238,7 +238,25 @@ O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário
 % - função
 % - tensão
 % - protocolo de comunicação
-% Isso melhora a organização e facilita leitura.
+% Isso melhora a organização e facilita leitura.    (FEITO)
+
+\begin{table}[H]
+    \centering
+    \caption{Resumo das Especificações Técnicas dos Componentes de Hardware.}
+    \label{tab:resumo_hardware}
+    \begin{tabular}{|p{3.5cm}|p{5.0cm}|c|p{3.5cm}|}
+        \hline
+        \textbf{Componente} & \textbf{Função Principal} & \textbf{Tensão} & \textbf{Comunicação / Sinal} \\ \hline
+        Raspberry Pi 3 B & Gateway de comunicação e envio de dados ao servidor & 5V & Serial (USB) / Wi-Fi (HTTP) \\ \hline
+        Arduino Uno R3 & Microcontrolador para leitura de sensores e controle de atuadores & 5V / 9V & Serial / I/O Digital e Analógico \\ \hline
+        Sensor Temp. (NTC) & Monitoramento térmico da água & 5V & Analógico (Divisor de Tensão) \\ \hline
+        Sensor de Nível & Detecção de nível crítico do reservatório & 5V & Digital (On/Off) \\ \hline
+        Sensor de pH & Medição da acidez e alcalinidade & 5V & Analógico \\ \hline
+        Sensor de Turbidez & Análise da transparência da água & 5V & Analógico \\ \hline
+        Bomba Submersa & Atuador para circulação e filtragem & 3V - 6V & Acionamento via Relé (Sinal Digital) \\ \hline
+    \end{tabular}
+    \caption*{Fonte: Autoria própria.}
+\end{table}
 
 
 % =======================
