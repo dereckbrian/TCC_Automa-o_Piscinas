@@ -282,7 +282,6 @@ Na camada embarcada, o Arduino foi programado via IDE própria para realizar a l
     \caption{Trecho de código do Arduino: Leitura de sensores e controle}
     \label{fig:cod_arduino}
     \includegraphics[width=0.9\textwidth]{imagens/arduino_code.jpeg} 
-    % Ou use o ambiente lstlisting se for texto
     \caption*{Fonte: Autoria própria.}
 \end{figure}
 
@@ -338,7 +337,30 @@ O Arduino, programado via IDE própria, capturou os parâmetros da água e acion
 Nesta fase, o sistema passou por testes práticos para validação do seu desempenho. Foram aplicados testes unitários nos sensores, incluindo calibração do NTC, verificação da estabilidade do sensor de nível e simulações de funcionamento crítico das bombas para evitar condições de \textit{dry-run}. Testes de integração verificaram o fluxo completo de dados, desde a leitura até a exibição na interface.
 
 % Adicionar tabela com:
-% - Teste realizado
+% - Teste realizado     (FEITO)
+
+\begin{table}[H]
+    \centering
+    \caption{Resumo dos Testes Realizados e Resultados Obtidos.}
+    \label{tab:testes_realizados}
+    \begin{tabular}{|p{4.0cm}|p{6.0cm}|p{3.5cm}|}
+        \hline
+        \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Resultado} \\ \hline
+        Calibração do Sensor NTC & Verificar a precisão térmica comparada a um termômetro de referência & \\ \hline
+        Calibração do Sensor de pH & Verificar a precisão do sensor comparando com testes de estojos para analisar parâmentros da água & \\ \hline
+        Validação de Turbidez & Verificar linearidade e sensibilidade através do método de diluição seriada (água límpida vs. saturada) & \\ \hline
+        Estabilidade do Sensor de Nível & Confirmar acionamento correto da boia sem oscilações espúrias (debounce) &  \\ \hline
+        Proteção \textit{Dry-run} & Impedir o acionamento da bomba quando o reservatório está vazio &  \\ \hline
+        Integração de Dados & Validar o fluxo: Arduino $\to$ Raspberry $\to$ Banco de Dados &  \\ \hline
+        Latência da Interface & Medir tempo entre a leitura do sensor e atualização na tela &  \\ \hline
+    \end{tabular}
+    \caption*{Fonte: Autoria própria.}
+\end{table}
 
 Também foram realizados testes de responsividade da interface e de comunicação entre o servidor e o dispositivo embarcado. Os ajustes finais envolveram correções de algoritmos de conversão, ajustes de temporização e adequações na exibição gráfica dos dados.
-% Inserir ao final desta seção uma reflexão crítica sobre limitações identificadas nos testes e possíveis trabalhos futuros derivados.
+
+Apesar dos resultados satisfatórios, foram identificadas limitações inerentes à prototipagem em escala reduzida. A principal dificuldade técnica residiu na calibração fina dos sensores analógicos (turbidez e pH), que demonstraram sensibilidade a ruídos elétricos, exigindo tratamento de dados via software para garantir a confiabilidade descrita na \autoref{tab:testes_realizados}. Além disso, a dependência da infraestrutura de rede local evidenciou que falhas momentâneas de conectividade podem gerar lacunas no monitoramento em tempo real.
+
+Como trabalhos futuros, sugere-se a validação do sistema em uma piscina de alvenaria em escala real, permitindo avaliar o comportamento dos sensores sob intempéries e uso contínuo. Recomenda-se também a incorporação de um sensor de Cloro Livre (ORP) para fechar o ciclo completo de automação química, bem como a implementação de algoritmos de inteligência artificial para manutenção preditiva, visando antecipar falhas nos equipamentos com base no histórico de operação.
+
+% Inserir ao final desta seção uma reflexão crítica sobre limitações identificadas nos testes e possíveis trabalhos futuros derivados.      (FEITO)

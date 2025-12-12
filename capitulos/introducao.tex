@@ -7,7 +7,7 @@ O avanço tecnológico consolidou a automação como elemento essencial na otimi
 
 Embora a automação residencial se consolide em diversos domínios, a manutenção de piscinas residenciais ainda é majoritariamente manual, exigindo do usuário conhecimento sobre parâmetros físico-químicos da água, dosagens de produtos, cálculo de volume e identificação visual de anomalias. Essas atividades, quando executadas sem precisão, podem gerar desperdício de água e energia, uso inadequado de substâncias químicas e custos elevados de manutenção. Além disso, falhas na dosagem ou na análise dos parâmetros podem comprometer a saúde dos usuários e o desempenho dos equipamentos. Nesse contexto, formula-se o seguinte problema de pesquisa: como desenvolver um sistema automatizado capaz de realizar a limpeza e a manutenção de piscinas residenciais, reduzindo a intervenção manual e promovendo eficiência, segurança e sustentabilidade no processo?
 
-A partir desse questionamento, estabelece-se a seguinte hipótese central: a integração entre sensores, atuadores e controladores microprocessados, associados a tecnologias de automação e Internet das Coisas (IoT), possibilita monitorar parâmetros essenciais da água — como pH, temperatura, turbidez e nível — e acionar automaticamente equipamentos de tratamento, garantindo maior precisão na manutenção e minimizando erros humanos. Presume-se, portanto, que um sistema automatizado possa otimizar recursos, aprimorar a qualidade da água e assegurar um processo contínuo e confiável. Se confirmada, essa hipótese reforça a necessidade de investigar sua aplicabilidade técnica, econômica e operacional.
+A partir desse questionamento, estabelece-se a seguinte hipótese central: a integração entre sensores, atuadores e controladores microprocessados, associados a tecnologias de automação e Internet das Coisas (IoT), possibilita monitorar parâmetros essenciais da água, como pH, temperatura, turbidez, nível e acionar automaticamente equipamentos de tratamento, garantindo maior precisão na manutenção e minimizando erros humanos. Presume-se, portanto, que um sistema automatizado possa otimizar recursos, aprimorar a qualidade da água e assegurar um processo contínuo e confiável. Se confirmada, essa hipótese reforça a necessidade de investigar sua aplicabilidade técnica, econômica e operacional.
 
 A justificativa para o desenvolvimento deste estudo fundamenta-se em três dimensões complementares. A dimensão social envolve a necessidade de preservar a saúde do usuário, considerando que procedimentos inadequados de tratamento da água podem gerar riscos sanitários. A dimensão ambiental relaciona-se ao uso racional de água e energia, uma vez que a automação tende a reduzir ciclos excessivos de filtragem e dosagens inadequadas de produtos químicos. Já a dimensão tecnológica evidencia uma lacuna no campo acadêmico: apesar do crescimento da automação residencial, há poucos estudos voltados especificamente à manutenção automatizada de piscinas, tema que permanece subexplorado tanto no cenário nacional quanto internacional. Assim, justificam-se os esforços em desenvolver e avaliar um sistema que integre automação, IoT e métodos de controle aplicados a esse contexto.
 
@@ -21,11 +21,47 @@ Desenvolver um sistema automatizado para limpeza e manutenção de piscinas resi
 \begin{itemize}
 \item Minimizar erros operacionais durante o processo de limpeza por meio de automação e controle preciso de dosagem química.
 \item Proporcionar maior praticidade e segurança nas etapas de limpeza e monitoramento da piscina.
-\item Desenvolver uma solução de baixo custo que viabilize o acesso à automação para diferentes perfis socioeconômicos.
 \item Implementar a automação dos processos de filtragem, aquecimento, medição de pH, verificação de temperatura e análise de turbidez da água.
 \item Reduzir a dependência de serviços terceirizados de manutenção por meio da automação residencial inteligente.
 \item Projetar e testar um módulo de monitoramento de pH com sensores IoT integrados ao sistema de controle.
 \item Desenvolver e implementar um algoritmo de acionamento automático da bomba de filtragem com base nas variáveis de qualidade da água.
 \end{itemize}
+
+\section{TRABALHOS CORRELATOS}
+
+
+Durante a pesquisa bibliográfica, foram identificados alguns trabalhos que abordam o tema sob diferentes perspectivas tecnológicas, os quais serão apresentados a seguir. 
+
+Uma das abordagens encontradas foi a de \citeonline{campos2014automaccao}, que desenvolveu um sistema de automação residencial amplo, com automações de diversos ambientes de uma residência, utilizando a plataforma Arduino. No projeto, a piscina é tratada como um subsistema e não o sistema central, onde o controle da filtragem é realizado apenas por agendamento temporal (\textit{timer}), sem a leitura de parâmetros da qualidade da água. O sistema foca na integração de diversos ambientes (portão, iluminação), mas carece de uma atuação específica e inteligente sobre o tratamento e monitoramento químico da piscina.
+
+Outra abordagem é apresentada por \citeonline{oliveira2023automaccao}, que propôs a automação de uma área de lazer utilizando o microcontrolador ESP32\footnote{Microcontrolador versátil e de baixo custo, famoso por ter Wi-Fi e Bluetooth integrados, sendo ideal para projetos de IoT (Internet das Coisas), automação residencial e robótica.}. O foco deste trabalho recai sobre o acionamento remoto de bombas e iluminação via Wi-Fi e no dimensionamento robusto da infraestrutura elétrica (contatores e quadros de comando). Contudo, o sistema opera majoritariamente como um controle remoto digital, dependendo da intervenção humana para decidir o momento de ligar a filtragem, uma vez que não possui sensores para monitorar a turbidez ou o pH da água.
+
+Presume-se que a grande maioria dos trabalhos em automação residencial tenha como objetivo automatizar parcialmente ou com ações pré-definidas pelo usuário. No entanto, poucos projetos se concentram na automação completa de sistemas, como bombas, filtros e aquecedores, por meio do monitoramento automático e contínuo dos parâmetros que afetam ou são afetados por esses atuadores.
+
+Em contraste com os trabalhos citados, a solução desenvolvida nesta pesquisa se diferencia por implementar um ciclo de automação fechado baseado na leitura de sensores. Enquanto \citeonline{campos2014automaccao} utiliza apenas temporizadores e \citeonline{oliveira2023automaccao} foca no acionamento manual remoto, o presente sistema utiliza sensores de pH e turbidez para tomar decisões autônomas sobre o tratamento da água, promovendo não apenas comodidade, mas também segurança sanitária e eficiência no uso de recursos químicos.
+
+A Tabela \ref{tab:trabalhos_correlatos} sintetiza a comparação entre os trabalhos analisados e a proposta deste trabalho.
+
+\begin{table}[H]
+    \centering
+    \caption{Comparativo entre o sistema desenvolvido e trabalhos correlatos}
+    \label{tab:trabalhos_correlatos}
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{|p{3.5cm}|p{4cm}|p{4cm}|p{4cm}|}
+    \hline
+    \textbf{Trabalho} & \textbf{Abordagem Principal} & \textbf{Diferencial do Presente Trabalho (Vantagens)} & \textbf{Limitações frente ao Correlato} \\ \hline
+    \textbf{\citeonline{campos2014automaccao}} & Automação residencial geral (Domótica). Controle da piscina baseado em temporizador (Timer/RTC). & Utilização de sensores (pH, Turbidez, Nível) para tomada de decisão autônoma, em vez de apenas agendamento horário fixo. Arquitetura de software moderna (IoT/Web). & O trabalho correlato integra a piscina a outros sistemas da casa (portão, iluminação), possuindo um escopo de automação residencial mais amplo. \\ \hline
+    \textbf{\citeonline{oliveira2023automaccao}} & Controle remoto de acionamento via Wi-Fi (ESP32) com foco em infraestrutura elétrica. & Automação do tratamento da água baseada em dados analíticos. O correlato funciona como controle remoto, dependendo da intervenção humana para decidir quando ligar. & O trabalho correlato apresenta um projeto elétrico robusto para motores de alta potência (contatores, proteção), enquanto este trabalho foca em prototipagem de lógica e sensores. \\ \hline
+    \textbf{Este Trabalho} & Sistema IoT para monitoramento e tratamento autônomo baseado em parâmetros físico-químicos. & Integração completa entre sensoriamento, lógica de controle autônoma e interface de gestão histórica via aplicação Web. & Validação realizada em protótipo de escala reduzida, necessitando adaptações de potência para aplicação em piscinas de grande porte. \\ \hline
+    \end{tabular}%
+    }
+    \par \vspace{0.2cm}
+    {\small \textbf{Fonte:} Autoria própria (2025).}
+\end{table}
+
+A Tabela \ref{tab:trabalhos_correlatos} sintetiza a comparação entre os trabalhos analisados e a proposta deste TCC.
+
+Dessa forma, observa-se que, embora existam soluções de automação residencial consolidadas, há uma lacuna no que tange a sistemas de baixo custo capazes de realizar o monitoramento analítico da qualidade da água e atuar de forma autônoma na sua manutenção, lacuna esta que o presente projeto visa preencher.
+
 
 Com base nessa contextualização, observa-se que a automação aplicada à manutenção de piscinas representa um campo em expansão, mas ainda pouco explorado academicamente. Para sustentar a proposta apresentada, o próximo capítulo reúne os fundamentos teóricos sobre piscinas e seus métodos tradicionais de tratamento, os princípios da automação residencial, as tecnologias empregadas em sistemas automatizados e os componentes necessários para integrar sensores e controladores inteligentes. Essa fundamentação constitui o embasamento conceitual indispensável para compreender as etapas metodológicas e o desenvolvimento do sistema proposto.

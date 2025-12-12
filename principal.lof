@@ -1,23 +1,23 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Primeiro registro histórico de piscina – “Grandes Banhos de Mohenjodaro”.}}{12}{figure.caption.9}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Componentes estruturais básicos de uma piscina.}}{13}{figure.caption.10}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Principais acessórios utilizados na limpeza física de piscinas.}}{14}{figure.caption.11}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Faixa de pH}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Estojo para Análise de Parâmetros Químicos da Água}}{19}{figure.caption.17}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura centralizada de automação residencial}}{22}{figure.caption.19}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura descentralizada de automação residencial}}{23}{figure.caption.20}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Placa Arduino Uno com pinos digitais e analógicos}}{26}{figure.caption.22}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Raspberry Pi Modelo B+}}{26}{figure.caption.24}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Bomba de água utilizada como atuador no sistema}}{28}{figure.caption.27}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Caso de Uso do Sistema}}{36}{figure.caption.39}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Sensor de Temperatura MF58 (NTC 10K)}}{37}{figure.caption.43}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Sensor de Nível LC26M-40}}{38}{figure.caption.45}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Bomba Submersa JT100}}{39}{figure.caption.48}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Placa Arduino Uno R3}}{40}{figure.caption.50}%
-\contentsline {figure}{\numberline {16}{\ignorespaces \textit {Raspberry Pi 3 Model B}}}{41}{figure.caption.52}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Trecho de código do Arduino: Leitura de sensores e controle}}{43}{figure.caption.54}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Script Python no Raspberry Pi: Envio de dados via HTTP}}{44}{figure.caption.55}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Controller Spring Boot: Recepção de dados e endpoints de controle}}{45}{figure.caption.56}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Componente React: Consumo de API e controle de estado}}{46}{figure.caption.57}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Componente React: Consumo de API e controle de estado}}{46}{figure.caption.58}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Primeiro registro histórico de piscina – “Grandes Banhos de Mohenjodaro”.}}{13}{figure.caption.10}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Componentes estruturais básicos de uma piscina.}}{14}{figure.caption.11}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Principais acessórios utilizados na limpeza física de piscinas.}}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Faixa de pH}}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Estojo para Análise de Parâmetros Químicos da Água}}{20}{figure.caption.18}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura centralizada de automação residencial}}{23}{figure.caption.20}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura descentralizada de automação residencial}}{24}{figure.caption.21}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Placa Arduino Uno com pinos digitais e analógicos}}{27}{figure.caption.23}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Raspberry Pi Modelo B+}}{27}{figure.caption.25}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Bomba de água utilizada como atuador no sistema}}{29}{figure.caption.28}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Caso de Uso do Sistema}}{37}{figure.caption.40}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Sensor de Temperatura MF58 (NTC 10K)}}{38}{figure.caption.44}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Sensor de Nível LC26M-40}}{39}{figure.caption.46}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Bomba Submersa JT100}}{40}{figure.caption.49}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Placa Arduino Uno R3}}{41}{figure.caption.51}%
+\contentsline {figure}{\numberline {16}{\ignorespaces \textit {Raspberry Pi 3 Model B}}}{42}{figure.caption.53}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Trecho de código do Arduino: Leitura de sensores e controle}}{44}{figure.caption.55}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Script Python no Raspberry Pi: Envio de dados via HTTP}}{45}{figure.caption.56}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Controller Spring Boot: Recepção de dados e endpoints de controle}}{46}{figure.caption.57}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Componente React: Consumo de API e controle de estado}}{47}{figure.caption.58}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Componente React: Consumo de API e controle de estado}}{47}{figure.caption.59}%
