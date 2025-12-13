@@ -25,6 +25,21 @@
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/28057/1/Empresa\%20prestadora\%20de\%20serviços\%20em\%20tratamento\%20e\%20limpeza\%20de\%20piscinas\%20-\%20Expansão.pdf}.}
 
+\bibitem[Boeira 2019]{boeira2019autopool}
+\abntrefinfo{Boeira}{BOEIRA}{2019}
+{BOEIRA, A.~M.
+\emph{Autopool: sistema de automa{\c{c}}{\~a}o de piscina}.
+Monografia (Trabalho de Conclusão de Curso) --- Centro Universitário
+  Unifacvest, Lages, SC, 2019.}
+
+\bibitem[Brand{\~a}o e Rocha 2018]{brandao2018sistema}
+\abntrefinfo{Brand{\~a}o e Rocha}{BRAND{\~A}O; ROCHA}{2018}
+{BRAND{\~A}O, A.~F.; ROCHA, M. F.~S.
+\emph{Sistema de controle autom{\'a}tico para desinfec{\c{c}}{\~a}o e
+  corre{\c{c}}{\~a}o de pH aplicado em piscinas}.
+Monografia (Trabalho de Conclusão de Curso) --- Universidade Tecnol{\'o}gica
+  Federal do Paran{\'a}, Corn{\'e}lio Proc{\'o}pio, PR, 2018.}
+
 \bibitem[Brockveld, TEIXEIRA e Silva 2017]{brockveld2017cultura}
 \abntrefinfo{Brockveld, TEIXEIRA e Silva}{BROCKVELD; TEIXEIRA; SILVA}{2017}
 {BROCKVELD, M. V.~V.; TEIXEIRA, C.~S.; SILVA, M.~d. A cultura maker em prol da
@@ -178,6 +193,14 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{https://www.researchgate.net/profile/Paulo-Silva-Junior/publication/376763873\_DESENVOLVIMENTO\_DE\_FRONT-END\_E\_BACK-END\_PARA\_NOS\_SENSORES\_SEM\_FIO/links/6592aede6f6e450f19bc87af/DESENVOLVIMENTO-DE-FRONT-END-E-BACK-END-PARA-NOS-SENSORES-SEM-FIO.pdf}.}
 
+\bibitem[Lavor 2019]{lavor2019verificaccao}
+\abntrefinfo{Lavor}{LAVOR}{2019}
+{LAVOR, C. F. C.~d. Verifica{\c{c}}{\~a}o da conformidade da qualidade da
+  {\'a}gua de piscinas de acordo com a nbr 10818/2016.
+2019.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufc.br/bitstream/riufc/43778/1/2019\_tcc\_cfclavor.pdf}.}
+
 \bibitem[Leite 2020]{leite2020plataforma}
 \abntrefinfo{Leite}{LEITE}{2020}
 {LEITE, M. Y.~F. Plataforma de monitoramento da qualidade d{\'a} {\'a}gua
@@ -237,6 +260,12 @@ Dispon{\'\i}vel em:
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/16441/1/AUTOMAÇÃO\%20DE\%20ÁREA\%20DE\%20LAZER.pdf}.}
 
+\bibitem[pH 2025]{siteCompreiPh}
+\abntrefinfo{pH}{PH}{2025}
+{PH, S. 2025.
+Dispon{\'\i}vel em:
+  \url{https://www.mercadolivre.com.br/sensor-ph--modulo-de-leitura-ph4502c--eletrodo-sonda-bnc/up/MLBU1980928920?pdp\_filters=item\_id:MLB3653757443}.}
+
 \bibitem[Pi 2025]{siteComprei3}
 \abntrefinfo{Pi}{PI}{2025}
 {PI, R. 2025.
@@ -257,6 +286,14 @@ Dispon{\'\i}vel em:
   {\'U}ltimo acesso em}, v.~16, n.~11, p.~2009, 2003.
 Dispon{\'\i}vel em:
   \url{https://www.angusyoung.org/arquivos/artigos/trabalho\_rup.pdf}.}
+
+\bibitem[{Pool News} 2020]{poolmagazine2020automation}
+\abntrefinfo{{Pool News}}{{Pool News}}{2020}
+{{Pool News}. Pool automation opportunity for pool owners.
+\emph{Pool Magazine}, march 2020.
+Acesso em: 12/12/2025.
+Dispon{\'\i}vel em:
+  \url{https://www.poolmagazine.com/features/pools/pool-automation-opportunity-for-pool-owners/}.}
 
 \bibitem[Report 2024]{cresceuBR}
 \abntrefinfo{Report}{REPORT}{2024}
@@ -299,6 +336,19 @@ Dispon{\'\i}vel em:
 P{\'o}s-Gradua{\c{c}}{\~a}o em Engenharia El{\'e}trica, 2018.
 Dispon{\'\i}vel em:
   \url{https://ri.ufs.br/bitstream/riufs/9568/2/MATHEUS\_OLIVEIRA\_SOUZA.pdf}.}
+
+\bibitem[Sulimann e Haupt 2014]{sulimann2014automatizacao}
+\abntrefinfo{Sulimann e Haupt}{SULIMANN; HAUPT}{2014}
+{SULIMANN, C. E.~D.; HAUPT, L. \emph{Automatiza{\c{c}}{\~a}o do processo de
+  tratamento de piscinas: aplica{\c{c}}{\~a}o de reagentes e limpeza da
+  {\'a}gua}. Luzerna, SC: Instituto Federal Catarinense, 2014.
+Projeto de Iniciação Científica.}
+
+\bibitem[Turbidez 2025]{siteCompreiTurbidez}
+\abntrefinfo{Turbidez}{TURBIDEZ}{2025}
+{TURBIDEZ, S. 2025.
+Dispon{\'\i}vel em:
+  \url{https://www.mercadolivre.com.br/sensor-de-turbidez-para-arduino-st100--modulo-de-leitura/up/MLBU3361510673?pdp\_filters=item\_id:MLB4164345711}.}
 
 \bibitem[Vasconcelos 2025]{vasconcelosconcepccao}
 \abntrefinfo{Vasconcelos}{VASCONCELOS}{2025}

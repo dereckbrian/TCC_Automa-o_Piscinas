@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex principal"] 1765554006.60586 "principal.aux" "principal.bbl" "principal" 1765554285.44282 0
-  "./bibliografia.bib" 1765550493 23820 cd49fb2b63df807ca9d8630a964b031f ""
+["bibtex principal"] 1765591725.66465 "principal.aux" "principal.bbl" "principal" 1765591729.13767 0
+  "./bibliografia.bib" 1765590639 26093 51c12d5583ee69d1960aa887bef14f8d ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/bibtex/bib/abntex2/abntex2-options.bib" 1543103229 5396 4eb260dac60f150ae608d45252853090 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/bibtex/bst/abntex2/abntex2-alf.bst" 1543103230 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "principal.aux" 1765554284 41722 786fdd4fbd4646530227b59c3f101d01 "pdflatex"
+  "principal.aux" 1765591728 45093 259b194c498d533c08a3d04fbbf0868d "pdflatex"
   (generated)
   "principal.bbl"
   "principal.blg"
   (rewritten before read)
-["makeindex principal.idx"] 1765552013.93773 "principal.idx" "principal.ind" "principal" 1765554285.44251 0
-  "principal.idx" 1765554283 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex principal.idx"] 1765590652.32412 "principal.idx" "principal.ind" "principal" 1765591729.13382 0
+  "principal.idx" 1765591726 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "principal.ilg"
   "principal.ind"
   (rewritten before read)
-["pdflatex"] 1765554282.60819 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" "principal.pdf" "principal" 1765554285.44323 0
+["pdflatex"] 1765591725.86245 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" "principal.pdf" "principal" 1765591729.13893 0
   "C:/Users/voluciano/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1762207822 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/voluciano/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760048588 24226934 7b1f61a276975ef1f89b4a2e371078b7 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -271,10 +271,10 @@
   "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" 1760047597 785 9b746d28aed595b0c0c1aafb4450c78e ""
   "capitulos/conclusao.tex" 1760047598 151 da91e627a17873f1d734a4907de69af9 ""
   "capitulos/correlatos.tex" 1764970299 1144 bfe138db356dfe758438c0c8d7a91678 ""
-  "capitulos/desenvolvimento.tex" 1765415954 27943 2f3585b3a5a598d0fab24cb66c567282 ""
-  "capitulos/fundamentacao-teorica.tex" 1765551584 45097 7731e54f63fc6d53404e00f35cd4ab2d ""
-  "capitulos/introducao.tex" 1765554281 10867 9bae7323aabfffa87d89e1ff064f29f0 ""
-  "capitulos/metodologia.tex" 1765078708 767 4972648bd4b3961af7640753cd3f518f ""
+  "capitulos/desenvolvimento.tex" 1765590961 28847 c010cfa7a348a81715294c8726f707e9 ""
+  "capitulos/fundamentacao-teorica.tex" 1765591722 45094 25f5e48892f820f23b6935f1be22b738 ""
+  "capitulos/introducao.tex" 1765590901 12111 62ac04e5012adc3f5d67d0e965b1a3f2 ""
+  "capitulos/resultados.tex" 1765576620 22 62189487d50cee67063385765f79bedc ""
   "config/abntex-ifg.sty" 1765553521 10295 86d0649250b8a3794d9cbfe090c30a5e ""
   "config/citacoes.tex" 1760047598 771 e0b5e7434deb57e06fd1b973712af5dc ""
   "config/cores.tex" 1760047598 480 e7645595260f50d8263140d856d4c4c9 ""
@@ -286,7 +286,7 @@
   "estrutura/pre-textual.tex" 1763430777 1810 e1db02d1005a5581f533caf0809bd1e5 ""
   "estrutura/preambulo-abntex.tex" 1760047598 3602 203da0ac9939925b60ba7aafca408a31 ""
   "estrutura/preambulo-usuario.tex" 1760047598 30 99bab22cce9b0497e83d8cabf72ede68 ""
-  "estrutura/textual.tex" 1762210808 628 39fd5d0e60a8ea7be5c145c29be64976 ""
+  "estrutura/textual.tex" 1765576620 650 7552024186c6bf87fe1cbab0f48d05c7 ""
   "imagens/acessoriosPiscina.jpg" 1765056157 108077 87b04988cd01f2a584fffd6e07f98e48 ""
   "imagens/arduino.png" 1764852635 135589 889c31e03fbbccdd2bcd1d059c50ab54 ""
   "imagens/arduinoDesenho.png" 1764945449 189995 c9826dd4536e1718b02813c441d2c4fe ""
@@ -308,6 +308,8 @@
   "imagens/raspberry.png" 1761580068 593793 6b5af3a654877d3b3e9488f5213525df ""
   "imagens/sensorNive.png" 1764710697 65518 f548914edfa6677a22563e1419ef51fe ""
   "imagens/sensorTemperatura.png" 1764709613 72786 1d43505d8f33caf30bc3b9ecc0f2f13c ""
+  "imagens/sensorTurbidez.png" 1765590596 111718 ab8b7c3860efadd76ba2d51d25291472 ""
+  "imagens/sensorpH.png" 1765590514 101767 f08bc956d6f7426bf9d4321fa27341dc ""
   "imagens/tabelaProdutos.png" 1760047598 507697 88394f97eb34c94bf6dd5ff4a6a0da92 ""
   "pos-textual/anexos.tex" 1760047598 36 e60c649d3fa170b08b1a4f6ac996109e ""
   "pos-textual/apendices.tex" 1760047598 2426 2f6c06b427c7edba55153aad582065cc ""
@@ -324,14 +326,14 @@
   "pre-textual/resumo.tex" 1761575458 1576 bd767b8abd1249f7ce5b2fbf06abbec4 ""
   "pre-textual/siglas.tex" 1760047597 11 5ac80352bcf42c5f3bf15ba6c6fb7c25 ""
   "pre-textual/sumario.tex" 1760047597 70 0a3a7f68c05f1630d37e27c5092179e8 ""
-  "principal.aux" 1765554284 41722 786fdd4fbd4646530227b59c3f101d01 "pdflatex"
-  "principal.bbl" 1765554006 15670 643f0bc7ba87a917f665b532f47de12e "bibtex principal"
-  "principal.brf" 1765554284 4431 7eb6709f0d330a486d7a84f05be5ea5d "pdflatex"
-  "principal.ind" 1765552014 0 d41d8cd98f00b204e9800998ecf8427e "makeindex principal.idx"
-  "principal.lof" 1765554284 2687 b9e93ef324e5c6322c71f4400c4c6624 "pdflatex"
-  "principal.lot" 1765554284 1018 5f8deff3fb96561639be3e5b8cb7bd32 "pdflatex"
+  "principal.aux" 1765591728 45093 259b194c498d533c08a3d04fbbf0868d "pdflatex"
+  "principal.bbl" 1765591725 17932 14d2cecab37bda200df67cd7db160b07 "bibtex principal"
+  "principal.brf" 1765591728 5056 6280b6ca84a9e6631feaa4a97013c69e "pdflatex"
+  "principal.ind" 1765590652 0 d41d8cd98f00b204e9800998ecf8427e "makeindex principal.idx"
+  "principal.lof" 1765591728 2899 fd912c6bf2b495ae9b6a7f3d6aab2c76 "pdflatex"
+  "principal.lot" 1765591728 1018 7e4db3f801d18f89611ec1a5d3af2068 "pdflatex"
   "principal.tex" 1760047597 785 9b746d28aed595b0c0c1aafb4450c78e ""
-  "principal.toc" 1765554284 3594 1cf6c9e978764d0da279eb6b35b4851a "pdflatex"
+  "principal.toc" 1765591728 3781 eab6d5c570c7ad80c9b392459996573d "pdflatex"
   (generated)
   "principal.aux"
   "principal.brf"

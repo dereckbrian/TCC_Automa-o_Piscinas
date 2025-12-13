@@ -11,7 +11,7 @@ A pesquisa caracteriza-se como aplicada, de abordagem mista e natureza explorat�
 % Inserir após este parágrafo uma breve problematização das limitações dos métodos manuais (ex.: falta de precisão, riscos sanitários, dependência da experiência do usuário).
 % Objetivo: fortalecer a justificativa metodológica da automação e conectar com o Capítulo 2.        (FEITO)
 
-A motivação principal desta pesquisa surge das limitações significativas associadas à limpeza manual de piscinas, que envolvem uma série de desafios e riscos. Primeiramente, há o risco à saúde dos usuários, uma vez que a limpeza inadequada pode comprometer a qualidade da água, criando condições propícias para o crescimento de microrganismos prejudiciais à saúde. Além disso, a falta de precisão no momento de adicionar produtos químicos à piscina pode resultar no desperdício desses produtos, prejudicando tanto a eficácia do tratamento quanto gerando custos desnecessários. Por fim, a limpeza de piscinas ainda depende fortemente do conhecimento de quem realiza o processo, o que cria uma dependência de profissionais qualificados. Isso significa que, em muitas situações, indivíduos sem a experiência necessária precisam contar com a ajuda de outros, o que pode gerar dificuldades operacionais e inconsistências na qualidade da manutenção.
+A motivação principal desta pesquisa surge das limitações significativas associadas à limpeza manual de piscinas, que envolvem uma série de desafios e riscos. Primeiramente, há o risco à saúde dos usuários, uma vez que a limpeza inadequada pode comprometer a qualidade da água, criando condições propícias para o crescimento de microrganismos prejudiciais à saúde. Além disso, a falta de precisão no momento de adicionar produtos químicos à piscina pode resultar no desperdício desses produtos, prejudicando tanto a eficácia do tratamento quanto gerando custos desnecessários. Por fim, a limpeza de piscinas ainda depende fortemente do conhecimento de quem a realiza, o que cria uma dependência de profissionais qualificados. Isso significa que, em muitas situações, indivíduos sem a experiência necessária precisam contar com a ajuda de outros, o que pode gerar dificuldades operacionais e inconsistências na qualidade da manutenção.
 
 O levantamento bibliográfico incluiu artigos científicos, manuais técnicos, normas da ABNT e documentos da ANVISA, garantindo base técnica suficiente para orientar as decisões posteriores de arquitetura, modelagem e implementação do sistema. Os critérios escolhidos para seleção das fontes bibliográficas foram: a atualidade das informações, priorizando-se publicações dos últimos cinco anos para temas relacionados à tecnologia, mercado de automação e Internet das Coisas (\textit{IoT}); a relevância técnica, com o uso de manuais de fabricantes e guias especializados para fundamentar os processos físico-químicos de tratamento da água; e a robustez teórica, buscando-se autores consolidados e trabalhos acadêmicos reconhecidos para embasar as metodologias de Engenharia de Software e arquitetura de sistemas.
 
@@ -185,7 +185,31 @@ O sensor de nível utilizado é o modelo LC26M-40, fabricado em Polipropileno (P
 
 \subsubsection*{Sensor de pH}
 
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Nível LC26M-40}
+    \label{fig:sensorlevel}
+    \includegraphics[width=0.60\textwidth]{imagens/sensorpH.png}
+    \caption*{Fonte: \cite{siteCompreiPh}.}
+\end{figure}
+
 O sensor de pH empregado no sistema realiza a medição da acidez da água da piscina. Os valores capturados são processados inicialmente no Arduino e enviados ao servidor para análise dos parâmetros e posterior recomendação de ajuste químico. A imagem será adicionada posteriormente, conforme previsto pelo aluno.
+
+% -------------------------------------------------
+% SENSOR DE Turbidez
+% -------------------------------------------------
+
+\subsubsection*{Sensor de Turbidez}
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Nível LC26M-40}
+    \label{fig:sensorlevel}
+    \includegraphics[width=0.60\textwidth]{imagens/sensorTurbidez.png}
+    \caption*{Fonte: \cite{siteCompreiTurbidez}.}
+\end{figure}
+
+O sensor de turbidez selecionado para o desenvolvimento do sistema foi o ST100, responsável por medir a presença de partículas em suspensão na água (turbidez). Os valores analógicos capturados pelo módulo de leitura são inicialmente processados pelo Arduino e, em seguida, enviados ao servidor para análise dos parâmetros. Com base nesses dados, o sistema faz a recomendação para o acionamento do sistema de filtragem ou aplicação do decantador, conforme necessário.
 
 % -------------------------------------------------
 % BOMBAS SUBMERSAS
@@ -272,7 +296,6 @@ O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário
 
 Em conformidade com a metodologia RUP, a fase de Construção foi executada por meio de ciclos iterativos e incrementais. O desenvolvimento iniciou-se pela camada física, com a implementação e validação individual dos sensores e atuadores no microcontrolador. Após garantir a estabilidade da leitura dos dados, iniciou-se a codificação da camada lógica, abrangendo o back-end (Spring Boot), o banco de dados e o front-end (React). A etapa final consistiu na integração completa entre o hardware e o software, validando o fluxo de transmissão das informações desde a coleta no ambiente físico até a visualização na interface web.
 
-O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, responsável pela leitura e envio dos dados; e a camada de aplicação, que recebeu, armazenou e exibiu as informações aos usuários.
 O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, responsável pela leitura e envio dos dados; e a camada de aplicação, que recebeu, armazenou e exibiu as informações aos usuários.
 
 Na camada embarcada, o Arduino foi programado via IDE própria para realizar a leitura dos sensores analógicos e digitais. A Figura \ref{fig:cod_arduino} demonstra a função de coleta dos parâmetros da água e o acionamento condicional dos atuadores.

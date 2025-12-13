@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  12 DEC 2025 12:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  12 DEC 2025 23:08
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1097,6 +1097,12 @@ LaTeX Info: Redefining \cite on input line 618.
 Writing index file principal.idx 
 (principal.aux
 
+LaTeX Warning: Label `fig:sensorlevel' multiply defined.
+
+
+LaTeX Warning: Label `fig:sensorlevel' multiply defined.
+
+
 LaTeX Warning: Label `fig:arduino' multiply defined.
 
 
@@ -1249,280 +1255,249 @@ l.35
 
 ] [9]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 37.
+(Font)              <10> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 37.
+(Font)              <7> on input line 40.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 37.
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[]|\T1/lmr/bx/n/12 (+20) Diferencial do
+(Font)              <5> on input line 40.
+ [10]
+Underfull \hbox (badness 4454) in paragraph at lines 61--61
+[]|\T1/lmr/bx/n/12 (+20) Diferencial do Pre-
  []
 
 
-Underfull \hbox (badness 8094) in paragraph at lines 57--57
+Underfull \hbox (badness 8094) in paragraph at lines 61--61
 []|\T1/lmr/bx/n/12 (+20) Limitações frente
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) ge-ral (Do-mó-tica).
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|[][]\T1/lmr/bx/n/12 (+20) Campos[][]
  []
 
 
-Underfull \hbox (badness 3128) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) Con-trole da pis-cina
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|[][]\T1/lmr/bx/n/12 (+20) Sulimann e
  []
 
 
-Underfull \hbox (badness 1199) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) para to-mada de de-
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 (+20) Automação in-dus-trial
  []
 
 
-Underfull \hbox (badness 1178) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) ci-são autô-noma, em
+Underfull \hbox (badness 2134) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 (+20) Autonomia do sis-tema
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) (por-tão, ilu-mi-na-ção),
+Underfull \hbox (badness 1043) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 (+20) O cor-re-lato foca no
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[]|[][]\T1/lmr/bx/n/12 (+20) Oliveira et al.[][]
+Underfull \hbox (badness 3895) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 (+20) Sistema IoT com-pleto
  []
 
 
-Underfull \hbox (badness 1057) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) o-na-mento via Wi-Fi
+Underfull \hbox (badness 1360) in paragraph at lines 61--61
+[]|\T1/lmr/m/n/12 (+20) Validação em es-cala
  []
 
-
-Underfull \hbox (badness 2221) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) ti-cos. O cor-re-lato
- []
-
-
-Underfull \hbox (badness 4954) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) fun-ci-ona como con-
- []
-
-
-Underfull \hbox (badness 1275) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) mo-to-res de alta po-
- []
-
-
-Underfull \hbox (badness 1231) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) ni-to-ra-mento e tra-ta-
- []
-
-
-Underfull \hbox (badness 6859) in paragraph at lines 57--57
-[]|\T1/lmr/m/n/12 (+20) Integração com-pleta
- []
-
-
-Underfull \hbox (badness 7273) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) en-tre sen-so-ri-a-mento,
- []
-
-
-Underfull \hbox (badness 3612) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) ges-tão his-tó-rica via
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-[]|\T1/lmr/m/n/12 (+20) Validação re-a-li-zada
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 57--57
-\T1/lmr/m/n/12 (+20) pis-ci-nas de grande
- []
-
-[10]) (capitulos/fundamentacao-teorica.tex [11] [12
+) (capitulos/fundamentacao-teorica.tex [11] [12
 
 ]
-<imagens/primeiraPiscina.png, id=234, 1027.84pt x 682.55pt>
+<imagens/primeiraPiscina.png, id=265, 1027.84pt x 682.55pt>
 File: imagens/primeiraPiscina.png Graphic file (type png)
 <use imagens/primeiraPiscina.png>
-Package pdftex.def Info: imagens/primeiraPiscina.png  used on input line 18.
+Package pdftex.def Info: imagens/primeiraPiscina.png  used on input line 19.
 (pdftex.def)             Requested size: 354.89944pt x 235.67789pt.
-<imagens/componentesPiscina.png, id=243, 702.625pt x 492.84125pt>
+<imagens/componentesPiscina.png, id=274, 702.625pt x 492.84125pt>
 File: imagens/componentesPiscina.png Graphic file (type png)
 <use imagens/componentesPiscina.png>
-Package pdftex.def Info: imagens/componentesPiscina.png  used on input line 33.
+Package pdftex.def Info: imagens/componentesPiscina.png  used on input line 34.
 (pdftex.def)             Requested size: 354.89944pt x 248.94678pt.
  [13 <./imagens/primeiraPiscina.png>]
-<imagens/acessoriosPiscina.jpg, id=259, 763.35187pt x 410.2828pt>
+<imagens/acessoriosPiscina.jpg, id=289, 763.35187pt x 410.2828pt>
 File: imagens/acessoriosPiscina.jpg Graphic file (type jpg)
 <use imagens/acessoriosPiscina.jpg>
-Package pdftex.def Info: imagens/acessoriosPiscina.jpg  used on input line 46.
+Package pdftex.def Info: imagens/acessoriosPiscina.jpg  used on input line 47.
 (pdftex.def)             Requested size: 418.59917pt x 224.98637pt.
  [14 <./imagens/componentesPiscina.png>] [15 <./imagens/acessoriosPiscina.jpg>]
-<imagens/medidorPh.png, id=285, 925.4575pt x 406.51875pt>
+<imagens/medidorPh.png, id=315, 925.4575pt x 406.51875pt>
 File: imagens/medidorPh.png Graphic file (type png)
 <use imagens/medidorPh.png>
-Package pdftex.def Info: imagens/medidorPh.png  used on input line 63.
+Package pdftex.def Info: imagens/medidorPh.png  used on input line 64.
 (pdftex.def)             Requested size: 218.39806pt x 95.9289pt.
  [16 <./imagens/medidorPh.png>] [17{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<imagens/tabelaProdutos.png, id=323, 813.0375pt x 490.08093pt>
+<imagens/tabelaProdutos.png, id=353, 813.0375pt x 490.08093pt>
 File: imagens/tabelaProdutos.png Graphic file (type png)
 <use imagens/tabelaProdutos.png>
-Package pdftex.def Info: imagens/tabelaProdutos.png  used on input line 126.
+Package pdftex.def Info: imagens/tabelaProdutos.png  used on input line 127.
 (pdftex.def)             Requested size: 455.0pt x 274.26398pt.
  [18]
-<imagens/estojoMedidor.png, id=334, 1089.06876pt x 1089.06876pt>
+<imagens/estojoMedidor.png, id=364, 1089.06876pt x 1089.06876pt>
 File: imagens/estojoMedidor.png Graphic file (type png)
 <use imagens/estojoMedidor.png>
-Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 148.
+Package pdftex.def Info: imagens/estojoMedidor.png  used on input line 149.
 (pdftex.def)             Requested size: 218.39806pt x 218.39151pt.
  [19 <./imagens/tabelaProdutos.png>] [20 <./imagens/estojoMedidor.png>] [21] [22]
-<imagens/arquiteturaCentralizada.png, id=392, 341.77687pt x 152.06813pt>
+<imagens/arquiteturaCentralizada.png, id=422, 341.77687pt x 152.06813pt>
 File: imagens/arquiteturaCentralizada.png Graphic file (type png)
 <use imagens/arquiteturaCentralizada.png>
-Package pdftex.def Info: imagens/arquiteturaCentralizada.png  used on input line 233.
+Package pdftex.def Info: imagens/arquiteturaCentralizada.png  used on input line 234.
 (pdftex.def)             Requested size: 241.14944pt x 107.29852pt.
  [23 <./imagens/arquiteturaCentralizada.png>]
-<imagens/arquiteturaDescentralizada.png, id=409, 584.1825pt x 383.93437pt>
+<imagens/arquiteturaDescentralizada.png, id=439, 584.1825pt x 383.93437pt>
 File: imagens/arquiteturaDescentralizada.png Graphic file (type png)
 <use imagens/arquiteturaDescentralizada.png>
-Package pdftex.def Info: imagens/arquiteturaDescentralizada.png  used on input line 243.
+Package pdftex.def Info: imagens/arquiteturaDescentralizada.png  used on input line 244.
 (pdftex.def)             Requested size: 241.14944pt x 158.48618pt.
  [24 <./imagens/arquiteturaDescentralizada.png>] [25]
-<imagens/arduinoDesenho.png, id=447, 444.91219pt x 338.76563pt>
+<imagens/arduinoDesenho.png, id=477, 444.91219pt x 338.76563pt>
 File: imagens/arduinoDesenho.png Graphic file (type png)
 <use imagens/arduinoDesenho.png>
-Package pdftex.def Info: imagens/arduinoDesenho.png  used on input line 303.
+Package pdftex.def Info: imagens/arduinoDesenho.png  used on input line 304.
 (pdftex.def)             Requested size: 295.74722pt x 225.18843pt.
  [26]
-<imagens/raspberry.png, id=463, 779.16093pt x 431.36156pt>
+<imagens/raspberry.png, id=493, 779.16093pt x 431.36156pt>
 File: imagens/raspberry.png Graphic file (type png)
 <use imagens/raspberry.png>
-Package pdftex.def Info: imagens/raspberry.png  used on input line 317.
+Package pdftex.def Info: imagens/raspberry.png  used on input line 318.
 (pdftex.def)             Requested size: 250.25139pt x 138.54533pt.
  [27 <./imagens/arduinoDesenho.png> <./imagens/raspberry.png>]
-<imagens/bombaAgua.png, id=489, 479.54156pt x 306.39468pt>
+<imagens/bombaAgua.png, id=519, 479.54156pt x 306.39468pt>
 File: imagens/bombaAgua.png Graphic file (type png)
 <use imagens/bombaAgua.png>
-Package pdftex.def Info: imagens/bombaAgua.png  used on input line 355.
+Package pdftex.def Info: imagens/bombaAgua.png  used on input line 356.
 (pdftex.def)             Requested size: 250.25139pt x 159.89653pt.
- [28] [29 <./imagens/bombaAgua.png>] [30] [31]) (capitulos/correlatos.tex) (capitulos/metodologia.tex) (capitulos/desenvolvimento.tex [32] [33
+ [28] [29 <./imagens/bombaAgua.png>] [30] [31]) (capitulos/correlatos.tex) (capitulos/desenvolvimento.tex [32] [33
 
 ] [34] [35]
-<imagens/meuDiagramaTcc.png, id=581, 1039.885pt x 690.58pt>
+<imagens/meuDiagramaTcc.png, id=611, 1039.885pt x 690.58pt>
 File: imagens/meuDiagramaTcc.png Graphic file (type png)
 <use imagens/meuDiagramaTcc.png>
 Package pdftex.def Info: imagens/meuDiagramaTcc.png  used on input line 124.
 (pdftex.def)             Requested size: 455.0pt x 302.1596pt.
  [36] [37 <./imagens/meuDiagramaTcc.png>]
-<imagens/sensorTemperatura.png, id=595, 413.29407pt x 284.56313pt>
+<imagens/sensorTemperatura.png, id=625, 413.29407pt x 284.56313pt>
 File: imagens/sensorTemperatura.png Graphic file (type png)
 <use imagens/sensorTemperatura.png>
 Package pdftex.def Info: imagens/sensorTemperatura.png  used on input line 160.
 (pdftex.def)             Requested size: 364.00139pt x 250.62907pt.
-<imagens/sensorNive.png, id=600, 291.33844pt x 377.91188pt>
+<imagens/sensorNive.png, id=630, 291.33844pt x 377.91188pt>
 File: imagens/sensorNive.png Graphic file (type png)
 <use imagens/sensorNive.png>
 Package pdftex.def Info: imagens/sensorNive.png  used on input line 176.
 (pdftex.def)             Requested size: 273.00278pt x 354.1531pt.
  [38 <./imagens/sensorTemperatura.png>]
-<imagens/bombaSubmersa.png, id=613, 607.51968pt x 556.32843pt>
+<imagens/sensorpH.png, id=643, 283.81032pt x 318.43968pt>
+File: imagens/sensorpH.png Graphic file (type png)
+<use imagens/sensorpH.png>
+Package pdftex.def Info: imagens/sensorpH.png  used on input line 192.
+(pdftex.def)             Requested size: 273.00278pt x 306.34001pt.
+ [39 <./imagens/sensorNive.png>]
+<imagens/sensorTurbidez.png, id=655, 288.3272pt x 267.24844pt>
+File: imagens/sensorTurbidez.png Graphic file (type png)
+<use imagens/sensorTurbidez.png>
+Package pdftex.def Info: imagens/sensorTurbidez.png  used on input line 208.
+(pdftex.def)             Requested size: 273.00278pt x 253.05269pt.
+ [40 <./imagens/sensorpH.png>]
+<imagens/bombaSubmersa.png, id=667, 607.51968pt x 556.32843pt>
 File: imagens/bombaSubmersa.png Graphic file (type png)
 <use imagens/bombaSubmersa.png>
-Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 200.
+Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 224.
 (pdftex.def)             Requested size: 273.00278pt x 250.00592pt.
- [39 <./imagens/sensorNive.png>]
-<imagens/arduino.png, id=626, 267.24844pt x 240.14719pt>
+ [41 <./imagens/sensorTurbidez.png>]
+<imagens/arduino.png, id=679, 267.24844pt x 240.14719pt>
 File: imagens/arduino.png Graphic file (type png)
 <use imagens/arduino.png>
-Package pdftex.def Info: imagens/arduino.png  used on input line 216.
+Package pdftex.def Info: imagens/arduino.png  used on input line 240.
 (pdftex.def)             Requested size: 273.00278pt x 245.3426pt.
- [40 <./imagens/bombaSubmersa.png>]
-<imagens/raspBerryQeuUso.png, id=637, 1445.4pt x 813.0375pt>
+ [42 <./imagens/bombaSubmersa.png>]
+<imagens/raspBerryQeuUso.png, id=691, 1445.4pt x 813.0375pt>
 File: imagens/raspBerryQeuUso.png Graphic file (type png)
 <use imagens/raspBerryQeuUso.png>
-Package pdftex.def Info: imagens/raspBerryQeuUso.png  used on input line 232.
+Package pdftex.def Info: imagens/raspBerryQeuUso.png  used on input line 256.
 (pdftex.def)             Requested size: 455.0pt x 255.93448pt.
- [41 <./imagens/arduino.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 251--251
+ [43 <./imagens/arduino.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 275--275
 []|\T1/lmr/bx/n/12 (+20) Comunicação /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 254--254
+Underfull \hbox (badness 10000) in paragraph at lines 278--278
 []|\T1/lmr/m/n/12 (+20) Sensor Temp.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--258
+Underfull \hbox (badness 10000) in paragraph at lines 282--282
 []|\T1/lmr/m/n/12 (+20) Acionamento via
  []
 
-[42 <./imagens/raspBerryQeuUso.png>]
-<imagens/arduino_code.jpeg, id=658, 1088.56688pt x 607.51968pt>
+[44 <./imagens/raspBerryQeuUso.png>]
+<imagens/arduino_code.jpeg, id=711, 1088.56688pt x 607.51968pt>
 File: imagens/arduino_code.jpeg Graphic file (type jpg)
 <use imagens/arduino_code.jpeg>
-Package pdftex.def Info: imagens/arduino_code.jpeg  used on input line 284.
+Package pdftex.def Info: imagens/arduino_code.jpeg  used on input line 307.
 (pdftex.def)             Requested size: 409.49722pt x 228.5331pt.
- [43]
+ [45]
 File: imagens/bombaSubmersa.png Graphic file (type png)
 <use imagens/bombaSubmersa.png>
-Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 294.
+Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 317.
 (pdftex.def)             Requested size: 409.49722pt x 374.99615pt.
- [44 <./imagens/arduino_code.jpeg>]
+ [46 <./imagens/arduino_code.jpeg>]
 
-LaTeX Warning: Reference `fig:cod_backend2' on page 45 undefined on input line 298.
+LaTeX Warning: Reference `fig:cod_backend2' on page 47 undefined on input line 321.
 
-<imagens/back_end_code.jpeg, id=669, 913.91437pt x 1092.33093pt>
+<imagens/back_end_code.jpeg, id=722, 913.91437pt x 1092.33093pt>
 File: imagens/back_end_code.jpeg Graphic file (type jpg)
 <use imagens/back_end_code.jpeg>
-Package pdftex.def Info: imagens/back_end_code.jpeg  used on input line 304.
+Package pdftex.def Info: imagens/back_end_code.jpeg  used on input line 327.
 (pdftex.def)             Requested size: 409.49722pt x 489.4276pt.
-[45]
-<imagens/frontEnd_resgatarBack.jpeg, id=675, 804.00375pt x 669.2503pt>
+[47]
+<imagens/frontEnd_resgatarBack.jpeg, id=728, 804.00375pt x 669.2503pt>
 File: imagens/frontEnd_resgatarBack.jpeg Graphic file (type jpg)
 <use imagens/frontEnd_resgatarBack.jpeg>
-Package pdftex.def Info: imagens/frontEnd_resgatarBack.jpeg  used on input line 314.
+Package pdftex.def Info: imagens/frontEnd_resgatarBack.jpeg  used on input line 337.
 (pdftex.def)             Requested size: 409.49722pt x 340.86382pt.
- [46 <./imagens/back_end_code.jpeg>]
-<imagens/frontEnd_enviarBack.jpeg, id=680, 873.2625pt x 522.45187pt>
+ [48 <./imagens/back_end_code.jpeg>]
+<imagens/frontEnd_enviarBack.jpeg, id=734, 873.2625pt x 522.45187pt>
 File: imagens/frontEnd_enviarBack.jpeg Graphic file (type jpg)
 <use imagens/frontEnd_enviarBack.jpeg>
-Package pdftex.def Info: imagens/frontEnd_enviarBack.jpeg  used on input line 322.
+Package pdftex.def Info: imagens/frontEnd_enviarBack.jpeg  used on input line 345.
 (pdftex.def)             Requested size: 409.49722pt x 244.99437pt.
- [47 <./imagens/frontEnd_resgatarBack.jpeg> <./imagens/frontEnd_enviarBack.jpeg>] [48]) (capitulos/conclusao.tex [49])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
+ [49 <./imagens/frontEnd_resgatarBack.jpeg> <./imagens/frontEnd_enviarBack.jpeg>] [50]) (capitulos/resultados.tex [51]) (capitulos/conclusao.tex [52
+
+])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
 \tf@brf=\write6
 \openout6 = `principal.brf'.
 
- [50
+ [53
 
 ]
 bibitemlist
-[51
+[54
 
-]
-Overfull \hbox (1830.2921pt too wide) in paragraph at lines 172--172
+] [55]
+Overfull \hbox (1830.2921pt too wide) in paragraph at lines 187--187
 \T1/lmr/m/n/12 (-20) SzVXRH-[]SUaodC0J119Zq1x6j6e-[]Uq80w~Cy4~QxiSVJDWVM5YgOx-[]fOYdLwFyDu7mZLRtSB6XC7krw-[]-[]Kw1TKN9THps~^^]L65lPt7tUssYl3w-[]rWQbMPN6M5vNg75dc0-[]g2CzlVvXfnEBljOr5A4WStb4JK8Lww4k86xCXyCoX3PA-[]D5eU0wCg~5Sp0~h~wJBFWFx5YwaQ5HNEijADHE1hxFFBimYjA5h7CySXlcf5gt~CTJ8hCT5MvASY-[]HgneijPnIsA2k3AxZKXMTotzHPRVG36TTHsnJS8P3aLN3w9qh~FgYOA8Pd2nx-[]rHYhh~6pT25z-[]bDS-[]tZpxT-[]54yfZg _ 
  []
 
-[52]
-Overfull \hbox (26.55319pt too wide) in paragraph at lines 180--180
+
+Overfull \hbox (26.55319pt too wide) in paragraph at lines 195--195
 \T1/lmr/m/n/12 (-20) DESENVOLVIMENTO-[]DE-[]FRONT-[]END-[]E-[]BACK-[]END-[]PARA-[]NOS-[]SENSORES-[]SEM-[]FIO . 
  []
 
 
-Overfull \hbox (101.45631pt too wide) in paragraph at lines 194--194
+Overfull \hbox (101.45631pt too wide) in paragraph at lines 217--217
 \T1/lmr/m/n/12 (-20) 8TJBhDNARIsAPX5qxTFFrnFSaupCXUFPgzABkacpcXV8KTq2u-[]UvU-[]H4bR6HVldZO6Xbd4aAndsEALw _ 
  []
 
-[53])) (pos-textual/glossario.tex) (pos-textual/apendices.tex) (pos-textual/anexos.tex) (pos-textual/indices.tex) (principal.ind)) 
+[56] [57])) (pos-textual/glossario.tex) (pos-textual/apendices.tex) (pos-textual/anexos.tex) (pos-textual/indices.tex) (principal.ind)) 
 AED: lastpage setting LastPage
-[54]
+[58]
 \tf@lof=\write7
 \openout7 = `principal.lof'.
 
@@ -1545,20 +1520,20 @@ LaTeX Warning: There were undefined references.
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `principal.brf' has not changed.
-(rerunfilecheck)             Checksum: 7EB6709F0D330A486D7A84F05BE5EA5D;4431.
+(rerunfilecheck)             Checksum: 6280B6CA84A9E6631FEAA4A97013C69E;5056.
  ) 
 Here is how much of TeX's memory you used:
- 37365 strings out of 474486
- 737456 string characters out of 5741867
- 1954542 words of memory out of 5000000
- 58511 multiletter control sequences out of 15000+600000
- 630102 words of font info for 184 fonts, out of 8000000 for 9000
+ 37475 strings out of 474486
+ 739930 string characters out of 5741867
+ 1953542 words of memory out of 5000000
+ 58596 multiletter control sequences out of 15000+600000
+ 630701 words of font info for 189 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,13n,111p,1483b,735s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on principal.pdf (55 pages, 7915250 bytes).
+Output written on principal.pdf (59 pages, 8156677 bytes).
 PDF statistics:
- 1086 PDF objects out of 1200 (max. 8388607)
- 208 named destinations out of 1000 (max. 500000)
- 37251 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 1171 PDF objects out of 1200 (max. 8388607)
+ 223 named destinations out of 1000 (max. 500000)
+ 37269 words of extra memory for PDF output out of 42996 (max. 10000000)
 

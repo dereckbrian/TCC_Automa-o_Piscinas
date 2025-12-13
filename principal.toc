@@ -29,12 +29,14 @@
 \contentsline {section}{\numberline {3.2}Processo de Desenvolvimento de Software}{33}{section.3.2}%
 \contentsline {section}{\numberline {3.3}Fase de Concepção (\textit {Inception})}{34}{section.3.3}%
 \contentsline {section}{\numberline {3.4}Fase de Elaboração (\textit {Elaboration})}{36}{section.3.4}%
-\contentsline {section}{\numberline {3.5}Fase de Construção (\textit {Construction})}{43}{section.3.5}%
-\contentsline {section}{\numberline {3.6}Fase de Transição (\textit {Transition})}{48}{section.3.6}%
+\contentsline {section}{\numberline {3.5}Fase de Construção (\textit {Construction})}{45}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Fase de Transição (\textit {Transition})}{50}{section.3.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados e discussão}}{50}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Resultados}}{52}{chapter.4}%
+\setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e discussão}}{53}{chapter.5}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{51}{section*.64}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{54}{section*.67}%
 \vspace {\cftbeforechapterskip }
