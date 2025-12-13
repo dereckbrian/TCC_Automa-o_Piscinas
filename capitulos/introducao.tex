@@ -9,7 +9,7 @@ Embora a automação residencial se consolide em diversos domínios, a manutenç
 
 A partir desse questionamento, estabelece-se a seguinte hipótese central: a integração entre sensores, atuadores e controladores microprocessados, associados a tecnologias de automação e Internet das Coisas (IoT), possibilita monitorar parâmetros essenciais da água, como pH, temperatura, turbidez, nível e acionar automaticamente equipamentos de tratamento, garantindo maior precisão na manutenção e minimizando erros humanos. Presume-se, portanto, que um sistema automatizado possa otimizar recursos, aprimorar a qualidade da água e assegurar um processo contínuo e confiável. Se confirmada, essa hipótese reforça a necessidade de investigar sua aplicabilidade técnica, econômica e operacional.
 
-A justificativa para o desenvolvimento deste estudo fundamenta-se em três dimensões complementares. A dimensão social envolve a necessidade de preservar a saúde do usuário, considerando que procedimentos inadequados de tratamento da água podem gerar riscos sanitários. A dimensão ambiental relaciona-se ao uso racional de água e energia, uma vez que a automação tende a reduzir ciclos excessivos de filtragem e dosagens inadequadas de produtos químicos. Já a dimensão tecnológica evidencia uma lacuna no campo acadêmico: apesar do crescimento da automação residencial, há poucos estudos voltados especificamente à manutenção automatizada de piscinas, tema que permanece subexplorado tanto no cenário nacional quanto internacional. Assim, justificam-se os esforços em desenvolver e avaliar um sistema que integre automação, IoT e métodos de controle aplicados a esse contexto.
+A justificativa para o desenvolvimento deste estudo fundamenta-se em três dimensões complementares. A dimensão social envolve a necessidade de preservar a saúde do usuário, considerando que procedimentos inadequados de tratamento da água podem gerar riscos sanitários. A dimensão ambiental relaciona-se ao uso racional de água e energia, uma vez que a automação tende a reduzir ciclos excessivos de filtragem e dosagens inadequadas de produtos químicos. Em relação à dimensão tecnológica, foi realizada uma análise com base nas pesquisas bibliográficas existentes, que revelou uma lacuna no desenvolvimento de sistemas de baixo custo que integrem de maneira completa o monitoramento de parâmetros de qualidade da água (como pH e turbidez) com a automação dos atuadores. Embora existam soluções isoladas para aquecimento ou controle químico, observa-se uma carência de estudos recentes que proponham uma arquitetura unificada de IoT, capaz de implementar o ciclo de controle fechado e a gestão remota de dados para piscinas residenciais.
 
 
 \section{Objetivo Geral}
@@ -45,18 +45,18 @@ A Tabela \ref{tab:trabalhos_correlatos} sintetiza a comparação entre os trabal
 
 \begin{table}[H]
     \centering
-    \caption{Comparativo entre o sistema desenvolvido e trabalhos correlatos}
-    \label{tab:trabalhos_correlatos}
+    \caption{Comparativo de funcionalidades entre trabalhos correlatos e o sistema proposto}
+    \label{tab:trabalhos_correlatos_check}
     \resizebox{\textwidth}{!}{%
-    \begin{tabular}{|p{3cm}|p{4.5cm}|p{4.5cm}|p{4cm}|}
+    \begin{tabular}{lcccccc}
     \hline
-    \textbf{Trabalho} & \textbf{Abordagem Principal} & \textbf{Diferencial do Presente Trabalho (Vantagens)} & \textbf{Limitações frente ao Correlato} \\ \hline
-    \textbf{\citeonline{campos2014automaccao}} & Automação residencial geral. Controle da piscina por \textit{timer}. & Tomada de decisão baseada em sensores (pH e Turbidez) e não apenas tempo. & O correlato possui escopo mais amplo (integra portão, luzes da casa, etc). \\ \hline
-    \textbf{\citeonline{brandao2018sistema}} & Controle químico (pH e ORP) em malha fechada com Arduino. & Monitoramento de Turbidez para limpeza física e conectividade IoT (Web) para histórico. & O correlato utiliza sensor de ORP para leitura de cloro, parâmetro não abordado neste trabalho. \\ \hline
-    \textbf{\citeonline{boeira2019autopool}} & Dosagem química automatizada e sistema de alarme de segurança. & Interface Web para gestão remota e sensor de turbidez para controle do filtro. & O correlato possui sistema de segurança contra afogamentos. \\ \hline
-    \textbf{\citeonline{sulimann2014automatizacao}} & Automação industrial com CLP, aquecimento e ionização. & Baixo custo de implementação (Open Hardware) e facilidade de integração IoT. & O correlato apresenta maior robustez industrial e controle de temperatura. \\ \hline
-    \textbf{\citeonline{oliveira2023automaccao}} & Acionamento remoto via Wi-Fi (ESP32) e infraestrutura elétrica. & Autonomia do sistema (não depende do usuário para ligar) baseada em dados analíticos. & O correlato foca no dimensionamento elétrico de potência (contatores). \\ \hline
-    \textbf{Este Trabalho} & Sistema IoT completo com monitoramento de pH e Turbidez e interface Web. & Integração entre sensoriamento físico-químico, lógica autônoma e gestão remota de dados. & Validação em escala de protótipo, necessitando adaptações para altas potências. \\ \hline
+    \textbf{Referência} & \textbf{Automação Química (pH)} & \textbf{Monitoramento de Turbidez} & \textbf{Interface Web/IoT} & \textbf{Controle Autônomo (Sensores)} & \textbf{Baixo Custo (Arduino/ESP)} & \textbf{Segurança (Alarme)} \\ \hline
+    \citeonline{campos2014automaccao} &  &  & \checkmark &  & \checkmark & \checkmark \\ \hline
+    \citeonline{brandao2018sistema} & \checkmark &  &  & \checkmark & \checkmark &  \\ \hline
+    \citeonline{boeira2019autopool} & \checkmark &  &  & \checkmark & \checkmark & \checkmark \\ \hline
+    \citeonline{sulimann2014automatizacao} & \checkmark &  &  & \checkmark &  &  \\ \hline
+    \citeonline{oliveira2023automaccao} &  &  & \checkmark &  & \checkmark &  \\ \hline
+    \textbf{Este Trabalho} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  \\ \hline
     \end{tabular}%
     }
     \par \vspace{0.2cm}
