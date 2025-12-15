@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  14 DEC 2025 21:56
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  15 DEC 2025 12:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1379,48 +1379,48 @@ LaTeX Warning: Citation `unesp_diagrama_casos_usoa' on page 33 undefined on inpu
 [33 <./imagens/rupImage.png>]) (capitulos/correlatos.tex) (capitulos/desenvolvimento.tex [34 <./imagens/umlExample.png>] [35
 
 ] [36] [37]
-<imagens/meuDiagramaTcc.png, id=667, 1039.885pt x 690.58pt>
+<imagens/meuDiagramaTcc.png, id=668, 1039.885pt x 690.58pt>
 File: imagens/meuDiagramaTcc.png Graphic file (type png)
 <use imagens/meuDiagramaTcc.png>
 Package pdftex.def Info: imagens/meuDiagramaTcc.png  used on input line 142.
 (pdftex.def)             Requested size: 455.0pt x 302.1596pt.
  [38] [39 <./imagens/meuDiagramaTcc.png>]
-<imagens/sensorTemperatura.png, id=680, 413.29407pt x 284.56313pt>
+<imagens/sensorTemperatura.png, id=681, 413.29407pt x 284.56313pt>
 File: imagens/sensorTemperatura.png Graphic file (type png)
 <use imagens/sensorTemperatura.png>
 Package pdftex.def Info: imagens/sensorTemperatura.png  used on input line 178.
 (pdftex.def)             Requested size: 364.00139pt x 250.62907pt.
-<imagens/sensorNive.png, id=685, 291.33844pt x 377.91188pt>
+<imagens/sensorNive.png, id=686, 291.33844pt x 377.91188pt>
 File: imagens/sensorNive.png Graphic file (type png)
 <use imagens/sensorNive.png>
 Package pdftex.def Info: imagens/sensorNive.png  used on input line 194.
 (pdftex.def)             Requested size: 273.00278pt x 354.1531pt.
  [40 <./imagens/sensorTemperatura.png>]
-<imagens/sensorpH.png, id=698, 283.81032pt x 318.43968pt>
+<imagens/sensorpH.png, id=699, 283.81032pt x 318.43968pt>
 File: imagens/sensorpH.png Graphic file (type png)
 <use imagens/sensorpH.png>
 Package pdftex.def Info: imagens/sensorpH.png  used on input line 210.
 (pdftex.def)             Requested size: 273.00278pt x 306.34001pt.
  [41 <./imagens/sensorNive.png>]
-<imagens/sensorTurbidez.png, id=710, 288.3272pt x 267.24844pt>
+<imagens/sensorTurbidez.png, id=711, 288.3272pt x 267.24844pt>
 File: imagens/sensorTurbidez.png Graphic file (type png)
 <use imagens/sensorTurbidez.png>
 Package pdftex.def Info: imagens/sensorTurbidez.png  used on input line 226.
 (pdftex.def)             Requested size: 273.00278pt x 253.05269pt.
  [42 <./imagens/sensorpH.png>]
-<imagens/bombaSubmersa.png, id=723, 607.51968pt x 556.32843pt>
+<imagens/bombaSubmersa.png, id=724, 607.51968pt x 556.32843pt>
 File: imagens/bombaSubmersa.png Graphic file (type png)
 <use imagens/bombaSubmersa.png>
 Package pdftex.def Info: imagens/bombaSubmersa.png  used on input line 242.
 (pdftex.def)             Requested size: 273.00278pt x 250.00592pt.
  [43 <./imagens/sensorTurbidez.png>]
-<imagens/arduino.png, id=735, 267.24844pt x 240.14719pt>
+<imagens/arduino.png, id=736, 267.24844pt x 240.14719pt>
 File: imagens/arduino.png Graphic file (type png)
 <use imagens/arduino.png>
 Package pdftex.def Info: imagens/arduino.png  used on input line 258.
 (pdftex.def)             Requested size: 273.00278pt x 245.3426pt.
  [44 <./imagens/bombaSubmersa.png>]
-<imagens/raspBerryQeuUso.png, id=746, 1445.4pt x 813.0375pt>
+<imagens/raspBerryQeuUso.png, id=747, 1445.4pt x 813.0375pt>
 File: imagens/raspBerryQeuUso.png Graphic file (type png)
 <use imagens/raspBerryQeuUso.png>
 Package pdftex.def Info: imagens/raspBerryQeuUso.png  used on input line 274.
@@ -1526,9 +1526,9 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  109i,13n,111p,1483b,873s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on principal.pdf (65 pages, 7737212 bytes).
+Output written on principal.pdf (65 pages, 7737445 bytes).
 PDF statistics:
- 1285 PDF objects out of 1440 (max. 8388607)
+ 1286 PDF objects out of 1440 (max. 8388607)
  235 named destinations out of 1000 (max. 500000)
  46011 words of extra memory for PDF output out of 51595 (max. 10000000)
 
