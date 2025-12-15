@@ -46,23 +46,53 @@ A Tabela \ref{tab:trabalhos_correlatos} sintetiza a comparação entre os trabal
 \begin{table}[H]
     \centering
     \caption{Comparativo de funcionalidades entre trabalhos correlatos e o sistema proposto}
-    \label{tab:trabalhos_correlatos_check}
-    \resizebox{\textwidth}{!}{%
-    \begin{tabular}{lcccccc}
-    \hline
-    \textbf{Referência} & \textbf{Automação Química (pH)} & \textbf{Monitoramento de Turbidez} & \textbf{Interface Web/IoT} & \textbf{Controle Autônomo (Sensores)} & \textbf{Baixo Custo (Arduino/ESP)} & \textbf{Segurança (Alarme)} \\ \hline
-    \citeonline{campos2014automaccao} &  &  & \checkmark &  & \checkmark & \checkmark \\ \hline
-    \citeonline{brandao2018sistema} & \checkmark &  &  & \checkmark & \checkmark &  \\ \hline
-    \citeonline{boeira2019autopool} & \checkmark &  &  & \checkmark & \checkmark & \checkmark \\ \hline
-    \citeonline{sulimann2014automatizacao} & \checkmark &  &  & \checkmark &  &  \\ \hline
-    \citeonline{oliveira2023automaccao} &  &  & \checkmark &  & \checkmark &  \\ \hline
-    \textbf{Este Trabalho} & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  \\ \hline
-    \end{tabular}%
-    }
+    \label{tab:trabalhos_correlatos}
+    
+    % \small diminui um pouco a fonte para tudo caber confortavelmente
+    \small 
+    
+    % --- CORREÇÃO DO "L" ENCIMA DO "AUTOMAÇÃO" ---
+    % Reduzimos o espaço entre colunas de 6pt (padrão) para 2pt.
+    % Isso dá espaço para o texto "respirar" dentro da célula sem invadir a vizinha.
+    \setlength{\tabcolsep}{-6.1pt} 
+
+    % Definição das colunas:
+    % l = alinhado à esquerda (Referência)
+    % X = colunas centrais com largura igual que quebram linha automaticamente
+    \begin{tabularx}{\textwidth}{ l *{6}{>{\centering\arraybackslash}X} }
+    \toprule
+    
+    \textbf{Referência} & 
+    \textbf{Automação \newline Química} & 
+    \textbf{Leitura \newline de \newline Turbidez} & 
+    \textbf{Interface \newline Web/IoT} & 
+    \textbf{Controle \newline Autônomo} & 
+    \textbf{Baixo \newline Custo} & 
+    \textbf{Segurança \newline (Alarme)} \\ 
+    \midrule
+    
+    \citeonline{campos2014automaccao}       &  &  & \checkmark &  & \checkmark & \checkmark \\ 
+    \addlinespace % Espacinho para facilitar a leitura
+    
+    \citeonline{brandao2018sistema}         & \checkmark &  &  & \checkmark & \checkmark &  \\ 
+    \addlinespace
+    
+    \citeonline{boeira2019autopool}         & \checkmark &  &  & \checkmark & \checkmark & \checkmark \\ 
+    \addlinespace
+    
+    \citeonline{sulimann2014automatizacao}  & \checkmark &  &  & \checkmark &  &  \\ 
+    \addlinespace
+    
+    \citeonline{oliveira2023automaccao}     &  &  & \checkmark &  & \checkmark &  \\ 
+    \midrule
+    
+    \textbf{Este Trabalho}                  & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  \\ 
+    \bottomrule
+    \end{tabularx}
+    
     \par \vspace{0.2cm}
     {\small \textbf{Fonte:} Autoria própria (2025).}
 \end{table}
-
 Dessa forma, observa-se que existe uma lacuna no que tange a sistemas de baixo custo capazes de realizar o monitoramento analítico da turbidez e pH simultaneamente, atuando de forma autônoma e conectada, lacuna esta que o presente projeto visa preencher.
 
     \vspace{2em}

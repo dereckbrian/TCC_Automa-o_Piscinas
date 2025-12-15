@@ -11,6 +11,13 @@
   b{\'a}sicos, arquiteturas, setores, aplica{\c{c}}{\~o}es e protocolos.
 \emph{Revista TIS}, v.~1, n.~2, 2012.}
 
+\bibitem[Allebrandt 2004]{allebrandt2004reengenharia}
+\abntrefinfo{Allebrandt}{ALLEBRANDT}{2004}
+{ALLEBRANDT, P.~C. Reengenharia de sistemas com rup estudo de caso: Apufsc.
+\emph{Florian{\'o}polis: UFSC}, 2004.
+Dispon{\'\i}vel em:
+  \url{https://repositorio.ufsc.br/bitstream/handle/123456789/183849/TCC-PauloCesarAllebrandt.pdf?sequence=-1}.}
+
 \bibitem[Atclllor 2021]{guiaTratamento}
 \abntrefinfo{Atclllor}{ATCLLLOR}{2021}
 {ATCLLLOR. \emph{Guia de Tratamento de Piscinas}.
@@ -24,6 +31,15 @@
 238, 2024.
 Dispon{\'\i}vel em:
   \url{http://ric-cps.eastus2.cloudapp.azure.com/bitstream/123456789/28057/1/Empresa\%20prestadora\%20de\%20serviços\%20em\%20tratamento\%20e\%20limpeza\%20de\%20piscinas\%20-\%20Expansão.pdf}.}
+
+\bibitem[Bernhardt et al. 2023]{bernhardt2023utilizaccao}
+\abntrefinfo{Bernhardt et al.}{BERNHARDT et al.}{2023}
+{BERNHARDT, G.~H. et al. A utiliza{\c{c}}{\~a}o da linguagem de modelagem
+  unificada (uml) na engenharia de software: uma avalia{\c{c}}{\~a}o da
+  ado{\c{c}}{\~a}o e relev{\^a}ncia.
+\emph{ENCONTRO CIENT{\'I}FICO CULTURAL INTERINSTITUCIONAL}, v.~21, 2023.
+Dispon{\'\i}vel em:
+  \url{https://www4.fag.edu.br/anais-2023/Anais-2023-48.pdf}.}
 
 \bibitem[Boeira 2019]{boeira2019autopool}
 \abntrefinfo{Boeira}{BOEIRA}{2019}
@@ -150,8 +166,8 @@ Dispon{\'\i}vel em:
   \url{https://home.howstuffworks.com/swimming-pool.htm}.
 Acesso em: 12 set. 2025.}
 
-\bibitem[Hip{\'o}lito e SILVA 2018]{hipolito2018automaccao}
-\abntrefinfo{Hip{\'o}lito e SILVA}{HIP{\'O}LITO; SILVA}{2018}
+\bibitem[Hip{\'o}lito e Silva 2018]{hipolito2018automaccao}
+\abntrefinfo{Hip{\'o}lito e Silva}{HIP{\'O}LITO; SILVA}{2018}
 {HIP{\'O}LITO, J.~G.; SILVA, M. d. J.~d. Automa{\c{c}}{\~a}o residencial com
   arduino.
 Centro Universit{\'a}rio UNIFAFIBE, 2018.
@@ -222,8 +238,8 @@ Dispon{\'\i}vel em:
 3. ed. São Paulo, 2004. Dispon{\'\i}vel em:
   \url{http://www.itaicipiscinas.com.br/images/dicas/guia\_genco.pdf}.}
 
-\bibitem[LUCIFABIO et al. 2023]{lucifabio2023aquario}
-\abntrefinfo{LUCIFABIO et al.}{LUCIFABIO et al.}{2023}
+\bibitem[Lucifabio et al. 2023]{lucifabio2023aquario}
+\abntrefinfo{Lucifabio et al.}{LUCIFABIO et al.}{2023}
 {LUCIFABIO, E.~M. et al. Aqu{\'a}rio automatizado.
 091, 2023.
 Dispon{\'\i}vel em:
@@ -349,6 +365,15 @@ Projeto de Iniciação Científica.}
 {TURBIDEZ, S. 2025.
 Dispon{\'\i}vel em:
   \url{https://www.mercadolivre.com.br/sensor-de-turbidez-para-arduino-st100--modulo-de-leitura/up/MLBU3361510673?pdp\_filters=item\_id:MLB4164345711}.}
+
+\bibitem[{Universidade Estadual Paulista} 2025]{unesp_diagrama_casos_uso}
+\abntrefinfo{{Universidade Estadual Paulista}}{{Universidade Estadual
+  Paulista}}{2025}
+{{Universidade Estadual Paulista}. \emph{Diagrama de Casos de Uso}. 2025.
+  Moodle UNESP.
+Acesso em: 14 dez. 2025.
+Dispon{\'\i}vel em:
+  \url{https://moodle.unesp.br/pluginfile.php/25934/mod\_resource/content/1/diagrama\_casos\_uso.pdf}.}
 
 \bibitem[Vasconcelos 2025]{vasconcelosconcepccao}
 \abntrefinfo{Vasconcelos}{VASCONCELOS}{2025}

@@ -64,36 +64,54 @@ O levantamento de requisitos resultou nos seguintes requisitos funcionais e não
 % - Condições para considerar um requisito atendido     (FEITO)
 
 \begin{table}[H] 
-    \centering \caption{Requisitos Funcionais do Sistema de Automação de Piscinas.} 
+    \centering 
+    \caption{Requisitos Funcionais do Sistema de Automação de Piscinas} 
     \label{tab:req_funcionais} 
-    \begin{tabular}{|p{1.5cm}|p{11cm}|} 
-    \hline\textbf{Código} & \textbf{Descrição} \\ 
-    \hline \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\ 
-    \hline \textbf{RF02} & O sistema deve acionar automaticamente a bomba de filtragem e o aquecedor conforme os parâmetros definidos ou coletados pelos sensores. \\ 
-    \hline \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\ \hline \textbf{RF04} & O sistema deve permitir o cadastro e armazenamento dos dados coletados no banco de dados. \\ 
-    \hline \textbf{RF05} & O sistema deve permitir o cadastro de piscinas vinculadas a usuários. \\ 
-    \hline \textbf{RF06} & O sistema deve emitir alertas quando algum parâmetro ultrapassar o limite ideal. \\ 
-    \hline \textbf{RF06} & O sistema deve emitir gráficos de acordo com os ultimos dados de determinadas parâmetros coletados. \\ \hline
-    \end{tabular}
-    \caption*{Fonte: Autoria própria.}
+    % X faz a coluna Descrição ocupar todo o espaço restante e quebra linha sozinho
+    \begin{tabularx}{\textwidth}{l X} 
+    \toprule
+    \textbf{Código} & \textbf{Descrição} \\ 
+    \midrule
+    \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\ 
+    \addlinespace % Espaço extra para leitura
+    \textbf{RF02} & O sistema deve acionar automaticamente a bomba de filtragem e o aquecedor conforme os parâmetros definidos ou coletados pelos sensores. \\ 
+    \addlinespace
+    \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\ 
+    \addlinespace
+    \textbf{RF04} & O sistema deve permitir o cadastro e armazenamento dos dados coletados no banco de dados. \\ 
+    \addlinespace
+    \textbf{RF05} & O sistema deve permitir o cadastro de piscinas vinculadas a usuários. \\ 
+    \addlinespace
+    \textbf{RF06} & O sistema deve emitir alertas quando algum parâmetro ultrapassar o limite ideal. \\ 
+    \addlinespace
+    \textbf{RF07} & O sistema deve emitir gráficos de acordo com os últimos dados de determinados parâmetros coletados. \\ % Corrigi RF06 duplicado para RF07
+    \bottomrule
+    \end{tabularx}
+    \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-Para a validação dos requisitos elencados, foram estabelecidos critérios quantitativos de aceitação baseados no desempenho esperado para um protótipo IoT. Determinou-se que a precisão dos sensores (RF01) deve operar com margem de erro inferior a ±5\% em comparação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder 5 segundos, garantindo a monitoração em tempo quase real. No que tange à comunicação (RNF04), considera-se o sistema estável se as requisições HTTP apresentarem taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a 4 segundo por requisição. Por fim, o requisito de automação (RF02) será considerado atendido se o acionamento dos atuadores (bombas) ocorrer em até 2 segundos após a detecção de uma condição crítica parametrizada no sistema.
+Para a validação dos requisitos elencados, foram estabelecidos critérios quantitativos de aceitação baseados no desempenho esperado para um protótipo IoT. Determinou-se que a precisão dos sensores (RF01) deve operar com margem de erro inferior a $\pm$5\% em comparação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder 5 segundos, garantindo a monitoração em tempo quase real. No que tange à comunicação (RNF03), considera-se o sistema estável se as requisições HTTP apresentarem taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a 4 segundos por requisição. Por fim, o requisito de automação (RF02) será considerado atendido se o acionamento dos atuadores (bombas) ocorrer em até 2 segundos após a detecção de uma condição crítica parametrizada no sistema.
 
 \vspace{0.5cm} 
 
 \begin{table}[H] 
-    \centering \caption{Requisitos Não Funcionais do Sistema de Automação de Piscinas.} 
+    \centering 
+    \caption{Requisitos Não Funcionais do Sistema de Automação de Piscinas} 
     \label{tab:req_nao_funcionais} 
-    \begin{tabular}{|p{1.5cm}|p{11cm}|} 
-    \hline \textbf{Código} & \textbf{Descrição} \\ 
-    \hline \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\ 
-    \hline \textbf{RNF02} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ 
-    \hline \textbf{RNF03} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP. \\ 
-    \hline \textbf{RNF04} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ 
-    \hline 
-    \end{tabular}
-    \caption*{Fonte: Autoria própria.}
+    \begin{tabularx}{\textwidth}{l X} 
+    \toprule
+    \textbf{Código} & \textbf{Descrição} \\ 
+    \midrule
+    \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\ 
+    \addlinespace
+    \textbf{RNF02} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\ 
+    \addlinespace
+    \textbf{RNF03} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando protocolos HTTP/HTTPS. \\ 
+    \addlinespace
+    \textbf{RNF04} & O sistema deve ser desenvolvido com o framework Spring Boot no back-end e React no front-end. \\ 
+    \bottomrule
+    \end{tabularx}
+    \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
 As tecnologias selecionadas para atender ao escopo inicial incluíram o Raspberry Pi como dispositivo de controle, sensores de pH, nível e temperatura, o framework React para interface web e PostgreSQL como banco de dados. O uso do Spring Boot no \textit{back-end} foi definido devido à sua robustez e integração com bibliotecas de segurança, conforme discutido na Seção 2.3.2.
@@ -268,20 +286,41 @@ O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário
 
 \begin{table}[H]
     \centering
-    \caption{Resumo das Especificações Técnicas dos Componentes de Hardware.}
+    \caption{Resumo das Especificações Técnicas dos Componentes de Hardware}
     \label{tab:resumo_hardware}
-    \begin{tabular}{|p{3.5cm}|p{5.0cm}|c|p{3.5cm}|}
-        \hline
-        \textbf{Componente} & \textbf{Função Principal} & \textbf{Tensão} & \textbf{Comunicação / Sinal} \\ \hline
-        Raspberry Pi 3 B & Gateway de comunicação e envio de dados ao servidor & 5V & Serial (USB) / Wi-Fi (HTTP) \\ \hline
-        Arduino Uno R3 & Microcontrolador para leitura de sensores e controle de atuadores & 5V / 9V & Serial / I/O Digital e Analógico \\ \hline
-        Sensor Temp. (NTC) & Monitoramento térmico da água & 5V & Analógico (Divisor de Tensão) \\ \hline
-        Sensor de Nível & Detecção de nível crítico do reservatório & 5V & Digital (On/Off) \\ \hline
-        Sensor de pH & Medição da acidez e alcalinidade & 5V & Analógico \\ \hline
-        Sensor de Turbidez & Análise da transparência da água & 5V & Analógico \\ \hline
-        Bomba Submersa & Atuador para circulação e filtragem & 3V - 6V & Acionamento via Relé (Sinal Digital) \\ \hline
-    \end{tabular}
-    \caption*{Fonte: Autoria própria.}
+    
+    % Definição das colunas:
+    % l = alinhado à esquerda (ajusta ao tamanho do texto)
+    % X = ocupa o espaço restante e quebra linha (bom para textos longos)
+    % c = centralizado
+    \begin{tabularx}{\textwidth}{l >{\raggedright\arraybackslash}X c >{\raggedright\arraybackslash}X}
+    \toprule
+    \textbf{Componente} & \textbf{Função Principal} & \textbf{Tensão} & \textbf{Comunicação / Sinal} \\ 
+    \midrule
+    
+    Raspberry Pi 3 B & Gateway de comunicação e envio de dados ao servidor & 5V & Serial (USB) / Wi-Fi (HTTP) \\ 
+    \addlinespace
+    
+    Arduino Uno R3 & Microcontrolador para leitura de sensores e controle de atuadores & 5V / 9V & Serial / I/O Digital e Analógico \\ 
+    \addlinespace
+    
+    Sensor Temp. (NTC) & Monitoramento térmico da água & 5V & Analógico (Divisor de Tensão) \\ 
+    \addlinespace
+    
+    Sensor de Nível & Detecção de nível crítico do reservatório & 5V & Digital (On/Off) \\ 
+    \addlinespace
+    
+    Sensor de pH & Medição da acidez e alcalinidade & 5V & Analógico \\ 
+    \addlinespace
+    
+    Sensor de Turbidez & Análise da transparência da água & 5V & Analógico \\ 
+    \addlinespace
+    
+    Bomba Submersa & Atuador para circulação e filtragem & 3V - 6V & Acionamento via Relé (Sinal Digital) \\ 
+    
+    \bottomrule
+    \end{tabularx}
+    \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
 
@@ -298,53 +337,13 @@ Em conformidade com a metodologia RUP, a fase de Construção foi executada por 
 
 O desenvolvimento do código foi conduzido em duas camadas: a camada embarcada, responsável pela leitura e envio dos dados; e a camada de aplicação, que recebeu, armazenou e exibiu as informações aos usuários.
 
-Na camada embarcada, o Arduino foi programado via IDE própria para realizar a leitura dos sensores analógicos e digitais. A Figura \ref{fig:cod_arduino} demonstra a função de coleta dos parâmetros da água e o acionamento condicional dos atuadores.
+Na camada embarcada, o Arduino foi programado via IDE própria para realizar a leitura dos sensores analógicos e digitais. Conforme o Apêndice \ref{apendice:codigos}, Código \ref{fig:cod_arduino} demonstra a função de coleta dos parâmetros da água e o acionamento condicional dos atuadores.
 
-\begin{figure}[H]
-    \centering
-    \caption{Trecho de código do Arduino: Leitura de sensores e controle}
-    \label{fig:cod_arduino}
-    \includegraphics[width=0.9\textwidth]{imagens/arduino_code.jpeg} 
-    \caption*{Fonte: Autoria própria.}
-\end{figure}
+Em seguida, o Raspberry Pi desempenha a função de gateway de comunicação. Um script desenvolvido em Python é responsável por estabelecer a conexão serial com o microcontrolador, realizar a leitura dos dados brutos e encaminhá-los via requisições HTTP POST para a API na nuvem. A lógica de implementação desse gateway, incluindo o tratamento de erros de conexão e serialização JSON, está detalhada no Apêndice \ref{apendice:codigos}, Código \ref{lst:python_gateway}.
 
-Em seguida, o Raspberry Pi atua como \textit{gateway}, utilizando scripts em Python para receber os dados via serial e encaminhá-los à nuvem. A Figura \ref{fig:cod_raspberry} ilustra a requisição HTTP POST realizada para enviar as leituras ao servidor.
+Na camada de aplicação, o back-end, construído com o framework Spring Boot, expõe os endpoints necessários para a recepção e persistência dos dados. O Controller responsável por mapear as requisições, converter os objetos JSON e salvar as leituras no banco de dados PostgreSQL pode ser consultado no Apêndice \ref{apendice:codigos}, Código \ref{lst:backend_controller}. Essa arquitetura centraliza a regra de negócios, garantindo a integridade e a disponibilidade do histórico de monitoramento.
 
-\begin{figure}[H]
-    \centering
-    \caption{Script Python no Raspberry Pi: Envio de dados via HTTP}
-    \label{fig:cod_raspberry}
-    \includegraphics[width=0.9\textwidth]{imagens/bombaSubmersa.png}
-    \caption*{Fonte: Autoria própria.}
-\end{figure}
-
-Na camada de aplicação, o \textit{back-end} desenvolvido em Spring Boot recebe essas requisições, persiste os dados no banco PostgreSQL e gerencia a lógica de negócios. A Figura \ref{fig:cod_backend} e a \ref{fig:cod_backend2} apresenta o \textit{Controller} responsável por receber os dados do sensor e o método para processar o comando de acionamento vindo da interface.
-
-\begin{figure}[H]
-    \centering
-    \caption{Controller Spring Boot: Recepção de dados e endpoints de controle}
-    \label{fig:cod_backend}
-    \includegraphics[width=0.9\textwidth]{imagens/back_end_code.jpeg}
-    \caption*{Fonte: Autoria própria.}
-\end{figure}
-
-Por fim, o \textit{front-end} em React consome essa API para consolidar a interface de visualização. A Figura \ref{fig:cod_frontend} exibe a função de resgate de dados (\textit{fetch}) para atualização dos gráficos e o componente de \textit{toggle} utilizado para enviar comandos manuais ao sistema.
-
-\begin{figure}[H]
-    \centering
-    \caption{Componente React: Consumo de API e controle de estado}
-    \label{fig:cod_frontend2}
-    \includegraphics[width=0.9\textwidth]{imagens/frontEnd_resgatarBack.jpeg}
-    \caption*{Fonte: Autoria própria.}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \caption{Componente React: Consumo de API e controle de estado}
-    \label{fig:cod_frontend}
-    \includegraphics[width=0.9\textwidth]{imagens/frontEnd_enviarBack.jpeg}
-    \caption*{Fonte: Autoria própria.}
-\end{figure}
+Por fim, a interface do usuário (front-end), desenvolvida em React, consome os dados processados pela API para exibir o estado atual da piscina em tempo real. A implementação da lógica de consumo da API (\textit{fetching}) e o controle de estado para acionamento manual dos atuadores estão apresentados no Apêndice \ref{apendice:codigos}, Código \ref{lst:frontend_fetch}, respectivamente.
 
 % É necessário incluir trechos de código comentados (curtos), conforme exigência de TCC de software.
 % Indicar onde: logo após o primeiro parágrafo da Construction.     (FEITO)
@@ -364,22 +363,42 @@ Nesta fase, o sistema passou por testes práticos para validação do seu desemp
 
 \begin{table}[H]
     \centering
-    \caption{Resumo dos Testes Realizados e Resultados Obtidos.}
+    \caption{Resumo dos Testes Realizados e Resultados Obtidos}
     \label{tab:testes_realizados}
-    \begin{tabular}{|p{4.0cm}|p{6.0cm}|p{3.5cm}|}
-        \hline
-        \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Resultado} \\ \hline
-        Calibração do Sensor NTC & Verificar a precisão térmica comparada a um termômetro de referência & \\ \hline
-        Calibração do Sensor de pH & Verificar a precisão do sensor comparando com testes de estojos para analisar parâmentros da água & \\ \hline
-        Validação de Turbidez & Verificar linearidade e sensibilidade através do método de diluição seriada (água límpida vs. saturada) & \\ \hline
-        Estabilidade do Sensor de Nível & Confirmar acionamento correto da boia sem oscilações espúrias (debounce) &  \\ \hline
-        Proteção \textit{Dry-run} & Impedir o acionamento da bomba quando o reservatório está vazio &  \\ \hline
-        Integração de Dados & Validar o fluxo: Arduino $\to$ Raspberry $\to$ Banco de Dados &  \\ \hline
-        Latência da Interface & Medir tempo entre a leitura do sensor e atualização na tela &  \\ \hline
-    \end{tabular}
-    \caption*{Fonte: Autoria própria.}
+    
+    % Definição das colunas:
+    % p{4cm}: Largura fixa para o nome do teste
+    % X: Ocupa o resto do espaço e quebra linha (para o objetivo longo)
+    % p{3cm}: Espaço reservado para o resultado
+    \begin{tabularx}{\textwidth}{ >{\raggedright\arraybackslash}p{4cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3cm} }
+    \toprule
+    \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Resultado} \\ 
+    \midrule
+    
+    Calibração do Sensor NTC & Verificar a precisão térmica comparada a um termômetro de referência & \\ 
+    \addlinespace
+    
+    Calibração do Sensor de pH & Verificar a precisão do sensor comparando com testes de estojos para analisar parâmetros da água & \\ 
+    \addlinespace
+    
+    Validação de Turbidez & Verificar linearidade e sensibilidade através do método de diluição seriada (água límpida vs. saturada) & \\ 
+    \addlinespace
+    
+    Estabilidade do Sensor de Nível & Confirmar acionamento correto da boia sem oscilações espúrias (\textit{debounce}) & \\ 
+    \addlinespace
+    
+    Proteção \textit{Dry-run} & Impedir o acionamento da bomba quando o reservatório está vazio & \\ 
+    \addlinespace
+    
+    Integração de Dados & Validar o fluxo: Arduino $\to$ Raspberry $\to$ Banco de Dados & \\ 
+    \addlinespace
+    
+    Latência da Interface & Medir tempo entre a leitura do sensor e atualização na tela & \\ 
+    
+    \bottomrule
+    \end{tabularx}
+    \caption*{Fonte: Autoria própria (2025).}
 \end{table}
-
 Também foram realizados testes de responsividade da interface e de comunicação entre o servidor e o dispositivo embarcado. Os ajustes finais envolveram correções de algoritmos de conversão, ajustes de temporização e adequações na exibição gráfica dos dados.
 
 Apesar dos resultados satisfatórios, foram identificadas limitações inerentes à prototipagem em escala reduzida. A principal dificuldade técnica residiu na calibração fina dos sensores analógicos (turbidez e pH), que demonstraram sensibilidade a ruídos elétricos, exigindo tratamento de dados via software para garantir a confiabilidade descrita na \autoref{tab:testes_realizados}. Além disso, a dependência da infraestrutura de rede local evidenciou que falhas momentâneas de conectividade podem gerar lacunas no monitoramento em tempo real.

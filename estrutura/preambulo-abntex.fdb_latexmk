@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1765078461.06074 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/estrutura/preambulo-abntex.tex" "preambulo-abntex.pdf" "preambulo-abntex" 1765078461.69716 2
+["pdflatex"] 1765722301.69855 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/estrutura/preambulo-abntex.tex" "preambulo-abntex.pdf" "preambulo-abntex" 1765722302.38567 2
   "C:/Users/voluciano/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760048588 24226934 7b1f61a276975ef1f89b4a2e371078b7 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr10.tfm" 1136765053 1296 45809c5a464d5f32c8f98ba97c1bb47f ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmr12.tfm" 1136765053 1288 655e228510b4c2a1abe905c368440826 ""
@@ -89,10 +89,10 @@
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/tex/latex/tools/xspace.sty" 1700599895 4545 9f5ea23ab1c91476c42749893f790666 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/tex/latex/url/url.sty" 1388490452 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
-  "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/estrutura/preambulo-abntex.tex" 1760047598 3602 203da0ac9939925b60ba7aafca408a31 ""
+  "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/estrutura/preambulo-abntex.tex" 1765721390 3603 e26a1d76eb989be1ca7d03f4edbab04c ""
   "config/abntex-ifg.sty" 0 -1 0 ""
-  "preambulo-abntex.aux" 1765078453 32 3985256e7290058c681f74d7a3565a19 "pdflatex"
-  "preambulo-abntex.tex" 1760047598 3602 203da0ac9939925b60ba7aafca408a31 ""
+  "preambulo-abntex.aux" 0 -1 0 "pdflatex"
+  "preambulo-abntex.tex" 1765721390 3603 e26a1d76eb989be1ca7d03f4edbab04c ""
   (generated)
   "preambulo-abntex.aux"
   "preambulo-abntex.log"

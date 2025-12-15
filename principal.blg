@@ -18,6 +18,7 @@ Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Warning--entry type for "piscineiroProfissional" isn't style-file defined
 --line 375 of file bibliografia.bib
+Warning--I didn't find a database entry for "unesp_diagrama_casos_usoa"
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -27,45 +28,45 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 50 entries,
+You've used 53 entries,
             6714 wiz_defined-function locations,
-            1465 strings with 22346 characters,
-and the built_in function-call counts, 130001 in all, are:
-= -- 17825
-> -- 1095
-< -- 5151
-+ -- 5573
-- -- 345
-* -- 7314
-:= -- 15117
-add.period$ -- 199
-call.type$ -- 50
-change.case$ -- 426
-chr.to.int$ -- 65
-cite$ -- 49
-duplicate$ -- 16851
-empty$ -- 2592
-format.name$ -- 1627
-if$ -- 23022
+            1483 strings with 23228 characters,
+and the built_in function-call counts, 136681 in all, are:
+= -- 18704
+> -- 1167
+< -- 5400
++ -- 5847
+- -- 367
+* -- 7704
+:= -- 15908
+add.period$ -- 213
+call.type$ -- 53
+change.case$ -- 455
+chr.to.int$ -- 71
+cite$ -- 52
+duplicate$ -- 17681
+empty$ -- 2744
+format.name$ -- 1734
+if$ -- 24228
 int.to.chr$ -- 0
 int.to.str$ -- 0
-missing$ -- 831
-newline$ -- 288
-num.names$ -- 245
-pop$ -- 1244
+missing$ -- 882
+newline$ -- 306
+num.names$ -- 260
+pop$ -- 1312
 preamble$ -- 1
-purify$ -- 173
+purify$ -- 184
 quote$ -- 0
-skip$ -- 16944
+skip$ -- 17776
 stack$ -- 1
-substring$ -- 6166
-swap$ -- 5653
-text.length$ -- 54
+substring$ -- 6473
+swap$ -- 5932
+text.length$ -- 58
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 13
 warning$ -- 0
-while$ -- 347
+while$ -- 368
 width$ -- 0
-write$ -- 740
-(There was 1 warning)
+write$ -- 787
+(There were 2 warnings)

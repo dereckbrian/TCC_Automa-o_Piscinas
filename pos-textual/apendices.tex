@@ -1,22 +1,329 @@
-%% Apêndices
+% ----------------------------------------------------------
+% Apêndices
+% ----------------------------------------------------------
+\begin{apendicesenv}
 
-%\begin{apendicesenv}
-%
-%%% Imprime uma página indicando o início dos apêndices (opcional, comente para retirar)
-%\partapendices
-%
-%%% Cada Capítulo será um apêndice
-%\chapter{Este será o apêndice A}
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent congue, turpis quis rutrum fringilla, lacus lorem faucibus diam, sit amet viverra urna quam sed metus. Pellentesque quis eros ex. Nullam vel ante rutrum eros placerat egestas. Morbi volutpat sapien elementum tincidunt fringilla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed rutrum vestibulum bibendum. Sed tincidunt, magna sit amet tempor tincidunt, turpis neque blandit eros, a tincidunt felis mauris vitae est. Aliquam sit amet placerat risus. Nunc eget est pulvinar est tristique convallis sit amet vel risus. Maecenas turpis nisl, blandit ac porttitor non, ultrices id est. Cras eleifend nulla ut condimentum ullamcorper. Quisque at gravida massa, fringilla varius sapien. Nulla ullamcorper mauris vel ipsum elementum, vel tincidunt ante pretium. Ut iaculis nunc ex, vitae elementum ante efficitur non. Pellentesque venenatis tristique odio, nec volutpat dui dapibus sit amet. Maecenas eu velit at arcu hendrerit sagittis vel a odio.
-%
-%Nulla gravida metus at gravida ultricies. Nulla auctor id mi id suscipit. Proin vestibulum metus non eros feugiat, ac blandit diam vestibulum. Sed in arcu eget mauris rhoncus semper. Integer dignissim dui quis massa vestibulum, luctus ultrices metus mollis. Sed aliquam leo hendrerit lacus ultricies efficitur. Praesent quis quam sed lorem tincidunt fringilla non interdum odio. Phasellus vel enim mattis, tempor arcu ut, pulvinar est. Sed ut tempus est. Fusce erat nisi, scelerisque quis tellus sit amet, lacinia sagittis libero. Sed ultrices odio ipsum, ut vestibulum nulla auctor in.
-%
-%
-%
-%
-%
-%\chapter{Este será o apêndice B}
-%Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada elit vel lacus fringilla, in luctus orci finibus. Praesent eget augue et enim luctus cursus ut ac nisl. In lobortis tellus non mauris euismod, tempus hendrerit nisi euismod. Integer id magna sapien. Nunc urna magna, consequat sed vehicula quis, convallis non justo. Aliquam risus dolor, viverra quis dignissim eget, convallis id sapien. Ut id turpis suscipit, mollis quam sed, lacinia lacus. Donec ac nulla dui.
-%
-%
-%\end{apendicesenv}
+\partapendices
+
+% ----------------------------------------------------------
+\chapter{Códigos Fonte do Sistema}
+\label{apendice:codigos}
+% ----------------------------------------------------------
+
+A seguir, apresentamos os scripts desenvolvidos para o funcionamento do sistema de automação.
+
+% --- ARDUINO ---
+\section{Firmware do Microcontrolador (Arduino)}
+\label{cod:arduino}
+
+
+\small
+\begin{verbatim}
+
+#define PINO_PH A0        
+#define PINO_TEMP A1       
+#define PINO_RELE 6       
+#define PINO_BOIA 7       
+
+// Configuracao NTC 10k
+#define R_FIXO 10000.0     
+#define RT0 10000.0        
+#define BETA 3950.0        
+
+float calibracao_slope = 0.18; 
+int estadoBomba = 0;
+bool forcarLigado = false; 
+
+// Variavel para controlar o tempo do envio (sem parar a bomba)
+unsigned long ultimoEnvio = 0;
+
+void setup() {
+  Serial.begin(9600);
+  
+  pinMode(PINO_PH, INPUT);
+  pinMode(PINO_BOIA, INPUT_PULLUP);
+  pinMode(PINO_RELE, OUTPUT);        
+  
+  digitalWrite(PINO_RELE, LOW);    
+  Serial.println("INICIO: MODO TURBO ATIVADO");
+}
+
+void loop() {
+  // ==========================================
+  // 1. LEITURA E CONTROLE IMEDIATO (SEM DELAY)
+  // ==========================================
+  // Isso roda milhares de vezes por segundo. 
+  // Se a boia mexer, a bomba responde imediatamente.
+  
+  // Le comando do site (se tiver)
+  if (Serial.available() > 0) {
+    char comando = Serial.read();
+    if (comando == 'L') forcarLigado = true;
+    if (comando == 'D') forcarLigado = false;
+  }
+
+  // Le a Boia
+  int leituraBoia = digitalRead(PINO_BOIA);
+  
+  // LOGICA:
+  // Boia HIGH (1) = VAZIO -> LIGA BOMBA
+  // Boia LOW (0)  = CHEIO -> DESLIGA BOMBA
+  
+  bool deveLigar = (leituraBoia == HIGH) || (forcarLigado == true);
+
+  if (deveLigar) { 
+      digitalWrite(PINO_RELE, HIGH); 
+      estadoBomba = 1; 
+  } 
+  else { 
+      digitalWrite(PINO_RELE, LOW);
+      estadoBomba = 0; 
+  }
+
+  // ==========================================
+  // 2. ENVIAR DADOS (SO A CADA 2 SEGUNDOS)
+  // ==========================================
+  // Usamos millis() em vez de delay() para nao travar a bomba
+  
+  if (millis() - ultimoEnvio > 2000) {
+      ultimoEnvio = millis(); // Atualiza o relogio
+      
+      // -- Le Temperatura so na hora de enviar --
+      float tempCelsius = 0;
+      int leituraTemp = analogRead(PINO_TEMP);
+      float voltagemTemp = leituraTemp * (5.0 / 1023.0);
+      if (voltagemTemp > 0.1 && voltagemTemp < 4.9) {
+          float r_termistor = R_FIXO * (5.0 - voltagemTemp) / voltagemTemp;
+          float tempKelvin = 1.0 / (1.0 / (273.15 + 25.0) + log(r_termistor / RT0) / BETA);
+          tempCelsius = tempKelvin - 273.15;
+      }
+
+      // -- Le pH so na hora de enviar --
+      long somaLeituras = 0;
+      for(int i = 0; i < 10; i++) {
+        somaLeituras += analogRead(PINO_PH);
+        delay(10); // Pequeno delay so pro sensor estabilizar (100ms total)
+      }
+      float mediaPH = somaLeituras / 10.0;
+      float voltagemPH = mediaPH * (5.0 / 1023.0);
+      float valorPH = 7.00 + ((2.50 - voltagemPH) / calibracao_slope);
+
+      // -- Envia o JSON pro Python --
+      Serial.print("{\"t\":");
+      Serial.print(tempCelsius);
+      Serial.print(",\"n\":");
+      Serial.print(leituraBoia == HIGH ? 0 : 1); // Inverte pro site (0=Baixo, 1=Cheio)
+      Serial.print(",\"p\":");
+      Serial.print(valorPH);
+      Serial.print(",\"b\":");
+      Serial.print(estadoBomba);
+      Serial.println("}");
+  }
+}
+\end{verbatim}
+\normalsize
+
+% --- PYTHON ---
+\section{Script do Gateway (Python)}
+\label{lst:python_gateway}
+
+
+\small
+\begin{verbatim}
+import serial
+import json
+import requests
+import time
+import sys
+
+# --- CONFIGURACOES ---
+PORTA_ARDUINO = '/dev/ttyUSB0' 
+VELOCIDADE = 9600
+IP_PC = "10.0.0.241" # Seu IP
+URL_BACKEND = f"http://{IP_PC}:8080/api/sensor/receber"
+
+def conectar_arduino():
+    while True:
+        try:
+            print(f" Tentando conectar ao Arduino em {PORTA_ARDUINO}...")
+            # timeout=1 e importante para nao travar a leitura
+            ser = serial.Serial(PORTA_ARDUINO, VELOCIDADE, timeout=1)
+            time.sleep(2) # Espera o Arduino reiniciar
+            print(" Conectado com sucesso!")
+            return ser
+        except serial.SerialException:
+            print(" Arduino nao encontrado. Tentando de novo em 3s...")
+            time.sleep(3)
+
+# --- LOOP PRINCIPAL ---
+arduino = conectar_arduino()
+
+while True:
+    try:
+        # Verifica se tem dados vindo do Arduino
+        if arduino.in_waiting > 0:
+            try:
+                linha = arduino.readline().decode('utf-8', errors='ignore').strip()
+                
+                # So processa se a linha nao estiver vazia
+                if not linha:
+                    continue
+
+                print(f" Enviando: {linha}")
+                
+                # 1. Tenta converter o texto do Arduino para JSON
+                dados = json.loads(linha)
+                
+                # 2. Envia para o Java e AGUARDA A RESPOSTA (timeout 2s)
+                resposta = requests.post(URL_BACKEND, json=dados, timeout=2)
+                
+                if resposta.status_code == 200:
+                    print(" Sucesso: Java salvou.")
+                    
+                    # --- AQUI E A PARTE NOVA: RECEBER COMANDO ---
+                    # Se o Java devolver um JSON com ordens (ex: ligar bomba)
+                    try:
+                        comando_java = resposta.json()
+                        
+                        # Exemplo: O Java devolve {"ligarBomba": true}
+                        if comando_java.get("ligarBomba") == True:
+                            print(" Java mandou LIGAR a bomba!")
+                            arduino.write(b'L') # Manda a letra 'L' pro Arduino
+                        
+                        elif comando_java.get("ligarBomba") == False:
+                            print(" Java mandou DESLIGAR a bomba!")
+                            arduino.write(b'D') # Manda a letra 'D' pro Arduino
+                            
+                    except json.JSONDecodeError:
+                        pass # O Java nao mandou JSON de volta, apenas OK
+                        
+                elif resposta.status_code == 403:
+                    print(" Erro 403: Acesso Negado (Token/Security)")
+                else:
+                    print(f" Erro no Java: {resposta.status_code}")
+            
+            except json.JSONDecodeError:
+                pass
+            except requests.exceptions.RequestException as e:
+                print(f" Erro de conexao com o Java: {e}")
+
+    except (OSError, serial.SerialException):
+        print("\n ERRO CRITICO: Conexao USB perdida! (Cabo soltou?)")
+        if 'arduino' in locals() and arduino.is_open:
+            arduino.close()
+        arduino = conectar_arduino()
+        
+    except KeyboardInterrupt:
+        print("\nEncerrando...")
+        if 'arduino' in locals() and arduino.is_open:
+            arduino.close()
+        break
+\end{verbatim}
+\normalsize
+
+% --- JAVA ---
+\section{Controller do Back-end (Java)}
+\label{lst:backend_controller}
+
+\small
+\begin{verbatim}
+package com.ifg.residIFG.controllers;
+
+import com.ifg.residIFG.domain.piscinas.LeituraSensor;
+import com.ifg.residIFG.repository.LeituraSensorRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Map;
+
+@RestController
+@RequestMapping("/api/sensor")
+@CrossOrigin(origins = "*")
+public class SensorController {
+
+    @Autowired
+    private LeituraSensorRepository repository;
+
+    @PostMapping("/receber")
+    public void receberDados(@RequestBody Map<String, Object> dados) {
+        Double temp = Double.valueOf(dados.get("t").toString());
+
+        Integer nivelRaw = Integer.valueOf(dados.get("n").toString());
+        Boolean nivel = (nivelRaw == 1);
+
+        Double ph = Double.valueOf(dados.get("p").toString());
+
+        Integer bombaRaw = Integer.valueOf(dados.get("b").toString());
+        Boolean bombaAtiva = (bombaRaw == 1);
+
+        LeituraSensor leitura = new LeituraSensor(temp, nivel, ph, bombaAtiva);
+
+        repository.save(leitura);
+    }
+
+    @GetMapping("/atual")
+    public LeituraSensor getAtual() {
+        return repository.findTopByOrderByDataHoraDesc();
+    }
+
+    @GetMapping("/historico")
+    public List<LeituraSensor> getHistorico() {
+        return repository.findTop20ByOrderByDataHoraDesc();
+    }
+}
+\end{verbatim}
+\normalsize
+
+% --- REACT ---
+\section{Front-end (React)}
+\label{lst:frontend_fetch}
+
+\small
+\begin{verbatim}
+  useEffect(() => {
+    const buscarDados = async () => {
+      try {
+        const response = await api.get("/api/sensor/atual");
+       
+        if (response.data) {
+          setTemperaturaAtual(response.data.temperatura || 0);
+          setNivelAgua(response.data.nivelOk);
+         
+          if (response.data.ph) {
+            setPhAtual(response.data.ph);
+          }
+
+          setPumpActive(response.data.bombaAtiva);
+        }
+      } catch (error) {
+        console.error("Erro ao buscar sensores:", error);
+      }
+    };
+
+    buscarDados();
+    const intervalo = setInterval(buscarDados, 5000); // Atualiza a cada 5s
+    return () => clearInterval(intervalo);
+  }, []);
+
+  const handlePumpToggle = async (checked: boolean) => {
+    setPumpActive(checked);
+   
+    const acao = checked ? "LIGAR" : "DESLIGAR";
+    const message = checked ? "Comando: Ligar Bomba enviado" 
+                            : "Comando: Desligar Bomba enviado";
+   
+    try {
+        await api.post("/api/sensor/comando-bomba", { ligar: checked });
+        toast.success(message);
+        await registrarHistorico(`Usuario alterou bomba para: ${acao}`);
+    } catch (error) {
+        toast.error("Erro ao enviar comando para a bomba.");
+        console.error(error);
+        setPumpActive(!checked);
+    }
+  };
+\end{verbatim}
+\normalsize
+
+\end{apendicesenv}
