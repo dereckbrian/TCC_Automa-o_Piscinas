@@ -501,6 +501,12 @@ INPUT .\pre-textual\agradecimentos.tex
 INPUT .\pre-textual\agradecimentos.tex
 INPUT .\pre-textual\agradecimentos.tex
 INPUT pre-textual\agradecimentos.tex
+INPUT .\pre-textual\epigrafe.tex
+INPUT .\pre-textual\epigrafe.tex
+INPUT .\pre-textual\epigrafe.tex
+INPUT .\pre-textual\epigrafe.tex
+INPUT pre-textual\epigrafe.tex
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\pre-textual\resumo.tex
 INPUT .\pre-textual\resumo.tex
 INPUT .\pre-textual\resumo.tex
@@ -519,7 +525,6 @@ INPUT pre-textual\lista-ilustracoes.tex
 INPUT .\principal.lof
 INPUT .\principal.lof
 INPUT principal.lof
-INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\pre-textual\lista-tabelas.tex
 INPUT .\pre-textual\lista-tabelas.tex
 INPUT .\pre-textual\lista-tabelas.tex

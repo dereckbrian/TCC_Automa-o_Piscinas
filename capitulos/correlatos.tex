@@ -1,26 +1,50 @@
-% \chapter{Trabalhos Correlatos}
+\chapter{Trabalhos Correlatos}
 
-%     \begin{table}[H]
-%         \centering
-%         \renewcommand{\arraystretch}{1.3}
-%         \setlength{\tabcolsep}{10pt}
-%         \begin{tabular}{lccccc}
-%         \hline
-%         \textbf{Tecnologia} & \textbf{2003} & \textbf{2004} & \textbf{2005} & \textbf{2006} & \textbf{2015(*)} \\
-%         \hline
-%         Cabeamento estruturado & 42\% & 61\% & 49\% & 53\% & 80\% \\
-%         Monitoramento de segurança & 18\% & 28\% & 29\% & 32\% & 81\% \\
-%         Multiroom audio & 9\% & 12\% & 15\% & 16\% & 86\% \\
-%         Home Theater & 9\% & 8\% & 11\% & 12\% & 86\% \\
-%         Controle de iluminação & 1\% & 2\% & 6\% & 8\% & 75\% \\
-%         Automação integrada & 0\% & 2\% & 6\% & 6\% & 70\% \\
-%         Gerenciamento de energia & 1\% & 5\% & 11\% & 11\% & 62\% \\
-%         \hline
-%         \end{tabular}
-%         \caption{Evolução das tecnologias de automação residencial ao longo dos anos.}
-%         \label{tab:tecnologias-automacao}
+A revisão bibliográfica permitiu identificar diferentes abordagens tecnológicas aplicadas à automação de piscinas e ambientes residenciais correlatos, variando desde soluções baseadas em acionamentos temporizados até sistemas fundamentados em controladores microprocessados e controladores lógicos programáveis. Esses trabalhos apresentam contribuições relevantes, porém adotam estratégias distintas quanto ao nível de automação, aos parâmetros monitorados e aos mecanismos de interação com o usuário. A seguir, são analisadas as principais propostas identificadas, com ênfase em seus escopos, limitações e diferenças em relação à solução desenvolvida neste trabalho.
 
-%         \vspace{0.5em}
-%         \small
-%         \textbf{Fonte:} \cite{automacaoResidencialCap1}.\\
-%     \end{table}
+Uma das abordagens iniciais encontradas é a de \citeonline{campos2014automaccao}, que propôs um sistema amplo de automação residencial utilizando a plataforma Arduino. Nesse projeto, a piscina é tratada como um subsistema, cujo controle de filtragem é realizado exclusivamente por meio de agendamento temporal (\textit{timer}), sem a leitura de parâmetros físico-químicos da água. Embora o trabalho apresente uma integração eficiente entre diferentes ambientes residenciais, observa-se a ausência de sensores voltados à análise da qualidade da água, o que limita a capacidade do sistema de atuar de forma inteligente e adaptativa no tratamento químico da piscina.
+
+Com foco específico no controle químico da água, \citeonline{brandao2018sistema} desenvolveram um sistema de malha fechada utilizando o Arduino Uno para o controle de pH e desinfecção. O diferencial dessa proposta reside na utilização de um sensor de potencial de oxirredução (ORP) para estimar a concentração de cloro livre, associado ao sensor de pH, com atuação realizada por bombas dosadoras peristálticas. Apesar da robustez do controle químico, a interação com o usuário restringe-se a um display LCD local, inexistindo conectividade com a Internet ou recursos de monitoramento remoto, o que reduz a flexibilidade e a escalabilidade da solução.
+
+Na mesma linha de automação voltada ao equilíbrio químico, \citeonline{boeira2019autopool} apresentaram o protótipo denominado \textit{Autopool}, desenvolvido com base no Arduino Mega. O sistema integra sensores de pH, nível e chuva, além de bombas adaptadas para a dosagem de produtos químicos. Um aspecto relevante desse trabalho é a inclusão de um mecanismo de segurança por meio de sensor de movimento, com o objetivo de prevenir acidentes. Entretanto, o sistema opera de forma isolada (\textit{offline}), sendo configurado exclusivamente por meio de interface física local, e não contempla o monitoramento da turbidez da água para a automação do processo de filtragem física.
+
+Em uma proposta mais recente, \citeonline{oliveira2023automaccao} desenvolveram um sistema de automação de área de lazer utilizando o microcontrolador ESP32, destacando-se pela conectividade Wi-Fi integrada e pelo dimensionamento da infraestrutura elétrica. O sistema possibilita o acionamento remoto de bombas e iluminação, caracterizando-se como uma solução de controle digital à distância. Todavia, a ausência de sensores para monitoramento da qualidade da água faz com que as decisões sobre o momento adequado de filtragem dependam diretamente da intervenção do usuário, não configurando, portanto, um ciclo de automação autônomo.
+
+Em contraste com os trabalhos analisados, a solução proposta neste TCC diferencia-se por implementar um ciclo de automação fechado (\textit{closed-loop}) integrado aos princípios da Internet das Coisas (IoT). Enquanto propostas como as de \citeonline{campos2014automaccao} e \citeonline{oliveira2023automaccao} concentram-se em agendamento temporal ou acionamento remoto, e os trabalhos de \citeonline{brandao2018sistema} e \citeonline{boeira2019autopool} priorizam o controle químico local, o sistema aqui desenvolvido combina sensores de pH e turbidez para subsidiar decisões autônomas tanto sobre o tratamento químico quanto sobre a filtragem física da água. Ademais, a disponibilização de dados históricos e a gestão por meio de uma interface web ampliam a capacidade de monitoramento e análise do sistema ao longo do tempo.
+
+A Tabela \ref{tab:trabalhos_correlatos} apresenta uma síntese comparativa das funcionalidades contempladas nos trabalhos correlatos e na proposta desenvolvida neste estudo, evidenciando os diferenciais da solução apresentada.
+
+\begin{table}[H]
+    \centering
+    \caption{Comparativo de funcionalidades entre trabalhos correlatos e o sistema proposto}
+    \label{tab:trabalhos_correlatos}
+    \small
+    \setlength{\tabcolsep}{-6.1pt}
+    \begin{tabularx}{\textwidth}{ l *{6}{>{\centering\arraybackslash}X} }
+    \toprule
+    \textbf{Referência} & 
+    \textbf{Automação \newline Química} & 
+    \textbf{Leitura \newline de \newline Turbidez} & 
+    \textbf{Interface \newline Web/IoT} & 
+    \textbf{Controle \newline Autônomo} & 
+    \textbf{Baixo \newline Custo} & 
+    \textbf{Segurança \newline (Alarme)} \\ 
+    \midrule
+    \citeonline{campos2014automaccao}       &  &  & \checkmark &  & \checkmark & \checkmark \\ 
+    \addlinespace
+    \citeonline{brandao2018sistema}         & \checkmark &  &  & \checkmark & \checkmark &  \\ 
+    \addlinespace
+    \citeonline{boeira2019autopool}         & \checkmark &  &  & \checkmark & \checkmark & \checkmark \\ 
+    \addlinespace
+    \citeonline{sulimann2014automatizacao}  & \checkmark &  &  & \checkmark &  &  \\ 
+    \addlinespace
+    \citeonline{oliveira2023automaccao}     &  &  & \checkmark &  & \checkmark &  \\ 
+    \midrule
+    \textbf{Este Trabalho}                  & \checkmark & \checkmark & \checkmark & \checkmark & \checkmark &  \\ 
+    \bottomrule
+    \end{tabularx}
+    \par \vspace{0.2cm}
+    {\small \textbf{Fonte:} Autoria própria (2025).}
+\end{table}
+
+A análise comparativa evidencia a existência de uma lacuna no desenvolvimento de sistemas de baixo custo capazes de realizar simultaneamente o monitoramento analítico de pH e turbidez, com atuação autônoma e conectividade via Internet. Essa lacuna, observada de forma recorrente nos trabalhos analisados, é diretamente abordada pela proposta apresentada neste estudo.
