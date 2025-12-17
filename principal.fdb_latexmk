@@ -1,20 +1,20 @@
 # Fdb version 4
-["bibtex principal"] 1765913068.37438 "principal.aux" "principal.bbl" "principal" 1765913072.32443 0
+["bibtex principal"] 1765929750.94601 "principal.aux" "principal.bbl" "principal" 1765930162.99512 0
   "./bibliografia.bib" 1765910364 28075 68634a4aa878162e5c059a48f1356971 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/bibtex/bib/abntex2/abntex2-options.bib" 1543103229 5396 4eb260dac60f150ae608d45252853090 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/bibtex/bst/abntex2/abntex2-alf.bst" 1543103230 60064 0819ac8568f9a482510a46e3a8a6f605 ""
-  "principal.aux" 1765913071 51698 10ac81a75bce3ad7f7f040c3b65f4ece "pdflatex"
+  "principal.aux" 1765930162 53628 e376cbdfbd7fa6638ae23c5b64d758fe "pdflatex"
   (generated)
   "principal.bbl"
   "principal.blg"
   (rewritten before read)
-["makeindex principal.idx"] 1765910987.3528 "principal.idx" "principal.ind" "principal" 1765913072.32411 0
-  "principal.idx" 1765913069 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+["makeindex principal.idx"] 1765923160.34036 "principal.idx" "principal.ind" "principal" 1765930162.99481 0
+  "principal.idx" 1765930160 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "principal.ilg"
   "principal.ind"
   (rewritten before read)
-["pdflatex"] 1765913068.7039 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" "principal.pdf" "principal" 1765913072.32485 0
+["pdflatex"] 1765930159.73187 "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" "principal.pdf" "principal" 1765930162.99554 0
   "C:/Users/voluciano/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1765882337 81088 29d6fa367ac022d1b69251d68c0742e6 ""
   "C:/Users/voluciano/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1760048588 24226934 7b1f61a276975ef1f89b4a2e371078b7 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -73,6 +73,7 @@
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb" 1256929440 112593 fda2373ba4420af33949610de4c28fe8 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb" 1256929440 109265 e6c7d377db6dfccd4a123fb26da8cffb ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb" 1256929440 27863 09ce3735688ffde955e72da27c95b61a ""
+  "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb" 1256929440 27802 5c876bb2c4040caaf035d60bd74a86bd ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb" 1256929440 113227 d3d1adc024746ff57b20efba82c6d365 ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/tex/generic/atbegshi/atbegshi.sty" 1575571100 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -278,8 +279,8 @@
   "C:/Users/voluciano/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "c:/Users/voluciano/OneDrive/Documentos/programacao/TCC/template-tcc-ifg-master/principal.tex" 1760047597 785 9b746d28aed595b0c0c1aafb4450c78e ""
   "capitulos/conclusao.tex" 1765724630 6 edaddb8132e9e0880252c5b6c47bf1c1 ""
-  "capitulos/correlatos.tex" 1765912812 6344 95093a3e6b892a8e19a7be185cbe2ab0 ""
-  "capitulos/desenvolvimento.tex" 1765910986 25914 e5f10a32ba4a76970f52488534774af8 ""
+  "capitulos/correlatos.tex" 1765913195 7013 61b8066de0247e2c30ed085aa53e1330 ""
+  "capitulos/desenvolvimento.tex" 1765930159 23410 809542d15dd8bddecdba1cba5ffa3af2 ""
   "capitulos/fundamentacao-teorica.tex" 1765913060 48198 fa2b173671485be4b110e1d3aa6a9931 ""
   "capitulos/introducao.tex" 1765909940 12084 2bb3d3e27e28ac7fb84fcbf5d2ee37a2 ""
   "capitulos/resultados.tex" 1765724705 58 d0273d440f965d1d45fe7e83932977ef ""
@@ -306,7 +307,7 @@
   "imagens/componentesPiscina.png" 1765413716 463125 5cf3ebf5067aacfacdaca471cb4c8fff ""
   "imagens/estojoMedidor.png" 1760047598 814925 6e0b0564b2c6a7dd37ac85acb68103a8 ""
   "imagens/medidorPh.png" 1760047598 268195 a82383402a8f2e040c74625b3d7d7193 ""
-  "imagens/meuDiagramaTcc.png" 1763906726 123763 43ee1034dc05a9b8e68387c96baf8e49 ""
+  "imagens/meuDiagramaTcc.png" 1765920556 110907 ddbc58df0ed0e2c961c26d78053a56b4 ""
   "imagens/primeiraPiscina.png" 1760047598 1251540 8f6a94910d1de8716d046ef9d8cfed08 ""
   "imagens/raspBerryQeuUso.png" 1765412821 607012 94cfbde3fb67378ffe80d3d4dc5bc2e0 ""
   "imagens/raspberry.png" 1761580068 593793 6b5af3a654877d3b3e9488f5213525df ""
@@ -318,7 +319,7 @@
   "imagens/tabelaProdutos.png" 1760047598 507697 88394f97eb34c94bf6dd5ff4a6a0da92 ""
   "imagens/umlExample.png" 1765752835 29968 8bf2e14afb73189c672d496159a08342 ""
   "pos-textual/anexos.tex" 1760047598 36 e60c649d3fa170b08b1a4f6ac996109e ""
-  "pos-textual/apendices.tex" 1765912037 10069 e6a6dd7e0ec1fcdc4cdbb6a6c8995da0 ""
+  "pos-textual/apendices.tex" 1765915764 10631 dcdfd9479f211dae9eebc04aff3c94fb ""
   "pos-textual/glossario.tex" 1760047598 89 44ab2e1e55aef9ef005209c18d4e0bad ""
   "pos-textual/indices.tex" 1760047598 256 57f0093bc0601156cdf2f85815287bad ""
   "pos-textual/referencias.tex" 1760047598 59 abdd30251b5443a3599db6471f616e58 ""
@@ -333,14 +334,14 @@
   "pre-textual/resumo.tex" 1765910527 1625 4c2c82ee9e3e0995ca988c10521b2645 ""
   "pre-textual/siglas.tex" 1760047597 11 5ac80352bcf42c5f3bf15ba6c6fb7c25 ""
   "pre-textual/sumario.tex" 1760047597 70 0a3a7f68c05f1630d37e27c5092179e8 ""
-  "principal.aux" 1765913071 51698 10ac81a75bce3ad7f7f040c3b65f4ece "pdflatex"
-  "principal.bbl" 1765913068 19584 4f934224aab658f89373791d25545db2 "bibtex principal"
-  "principal.brf" 1765913071 6177 f4e325eac6205ab675b00e96258353c7 "pdflatex"
-  "principal.ind" 1765910987 0 d41d8cd98f00b204e9800998ecf8427e "makeindex principal.idx"
-  "principal.lof" 1765913071 2428 9b0786e50644a3d73bfbc8113e767ba1 "pdflatex"
-  "principal.lot" 1765913071 1186 754084e70915f9f9fd02b491c862237b "pdflatex"
+  "principal.aux" 1765930162 53628 e376cbdfbd7fa6638ae23c5b64d758fe "pdflatex"
+  "principal.bbl" 1765929751 19584 4f934224aab658f89373791d25545db2 "bibtex principal"
+  "principal.brf" 1765930162 6177 38d3108727eebf183243ac3f8173f274 "pdflatex"
+  "principal.ind" 1765923160 0 d41d8cd98f00b204e9800998ecf8427e "makeindex principal.idx"
+  "principal.lof" 1765930162 2450 350c643c8a65512aae1ed071c59f2654 "pdflatex"
+  "principal.lot" 1765930162 1180 8e7f01efde703f012cd235500225c0eb "pdflatex"
   "principal.tex" 1760047597 785 9b746d28aed595b0c0c1aafb4450c78e ""
-  "principal.toc" 1765913071 4853 a1606964da88a41207095431ba95c7dc "pdflatex"
+  "principal.toc" 1765930162 5344 c3efadee2cbc3b1c5723055d67280397 "pdflatex"
   (generated)
   "principal.aux"
   "principal.brf"

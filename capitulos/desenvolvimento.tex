@@ -79,7 +79,7 @@ Para atender ao escopo definido, adotou-se uma arquitetura distribuída de hardw
 
 Com o objetivo de mitigar riscos técnicos e validar as principais decisões arquiteturais do sistema, foram desenvolvidos protótipos funcionais parciais, conforme recomendado pelo Rational Unified Process (RUP). Nessa etapa, realizaram-se testes preliminares de integração entre os sensores, o microcontrolador Arduino e o Raspberry Pi, com foco na verificação da estabilidade da comunicação serial, da latência no envio de dados e da viabilidade da arquitetura proposta. Esses experimentos permitiram confirmar que a infraestrutura de hardware selecionada atende aos requisitos de desempenho estabelecidos na fase de Concepção.
 
-Nesta fase também foram definidos os principais artefatos estruturais do sistema, incluindo a modelagem dos casos de uso, a arquitetura de comunicação entre os dispositivos físicos e a especificação dos componentes embarcados que compõem o protótipo. Dessa forma, a fase de Elaboração estabelece a ligação entre os requisitos identificados na Concepção e a implementação conduzida na fase de Construção, assegurando que o sistema seja desenvolvido com base em uma arquitetura previamente validada e devidamente documentada.
+Simultaneamente, foram definidos os principais artefatos estruturais do sistema, incluindo a modelagem dos casos de uso, a arquitetura de comunicação entre os dispositivos físicos e a especificação dos componentes embarcados que compõem o protótipo. Dessa forma, a fase de Elaboração estabelece a ligação entre os requisitos identificados na Concepção e a implementação conduzida na fase de Construção, assegurando que o sistema seja desenvolvido com base em uma arquitetura previamente validada e devidamente documentada.
 
 \subsection*{Modelagem de Caso de Uso}
 
@@ -89,7 +89,7 @@ A modelagem de casos de uso, elaborada segundo a Linguagem de Modelagem Unificad
     \centering
     \caption{Diagrama de Caso de Uso do Sistema}
     \label{fig:usecase}
-    \includegraphics[width=\textwidth]{imagens/meuDiagramaTcc.png}
+    \includegraphics[width=1.00\textwidth]{imagens/meuDiagramaTcc.png}
     \caption*{Fonte: Autoria própria (2025).}
 \end{figure}
 
@@ -111,90 +111,25 @@ Além disso, a comunicação baseada em protocolos HTTP está sujeita a latênci
 
 \subsection*{Componentes Utilizados no Sistema}
 
-A seguir, são apresentados os principais componentes físicos selecionados para o desenvolvimento do protótipo, incluindo sensores, atuadores e dispositivos de controle. A definição desses elementos nesta fase está alinhada ao RUP, uma vez que a Elaboração contempla a consolidação da arquitetura física e lógica do sistema.
+A seguir, são apresentados os principais componentes físicos selecionados para o desenvolvimento do protótipo, incluindo sensores, atuadores e dispositivos de controle. A definição desses elementos nesta fase está alinhada ao RUP, uma vez que a Elaboração contempla a consolidação da arquitetura física e lógica do sistema. 
 
-\subsubsection*{Sensor de Temperatura}
+\subsubsection*{Sensores de Monitoramento}
 
-\begin{figure}[H]
-    \centering
-    \caption{Sensor de Temperatura MF58 (NTC 10K)}
-    \label{fig:sensortemp}
-    \includegraphics[width=0.80\textwidth]{imagens/sensorTemperatura.png}
-    \caption*{Fonte: \cite{siteComprei}.}
-\end{figure}
+Para a medição da temperatura da água, optou-se pelo sensor NTC 10K (Modelo MF58), ilustrado na Figura \ref{fig:sensortemp} (Apêndice \ref{apendice:hardware}). Este termistor altera sua resistência elétrica inversamente à temperatura e é lido por uma porta analógica do Arduino através de um divisor de tensão.
 
-O sensor selecionado para a medição da temperatura da água foi o modelo MF58 (NTC 10K), um termistor cujo valor de resistência elétrica diminui à medida que a temperatura aumenta. A leitura é realizada por meio de uma entrada analógica do Arduino, utilizando um divisor de tensão, o que possibilita a conversão da resistência elétrica em valores de temperatura, posteriormente processados pelo sistema.
+O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, seu funcionamento baseia-se em um interruptor magnético (\textit{reed switch}) acionado pelo deslocamento de um flutuador, fornecendo um sinal digital (SPST) para identificar níveis críticos no reservatório.
 
-\subsubsection*{Sensor de Nível}
+A qualidade química da água é aferida por um Sensor de pH (Figura \ref{fig:sensorph}, Apêndice \ref{apendice:hardware}) e um Sensor de Turbidez Modelo ST100 (Figura \ref{fig:sensorturbidez}, Apêndice \ref{apendice:hardware}). O sensor de pH monitora a acidez, enquanto o sensor de turbidez identifica partículas em suspensão. Ambos geram sinais analógicos processados pelo Arduino e enviados ao servidor para análise e tomada de decisão.
 
-\begin{figure}[H]
-    \centering
-    \caption{Sensor de Nível LC26M-40}
-    \label{fig:sensorlevel}
-    \includegraphics[width=0.60\textwidth]{imagens/sensorNive.png}
-    \caption*{Fonte: \cite{siteComprei2}.}
-\end{figure}
+\subsubsection*{Atuadores}
 
-O sensor de nível empregado no sistema é o modelo LC26M-40, fabricado em polipropileno (PP). Seu funcionamento baseia-se em um interruptor magnético interno (\textit{reed switch}), cujo estado é alterado conforme o deslocamento do flutuador provocado pela variação do nível da água. O dispositivo fornece um sinal digital do tipo SPST, permitindo a identificação de níveis críticos no reservatório.
+Para o controle do fluxo de água, foram utilizadas bombas submersas modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, estes equipamentos são responsáveis pela filtragem e acionamento da cascata no protótipo.
 
-\subsubsection*{Sensor de pH}
+\subsubsection*{Controladores e Gateway}
 
-\begin{figure}[H]
-    \centering
-    \caption{Sensor de pH}
-    \label{fig:sensorph}
-    \includegraphics[width=0.60\textwidth]{imagens/sensorpH.png}
-    \caption*{Fonte: \cite{siteCompreiPh}.}
-\end{figure}
+O controle direto de hardware é exercido pela placa Arduino Uno R3 (Figura \ref{fig:arduino}, Apêndice \ref{apendice:hardware}). Sua escolha deve-se à robustez nas leituras analógicas e à vasta disponibilidade de bibliotecas para controle dos atuadores em tempo real.
 
-O sensor de pH utilizado no sistema é responsável pela medição do nível de acidez da água da piscina. Os valores capturados são inicialmente processados pelo Arduino e, em seguida, enviados ao servidor para análise dos parâmetros e suporte à tomada de decisão relacionada ao ajuste químico da água.
-
-\subsubsection*{Sensor de Turbidez}
-
-\begin{figure}[H]
-    \centering
-    \caption{Sensor de Turbidez ST100}
-    \label{fig:sensorturbidez}
-    \includegraphics[width=0.60\textwidth]{imagens/sensorTurbidez.png}
-    \caption*{Fonte: \cite{siteCompreiTurbidez}.}
-\end{figure}
-
-O sensor de turbidez selecionado foi o modelo ST100, responsável por identificar a presença de partículas em suspensão na água. Os valores analógicos obtidos são processados pelo Arduino e enviados ao servidor para análise. Com base nesses dados, o sistema pode recomendar ou acionar automaticamente o processo de filtragem ou a aplicação de agentes decantadores, conforme os limites parametrizados.
-
-\subsubsection*{Bombas Submersas}
-
-\begin{figure}[H]
-    \centering
-    \caption{Bomba Submersa JT100}
-    \label{fig:bombasub}
-    \includegraphics[width=0.60\textwidth]{imagens/bombaSubmersa.png}
-    \caption*{Fonte: \cite{siteComprei}.}
-\end{figure}
-
-Foram utilizadas bombas submersas de 3 a 5\,V, modelo JT100, responsáveis pelo enchimento, filtragem e acionamento da cascata do sistema. O equipamento apresenta vazão entre 1000 e 1500\,ml/min e altura máxima de elevação de aproximadamente 1\,m. Suas dimensões compactas, baixo consumo energético e facilidade de integração justificam sua adoção no protótipo desenvolvido.
-\subsubsection*{Arduino}
-
-\begin{figure}[H]
-    \centering
-    \caption{Placa Arduino Uno R3}
-    \label{fig:arduino}
-    \includegraphics[width=0.60\textwidth]{imagens/arduino.png}
-    \caption*{Fonte: \cite{siteComprei4}.}
-\end{figure}
-
-O Arduino Uno R3 foi selecionado como o microcontrolador responsável pela leitura direta dos sensores e pelo acionamento dos atuadores do sistema. Sua ampla compatibilidade com bibliotecas de código aberto, aliada à quantidade adequada de pinos digitais e analógicos, permite atender aos requisitos funcionais definidos na fase de Concepção, especialmente no que se refere à aquisição de dados em tempo real e ao controle dos dispositivos físicos.
-
-\subsubsection*{\textit{Raspberry Pi}}
-
-\begin{figure}[H]
-    \centering
-    \caption{\textit{Raspberry Pi 3 Model B}}
-    \label{fig:raspberry}
-    \includegraphics[width=\textwidth]{imagens/raspBerryQeuUso.png}
-    \caption*{Fonte: \cite{siteComprei3}.}
-\end{figure}
-
-O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário entre o Arduino e o servidor de aplicação. Seu processador quad-core, a memória RAM de 1\,GB e a compatibilidade com sistemas operacionais baseados em Linux possibilitam a execução contínua de rotinas de comunicação, processamento intermediário dos dados e envio das informações ao servidor por meio de requisições HTTP, desempenhando o papel de \textit{gateway} de comunicação do sistema.
+Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Model B, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador \textit{quad-core}, ele gerencia a comunicação Serial com o Arduino e executa os \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico.
 
 \begin{table}[H]
     \centering
@@ -224,43 +159,43 @@ O \textit{Raspberry Pi 3 Model B} foi definido como o dispositivo intermediário
 
 \section{Fase de Construção (\textit{Construction})}
 
-Em conformidade com a metodologia RUP, a fase de Construção foi conduzida por meio de ciclos iterativos e incrementais, nos quais funcionalidades do sistema foram implementadas e validadas progressivamente. O desenvolvimento iniciou-se pela camada física, com a implementação e a validação individual dos sensores e atuadores conectados ao microcontrolador. Após a estabilização da aquisição dos dados, procedeu-se à implementação da camada lógica, englobando o back-end, o banco de dados e o front-end. A etapa final concentrou-se na integração completa entre hardware e software, validando o fluxo de transmissão das informações desde a coleta no ambiente físico até a apresentação na interface web.
+Em conformidade com a metodologia RUP, a fase de Construção foi conduzida por meio de ciclos iterativos e incrementais, nos quais funcionalidades do sistema foram implementadas e validadas progressivamente. O desenvolvimento iniciou-se pela camada física, com a implementação e a validação individual dos sensores e atuadores conectados ao microcontrolador. Após a estabilização da aquisição dos dados, procedeu-se à implementação da camada lógica, englobando o back-end, o banco de dados e o front-end. 
 
-O desenvolvimento do sistema foi estruturado em duas camadas principais: a camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados; e a camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
+A etapa final concentrou-se na integração completa entre hardware e software, validando o fluxo de transmissão das informações desde a coleta no ambiente físico até a apresentação na interface web.O desenvolvimento do sistema foi estruturado em duas camadas principais: a camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados; e a camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
 
-Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para realizar a leitura dos sensores analógicos e digitais, bem como o acionamento condicional dos atuadores. Conforme apresentado no Apêndice \ref{apendice:codigos}, o Código \ref{fig:cod_arduino} ilustra a rotina de coleta dos parâmetros da água e a lógica empregada para o controle dos dispositivos físicos.
+Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para realizar a leitura dos sensores analógicos e digitais, bem como o acionamento condicional dos atuadores. A montagem física e a organização dos componentes durante os testes de bancada podem ser visualizadas na Figura X.
 
-O Raspberry Pi desempenhou a função de \textit{gateway} de comunicação do sistema. Um script desenvolvido em Python foi responsável por estabelecer a comunicação serial com o microcontrolador, interpretar os dados recebidos e encaminhá-los ao servidor por meio de requisições HTTP do tipo POST. A lógica de implementação desse \textit{gateway}, incluindo os mecanismos de tratamento de falhas de comunicação e a serialização dos dados em formato JSON, encontra-se detalhada no Apêndice \ref{apendice:codigos}, Código \ref{lst:python_gateway}.
+\textcolor{red}{imagem do prototipo}
 
-Na camada de aplicação, o back-end, implementado com o framework Spring Boot, disponibiliza os \textit{endpoints} necessários para a recepção e a persistência dos dados coletados. O \textit{controller} responsável por mapear as requisições, converter os objetos JSON e armazenar as leituras no banco de dados PostgreSQL está apresentado no Apêndice \ref{apendice:codigos}, Código \ref{lst:backend_controller}. Essa arquitetura centraliza a regra de negócios, assegurando a integridade, a consistência e a disponibilidade do histórico de monitoramento.
+Conforme apresentado no Apêndice \ref{apendice:codigos}, a Seção \ref{cod:arduino} ilustra a rotina de coleta dos parâmetros da água e a lógica empregada para o controle dos dispositivos físicos.
 
-Por fim, a interface do usuário, desenvolvida em React, consome os dados fornecidos pela API para apresentar o estado atual da piscina em tempo quase real. A implementação da lógica de consumo da API e o gerenciamento de estado para visualização dos parâmetros e acionamento manual dos atuadores estão descritos no Apêndice \ref{apendice:codigos}, Código \ref{lst:frontend_fetch}.
+O Raspberry Pi desempenhou a função de \textit{gateway} de comunicação do sistema. Um \textit{script} desenvolvido em Python foi responsável por estabelecer a comunicação serial com o microcontrolador, interpretar os dados recebidos e encaminhá-los ao servidor por meio de requisições HTTP do tipo POST. A lógica de implementação desse \textit{gateway}, incluindo os mecanismos de tratamento de falhas de comunicação e a serialização dos dados em formato JSON, encontra-se detalhada no Apêndice \ref{apendice:codigos}, Seção \ref{cod:python}.
+
+Na camada de aplicação, o \textit{back-end}, implementado com o \textit{framework} Spring Boot, disponibiliza os \textit{endpoints} necessários para a recepção e a persistência dos dados coletados. O \textit{controller} responsável por mapear as requisições, converter os objetos JSON e armazenar as leituras no banco de dados PostgreSQL está apresentado no Apêndice \ref{apendice:codigos}, Seção \ref{cod:java}. Essa arquitetura centraliza a regra de negócios, assegurando a integridade, a consistência e a disponibilidade do histórico de monitoramento.
+
+Por fim, a interface do usuário, desenvolvida em React, consome os dados fornecidos pela API para apresentar o estado atual da piscina em tempo quase real. A implementação da lógica de consumo da API e o gerenciamento de estado para visualização dos parâmetros e acionamento manual dos atuadores estão descritos no Apêndice \ref{apendice:codigos}, Seção \ref{cod:react}.
 
 \section{Fase de Transição (\textit{Transition})}
 
-Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos com o objetivo de validar seu desempenho, estabilidade e conformidade com os requisitos estabelecidos nas fases anteriores. Foram realizados testes unitários nos sensores, abrangendo a calibração do sensor NTC de temperatura, a verificação da estabilidade do sensor de nível e simulações de condições críticas de funcionamento das bombas, de modo a prevenir situações de \textit{dry-run}. Paralelamente, testes de integração avaliaram o fluxo completo dos dados, desde a aquisição no ambiente físico até a apresentação das informações na interface web.
+Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos com o objetivo de validar seu desempenho, estabilidade e conformidade com os requisitos estabelecidos nas fases anteriores. Foram realizados testes unitários nos sensores, abrangendo a calibração do sensor NTC de temperatura e pH, a verificação da estabilidade do sensor de nível e simulações de condições críticas de funcionamento das bombas, de modo a prevenir situações de \textit{dry-run}. Paralelamente, testes de integração avaliaram o fluxo completo dos dados, desde a aquisição no ambiente físico até a apresentação das informações na interface web.
 
 \begin{table}[H]
     \centering
-    \caption{Resumo dos Testes Realizados e Resultados Obtidos}
+    \caption{Resumo dos Testes de Validação Sistêmica}
     \label{tab:testes_realizados}
-    \begin{tabularx}{\textwidth}{ >{\raggedright\arraybackslash}p{4cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3cm} }
+    \begin{tabularx}{\textwidth}{ >{\raggedright\arraybackslash}p{4cm} >{\raggedright\arraybackslash}X >{\raggedright\arraybackslash}p{3.5cm} }
     \toprule
-    \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Resultado} \\
+    \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Critério/Resultado} \\
     \midrule
-    Calibração do Sensor NTC & Verificar a precisão térmica por comparação com termômetro de referência & Aprovado \\
+    Calibração do Sensor NTC & Verificar a precisão térmica por comparação com termômetro de referência & Margem de erro aceitável ($<\pm 1^{\circ}$C) \\
     \addlinespace
-    Calibração do Sensor de pH & Comparar as leituras do sensor com estojos comerciais de análise da água & Aprovado \\
+    Calibração do pH & Ajuste de ganho via \textit{trimpot} do módulo comparado com valor de referência & Erro absoluto médio $< 0,1$ pH \\
     \addlinespace
-    Validação de Turbidez & Avaliar linearidade e sensibilidade por meio de diluição seriada (água límpida e saturada) & Aprovado \\
+    Estabilidade do Nível & Confirmar o acionamento da boia sem oscilações espúrias & \textit{Debounce} lógico funcional \\
     \addlinespace
-    Estabilidade do Sensor de Nível & Confirmar o acionamento correto da boia sem oscilações espúrias (\textit{debounce}) & Aprovado \\
+    Integração de Dados & Validar o fluxo completo Arduino $\rightarrow$ Raspberry Pi $\rightarrow$ Banco de Dados & Persistência verificada no PostgreSQL \\
     \addlinespace
-    Proteção \textit{Dry-run} & Impedir o acionamento da bomba em condição de reservatório vazio & Aprovado \\
-    \addlinespace
-    Integração de Dados & Validar o fluxo completo Arduino $\rightarrow$ Raspberry Pi $\rightarrow$ Banco de Dados & Aprovado \\
-    \addlinespace
-    Latência da Interface & Medir o tempo entre a leitura do sensor e a atualização na interface web & Aprovado \\
+    Latência da Interface & Medir o tempo entre a leitura do sensor e a atualização na interface web & Atualização em tempo quase real ($<$ 5s) \\
     \bottomrule
     \end{tabularx}
     \caption*{Fonte: Autoria própria (2025).}
@@ -272,4 +207,4 @@ Apesar dos resultados satisfatórios obtidos nos testes, foram identificadas lim
 
 Outro aspecto relevante diz respeito à dependência da infraestrutura de rede local. Falhas momentâneas de conectividade podem ocasionar atrasos ou lacunas temporárias no monitoramento em tempo real, ainda que não comprometam o armazenamento posterior dos dados. Esse comportamento reforça a necessidade de estratégias adicionais de tolerância a falhas, como armazenamento local temporário e mecanismos de retransmissão automática.
 
-Como perspectivas de trabalhos futuros, recomenda-se a validação do sistema em uma piscina de alvenaria em escala real, permitindo avaliar o desempenho dos sensores sob condições ambientais variáveis e uso contínuo. Sugere-se, ainda, a incorporação de um sensor de cloro livre (ORP), de modo a fechar o ciclo completo de automação química, bem como a implementação de algoritmos de aprendizado de máquina voltados à manutenção preditiva, com o objetivo de antecipar falhas em bombas e sensores a partir do histórico operacional.
+% Como perspectivas de trabalhos futuros, recomenda-se a validação do sistema em uma piscina de alvenaria em escala real, permitindo avaliar o desempenho dos sensores sob condições ambientais variáveis e uso contínuo. Sugere-se, ainda, a incorporação de um sensor de cloro livre (ORP), de modo a fechar o ciclo completo de automação química, bem como a implementação de algoritmos de aprendizado de máquina voltados à manutenção preditiva, com o objetivo de antecipar falhas em bombas e sensores a partir do histórico operacional.

@@ -5,21 +5,90 @@
 
 \partapendices
 
-% ----------------------------------------------------------
+% ==========================================================
+% APÊNDICE A - HARDWARE
+% ==========================================================
+\chapter{Detalhamento dos Componentes de Hardware}
+\label{apendice:hardware}
+
+Neste apêndice são apresentados os componentes físicos utilizados na montagem do protótipo, conforme referenciado no Capítulo de Desenvolvimento.
+
+\section{Sensores}
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Temperatura MF58 (NTC 10K)}
+    \label{fig:sensortemp}
+    \includegraphics[width=0.70\textwidth]{imagens/sensorTemperatura.png}
+    \caption*{Fonte: \cite{siteComprei}.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Nível LC26M-40}
+    \label{fig:sensorlevel}
+    \includegraphics[width=0.60\textwidth]{imagens/sensorNive.png}
+    \caption*{Fonte: \cite{siteComprei2}.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de pH}
+    \label{fig:sensorph}
+    \includegraphics[width=0.60\textwidth]{imagens/sensorpH.png}
+    \caption*{Fonte: \cite{siteCompreiPh}.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Sensor de Turbidez ST100}
+    \label{fig:sensorturbidez}
+    \includegraphics[width=0.60\textwidth]{imagens/sensorTurbidez.png}
+    \caption*{Fonte: \cite{siteCompreiTurbidez}.}
+\end{figure}
+
+\section{Atuadores e Controladores}
+
+\begin{figure}[H]
+    \centering
+    \caption{Bomba Submersa JT100}
+    \label{fig:bombasub}
+    \includegraphics[width=0.60\textwidth]{imagens/bombaSubmersa.png}
+    \caption*{Fonte: \cite{siteComprei}.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Placa Arduino Uno R3 (Controlador Físico)}
+    \label{fig:arduino}
+    \includegraphics[width=0.60\textwidth]{imagens/arduino.png}
+    \caption*{Fonte: \cite{siteComprei4}.}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \caption{Raspberry Pi 3 Model B (Gateway)}
+    \label{fig:raspberry}
+    \includegraphics[width=0.80\textwidth]{imagens/raspBerryQeuUso.png}
+    \caption*{Fonte: \cite{siteComprei3}.}
+\end{figure}
+
+% ==========================================================
+% APÊNDICE B - SOFTWARE
+% ==========================================================
 \chapter{Códigos Fonte do Sistema}
 \label{apendice:codigos}
-% ----------------------------------------------------------
 
-A seguir, apresentamos os scripts desenvolvidos para o funcionamento do sistema de automação.
+A seguir, apresentamos os trechos essenciais dos scripts desenvolvidos para o funcionamento do sistema de automação, demonstrando a integração entre as camadas de Firmware, Gateway e Aplicação.
 
 % --- ARDUINO ---
 \section{Firmware do Microcontrolador (Arduino)}
-\label{fig:cod_arduino}
+\label{cod:arduino}
 
+O código abaixo é responsável pela leitura dos sensores em tempo real e controle imediato do relé da bomba, garantindo segurança operacional mesmo sem conexão de rede.
 
 \small
 \begin{verbatim}
-
 #define PINO_PH A0        
 #define PINO_TEMP A1       
 #define PINO_RELE 6       
@@ -34,7 +103,7 @@ float calibracao_slope = 0.18;
 int estadoBomba = 0;
 bool forcarLigado = false; 
 
-// Variavel para controlar o tempo do envio (sem parar a bomba)
+// Variavel para controlar o tempo do envio
 unsigned long ultimoEnvio = 0;
 
 void setup() {
@@ -49,26 +118,16 @@ void setup() {
 }
 
 void loop() {
-  // ==========================================
-  // 1. LEITURA E CONTROLE IMEDIATO (SEM DELAY)
-  // ==========================================
-  // Isso roda milhares de vezes por segundo. 
-  // Se a boia mexer, a bomba responde imediatamente.
-  
-  // Le comando do site (se tiver)
+  // 1. LEITURA E CONTROLE IMEDIATO
   if (Serial.available() > 0) {
     char comando = Serial.read();
     if (comando == 'L') forcarLigado = true;
     if (comando == 'D') forcarLigado = false;
   }
 
-  // Le a Boia
   int leituraBoia = digitalRead(PINO_BOIA);
   
-  // LOGICA:
-  // Boia HIGH (1) = VAZIO -> LIGA BOMBA
-  // Boia LOW (0)  = CHEIO -> DESLIGA BOMBA
-  
+  // Logica de Seguranca Local
   bool deveLigar = (leituraBoia == HIGH) || (forcarLigado == true);
 
   if (deveLigar) { 
@@ -80,15 +139,11 @@ void loop() {
       estadoBomba = 0; 
   }
 
-  // ==========================================
-  // 2. ENVIAR DADOS (SO A CADA 2 SEGUNDOS)
-  // ==========================================
-  // Usamos millis() em vez de delay() para nao travar a bomba
-  
+  // 2. ENVIAR DADOS (A CADA 2 SEGUNDOS)
   if (millis() - ultimoEnvio > 2000) {
-      ultimoEnvio = millis(); // Atualiza o relogio
+      ultimoEnvio = millis(); 
       
-      // -- Le Temperatura so na hora de enviar --
+      // Calculo Temperatura
       float tempCelsius = 0;
       int leituraTemp = analogRead(PINO_TEMP);
       float voltagemTemp = leituraTemp * (5.0 / 1023.0);
@@ -98,21 +153,21 @@ void loop() {
           tempCelsius = tempKelvin - 273.15;
       }
 
-      // -- Le pH so na hora de enviar --
+      // Calculo pH
       long somaLeituras = 0;
       for(int i = 0; i < 10; i++) {
         somaLeituras += analogRead(PINO_PH);
-        delay(10); // Pequeno delay so pro sensor estabilizar (100ms total)
+        delay(10); 
       }
       float mediaPH = somaLeituras / 10.0;
       float voltagemPH = mediaPH * (5.0 / 1023.0);
       float valorPH = 7.00 + ((2.50 - voltagemPH) / calibracao_slope);
 
-      // -- Envia o JSON pro Python --
+      // Serializacao JSON
       Serial.print("{\"t\":");
       Serial.print(tempCelsius);
       Serial.print(",\"n\":");
-      Serial.print(leituraBoia == HIGH ? 0 : 1); // Inverte pro site (0=Baixo, 1=Cheio)
+      Serial.print(leituraBoia == HIGH ? 0 : 1); 
       Serial.print(",\"p\":");
       Serial.print(valorPH);
       Serial.print(",\"b\":");
@@ -125,8 +180,9 @@ void loop() {
 
 % --- PYTHON ---
 \section{Script do Gateway (Python)}
-\label{lst:python_gateway}
+\label{cod:python}
 
+Este script roda no Raspberry Pi, atuando como ponte entre a porta Serial (USB) e a API REST.
 
 \small
 \begin{verbatim}
@@ -139,16 +195,15 @@ import sys
 # --- CONFIGURACOES ---
 PORTA_ARDUINO = '/dev/ttyUSB0' 
 VELOCIDADE = 9600
-IP_PC = "10.0.0.241" # Seu IP
+IP_PC = "10.0.0.241" 
 URL_BACKEND = f"http://{IP_PC}:8080/api/sensor/receber"
 
 def conectar_arduino():
     while True:
         try:
             print(f" Tentando conectar ao Arduino em {PORTA_ARDUINO}...")
-            # timeout=1 e importante para nao travar a leitura
             ser = serial.Serial(PORTA_ARDUINO, VELOCIDADE, timeout=1)
-            time.sleep(2) # Espera o Arduino reiniciar
+            time.sleep(2) 
             print(" Conectado com sucesso!")
             return ser
         except serial.SerialException:
@@ -160,61 +215,39 @@ arduino = conectar_arduino()
 
 while True:
     try:
-        # Verifica se tem dados vindo do Arduino
         if arduino.in_waiting > 0:
             try:
                 linha = arduino.readline().decode('utf-8', errors='ignore').strip()
                 
-                # So processa se a linha nao estiver vazia
-                if not linha:
-                    continue
+                if not linha: continue
 
                 print(f" Enviando: {linha}")
-                
-                # 1. Tenta converter o texto do Arduino para JSON
                 dados = json.loads(linha)
                 
-                # 2. Envia para o Java e AGUARDA A RESPOSTA (timeout 2s)
+                # Envia e aguarda resposta do comando (Ligar/Desligar)
                 resposta = requests.post(URL_BACKEND, json=dados, timeout=2)
                 
                 if resposta.status_code == 200:
-                    print(" Sucesso: Java salvou.")
-                    
-                    # --- AQUI E A PARTE NOVA: RECEBER COMANDO ---
-                    # Se o Java devolver um JSON com ordens (ex: ligar bomba)
                     try:
                         comando_java = resposta.json()
-                        
-                        # Exemplo: O Java devolve {"ligarBomba": true}
                         if comando_java.get("ligarBomba") == True:
-                            print(" Java mandou LIGAR a bomba!")
-                            arduino.write(b'L') # Manda a letra 'L' pro Arduino
-                        
+                            arduino.write(b'L') 
                         elif comando_java.get("ligarBomba") == False:
-                            print(" Java mandou DESLIGAR a bomba!")
-                            arduino.write(b'D') # Manda a letra 'D' pro Arduino
-                            
+                            arduino.write(b'D') 
                     except json.JSONDecodeError:
-                        pass # O Java nao mandou JSON de volta, apenas OK
-                        
-                elif resposta.status_code == 403:
-                    print(" Erro 403: Acesso Negado (Token/Security)")
-                else:
-                    print(f" Erro no Java: {resposta.status_code}")
-            
+                        pass 
+                
             except json.JSONDecodeError:
                 pass
             except requests.exceptions.RequestException as e:
                 print(f" Erro de conexao com o Java: {e}")
 
     except (OSError, serial.SerialException):
-        print("\n ERRO CRITICO: Conexao USB perdida! (Cabo soltou?)")
         if 'arduino' in locals() and arduino.is_open:
             arduino.close()
         arduino = conectar_arduino()
         
     except KeyboardInterrupt:
-        print("\nEncerrando...")
         if 'arduino' in locals() and arduino.is_open:
             arduino.close()
         break
@@ -222,8 +255,10 @@ while True:
 \normalsize
 
 % --- JAVA ---
-\section{Controller do Back-end (Java)}
-\label{lst:backend_controller}
+\section{Controller do Back-end (Java/Spring Boot)}
+\label{cod:java}
+
+Controlador REST responsável por receber os dados do Gateway e persisti-los no banco PostgreSQL.
 
 \small
 \begin{verbatim}
@@ -233,7 +268,6 @@ import com.ifg.residIFG.domain.piscinas.LeituraSensor;
 import com.ifg.residIFG.repository.LeituraSensorRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
 import java.util.Map;
 
@@ -248,7 +282,7 @@ public class SensorController {
     @PostMapping("/receber")
     public void receberDados(@RequestBody Map<String, Object> dados) {
         Double temp = Double.valueOf(dados.get("t").toString());
-
+        
         Integer nivelRaw = Integer.valueOf(dados.get("n").toString());
         Boolean nivel = (nivelRaw == 1);
 
@@ -260,6 +294,8 @@ public class SensorController {
         LeituraSensor leitura = new LeituraSensor(temp, nivel, ph, bombaAtiva);
 
         repository.save(leitura);
+        // Nota: A logica de retorno de comando deve ser implementada 
+        // no retorno deste metodo para fechar o ciclo com o Python.
     }
 
     @GetMapping("/atual")
@@ -277,7 +313,9 @@ public class SensorController {
 
 % --- REACT ---
 \section{Front-end (React)}
-\label{lst:frontend_fetch}
+\label{cod:react}
+
+Trecho do componente principal responsável pelo *polling* de dados e envio de comandos manuais.
 
 \small
 \begin{verbatim}
@@ -289,7 +327,7 @@ public class SensorController {
         if (response.data) {
           setTemperaturaAtual(response.data.temperatura || 0);
           setNivelAgua(response.data.nivelOk);
-         
+          
           if (response.data.ph) {
             setPhAtual(response.data.ph);
           }
@@ -302,7 +340,7 @@ public class SensorController {
     };
 
     buscarDados();
-    const intervalo = setInterval(buscarDados, 5000); // Atualiza a cada 5s
+    const intervalo = setInterval(buscarDados, 5000); 
     return () => clearInterval(intervalo);
   }, []);
 
@@ -310,16 +348,11 @@ public class SensorController {
     setPumpActive(checked);
    
     const acao = checked ? "LIGAR" : "DESLIGAR";
-    const message = checked ? "Comando: Ligar Bomba enviado" 
-                            : "Comando: Desligar Bomba enviado";
-   
     try {
         await api.post("/api/sensor/comando-bomba", { ligar: checked });
-        toast.success(message);
-        await registrarHistorico(`Usuario alterou bomba para: ${acao}`);
+        toast.success(`Comando: ${acao} enviado`);
     } catch (error) {
-        toast.error("Erro ao enviar comando para a bomba.");
-        console.error(error);
+        toast.error("Erro ao enviar comando.");
         setPumpActive(!checked);
     }
   };
