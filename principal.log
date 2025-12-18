@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  18 DEC 2025 07:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2025.10.9)  18 DEC 2025 08:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1433,12 +1433,12 @@ File: imagens/calibrandoSesorTemperatura.png Graphic file (type png)
 Package pdftex.def Info: imagens/calibrandoSesorTemperatura.png  used on input line 50.
 (pdftex.def)             Requested size: 455.0pt x 255.93448pt.
  [52 <./imagens/calibracaoSensorPh.png (PNG copy)>]
-<imagens/dashboardSite.png, id=814, 828.09375pt x 487.8225pt>
-File: imagens/dashboardSite.png Graphic file (type png)
-<use imagens/dashboardSite.png>
-Package pdftex.def Info: imagens/dashboardSite.png  used on input line 68.
-(pdftex.def)             Requested size: 455.0pt x 268.04268pt.
- [53 <./imagens/calibrandoSesorTemperatura.png (PNG copy)>] [54 <./imagens/dashboardSite.png>]) (capitulos/conclusao.tex [55])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
+<imagens/printSistema.png, id=814, 1398.72563pt x 718.93594pt>
+File: imagens/printSistema.png Graphic file (type png)
+<use imagens/printSistema.png>
+Package pdftex.def Info: imagens/printSistema.png  used on input line 68.
+(pdftex.def)             Requested size: 455.0pt x 233.85985pt.
+ [53 <./imagens/calibrandoSesorTemperatura.png (PNG copy)>] [54 <./imagens/printSistema.png>]) (capitulos/conclusao.tex [55])) (estrutura/pos-textual.tex (pos-textual/referencias.tex (principal.bbl (principal.brf)
 \tf@brf=\write6
 \openout6 = `principal.brf'.
 
@@ -1567,14 +1567,14 @@ Package rerunfilecheck Info: File `principal.brf' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  38423 strings out of 474486
- 755655 string characters out of 5741867
+ 755648 string characters out of 5741867
  1955542 words of memory out of 5000000
  59464 multiletter control sequences out of 15000+600000
  645929 words of font info for 211 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  109i,13n,111p,1608b,877s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbxi10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb><C:/Users/voluciano/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on principal.pdf (75 pages, 9770597 bytes).
+Output written on principal.pdf (75 pages, 9808072 bytes).
 PDF statistics:
  1431 PDF objects out of 1440 (max. 8388607)
  264 named destinations out of 1000 (max. 500000)
