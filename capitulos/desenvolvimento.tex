@@ -161,11 +161,27 @@ Em conformidade com a metodologia RUP, a fase de Construção foi conduzida por 
 
 A etapa final concentrou-se na integração completa entre hardware e software, validando o fluxo de transmissão das informações desde a coleta no ambiente físico até a apresentação na interface web.O desenvolvimento do sistema foi estruturado em duas camadas principais: a camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados; e a camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
 
-Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para realizar a leitura dos sensores analógicos e digitais, bem como o acionamento condicional dos atuadores. A montagem física e a organização dos componentes durante os testes de bancada podem ser visualizadas na Figura X.
+Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para realizar a leitura dos sensores analógicos e digitais, bem como o acionamento condicional dos atuadores. A montagem física e a organização dos componentes durante os testes de bancada podem ser visualizadas na Figura \ref{fig:testes_bancada}.
 
-\textcolor{red}{imagem do prototipo}
+\begin{figure}[H]
+    \centering
+    \caption{Testes em bancada}
+    \label{fig:testes_bancada}
+    \includegraphics[width=0.6\textwidth]{imagens/prototipoMesa.jpeg}
+    \caption*{Fonte: Autoria própria (2025).}
+\end{figure}
 
 Conforme apresentado no Apêndice \ref{apendice:codigos}, a Seção \ref{cod:arduino} ilustra a rotina de coleta dos parâmetros da água e a lógica empregada para o controle dos dispositivos físicos.
+
+Com o intuito de  garantir a confiabilidade das informações coletadas e evitar o armazenamento de dados incorretos, foi desenvolvido um fluxo lógico de validação e normalização antes da persistência no banco de dados. A Figura \ref{fig:fluxo_logica} demonstra o algoritmo de decisão executado pelo sistema a cada ciclo de leitura.
+
+\begin{figure}[H]
+    \centering
+    \caption{Fluxograma de validação de dados e tomada de decisão do sistema}
+    \label{fig:fluxo_logica}
+    \includegraphics[width=0.6\textwidth]{imagens/diagramaFluxo.png}
+    \caption*{Fonte: Autoria própria (2025).}
+\end{figure}
 
 O Raspberry Pi desempenhou a função de \textit{gateway} de comunicação do sistema. Um \textit{script} desenvolvido em Python foi responsável por estabelecer a comunicação serial com o microcontrolador, interpretar os dados recebidos e encaminhá-los ao servidor por meio de requisições HTTP do tipo POST. A lógica de implementação desse \textit{gateway}, incluindo os mecanismos de tratamento de falhas de comunicação e a serialização dos dados em formato JSON, encontra-se detalhada no Apêndice \ref{apendice:codigos}, Seção \ref{cod:python}.
 
