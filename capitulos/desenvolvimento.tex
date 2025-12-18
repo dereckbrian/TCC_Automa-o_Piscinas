@@ -36,23 +36,21 @@ O levantamento de requisitos resultou na definição dos requisitos funcionais (
     \midrule
     \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\
     \addlinespace
-    \textbf{RF02} & O sistema deve acionar automaticamente a bomba de filtragem e o aquecedor conforme os parâmetros definidos ou coletados pelos sensores. \\
+    \textbf{RF02} & O sistema deve acionar automaticamente a bomba de água conforme os parâmetros coletado pelo sensor de nível. \\
     \addlinespace
     \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\
     \addlinespace
     \textbf{RF04} & O sistema deve permitir o cadastro e o armazenamento dos dados coletados no banco de dados. \\
     \addlinespace
-    \textbf{RF05} & O sistema deve permitir o cadastro de piscinas vinculadas a usuários. \\
+    \textbf{RF05} & O sistema deve emitir alertas quando algum parâmetro ultrapassar os limites estabelecidos. \\
     \addlinespace
-    \textbf{RF06} & O sistema deve emitir alertas quando algum parâmetro ultrapassar os limites estabelecidos. \\
-    \addlinespace
-    \textbf{RF07} & O sistema deve gerar gráficos com base nos dados históricos dos parâmetros monitorados. \\
+    \textbf{RF06} & O sistema deve gerar gráficos com base nos dados históricos dos parâmetros monitorados. \\
     \bottomrule
     \end{tabularx}
     \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-Para a validação dos requisitos definidos, foram estabelecidos critérios quantitativos de aceitação, considerando o desempenho esperado para um protótipo IoT. A precisão dos sensores (RF01) foi definida com margem de erro inferior a $\pm$5\% em relação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder cinco segundos, caracterizando uma monitoração em tempo quase real. No que se refere à comunicação (RNF03), o sistema é considerado estável quando as requisições HTTP apresentam taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a quatro segundos por requisição. O requisito de automação (RF02) é considerado atendido quando o acionamento dos atuadores ocorre em até dois segundos após a detecção de uma condição crítica previamente parametrizada.
+Para a validação dos requisitos definidos, foram estabelecidos critérios quantitativos de aceitação, considerando o desempenho esperado para um protótipo IoT. A precisão dos sensores (RF01) foi definida com margem de erro inferior a $\pm$5\% em relação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder cinco segundos, caracterizando uma monitoração em tempo quase real. No que se refere à comunicação (RNF03), o sistema é considerado estável quando as requisições HTTP apresentam taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a quatro segundos por requisição. O requisito de automação (RF02) é considerado atendido quando o acionamento do atuador ocorrer em até dois segundos após a detecção da falta de água.
 
 \begin{table}[H]
     \centering
@@ -66,7 +64,7 @@ Para a validação dos requisitos definidos, foram estabelecidos critérios quan
     \addlinespace
     \textbf{RNF02} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\
     \addlinespace
-    \textbf{RNF03} & A comunicação entre o microcontrolador e o servidor deve ocorrer de forma segura, utilizando os protocolos HTTP e HTTPS. \\
+    \textbf{RNF03} & A comunicação entre o gateway (Raspberry Pi) e o servidor deve ocorrer utilizando o protocolo HTTP. \\
     \addlinespace
     \textbf{RNF04} & O sistema deve ser desenvolvido utilizando o framework Spring Boot no back-end e React no front-end. \\
     \bottomrule
@@ -129,7 +127,7 @@ Para o controle do fluxo de água, foram utilizadas bombas submersas modelo JT10
 
 O controle direto de hardware é exercido pela placa Arduino Uno R3 (Figura \ref{fig:arduino}, Apêndice \ref{apendice:hardware}). Sua escolha deve-se à robustez nas leituras analógicas e à vasta disponibilidade de bibliotecas para controle dos atuadores em tempo real.
 
-Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Model B, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador \textit{quad-core}, ele gerencia a comunicação Serial com o Arduino e executa os \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico.
+Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Model B, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador, ele gerencia a comunicação Serial com o Arduino e executa os \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico.
 
 \begin{table}[H]
     \centering
@@ -203,8 +201,10 @@ Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos 
 
 Adicionalmente, foram realizados testes de responsividade da interface web e de confiabilidade da comunicação entre o servidor e os dispositivos embarcados. Os ajustes finais envolveram a correção de algoritmos de conversão dos sensores, a adequação de temporizações de leitura e transmissão, bem como melhorias na visualização gráfica dos dados apresentados ao usuário.
 
-Apesar dos resultados satisfatórios obtidos nos testes, foram identificadas limitações inerentes à prototipagem em escala reduzida. A principal restrição técnica observada refere-se à calibração fina dos sensores analógicos de turbidez e pH, os quais apresentaram sensibilidade a ruídos elétricos e variações ambientais, demandando tratamento adicional dos sinais por meio de filtragem e normalização em software. Tais limitações evidenciam que, embora o sistema atenda aos requisitos funcionais propostos, sua precisão pode ser impactada por fatores externos em cenários de uso prolongado.
+Embora os testes tenham validado a funcionalidade do sistema, observaram-se limitações decorrentes da escala reduzida do protótipo. A discussão detalhada sobre esses desafios e o desempenho quantitativo do sistema será apresentada a seguir.
 
-Outro aspecto relevante diz respeito à dependência da infraestrutura de rede local. Falhas momentâneas de conectividade podem ocasionar atrasos ou lacunas temporárias no monitoramento em tempo real, ainda que não comprometam o armazenamento posterior dos dados. Esse comportamento reforça a necessidade de estratégias adicionais de tolerância a falhas, como armazenamento local temporário e mecanismos de retransmissão automática.
+% A principal restrição técnica observada refere-se à calibração fina dos sensores analógicos de turbidez e pH, os quais apresentaram sensibilidade a ruídos elétricos e variações ambientais, demandando tratamento adicional dos sinais por meio de filtragem e normalização em software. Tais limitações evidenciam que, embora o sistema atenda aos requisitos funcionais propostos, sua precisão pode ser impactada por fatores externos em cenários de uso prolongado.
 
-% Como perspectivas de trabalhos futuros, recomenda-se a validação do sistema em uma piscina de alvenaria em escala real, permitindo avaliar o desempenho dos sensores sob condições ambientais variáveis e uso contínuo. Sugere-se, ainda, a incorporação de um sensor de cloro livre (ORP), de modo a fechar o ciclo completo de automação química, bem como a implementação de algoritmos de aprendizado de máquina voltados à manutenção preditiva, com o objetivo de antecipar falhas em bombas e sensores a partir do histórico operacional.
+% Outro aspecto relevante diz respeito à dependência da infraestrutura de rede local. Falhas momentâneas de conectividade podem ocasionar atrasos ou lacunas temporárias no monitoramento em tempo real, ainda que não comprometam o armazenamento posterior dos dados. Esse comportamento reforça a necessidade de estratégias adicionais de tolerância a falhas, como armazenamento local temporário e mecanismos de retransmissão automática.
+
+

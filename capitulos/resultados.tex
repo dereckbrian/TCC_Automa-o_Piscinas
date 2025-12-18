@@ -19,7 +19,7 @@ A Figura \ref{fig:prototipo_final} apresenta a visão geral do protótipo montad
 
 \vspace{5em}
 
-Durante os testes de integração, o sistema de atuadores respondeu conforme o esperado, com o acionamento da bomba via relé ocorrendo sem atrasos perceptíveis. Entretanto, nas etapas iniciais de validação, foi indentificado um problema: o acionamento da bomba gerava ruídos eletromagnéticos e picos de tensão (\textit{back EMF}) que interferiam no circuito do microcontrolador, comprometendo a estabilidade das leituras dos sensores e da própria bomba.
+Durante os testes de integração, o sistema de atuadores respondeu conforme o esperado, com o acionamento da bomba via relé ocorrendo sem atrasos perceptíveis. Entretanto, nas etapas iniciais de validação, foi indentificado um problema: o acionamento da bomba gerava ruídos eletromagnéticos e picos de tensão que interferiam no circuito do microcontrolador, comprometendo a estabilidade das leituras dos sensores e da própria bomba.
 
 Tal problema foi solucionado com a substituição do módulo de acionamento simples por um módulo relé com isolamento via optoacoplador. Essa alteração garantiu o isolamento galvânico entre o circuito de potência e o circuito lógico do Arduino, eliminando as interferências indentificadas. A Figura \ref{fig:rele_opto} apresenta o componente adotado para mitigar essa falha.
 
@@ -75,10 +75,14 @@ A Figura \ref{fig:dashboard_web} ilustra a tela principal do sistema, onde são 
 
 Os testes práticos realizados no cenário de validação demonstraram que o sistema é capaz de realizar o ciclo completo de automação: leitura, processamento, envio e atuação.
 
-No que tange à precisão das leituras, o sensor de temperatura NTC 10K apresentou alta estabilidade, com variações desprezíveis em relação ao termômetro de referência. Já os sensores de qualidade da água (pH e Turbidez) exigiram um tratamento de software mais robusto. Observou-se que, sem a aplicação de filtros de média móvel no firmware do Arduino, as leituras apresentavam oscilações momentâneas (ruído), o que poderia levar a acionamentos indevidos da bomba. Com a implementação da filtragem digital, o sistema atingiu uma estabilidade satisfatória para uso doméstico.
-
-Um desafio relevante encontrado durante o desenvolvimento foi a calibração do sensor de turbidez. A correlação entre a tensão analógica lida e a "sujeira" visível da água não é linear em todos os pontos, exigindo múltiplos testes com diferentes concentrações de partículas para definir o limiar (\textit{threshold}) ideal de acionamento da filtragem.
+No que tange à precisão das leituras, o sensor de temperatura NTC 10K apresentou alta estabilidade, com variações desprezíveis em relação ao termômetro de referência. Já os sensores de qualidade da água exigiram um tratamento de software e hardware mais robusto. Observou-se que, sem a aplicação de filtros de média móvel no firmware do Arduino, as leituras apresentavam oscilações momentâneas (ruído), o que poderia levar a acionamentos indevidos da bomba. Com a implementação da filtragem digital, o sistema atingiu uma estabilidade satisfatória para uso doméstico.
 
 A latência da comunicação, um dos requisitos não funcionais críticos, manteve-se dentro do aceitável para aplicações IoT residenciais. O tempo médio entre a mudança de estado físico (ex: sensor de nível detectando falta d'água) e a atualização na interface web foi inferior a 5 segundos na maioria dos testes, validando a eficiência da arquitetura distribuída baseada em API REST.
 
 As limitações encontradas, principalmente relacionadas à sensibilidade dos sensores analógicos de baixo custo e à dependência da estabilidade da rede Wi-Fi local, apontam caminhos para evoluções futuras do projeto, as quais serão detalhadas nas considerações finais.
+
+\section{Trabalhos futuros}
+
+    Integrar um sensor de cloro livre (ORP), completando o ciclo de automação química, bem como implementar algoritmos de aprendizado de máquina voltados para manutenção preditiva, com o objetivo de antecipar falhas em bombas e sensores com base no histórico operacional. O sistema será implementado em até duas piscinas de alvenaria em escala real, proporcionando uma melhor visualização da capacidade total do sistema e permitindo sua expansão. A escalabilidade do sistema possibilitará a adição de mais piscinas e usuários, ampliando sua aplicabilidade.
+
+    
