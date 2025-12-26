@@ -221,7 +221,7 @@ No próximo tópico, são apresentados os principais conceitos e componentes que
 
 Tecnicamente denominada domótica\footnote{\textit{Domótica}: termo que designa a integração de tecnologias destinadas ao controle inteligente de ambientes residenciais.}, a automação residencial tem como principal objetivo acionar, monitorar, integrar e controlar diferentes variáveis de uma residência, como iluminação, climatização, áudio e vídeo, a fim de promover eficiência, comodidade e segurança ao usuário \citeonline{oliveira2019domotica}. No Brasil, o termo mais utilizado é automação residencial, uma tradução derivada da expressão americana \textit{home automation}. Apesar disso, essa tradução não abrange plenamente a concepção de domótica, que envolve não apenas o controle remoto, mas a integração inteligente de sistemas.
 
-O uso de tecnologias residenciais tem crescido de maneira expressiva no país; entretanto, o setor da construção civil ainda não acompanha plenamente o ritmo de evolução observado em áreas como a indústria automotiva, que já emprega amplamente \textit{tecnologias embarcadas}\footnote{\textit{Tecnologia embarcada}: computador especializado, composto por hardware e software dedicados, integrados a um sistema maior para execução de funções específicas.} \citeonline{hipolito2018automaccao}. Essa diferença evidencia a necessidade de maior disseminação dos conceitos técnicos que sustentam a automação no ambiente doméstico.
+O uso de tecnologias residenciais tem crescido de maneira expressiva no país; entretanto, o setor da construção civil ainda não acompanha plenamente o ritmo de evolução observado em áreas como a indústria automotiva, que já emprega amplamente tecnologias embarcadas\footnote{\textit{Tecnologia embarcada}: computador especializado, composto por hardware e software dedicados, integrados a um sistema maior para execução de funções específicas.} \citeonline{hipolito2018automaccao}. Essa diferença evidencia a necessidade de maior disseminação dos conceitos técnicos que sustentam a automação no ambiente doméstico.
 
 De acordo com \citeonline{accardi2012automaccao}, a forma como os componentes de um sistema residencial se comunicam depende diretamente da arquitetura adotada, que pode ser centralizada ou descentralizada. Em uma arquitetura centralizada, todos os dispositivos se conectam a um único controlador principal, responsável por processar e executar todas as ações do sistema; esse arranjo é ilustrado na \autoref{fig:arquiteturaCentralizada}. Essa configuração exige que o controlador possua alta capacidade de processamento e confiabilidade operacional.
 
@@ -271,7 +271,7 @@ A automação residencial é composta por diversos elementos que, em conjunto, p
     \item \textbf{Camada de comunicação/rede:}
     Segundo \citeonline{accardi2012automaccao}, a comunicação entre os dispositivos ocorre por meio de protocolos, que funcionam como acordos que definem regras e padrões para a troca de informações. Assim, o protocolo estabelece como os equipamentos interagem entre si dentro do sistema.
     
-    Entre os protocolos mais utilizados em automação residencial estão Ethernet, X-10, HomePNA e Wi-Fi. Alguns foram desenvolvidos especificamente para ambientes residenciais, enquanto outros derivam de aplicações industriais ou comerciais.
+    Entre os protocolos mais utilizados em automação residencial estão \textit{Ethernet}, X-10, \textit{HomePNA} e \textit{Wi-Fi}. Alguns foram desenvolvidos especificamente para ambientes residenciais, enquanto outros derivam de aplicações industriais ou comerciais.
     
     \item \textbf{Camada de controle/automação lógica:}
     Também denominada central de automação, essa camada representa o núcleo lógico do sistema, responsável por gerenciar os dispositivos conectados. Ela processa os dados recebidos e executa ações conforme as instruções programadas.
@@ -285,7 +285,7 @@ Nesse contexto, o próximo capítulo apresenta o desenvolvimento de um sistema a
 
 Esta seção apresenta as principais ferramentas, dispositivos e tecnologias empregadas no desenvolvimento do sistema automatizado proposto, abrangendo tanto os componentes físicos de hardware quanto as plataformas de controle utilizadas na integração entre sensores, atuadores e algoritmos de decisão.
 
-\subsection{COMPONENTES FÍSICOS E DE CONTROLE (HARDWARE)}
+\subsection{COMPONENTES FÍSICOS E DE CONTROLE (\textit{HARDWARE})}
 
 O sistema de automação requer componentes capazes de processar informações, interagir com o ambiente físico, executar ações mecânicas e realizar medições em tempo real. Entre esses elementos estão plataformas de prototipagem, microcomputadores, sensores especializados e atuadores eletromecânicos.
 
@@ -303,12 +303,12 @@ A placa Arduino é composta por diversos componentes, sendo o microcontrolador o
     \caption*{Fonte: \citeonline{silva2025automacao}.}
 \end{figure}
 
-A \autoref{fig:arduino} apresenta o Arduino Uno, que possui 14 pinos digitais e 6 pinos analógicos, permitindo a conexão com uma variedade de sensores e atuadores, possibilitando a interação direta entre o sistema e o ambiente físico. São alguns dos elementos que compõem o Arduino: a placa protoboard, que consiste em uma base utilizada para construir dispositivos eletrônicos temporários, sem a necessidade de soldagem, utilizando jumpers\footnote{Condutor curto usado para fechar, abrir ou desviar parte de um circuito eletrônico} para a conexão \cite{de2012introduccao}.
+A \autoref{fig:arduino} apresenta o Arduino Uno, que possui 14 pinos digitais e 6 pinos analógicos, permitindo a conexão com uma variedade de sensores e atuadores, possibilitando a interação direta entre o sistema e o ambiente físico. São alguns dos elementos que compõem o Arduino: a placa protoboard, que consiste em uma base utilizada para construir dispositivos eletrônicos temporários, sem a necessidade de soldagem, utilizando \textit{jumpers}\footnote{Condutor curto usado para fechar, abrir ou desviar parte de um circuito eletrônico} para a conexão \cite{de2012introduccao}.
 
 
 \subsubsection*{Raspberry Pi}
 
-De acordo com \citeonline{juca2018aplicaccoes}, o Raspberry Pi é considerado um dos menores computadores do mundo, apresentando dimensões semelhantes às de um cartão de crédito. O dispositivo inclui porta HDMI\footnote{\textit{High-Definition Multimedia Interface}: interface digital para transmissão de áudio e vídeo em alta definição.}, portas USB, pinos de conexão GPIO, entrada Ethernet, conector P2 para áudio, módulo Wi-Fi e Bluetooth integrados.
+De acordo com \citeonline{juca2018aplicaccoes}, o Raspberry Pi é considerado um dos menores computadores do mundo, apresentando dimensões semelhantes às de um cartão de crédito. O dispositivo inclui porta \textit{HDMI}\footnote{\textit{High-Definition Multimedia Interface}: interface digital para transmissão de áudio e vídeo em alta definição.}, portas \textit{USB}\footnote{(\textit{Universal Serial Bus}) é um padrão universal para conectar, comunicar e fornecer energia entre computadores e periféricos (mouses, teclados, pen drives, etc.)}, pinos de conexão \textit{GPIO}\footnote{GPIO (\textit{General-Purpose Input/Output}) são portas configuráveis em microcontroladores (como Raspberry Pi e Arduino) que atuam como entradas (para ler sensores ou botões) ou saídas (para controlar LEDs e motores)}, entrada \textit{Ethernet}, conector P2 para áudio, módulo \textit{Wi-Fi} e \textit{Bluetooth} integrados.
 
 \begin{figure}[H]
     \centering
@@ -318,7 +318,7 @@ De acordo com \citeonline{juca2018aplicaccoes}, o Raspberry Pi é considerado um
     \caption*{Fonte: \citeonline{juca2018aplicaccoes}.}
 \end{figure}
 
-Como observado na Figura \ref{fig:raspberry}, o hardware do Raspberry Pi funciona de maneira integrada em uma única placa, o que reduz custos e possibilita que o dispositivo execute diversas funções de um computador convencional, como acesso à internet, edição de textos e reprodução de vídeos. Além disso, seus pinos GPIO permitem interação com sensores, possibilitando aplicações em automação e sistemas embarcados.
+Como observado na Figura \ref{fig:raspberry}, o hardware do Raspberry Pi funciona de maneira integrada em uma única placa, o que reduz custos e possibilita que o dispositivo execute diversas funções de um computador convencional, como acesso à internet, edição de textos e reprodução de vídeos. Além disso, seus pinos \textit{GPIO} permitem interação com sensores, possibilitando aplicações em automação e sistemas embarcados.
 
 \subsubsection*{Sensores Específicos}
 

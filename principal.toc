@@ -6,11 +6,11 @@
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {1}\MakeTextUppercase []{Introdução}}{11}{chapter.1}%
+\contentsline {chapter}{\chapternumberline {1}\MakeUppercase []{Introdução}}{11}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Objetivo Geral}{12}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objetivos Específicos}{12}{section.1.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {2}\MakeTextUppercase []{Fundamentação teórica}}{14}{chapter.2}%
+\contentsline {chapter}{\chapternumberline {2}\MakeUppercase []{Fundamentação teórica}}{14}{chapter.2}%
 \contentsline {section}{\numberline {2.1}PISCINAS E SUA MANUTENÇÃO}{14}{section.2.1}%
 \contentsline {subsection}{\numberline {2.1.1}HISTÓRICO E POPULARIZAÇÃO DAS PISCINAS}{14}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}COMPONENTES BÁSICOS DE UMA PISCINA}{15}{subsection.2.1.2}%
@@ -21,12 +21,12 @@
 \contentsline {subsection}{\numberline {2.2.2}CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}{25}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}COMPONENTES BÁSICOS}{26}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}FERRAMENTAS UTILIZADAS PARA AUTOMAÇÃO}{27}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}COMPONENTES FÍSICOS E DE CONTROLE (HARDWARE)}{28}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.1}COMPONENTES FÍSICOS E DE CONTROLE (\textit {HARDWARE})}{28}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}FERRAMENTAS DE SOFTWARE E METODOLOGIAS DE DESENVOLVIMENTO}{31}{subsection.2.3.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {3}\MakeTextUppercase []{Trabalhos Correlatos}}{36}{chapter.3}%
+\contentsline {chapter}{\chapternumberline {3}\MakeUppercase []{Trabalhos Correlatos}}{36}{chapter.3}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {4}\MakeTextUppercase []{Desenvolvimento}}{39}{chapter.4}%
+\contentsline {chapter}{\chapternumberline {4}\MakeUppercase []{Desenvolvimento}}{39}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Tipo de Pesquisa e Etapas de Construção}{39}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Processo de Desenvolvimento de Software}{39}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Fase de Concepção (\textit {Inception})}{40}{section.4.3}%
@@ -34,17 +34,17 @@
 \contentsline {section}{\numberline {4.5}Fase de Construção (\textit {Construction})}{45}{section.4.5}%
 \contentsline {section}{\numberline {4.6}Fase de Transição (\textit {Transition})}{48}{section.4.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e Discussão}}{50}{chapter.5}%
+\contentsline {chapter}{\chapternumberline {5}\MakeUppercase []{Resultados e Discussão}}{50}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Integração do Protótipo Físico}{50}{section.5.1}%
 \contentsline {section}{\numberline {5.2}Interface de Controle e Monitoramento}{53}{section.5.2}%
 \contentsline {section}{\numberline {5.3}Análise de Desempenho e Discussão}{54}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Trabalhos futuros}{55}{section.5.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{56}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeUppercase []{Considerações Finais}}{56}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{57}{section*.63}%
+\contentsline {chapter}{\MakeUppercase []{Refer\^encias}}{57}{section*.63}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
@@ -52,13 +52,13 @@
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Detalhamento dos Componentes de Hardware}}{63}{appendix.A}%
+\contentsline {appendix}{\chapternumberline {A}\MakeUppercase []{Detalhamento dos Componentes de Hardware}}{63}{appendix.A}%
 \contentsline {section}{\numberline {A.1}Sensores}{63}{section.A.1}%
 \contentsline {section}{\numberline {A.2}Atuadores e Controladores}{66}{section.A.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Códigos Fonte do Sistema}}{68}{appendix.B}%
+\contentsline {appendix}{\chapternumberline {B}\MakeUppercase []{Códigos Fonte do Sistema}}{68}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Firmware do Microcontrolador (Arduino)}{68}{section.B.1}%
 \contentsline {section}{\numberline {B.2}Script do Gateway (Python)}{70}{section.B.2}%
 \contentsline {section}{\numberline {B.3}Controller do Back-end (Java/Spring Boot)}{72}{section.B.3}%
