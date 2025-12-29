@@ -22,7 +22,7 @@ As subseções seguintes descrevem detalhadamente cada uma dessas fases, destaca
 
 Na fase de Concepção foram definidos o problema de pesquisa, o escopo inicial do projeto e os requisitos fundamentais do sistema. O problema identificado refere-se às dificuldades enfrentadas pelos usuários no processo manual de manutenção de piscinas, decorrentes da necessidade de medições frequentes, cálculos físico-químicos, além do risco de desperdício de produtos ocasionado pela aplicação imprecisa das dosagens recomendadas.
 
-Com o objetivo de mitigar essas limitações, o sistema foi concebido para automatizar a leitura contínua dos principais parâmetros físico-químicos da água, reduzir a subjetividade na avaliação da qualidade, atuar de forma autônoma no sistema de filtragem com base na turbidez e disponibilizar interfaces remotas para monitoramento e acompanhamento do processo de manutenção.
+Com o objetivo de mitigar essas limitações, o sistema foi concebido para automatizar a leitura contínua dos principais parâmetros físico-químicos da água, reduzir a subjetividade na avaliação da qualidade, atuar de forma autônoma na reposição de água com base no sensor de nível e disponibilizar interfaces remotas para monitoramento e acompanhamento do processo de manutenção.
 
 O levantamento de requisitos resultou na definição dos requisitos funcionais (RF) e não funcionais (RNF), apresentados nas Tabelas \ref{tab:req_funcionais} e \ref{tab:req_nao_funcionais}, respectivamente.
 
@@ -109,19 +109,21 @@ Além disso, a comunicação baseada em protocolos HTTP está sujeita a latênci
 
 \subsection*{Componentes Utilizados no Sistema}
 
-A seguir, são apresentados os principais componentes físicos selecionados para o desenvolvimento do protótipo, incluindo sensores, atuadores e dispositivos de controle. A definição desses elementos nesta fase está alinhada ao RUP, uma vez que a Elaboração contempla a consolidação da arquitetura física e lógica do sistema. 
+A seguir, são apresentados os principais componentes físicos selecionados para o desenvolvimento do protótipo, incluindo sensores, atuadores e dispositivos de controle. 
+
+% A definição desses elementos nesta fase está alinhada ao RUP, uma vez que a Elaboração contempla a consolidação da arquitetura física e lógica do sistema. 
 
 \subsubsection*{Sensores de Monitoramento}
 
 Para a medição da temperatura da água, optou-se pelo sensor NTC 10K (Modelo MF58), ilustrado na Figura \ref{fig:sensortemp} (Apêndice \ref{apendice:hardware}). Este termistor altera sua resistência elétrica inversamente à temperatura e é lido por uma porta analógica do Arduino através de um divisor de tensão.
 
-O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, seu funcionamento baseia-se em um interruptor magnético (\textit{reed switch}) acionado pelo deslocamento de um flutuador, fornecendo um sinal digital (SPST) para identificar níveis críticos no reservatório.
+O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, seu funcionamento baseia-se em um interruptor magnético (\textit{reed switch}) acionado pelo deslocamento de um flutuador, fornecendo um sinal digital (SPST)\footnote{Refere-se a um tipo de interruptor (chave). A sigla significa \textit{Single-Pole}, \textit{Single-Throw} (unipolar, de uma via ou um estágio), descrevendo o mecanismo físico de um interruptor simples de ligar/desligar (\textit{on/off}). } para identificar níveis críticos no reservatório.
 
-A qualidade química da água é aferida por um Sensor de pH (Figura \ref{fig:sensorph}, Apêndice \ref{apendice:hardware}) e um Sensor de Turbidez Modelo ST100 (Figura \ref{fig:sensorturbidez}, Apêndice \ref{apendice:hardware}). O sensor de pH monitora a acidez, enquanto o sensor de turbidez identifica partículas em suspensão. Ambos geram sinais analógicos processados pelo Arduino e enviados ao servidor para análise e tomada de decisão.
+A qualidade química da água é aferida por um Sensor de pH (Figura \ref{fig:sensorph}, Apêndice \ref{apendice:hardware}) e um Sensor de Turbidez Modelo ST100 (Figura \ref{fig:sensorturbidez}, Apêndice \ref{apendice:hardware}). O sensor de pH monitora a acidez e a alcalinidade, enquanto o sensor de turbidez identifica partículas em suspensão. Ambos geram sinais analógicos processados pelo Arduino e enviados ao servidor para análise e tomada de decisão.
 
 \subsubsection*{Atuadores}
 
-Para o controle do fluxo de água, foram utilizadas bombas submersas modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, estes equipamentos são responsáveis pela filtragem e acionamento da cascata no protótipo.
+Para o controle do fluxo de água, foi utilizado uma bomba submersa modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, este equipamento é responsável pelo controle de nível de água da psicina, sendo acionado quando o sensor de nível informar o nível abaixo do determinado.
 
 \subsubsection*{Controladores e Gateway}
 
@@ -139,7 +141,7 @@ Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Mod
     \midrule
     Raspberry Pi 3 B & Gateway de comunicação e envio de dados ao servidor & 5\,V & Serial (USB) / Wi-Fi (HTTP) \\
     \addlinespace
-    Arduino Uno R3 & Leitura de sensores e controle de atuadores & 5\,V / 9\,V & Serial / I/O digital e analógico \\
+    Arduino Uno R3 & Leitura de sensores e controle de atuadores & 5\,V  & Serial / I/O digital e analógico \\
     \addlinespace
     Sensor de Temperatura (NTC) & Monitoramento térmico da água & 5\,V & Analógico (divisor de tensão) \\
     \addlinespace
@@ -191,7 +193,7 @@ Por fim, a interface do usuário, desenvolvida em React, consome os dados fornec
 
 \section{Fase de Transição (\textit{Transition})}
 
-Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos com o objetivo de validar seu desempenho, estabilidade e conformidade com os requisitos estabelecidos nas fases anteriores. Foram realizados testes unitários nos sensores, abrangendo a calibração do sensor NTC de temperatura e pH, a verificação da estabilidade do sensor de nível e simulações de condições críticas de funcionamento das bombas, de modo a prevenir situações de \textit{dry-run}. Paralelamente, testes de integração avaliaram o fluxo completo dos dados, desde a aquisição no ambiente físico até a apresentação das informações na interface web.
+Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos com o objetivo de validar seu desempenho, estabilidade e conformidade com os requisitos estabelecidos nas fases anteriores. Foram realizados testes unitários nos sensores, abrangendo a calibração do sensor NTC de temperatura e pH, a verificação da estabilidade do sensor de nível e simulações de condições críticas de funcionamento das bombas, de modo a prevenir situações de \textit{dry-run}. Paralelamente, testes de integração avaliaram o fluxo completo dos dados, desde a aquisição no ambiente físico até a apresentação das informações na interface web, conforme detalhado na Tabela \ref{tab:testes_realizados}. 
 
 \begin{table}[H]
     \centering
