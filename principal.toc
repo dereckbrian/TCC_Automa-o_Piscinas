@@ -31,36 +31,36 @@
 \contentsline {section}{\numberline {4.2}Processo de Desenvolvimento de Software}{39}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Fase de Concepção (\textit {Inception})}{40}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Fase de Elaboração (\textit {Elaboration})}{42}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Fase de Construção (\textit {Construction})}{45}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Fase de Transição (\textit {Transition})}{48}{section.4.6}%
+\contentsline {section}{\numberline {4.5}Fase de Construção (\textit {Construction})}{46}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Fase de Transição (\textit {Transition})}{49}{section.4.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e Discussão}}{50}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Integração do Protótipo Físico}{50}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Interface de Controle e Monitoramento}{53}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Análise de Desempenho e Discussão}{54}{section.5.3}%
-\contentsline {section}{\numberline {5.4}Trabalhos futuros}{55}{section.5.4}%
+\contentsline {chapter}{\chapternumberline {5}\MakeTextUppercase []{Resultados e Discussão}}{51}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Integração do Protótipo Físico}{51}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Interface de Controle e Monitoramento}{55}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Análise de Desempenho e Discussão}{56}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Trabalhos futuros}{57}{section.5.4}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
-\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{56}{chapter.6}%
+\contentsline {chapter}{\chapternumberline {6}\MakeTextUppercase []{Considerações Finais}}{58}{chapter.6}%
 \vspace {\cftbeforechapterskip }
 \vspace {\cftbeforechapterskip }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
-\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{57}{section*.63}%
+\contentsline {chapter}{\MakeTextUppercase []{Refer\^encias}}{59}{section*.63}%
 \renewcommand *{\cftappendixname }{AP\^ENDICE \space }
 \setlength {\cftpartindent }{\cftlastnumwidth } \setlength {\cftpartnumwidth }{2em}
 \cftinsert {A}
-\contentsline {part}{\uppercase {Ap\^endices}}{62}{section*.64}%
+\contentsline {part}{\uppercase {Ap\^endices}}{64}{section*.64}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Detalhamento dos Componentes de Hardware}}{63}{appendix.A}%
-\contentsline {section}{\numberline {A.1}Sensores}{63}{section.A.1}%
-\contentsline {section}{\numberline {A.2}Atuadores e Controladores}{66}{section.A.2}%
+\contentsline {appendix}{\chapternumberline {A}\MakeTextUppercase []{Detalhamento dos Componentes de Hardware}}{65}{appendix.A}%
+\contentsline {section}{\numberline {A.1}Sensores}{65}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Atuadores e Controladores}{68}{section.A.2}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \setlength {\cftchapterindent }{\cftlastnumwidth } \setlength {\cftchapternumwidth }{2em}
 \cftinsert {A}
-\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Códigos Fonte do Sistema}}{68}{appendix.B}%
-\contentsline {section}{\numberline {B.1}Firmware do Microcontrolador (Arduino)}{68}{section.B.1}%
-\contentsline {section}{\numberline {B.2}Script do Gateway (Python)}{70}{section.B.2}%
-\contentsline {section}{\numberline {B.3}Controller do Back-end (Java/Spring Boot)}{72}{section.B.3}%
-\contentsline {section}{\numberline {B.4}Front-end (React)}{73}{section.B.4}%
+\contentsline {appendix}{\chapternumberline {B}\MakeTextUppercase []{Códigos Fonte do Sistema}}{70}{appendix.B}%
+\contentsline {section}{\numberline {B.1}Firmware do Microcontrolador (Arduino)}{70}{section.B.1}%
+\contentsline {section}{\numberline {B.2}Script do Gateway (Python)}{72}{section.B.2}%
+\contentsline {section}{\numberline {B.3}Controller do Back-end (Java/Spring Boot)}{74}{section.B.3}%
+\contentsline {section}{\numberline {B.4}Front-end (React)}{75}{section.B.4}%
 \vspace {\cftbeforechapterskip }
