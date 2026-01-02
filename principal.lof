@@ -11,19 +11,19 @@
 \contentsline {figure}{\numberline {9}{\ignorespaces Raspberry Pi Modelo B+}}{30}{figure.caption.27}%
 \contentsline {figure}{\numberline {10}{\ignorespaces Bomba de água utilizada como atuador no sistema}}{31}{figure.caption.30}%
 \contentsline {figure}{\numberline {11}{\ignorespaces Fases do Rational Unified Process RUP.}}{34}{figure.caption.38}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de Diagrama de Casos de Uso}}{35}{figure.caption.40}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Caso de Uso do Sistema}}{43}{figure.caption.45}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Testes em bancada}}{46}{figure.caption.52}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de Diagrama de Casos de Uso}}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Caso de Uso do Sistema}}{44}{figure.caption.45}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Testes em bancada}}{47}{figure.caption.52}%
 \contentsline {figure}{\numberline {15}{\ignorespaces Fluxograma de validação de dados e tomada de decisão do sistema}}{48}{figure.caption.53}%
 \contentsline {figure}{\numberline {16}{\ignorespaces Protótipo final do sistema de automação montado.}}{52}{figure.caption.55}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Relé com optoacoplador}}{53}{figure.caption.56}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Validação sensor de pH}}{54}{figure.caption.57}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Validação sensor de temperatura}}{55}{figure.caption.58}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Relé com optoacoplador.}}{53}{figure.caption.56}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Validação do sensor de pH.}}{54}{figure.caption.57}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Validação do sensor de temperatura.}}{55}{figure.caption.58}%
 \contentsline {figure}{\numberline {20}{\ignorespaces Interface Web: Dashboard de monitoramento em tempo real.}}{56}{figure.caption.59}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Sensor de Temperatura MF58 (NTC 10K)}}{65}{figure.caption.65}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Sensor de Nível LC26M-40}}{66}{figure.caption.66}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Sensor de pH}}{67}{figure.caption.67}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Sensor de Turbidez ST100}}{67}{figure.caption.68}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Bomba Submersa JT100}}{68}{figure.caption.69}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Placa Arduino Uno R3 (Controlador Físico)}}{68}{figure.caption.70}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Raspberry Pi 3 Model B (Gateway)}}{69}{figure.caption.71}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Sensor de Temperatura MF58 (NTC 10K)}}{67}{figure.caption.65}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Sensor de Nível LC26M-40}}{68}{figure.caption.66}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Sensor de pH}}{69}{figure.caption.67}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Sensor de Turbidez ST100}}{69}{figure.caption.68}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Bomba Submersa JT100}}{70}{figure.caption.69}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Placa Arduino Uno R3 (Controlador Físico)}}{70}{figure.caption.70}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Raspberry Pi 3 Model B (Gateway)}}{71}{figure.caption.71}%

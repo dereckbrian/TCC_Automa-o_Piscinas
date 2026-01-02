@@ -259,7 +259,7 @@ A automação residencial é composta por diversos elementos que, em conjunto, p
         Segundo \citeonline{leite2020plataforma}, o sensor é um dispositivo sensível ao ambiente no qual está inserido, capaz de detectar alterações em variáveis como temperatura, luminosidade ou movimento. Sua função consiste em captar essas mudanças e convertê-las em sinais elétricos que possam ser interpretados por um controlador e posteriormente utilizados pela rede de automação.
         
         \item \textbf{Atuadores:}
-        São dispositivos eletromecânicos acionados pelo sistema para executar funções específicas, como ativar lâmpadas, fechaduras magnéticas, motores, válvulas ou sirenes \cite{hipolito2018automaccao}. O atuador materializa a ação física determinada pela lógica programada.
+        São dispositivos eletromecânicos acionados pelo sistema para executar funções específicas, como ativar lâmpadas, fechaduras magnéticas, motores, válvulas ou sirenes \citeonline{hipolito2018automaccao}. O atuador materializa a ação física determinada pela lógica programada.
         
         \item \textbf{Controladores:}
         Responsáveis por monitorar os dados coletados pelos sensores e acionar os respectivos atuadores conforme a lógica definida. O controlador pode operar como módulo independente ou integrar-se a centrais mais complexas \cite{hipolito2018automaccao}.
@@ -319,6 +319,8 @@ De acordo com \citeonline{juca2018aplicaccoes}, o Raspberry Pi é considerado um
 \end{figure}
 
 Como observado na Figura \ref{fig:raspberry}, o hardware do Raspberry Pi funciona de maneira integrada em uma única placa, o que reduz custos e possibilita que o dispositivo execute diversas funções de um computador convencional, como acesso à internet, edição de textos e reprodução de vídeos. Além disso, seus pinos \textit{GPIO} permitem interação com sensores, possibilitando aplicações em automação e sistemas embarcados.
+
+Em outros contextos, o poder de processamento e a conectividade nativa do Raspberry Pi são explorados para desempenhar a função de \textit{Gateway} IoT. Ele atua como o elo entre a camada física (Arduino) e a camada de aplicação (Servidor Web), viabilizando a transmissão de dados e o controle remoto do sistema.
 
 \subsubsection*{Sensores Específicos}
 
@@ -416,13 +418,15 @@ A figura \ref{fig:RUP_Image} apresenta uma representação visual mais intuitiva
     \caption*{Fonte: \citeonline{allebrandt2004reengenharia}.}
 \end{figure}
 
+A adoção do RUP justifica-se pela necessidade de gerenciar a complexidade inerente à integração entre componentes de hardware (IoT) e software web. A abordagem iterativa e a ênfase na mitigação de riscos mostram-se essenciais para assegurar que desafios técnicos, como a comunicação serial e a calibração de sensores, sejam validados ainda nas fases iniciais (Elaboração), evitando retrabalho crítico. Dessa forma, a estrutura de fases apresentada fundamenta a organização cronológica do desenvolvimento do protótipo.
+
 \subsubsection*{Linguagem UML}
 
-A Linguagem de Modelagem Unificada (UML) constitui um conjunto padronizado de notações gráficas destinado à representação visual de sistemas de software, sendo amplamente empregada para apoiar a especificação, a documentação e a compreensão tanto da estrutura quanto do comportamento dos sistemas \citeonline{castro2013paradigma}. Sua utilização favorece a construção de uma linguagem comum entre analistas, desenvolvedores e demais partes interessadas, reduzindo ambiguidades na interpretação dos requisitos e das soluções propostas \citeonline{bernhardt2023utilizaccao}.
+A Linguagem de Modelagem Unificada (UML) constitui um conjunto padronizado de notações gráficas destinado à representação visual de sistemas de software, sendo amplamente empregada para apoiar a especificação, a documentação e a compreensão tanto da estrutura quanto do comportamento dos sistemas \citeonline{castro2013paradigma}. Sua utilização favorece a construção de uma linguagem comum entre analistas, desenvolvedores e demais partes interessadas, reduzindo ambiguidades na interpretação dos requisitos e das soluções propostas \cite{bernhardt2023utilizaccao}.
 
 No contexto da Engenharia de Software, a UML desempenha papel fundamental nas fases iniciais do desenvolvimento, especialmente na análise e no projeto do sistema. Por meio de seus diferentes tipos de diagramas, torna-se possível representar desde aspectos funcionais, como as interações entre usuários e o sistema, até aspectos comportamentais e estruturais, contribuindo para a rastreabilidade entre requisitos, decisões arquiteturais e implementação.
 
-Dentre os diagramas definidos pela UML, o Diagrama de Casos de Uso destaca-se por permitir a modelagem das funcionalidades do sistema sob a perspectiva do usuário, evidenciando os objetivos que este pretende alcançar ao interagir com a aplicação. Esse tipo de diagrama abstrai detalhes de implementação e concentra-se na relação entre atores e serviços oferecidos pelo sistema, sendo particularmente adequado para a validação de requisitos funcionais e para o alinhamento entre as expectativas dos usuários e as soluções técnicas propostas. A Figura \ref{fig:digramaExample} ilustra um exemplo de diagrama de casos de uso simplificado, conforme apresentado por \citeonline{unesp_diagrama_casos_uso}.
+Dentre os diagramas definidos pela UML, o Diagrama de Casos de Uso destaca-se por permitir a modelagem das funcionalidades do sistema sob a perspectiva do usuário, evidenciando os objetivos que este pretende alcançar ao interagir com a aplicação. Esse tipo de diagrama abstrai detalhes de implementação e concentra-se na relação entre atores e serviços oferecidos pelo sistema, sendo particularmente adequado para a validação de requisitos funcionais e para o alinhamento entre as expectativas dos usuários e as soluções técnicas propostas. A Figura \ref{fig:digramaExample} ilustra um exemplo de diagrama de casos de uso simplificado, conforme apresentado por \cite{unesp_diagrama_casos_uso}.
 
 \begin{figure}[H]
     \centering

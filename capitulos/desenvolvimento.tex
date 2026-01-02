@@ -81,7 +81,7 @@ Simultaneamente, foram definidos os principais artefatos estruturais do sistema,
 
 \subsection*{Modelagem de Caso de Uso}
 
-A modelagem de casos de uso, elaborada segundo a Linguagem de Modelagem Unificada (UML), fornece uma visão geral das interações entre os atores e as funcionalidades principais do sistema. O diagrama permite compreender como o usuário acessa as informações coletadas, como interage com o sistema por meio da interface web e como os dispositivos físicos se integram às operações lógicas implementadas no back-end.
+A Figura \ref{fig:usecase} apresenta o Diagrama de Casos de Uso do sistema, detalhando as interações permitidas ao usuário, como a visualização de parâmetros e a configuração de alertas, bem como a integração dos dispositivos físicos com o back-end.
 
 \begin{figure}[H]
     \centering
@@ -115,9 +115,9 @@ A seguir, são apresentados os principais componentes físicos selecionados para
 
 \subsubsection*{Sensores de Monitoramento}
 
-Para a medição da temperatura da água, optou-se pelo sensor NTC 10K (Modelo MF58), ilustrado na Figura \ref{fig:sensortemp} (Apêndice \ref{apendice:hardware}). Este termistor altera sua resistência elétrica inversamente à temperatura e é lido por uma porta analógica do Arduino através de um divisor de tensão.
+Para a medição da temperatura da água, optou-se pelo sensor NTC 10K (Modelo MF58), ilustrado na Figura \ref{fig:sensortemp} (Apêndice \ref{apendice:hardware}). O componente foi integrado ao circuito por meio de um divisor de tensão e conectado a uma entrada analógica do Arduino para leitura dos dados térmicos.
 
-O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, seu funcionamento baseia-se em um interruptor magnético (\textit{reed switch}) acionado pelo deslocamento de um flutuador, fornecendo um sinal digital (SPST)\footnote{Refere-se a um tipo de interruptor (chave). A sigla significa \textit{Single-Pole}, \textit{Single-Throw} (unipolar, de uma via ou um estágio), descrevendo o mecanismo físico de um interruptor simples de ligar/desligar (\textit{on/off}). } para identificar níveis críticos no reservatório.
+O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, o dispositivo fornece um sinal digital (nível lógico alto ou baixo) diretamente ao microcontrolador, permitindo a identificação imediata de níveis críticos no reservatório.
 
 A qualidade química da água é aferida por um Sensor de pH (Figura \ref{fig:sensorph}, Apêndice \ref{apendice:hardware}) e um Sensor de Turbidez Modelo ST100 (Figura \ref{fig:sensorturbidez}, Apêndice \ref{apendice:hardware}). O sensor de pH monitora a acidez e a alcalinidade, enquanto o sensor de turbidez identifica partículas em suspensão. Ambos geram sinais analógicos processados pelo Arduino e enviados ao servidor para análise e tomada de decisão.
 
@@ -181,7 +181,7 @@ Com o intuito de  garantir a confiabilidade das informações coletadas e evitar
     \centering
     \caption{Fluxograma de validação de dados e tomada de decisão do sistema}
     \label{fig:fluxo_logica}
-    \includegraphics[width=0.6\textwidth]{imagens/diagramaFluxo.png}
+    \includegraphics[width=0.5\textwidth]{imagens/diagramaFluxo.png}
     \caption*{Fonte: Autoria própria (2025).}
 \end{figure}
 

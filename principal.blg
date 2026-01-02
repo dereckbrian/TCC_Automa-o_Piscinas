@@ -16,9 +16,46 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
+Warning--entry type for "automacao" isn't style-file defined
+--line 1 of file bibliografia.bib
+Warning--entry type for "CNI" isn't style-file defined
+--line 17 of file bibliografia.bib
+Warning--entry type for "aumentoAosAnos" isn't style-file defined
+--line 33 of file bibliografia.bib
+Warning--entry type for "cresceuBR" isn't style-file defined
+--line 49 of file bibliografia.bib
+Warning--entry type for "piscinaHistoria" isn't style-file defined
+--line 131 of file bibliografia.bib
+Warning--entry type for "piscinaOquee" isn't style-file defined
+--line 147 of file bibliografia.bib
 Warning--entry type for "piscineiroProfissional" isn't style-file defined
---line 375 of file bibliografia.bib
-Warning--I didn't find a database entry for "unesp_diagrama_casos_usoa"
+--line 261 of file bibliografia.bib
+Warning--entry type for "refComponents" isn't style-file defined
+--line 277 of file bibliografia.bib
+Warning--entry type for "gencoEmpresa" isn't style-file defined
+--line 309 of file bibliografia.bib
+Warning--entry type for "linguagemProgramacao" isn't style-file defined
+--line 325 of file bibliografia.bib
+Warning--entry type for "de2006introduccao" isn't style-file defined
+--line 343 of file bibliografia.bib
+Warning--entry type for "moreiraprocessos" isn't style-file defined
+--line 361 of file bibliografia.bib
+Warning--entry type for "de2012introduccao" isn't style-file defined
+--line 379 of file bibliografia.bib
+Warning--entry type for "unesp_diagrama_casos_uso" isn't style-file defined
+--line 397 of file bibliografia.bib
+Warning--entry type for "siteComprei" isn't style-file defined
+--line 417 of file bibliografia.bib
+Warning--entry type for "siteComprei2" isn't style-file defined
+--line 433 of file bibliografia.bib
+Warning--entry type for "siteComprei3" isn't style-file defined
+--line 449 of file bibliografia.bib
+Warning--entry type for "siteCompreiPh" isn't style-file defined
+--line 465 of file bibliografia.bib
+Warning--entry type for "siteCompreiTurbidez" isn't style-file defined
+--line 481 of file bibliografia.bib
+Warning--entry type for "siteComprei4" isn't style-file defined
+--line 497 of file bibliografia.bib
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
@@ -30,43 +67,43 @@ Reallocating 'global_strs' (item size: 1) to 4000000 items.
 +---------------------------------------------------------+
 You've used 54 entries,
             6714 wiz_defined-function locations,
-            1489 strings with 23921 characters,
-and the built_in function-call counts, 148053 in all, are:
-= -- 20445
-> -- 1183
-< -- 5971
-+ -- 6421
-- -- 372
-* -- 8312
-:= -- 17133
-add.period$ -- 217
+            1493 strings with 20293 characters,
+and the built_in function-call counts, 50680 in all, are:
+= -- 5139
+> -- 1173
+< -- 815
++ -- 1266
+- -- 370
+* -- 3229
+:= -- 6727
+add.period$ -- 220
 call.type$ -- 54
-change.case$ -- 462
-chr.to.int$ -- 75
+change.case$ -- 467
+chr.to.int$ -- 70
 cite$ -- 53
-duplicate$ -- 19417
-empty$ -- 2790
-format.name$ -- 1757
-if$ -- 26063
-int.to.chr$ -- 0
+duplicate$ -- 4050
+empty$ -- 2856
+format.name$ -- 1743
+if$ -- 10727
+int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 898
-newline$ -- 312
+missing$ -- 910
+newline$ -- 292
 num.names$ -- 265
-pop$ -- 1338
+pop$ -- 1074
 preamble$ -- 1
-purify$ -- 187
+purify$ -- 186
 quote$ -- 0
-skip$ -- 19503
+skip$ -- 4279
 stack$ -- 1
-substring$ -- 7061
-swap$ -- 6511
-text.length$ -- 60
+substring$ -- 1922
+swap$ -- 1515
+text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 13
+type$ -- 75
 warning$ -- 0
-while$ -- 375
+while$ -- 339
 width$ -- 0
-write$ -- 803
-(There were 2 warnings)
+write$ -- 837
+(There were 20 warnings)
