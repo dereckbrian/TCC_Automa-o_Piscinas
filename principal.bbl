@@ -64,9 +64,9 @@ Trabalho de Conclusão de Curso --- Universidade Tecnológica Federal do
   \emph{Anais da Conferência ANPROTEC}. [s.n.], 2017. Dispon{\'\i}vel em:
   \url{https://via.ufsc.br/wp-content/uploads/2017/11/maker.pdf}.}
 
-\bibitem[Calça 2022]{calcca2022analise}
-\abntrefinfo{Calça}{CALçA}{2022}
-{CALçA, J. V.~J.
+\bibitem[Cal{\c{c}}a 2022]{calcca2022analise}
+\abntrefinfo{Cal{\c{c}}a}{CAL{\c{C}}A}{2022}
+{CAL{\c{C}}A, J. V.~J.
 \emph{Análise comparativa entre os frameworks Django e Spring Boot}.
 Trabalho de Conclusão de Curso --- Centro Paula Souza, São Paulo, 2022.}
 
@@ -132,9 +132,9 @@ Acessado em: 01 jul. 2025.}
   \url{https://fibratecpiscinas.com.br/blog/historia-das-piscinas}.
 Acessado em: 01 jul. 2025.}
 
-\bibitem[Florêncio 2015]{florencio2015central}
-\abntrefinfo{Florêncio}{FLORêNCIO}{2015}
-{FLORêNCIO, G.
+\bibitem[Flor{\^{e}}ncio 2015]{florencio2015central}
+\abntrefinfo{Flor{\^{e}}ncio}{FLOR{\^{E}}NCIO}{2015}
+{FLOR{\^{E}}NCIO, G.
 \emph{Central microcontrolada para automação residencial: controle sem fio
   para sensores e atuadores}.
 Trabalho de Conclusão de Curso --- Instituto Federal de Educação, Ciência e
@@ -171,9 +171,9 @@ Acessado em: 12 dez. 2025.}
   \url{https://home.howstuffworks.com/swimming-pool.htm}.
 Acessado em: 12 set. 2025.}
 
-\bibitem[Hipólito e Silva 2018]{hipolito2018automaccao}
-\abntrefinfo{Hipólito e Silva}{HIPóLITO; SILVA}{2018}
-{HIPóLITO, J.~G.; SILVA, M. d. J.~d. Automação residencial com arduino.
+\bibitem[Hip{\'{o}}lito e Silva 2018]{hipolito2018automaccao}
+\abntrefinfo{Hip{\'{o}}lito e Silva}{HIP{\'{O}}LITO; SILVA}{2018}
+{HIP{\'{O}}LITO, J.~G.; SILVA, M. d. J.~d. Automação residencial com arduino.
 \emph{Revista Eletrônica UNIFAFIBE}, 2018.
 Dispon{\'\i}vel em:
   \url{https://unifafibe.com.br/revistasonline/arquivos/revistaeletrica/sumario/69/06022019135904.pdf}.}
@@ -197,10 +197,11 @@ Acessado em: 2025.}
 {JUCá, S.; PEREIRA, R. \emph{Aplicações práticas de sistemas embarcados
   Linux utilizando Raspberry Pi}. Rio de Janeiro: PoD Editoria, 2018.}
 
-\bibitem[Júnior et al. 2025]{dadesenvolvimento}
-\abntrefinfo{Júnior et al.}{JúNIOR et al.}{2025}
-{JúNIOR, P.~F. da S. et al. Desenvolvimento de front-end e back-end para nós
-  sensores sem fio. In:  \emph{ResearchGate}. [s.n.], 2025. Dispon{\'\i}vel em:
+\bibitem[J{\'{u}}nior et al. 2025]{dadesenvolvimento}
+\abntrefinfo{J{\'{u}}nior et al.}{J{\'{U}}NIOR et al.}{2025}
+{J{\'{U}}NIOR, P.~F. da S. et al. Desenvolvimento de front-end e back-end para
+  nós sensores sem fio. In:  \emph{ResearchGate}. [s.n.], 2025.
+  Dispon{\'\i}vel em:
   \url{https://www.researchgate.net/publication/376763873}.}
 
 \bibitem[Lavor 2019]{lavor2019verificaccao}
@@ -259,9 +260,9 @@ Acessado em: 27 mai. 2025.}
   \url{https://www.cin.ufpe.br/~processos/TAES3/Livro/00-LIVRO/01-PTDS-v7_CORRIGIDO_Versao_Final_OK.pdf}.
 Acessado em: 2025.}
 
-\bibitem[Muratori e Bó 2011]{automacaoResidencialCap1}
-\abntrefinfo{Muratori e Bó}{MURATORI; Bó}{2011}
-{MURATORI, J.~R.; Bó, P.~H. D. Capítulo i: Automação residencial:
+\bibitem[Muratori e B{\'{o}} 2011]{automacaoResidencialCap1}
+\abntrefinfo{Muratori e B{\'{o}}}{MURATORI; B{\'{O}}}{2011}
+{MURATORI, J.~R.; B{\'{O}}, P.~H. D. Capítulo i: Automação residencial:
   histórico, definições e conceitos.
 \emph{O Setor Elétrico}, p. 70--77, 2011.
 Dispon{\'\i}vel em:

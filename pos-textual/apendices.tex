@@ -79,7 +79,7 @@ Neste apêndice são apresentados os componentes físicos utilizados na montagem
 \chapter{Códigos Fonte do Sistema}
 \label{apendice:codigos}
 
-A seguir, apresentamos os trechos essenciais dos scripts desenvolvidos para o funcionamento do sistema de automação, demonstrando a integração entre as camadas de Firmware, Gateway e Aplicação.
+A seguir, apresentamos os trechos essenciais dos scripts desenvolvidos para o funcionamento do sistema de automação, demonstrando a integração entre as camadas de \textit{Firmware}, \textit{Gateway} e Aplicação.
 
 % --- ARDUINO ---
 \section{Firmware do Microcontrolador (Arduino)}
@@ -182,7 +182,7 @@ void loop() {
 \section{Script do Gateway (Python)}
 \label{cod:python}
 
-Este script roda no Raspberry Pi, atuando como ponte entre a porta Serial (USB) e a API REST.
+Este \textit{script} roda no Raspberry Pi, atuando como ponte entre a porta Serial (USB) e a API REST.
 
 \small
 \begin{verbatim}
@@ -255,19 +255,23 @@ while True:
 \normalsize
 
 % --- JAVA ---
-\section{Controller do Back-end (Java/Spring Boot)}
+\section{\textit{Controller} do \textit{Back-end} (Java/Spring Boot)}
 \label{cod:java}
 
-Controlador REST responsável por receber os dados do Gateway e persisti-los no banco PostgreSQL.
+Controlador REST responsável por receber os dados do \textit{Gateway} e persisti-los no banco PostgreSQL.
 
 \small
 \begin{verbatim}
 package com.ifg.residIFG.controllers;
 
 import com.ifg.residIFG.domain.piscinas.LeituraSensor;
+import com.ifg.residIFG.domain.user.User;
+import com.ifg.residIFG.dto.SensorDashboardDTO;
 import com.ifg.residIFG.repository.LeituraSensorRepository;
+import com.ifg.residIFG.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
 import java.util.List;
 import java.util.Map;
 
@@ -278,34 +282,46 @@ public class SensorController {
 
     @Autowired
     private LeituraSensorRepository repository;
+    @Autowired
+    private UserRepository userRepository;
 
     @PostMapping("/receber")
     public void receberDados(@RequestBody Map<String, Object> dados) {
         Double temp = Double.valueOf(dados.get("t").toString());
-        
         Integer nivelRaw = Integer.valueOf(dados.get("n").toString());
         Boolean nivel = (nivelRaw == 1);
-
         Double ph = Double.valueOf(dados.get("p").toString());
-
         Integer bombaRaw = Integer.valueOf(dados.get("b").toString());
         Boolean bombaAtiva = (bombaRaw == 1);
 
-        LeituraSensor leitura = new LeituraSensor(temp, nivel, ph, bombaAtiva);
+        // Leitura de Turbidez (tb) com tratamento de nulo
+        Double turbidez = 0.0;
+        if (dados.get("tb") != null) {
+            turbidez = Double.valueOf(dados.get("tb").toString());
+        }
 
+        LeituraSensor leitura = new LeituraSensor(temp, nivel, ph, bombaAtiva, turbidez);
         repository.save(leitura);
-        // Nota: A logica de retorno de comando deve ser implementada 
-        // no retorno deste metodo para fechar o ciclo com o Python.
     }
 
     @GetMapping("/atual")
-    public LeituraSensor getAtual() {
-        return repository.findTopByOrderByDataHoraDesc();
-    }
+    public SensorDashboardDTO getAtual() {
+        // 1. Busca a ultima leitura do sensor
+        LeituraSensor leitura = repository.findTopByOrderByDataHoraDesc();
 
-    @GetMapping("/historico")
-    public List<LeituraSensor> getHistorico() {
-        return repository.findTop20ByOrderByDataHoraDesc();
+        // 2. Busca dimensoes do usuario para calculo de volume
+        List<User> users = userRepository.findAll();
+        Double volumeCalculado = 0.0;
+
+        if (!users.isEmpty()) {
+            User unicoUsuario = users.get(0); 
+            // Formula: (Comp * Larg * Prof) * 1000 = Litros
+            float v = unicoUsuario.getComprimentoPiscina() * unicoUsuario.getLarguraPiscina() * unicoUsuario.getProfundidadePiscina();
+            volumeCalculado = (double) (v * 1000);
+        }
+
+        // Retorna DTO com dados do sensor + volume calculado
+        return new SensorDashboardDTO(leitura, volumeCalculado);
     }
 }
 \end{verbatim}
@@ -315,7 +331,7 @@ public class SensorController {
 \section{Front-end (React)}
 \label{cod:react}
 
-Trecho do componente principal responsável pelo *polling* de dados e envio de comandos manuais.
+Trecho do componente principal responsável pelo \textit{polling} de dados e envio de comandos manuais.
 
 \small
 \begin{verbatim}
@@ -360,3 +376,81 @@ Trecho do componente principal responsável pelo *polling* de dados e envio de c
 \normalsize
 
 \end{apendicesenv}
+
+% --- REACT ---
+
+\section{Algoritmo de Recomendação Química e Alertas (React)}
+\label{cod:react_logic}
+
+O trecho abaixo apresenta a função \texttt{verificarQuimica} na camada de aplicação. Este algoritmo compara os dados monitorados com as normas sanitárias e com as configurações do usuário, gerando as sugestões de dosagem proporcionais ao volume calculado.
+
+\small
+\begin{verbatim}
+  // Algoritmo de Recomendacao de Dosagem e Alertas
+  const verificarQuimica = (ph: number, turbidez: number, 
+                            temp: number, volLitros: number) => {
+    
+    // Verifica tempo de silencio (Cooldown de alertas para nao spammar)
+    if (Date.now() < proximoAlerta) return; 
+
+    let produto = "";
+    let dosagemPor1000 = 0;
+    let motivo = "";
+
+    // 1. Logica de Correcao de pH (Tabela de Referencia)
+    if (ph < 6.8) {
+      produto = "pH+ (Liquido)";
+      motivo = "pH muito baixo (< 6.8)";
+      dosagemPor1000 = 20; 
+    } else if (ph >= 6.8 && ph < 7.2) { 
+       if (ph <= 7.0) {
+          produto = "pH+ (Liquido)";
+          motivo = "pH levemente baixo";
+          dosagemPor1000 = 15; 
+       }
+    } else if (ph > 7.6) {
+      produto = "pH- (Liquido)";
+      motivo = "pH alto (> 7.6)";
+      dosagemPor1000 = 10; 
+    }
+    
+    // 2. Logica de Turbidez (Clarificacao se > 3.0 NTU)
+    else if (turbidez > 3.0) {
+      produto = "Clarificante";
+      motivo = `Agua turva (${turbidez} NTU)`;
+      dosagemPor1000 = 4;
+    }
+    
+    // 3. Alerta de Temperatura (Baseado na Configuracao do Usuario)
+    else if (temp < minTempConfig) {
+       toast({
+         title: "Temperatura Baixa",
+         description: `Atual: ${temp}°C (Minimo: ${minTempConfig}°C)`,
+       });
+       // Define cooldown curto para temperatura
+       setProximoAlerta(Date.now() + (5 * 60 * 1000));
+       return; 
+    }
+
+    // Calculo Final e Disparo da Sugestao
+    if (produto !== "") {
+      const qtdTotal = (volLitros / 1000) * dosagemPor1000;
+      
+      const tempoSilencio = 20 * 60 * 1000; // 20 min sem repetir
+      setProximoAlerta(Date.now() + tempoSilencio);
+
+      toast({
+        variant: "destructive",
+        title: `Atencao: ${motivo}`,
+        description: `Clique para ver a correcao.`,
+        action: (
+          <ToastAction altText="Ver Dosagem" 
+                       onClick={() => setIsModalOpen(true)}>
+            Ver Dosagem
+          </ToastAction>
+        ),
+      });
+    }
+  };
+\end{verbatim}
+\normalsize

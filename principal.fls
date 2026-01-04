@@ -721,6 +721,13 @@ INPUT .\imagens\diagramaFluxo.png
 INPUT .\imagens\diagramaFluxo.png
 INPUT .\imagens\diagramaFluxo.png
 INPUT .\imagens\diagramaFluxo.png
+INPUT .\imagens\printModal.png
+INPUT .\imagens\printModal.png
+INPUT .\imagens\printModal.png
+INPUT .\imagens\printModal.png
+INPUT .\imagens\printModal.png
+INPUT .\imagens\printModal.png
+INPUT .\imagens\printModal.png
 INPUT .\capitulos\resultados.tex
 INPUT .\capitulos\resultados.tex
 INPUT .\capitulos\resultados.tex
@@ -848,6 +855,11 @@ INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmtt.fd
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt10.tfm
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmtt12.tfm
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmtt.fd
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmtt.fd
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmtt.fd
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmtt10.tfm
 INPUT .\pos-textual\anexos.tex
 INPUT .\pos-textual\anexos.tex
 INPUT .\pos-textual\anexos.tex
@@ -895,5 +907,7 @@ INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lms
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy8.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt10.pfb
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
+INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb
 INPUT C:\Users\voluciano\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\symbols\msam10.pfb

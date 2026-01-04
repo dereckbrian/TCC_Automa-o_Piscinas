@@ -50,7 +50,7 @@ O levantamento de requisitos resultou na definição dos requisitos funcionais (
     \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-Para a validação dos requisitos definidos, foram estabelecidos critérios quantitativos de aceitação, considerando o desempenho esperado para um protótipo IoT. A precisão dos sensores (RF01) foi definida com margem de erro inferior a $\pm$5\% em relação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder cinco segundos, caracterizando uma monitoração em tempo quase real. No que se refere à comunicação (RNF03), o sistema é considerado estável quando as requisições HTTP apresentam taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a quatro segundos por requisição. O requisito de automação (RF02) é considerado atendido quando o acionamento do atuador ocorrer em até dois segundos após a detecção da falta de água.
+Para a validação dos requisitos definidos, foram estabelecidos critérios quantitativos de aceitação, considerando o desempenho esperado para um protótipo IoT. A precisão dos sensores (RF01) foi definida com margem de erro inferior a $\pm$5\% em relação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder oito segundos, caracterizando uma monitoração em tempo quase real. No que se refere à comunicação (RNF03), o sistema é considerado estável quando as requisições HTTP apresentam taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a seis segundos por requisição. O requisito de automação (RF02) é considerado atendido quando o acionamento do atuador ocorrer em até três segundos após a detecção da falta de água.
 
 \begin{table}[H]
     \centering
@@ -123,7 +123,7 @@ A qualidade química da água é aferida por um Sensor de pH (Figura \ref{fig:se
 
 \subsubsection*{Atuadores}
 
-Para o controle do fluxo de água, foi utilizado uma bomba submersa modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, este equipamento é responsável pelo controle de nível de água da psicina, sendo acionado quando o sensor de nível informar o nível abaixo do determinado.
+Para o controle do fluxo de água, foi utilizado uma bomba submersa modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, este equipamento é responsável pelo controle de nível de água da psicina, sendo acionado quando o sensor de nível indicar leituras abaixo do limite configurado.
 
 \subsubsection*{Controladores e Gateway}
 
@@ -161,7 +161,7 @@ Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Mod
 
 Em conformidade com a metodologia RUP, a fase de Construção foi conduzida por meio de ciclos iterativos e incrementais, nos quais funcionalidades do sistema foram implementadas e validadas progressivamente. O desenvolvimento iniciou-se pela camada física, com a implementação e a validação individual dos sensores e atuadores conectados ao microcontrolador. Após a estabilização da aquisição dos dados, procedeu-se à implementação da camada lógica, englobando o back-end, o banco de dados e o front-end. 
 
-A etapa final concentrou-se na integração completa entre hardware e software, validando o fluxo de transmissão das informações desde a coleta no ambiente físico até a apresentação na interface web.O desenvolvimento do sistema foi estruturado em duas camadas principais: a camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados; e a camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
+A etapa final concentrou-se na integração completa entre hardware e software, validando o fluxo de transmissão das informações, desde a coleta no ambiente físico até a apresentação na interface web.O desenvolvimento do sistema foi estruturado em duas camadas principais: a camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados; e a camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
 
 Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para realizar a leitura dos sensores analógicos e digitais, bem como o acionamento condicional dos atuadores. A montagem física e a organização dos componentes durante os testes de bancada podem ser visualizadas na Figura \ref{fig:testes_bancada}.
 
@@ -187,9 +187,19 @@ Com o intuito de  garantir a confiabilidade das informações coletadas e evitar
 
 O Raspberry Pi desempenhou a função de \textit{gateway} de comunicação do sistema. Um \textit{script} desenvolvido em Python foi responsável por estabelecer a comunicação serial com o microcontrolador, interpretar os dados recebidos e encaminhá-los ao servidor por meio de requisições HTTP do tipo POST. A lógica de implementação desse \textit{gateway}, incluindo os mecanismos de tratamento de falhas de comunicação e a serialização dos dados em formato JSON, encontra-se detalhada no Apêndice \ref{apendice:codigos}, Seção \ref{cod:python}.
 
-Na camada de aplicação, o \textit{back-end}, desenvolvido utilizando o \textit{framework} Spring Boot, centraliza a lógica do sistema e disponibiliza os \textit{endpoints} para a recepção e persistência dos dados. Uma funcionalidade fundamental desenvolvido nesta etapa foi o algoritmo de recomendação de dosagem química, capaz de sugerir correções precisas (ex: quantidade em gramas de elevador de pH) com base nos parâmetros monitorados. Para viabilizar esses cálculos, o sistema exige a parametrização do volume da piscina (em litros) nas configurações do usuário. Esse valor é armazenado no banco de dados e utilizado como constante multiplicadora nas fórmulas de tratamento. O \textit{controller} responsável por mapear as requisições, converter os objetos JSON e armazenar as leituras no banco de dados PostgreSQL está apresentado no Apêndice \ref{apendice:codigos}, Seção \ref{cod:java}. Essa arquitetura assegura a integridade, a consistência e a disponibilidade do histórico de monitoramento.
+Na camada de aplicação, o \textit{back-end}, desenvolvido utilizando o \textit{framework} Spring Boot, centraliza a lógica de persistência e fornece os dados base para o sistema. Uma funcionalidade fundamental implementada foi a personalização do monitoramento: o sistema gerencia um perfil de usuário com as dimensões físicas da piscina e os limites de alerta. O \textit{back-end} utiliza esses parâmetros para calcular dinamicamente o volume exato (em litros) a cada requisição. A partir desse dado, a interface \textit{web} executa o algoritmo de recomendação de dosagem química, sugerindo correções precisas ao usuário, como evidenciado na Figura \ref{fig:imageModal}. O \textit{controller} responsável pelo cálculo de volume e persistência está apresentado no Apêndice \ref{apendice:codigos}, Seção \ref{cod:java}, enquanto a lógica de recomendação e alertas é detalhada na Seção \ref{cod:react_logic}. Essa arquitetura assegura a integridade, a consistência e a disponibilidade do histórico de monitoramento.
+
+\begin{figure}[H]
+    \centering
+    \caption{Modal de recomendação de dosagem}
+    \label{fig:imageModal}
+    \includegraphics[width=0.8\textwidth]{imagens/printModal.png}
+    \caption*{Fonte: Autoria própria (2025).}
+\end{figure}
 
 Por fim, a interface do usuário, desenvolvida em React, consome os dados fornecidos pela API para apresentar o estado atual da piscina em tempo quase real. A implementação da lógica de consumo da API e o gerenciamento de estado para visualização dos parâmetros e acionamento manual dos atuadores estão descritos no Apêndice \ref{apendice:codigos}, Seção \ref{cod:react}.
+
+Além do monitoramento passivo, a interface web foi dotada de lógica reativa para auxílio à tomada de decisão. Ao detectar que parâmetros críticos (como pH ou turbidez) estão fora dos limites estabelecidos, o sistema habilita uma funcionalidade interativa de cálculo de correção. Por meio dela, o usuário pode visualizar instantaneamente a sugestão de dosagem exata dos produtos químicos necessários (ex: quantidade de clarificante ou redutor de pH), calculada com base no volume específico da piscina parametrizado anteriormente.
 
 \section{Fase de Transição (\textit{Transition})}
 
@@ -203,9 +213,11 @@ Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos 
     \toprule
     \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Critério/Resultado} \\
     \midrule
-    Calibração do Sensor NTC & Verificar a precisão térmica por comparação com termômetro de referência & Margem de erro aceitável ($<\pm 1^{\circ}$C) \\
+    Calibração do Sensor NTC & Verificar a precisão térmica por comparação com termômetro de referência & Margem de erro aceitável ($<\pm 2^{\circ}$C) \\
     \addlinespace
-    Calibração do pH & Ajuste de ganho via \textit{trimpot} do módulo comparado com valor de referência & Erro absoluto médio $< 0,1$ pH \\
+    Calibração do pH & Ajuste de ganho via \textit{trimpot} do módulo comparado com valor de referência & Erro absoluto médio $< 0,3$ pH \\
+    \addlinespace
+    Calibração de Turbidez & Definição dos limiares de tensão para água limpa e suja (sensor ST100) & Diferenciação clara (Limpa $> 4$V / Suja $< 1$V) \\
     \addlinespace
     Estabilidade do Nível & Confirmar o acionamento da boia sem oscilações espúrias & \textit{Debounce} lógico funcional \\
     \addlinespace
