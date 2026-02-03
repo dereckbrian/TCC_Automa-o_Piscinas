@@ -1,44 +1,44 @@
 \chapter{Fundamentação teórica}
 \label{cap:fundamentacao}
-Este capítulo apresenta os fundamentos conceituais e técnicos que sustentam o desenvolvimento do sistema automatizado proposto. Inicialmente, descrevem-se os aspectos estruturais e os procedimentos de manutenção de piscinas, com ênfase nas práticas e parâmetros que orientam a qualidade da água. Em seguida, são expostos os princípios da automação residencial, os componentes e protocolos relevantes à integração de sensores e controladores, e, por fim, as ferramentas de hardware e software empregadas no projeto. A seleção e a organização dos tópicos procuram estabelecer a base teórica necessária para justificar escolhas de projeto e para interpretar os resultados apresentados nos capítulos subsequentes.
+Este capítulo apresenta fundamentos conceituais e técnicos que sustentam o desenvolvimento do sistema automatizado proposto. Inicialmente, descrevem-se aspectos estruturais e procedimentos de manutenção de piscinas, com ênfase nas práticas e parâmetros que orientam a qualidade da água. Em seguida, são expostos princípios da automação residencial, componentes e protocolos relevantes à integração de sensores e controladores e as ferramentas de hardware e software empregadas no projeto. A seleção e organização dos tópicos procuram estabelecer base teórica para justificar escolhas de projeto e para interpretar resultados apresentados nos capítulos subsequentes.
 
-\section{PISCINAS E SUA MANUTENÇÃO}
+\section{MANUTENÇÃO DE PISCINAS}
 
-A compreensão da automação aplicada à manutenção de piscinas exige o entendimento prévio de sua estrutura física, de seu funcionamento hidráulico e dos métodos tradicionais utilizados para preservar a qualidade da água. Esses elementos formam a base sobre a qual se fundamentam as etapas de monitoramento e controle automatizado, permitindo identificar quais parâmetros são passíveis de coleta e quais processos podem ser otimizados com o uso de sensores e atuadores. Para isso, esta seção apresenta um panorama histórico das piscinas, descreve seus componentes estruturais e discute os procedimentos manuais de limpeza (físicos e químicos) que orientam a manutenção convencional. A partir dessa exposição, evidenciam-se as limitações dos métodos tradicionais e a necessidade de soluções automatizadas. 
+A compreensão da automação aplicada à manutenção de piscinas exige entendimento de sua estrutura física, funcionamento hidráulico e métodos utilizados para preservar a qualidade da água. Esses elementos formam base sobre a qual se fundamentam as etapas de monitoramento e controle automatizado, permitindo identificar parâmetros passíveis de coleta e processos que podem ser otimizados com uso de sensores e atuadores. Para isso, esta seção apresenta panorama histórico das piscinas, descreve seus componentes estruturais e discute procedimentos manuais de limpeza (físicos e químicos) que orientam a manutenção convencional. A partir dessa exposição, evidenciam-se limitações dos métodos tradicionais e necessidade de soluções automatizadas. 
 
-\subsection{HISTÓRICO E POPULARIZAÇÃO DAS PISCINAS}
+\subsection{HISTÓRICO E POPULARIZAÇÃO}
 
-O termo piscina deriva do latim piscis, utilizado para designar reservatórios destinados à recreação, natação, rituais ou uso coletivo \cite{piscinaOquee}. Existem registros de tanques de banho que remontam a aproximadamente 2600 a.C., como os “Grandes Banhos de Mohenjodaro”, cuja função possivelmente se relacionava a práticas cerimoniais. Conforme ilustrado na \autoref{fig:historia}, trata-se de uma das primeiras estruturas documentadas que apresentam características semelhantes às piscinas contemporâneas. Ao longo dos séculos, diferentes civilizações desenvolveram estruturas semelhantes, adaptadas a necessidades sociais, culturais e recreativas.
+Piscina deriva do termo em latim \textit{piscis}, utilizado para designar reservatórios destinados à recreação, natação, rituais ou uso coletivo \cite{piscinaOquee}. Existem registros de tanques de banho que remontam a aproximadamente 2600 a.C., como os \textit{Grandes Banhos de Mohenjodaro}, cuja função possivelmente se relacionava a práticas cerimoniais. Conforme ilustrado na \autoref{fig:historia}, trata-se de uma das primeiras estruturas documentadas que apresentam características semelhantes às piscinas contemporâneas. Ao longo dos séculos, diferentes civilizações desenvolveram estruturas semelhantes, adaptadas a necessidades sociais, culturais e recreativas.
 
-Com o avanço tecnológico do século XX, o uso de materiais como gunite (mistura de cimento, areia e água) e a incorporação de sistemas de filtração e cloração possibilitaram a manutenção contínua da água, sem necessidade de esvaziamento recorrente \cite{piscinaHistoria}. Tais inovações contribuíram para a popularização das piscinas residenciais e demandaram o desenvolvimento de práticas de manutenção física e química, que servem de referência para os sistemas automatizados contemporâneos.
+Com o avanço tecnológico do século XX, o uso de materiais como gunite (mistura de cimento, areia e água) e a incorporação de sistemas de filtração e cloração possibilitaram manutenção contínua da água, sem necessidade de esvaziamento recorrente \cite{piscinaHistoria}. Tais inovações contribuíram para a popularização das piscinas residenciais e demandaram desenvolvimento de práticas de manutenção física e química, que servem de referência para sistemas automatizados contemporâneos.
        
 \begin{figure}[H]
     \centering
-    \caption{Primeiro registro histórico de piscina – “Grandes Banhos de Mohenjodaro”.}
+    \caption{Primeiro registro histórico de piscina – \textit{Grandes Banhos de Mohenjodaro}.}
     \label{fig:historia}
     \includegraphics[width=0.78\textwidth]{imagens/primeiraPiscina.png}
     \caption*{Fonte: \citeonline{piscinaHistoria}.}
 \end{figure}
 
 
-A seguir, apresentam-se os principais componentes estruturais que permitem o funcionamento de uma piscina moderna e que, futuramente, serão integrados à automação.
+A seguir, apresentam-se os principais componentes estruturais que permitem o funcionamento de uma piscina moderna.
 
 
-\subsection{COMPONENTES BÁSICOS DE UMA PISCINA}
+\subsection{COMPONENTES BÁSICOS DA PISCINA}
 
-Segundo \citeonline{refComponents}, as piscinas residenciais e públicas, apesar das diferenças de tipologia e porte, compartilham um conjunto de elementos funcionais que garantem a circulação, filtragem e tratamento da água. Esses componentes formam a estrutura hidráulica básica que permite a manutenção contínua da qualidade da água e o correto funcionamento de dispositivos auxiliares. A \autoref{fig:componentesPiscina} apresenta uma visão geral desses elementos estruturais, destacando a bomba, o filtro, os drenos, as tubulações e os pontos de retorno, que compõem o ciclo de movimentação e purificação do volume total da piscina.
+Segundo \citeonline{refComponents}, piscinas residenciais e públicas, apesar das diferenças de tipologia e porte, compartilham conjunto de elementos funcionais que garantem circulação, filtragem e tratamento da água. Esses componentes formam a estrutura hidráulica básica que permite manutenção contínua da qualidade da água e o correto funcionamento de dispositivos auxiliares. A \autoref{fig:componentesPiscina} apresenta visão geral desses elementos estruturais, destacando bomba, filtro, drenos, tubulações e pontos de retorno, que compõem o ciclo de movimentação e purificação do volume total da piscina.
 
 \begin{figure}[H]
     \centering
-    \caption{Componentes estruturais básicos de uma piscina.}
+    \caption{Componentes estruturais básicos da piscina.}
     \includegraphics[width=0.78\textwidth]{imagens/componentesPiscina.png}
     \label{fig:componentesPiscina}
     \caption*{Fonte: \citeonline{refComponents}.}
 \end{figure}
 
-A bomba motorizada cumpre a função central de impulsionar a água pelo sistema, enviando-a para as etapas de filtração e tratamento químico. Já o filtro, geralmente preenchido com areia ou elementos sintéticos, remove partículas sólidas, como poeira, folhas e microrganismos, garantindo maior transparência à água. Os drenos e skimmers são responsáveis pela coleta inicial da água, enquanto as tubulações de \textit{PVC} \footnote{Sigla para Poli(cloreto de vinila), um polímero termoplástico versátil, conhecido por sua durabilidade, resistência química e ampla utilização em tubos, conexões e revestimentos.} interligam todos os elementos hidráulicos, assegurando o fluxo contínuo. Em algumas configurações, incluem-se ainda aquecedores que regulam a temperatura da água, agregando conforto ao uso recreativo.
+A bomba motorizada cumpre a função de impulsionar água pelo sistema, enviando-a para as etapas de filtração e tratamento químico. O filtro, geralmente preenchido com areia ou elementos sintéticos, remove partículas sólidas, como poeira, folhas e microrganismos, garantindo transparência à água. Os drenos e skimmers são responsáveis pela coleta inicial da água, enquanto tubulações de \textit{PVC} \footnote{Sigla para Poli(cloreto de vinila), polímero termoplástico versátil, conhecido por sua durabilidade, resistência química e ampla utilização em tubos, conexões e revestimentos.} interligam todos os elementos hidráulicos, assegurando fluxo contínuo. Em algumas configurações, incluem-se ainda aquecedores que regulam a temperatura da água, agregando conforto ao uso recreativo.
 
-Além desses elementos fixos, a manutenção cotidiana envolve equipamentos manuais destinados à limpeza física da piscina. A \autoref{fig:acessoriosPiscina} reúne os principais acessórios utilizados nesse processo, como o aspirador de escova, a peneira, a escova de parede e o cabo telescópico, que permite alcançar regiões de difícil acesso. Segundo \citeonline{benedito2024projeto}, esses instrumentos são indispensáveis para remover resíduos decantados, partículas flutuantes e biofilmes aderidos às paredes da piscina, constituindo o primeiro nível de intervenção antes do tratamento químico.
+Além desses elementos fixos, a manutenção envolve equipamentos manuais destinados à limpeza física da piscina. A \autoref{fig:acessoriosPiscina} reúne os principais acessórios utilizados nesse processo, como aspirador de escova, peneira, escova de parede e cabo telescópico, que permite alcançar regiões de difícil acesso. Segundo \citeonline{benedito2024projeto}, esses instrumentos são indispensáveis para remover resíduos decantados, partículas flutuantes e biofilmes aderidos às paredes da piscina, constituindo o primeiro nível de intervenção antes do tratamento químico.
 
 
 \begin{figure}[H]
@@ -50,13 +50,13 @@ Além desses elementos fixos, a manutenção cotidiana envolve equipamentos manu
 \end{figure}
 
 
-A compreensão desses componentes, tanto estruturais quanto acessórios, é fundamental para o desenvolvimento de sistemas automatizados, uma vez que muitos dos processos realizados manualmente, como circulação, remoção de impurezas e monitoramento da qualidade da água, podem ser otimizados por meio de sensores, atuadores e controladores eletrônicos, tema aprofundado nos tópicos subsequentes.
+A compreensão desses componentes, tanto estruturais quanto acessórios, é fundamental para o desenvolvimento de sistemas automatizados, uma vez que processos realizados manualmente, como circulação, remoção de impurezas e monitoramento da qualidade da água, podem ser otimizados por sensores, atuadores e controladores eletrônicos, tema aprofundado nos tópicos subsequentes.
 
 
-\subsection{NORMAS E PROCEDIMENTOS TÉCNICOS DE LIMPEZA MANUAL}
-A manutenção adequada de uma piscina não depende apenas dos equipamentos estruturais apresentados na seção anterior, mas também da aplicação criteriosa de normas e procedimentos técnicos que asseguram a qualidade sanitária da água. Conforme destaca \citeonline{piscineiroProfissional}, a ausência de práticas corretas de limpeza pode resultar em diversos problemas de saúde, como dermatites, micoses e outras infecções, o que reforça a importância de um tratamento contínuo e devidamente monitorado. Para prevenir tais riscos, a Associação Brasileira de Normas Técnicas (ABNT) estabelece parâmetros essenciais que orientam o controle físico e químico da água. 
+\subsection{NORMAS E PROCEDIMENTOS TÉCNICOS PARA LIMPEZA MANUAL}
+A manutenção adequada de uma piscina não depende apenas dos equipamentos apresentados na seção anterior, mas também da aplicação de normas e procedimentos técnicos que assegurem a qualidade sanitária da água. Conforme destaca \citeonline{piscineiroProfissional}, a ausência de práticas corretas de limpeza pode resultar em diversos problemas de saúde, como dermatites, micoses e outras infecções, o que reforça a importância de tratamento contínuo e devidamente monitorado. Para prevenir riscos, a Associação Brasileira de Normas Técnicas (ABNT) estabelece parâmetros que orientam o controle físico e químico da água. 
 
-Diversos poluentes influenciam diretamente esses parâmetros, incluindo suor, urina, cabelos, óleos naturais da pele, insetos, folhas e formação de algas, conforme observa \citeonline{guiaTratamento}. Esses elementos alteram, sobretudo, o pH da água e a concentração de cloro, variáveis fundamentais para garantir segurança aos usuários. Segundo \citeonline{leite2020plataforma}, o pH é um indicador que expressa a acidez ou alcalinidade do fluido, variando entre valores menores que 7 (ácidos) e maiores que 7 (alcalinos). A \autoref{fig:phNivel} apresenta a faixa recomendada para piscinas, entre 7,2 e 7,8, parâmetro indispensável para prevenir irritações e preservar a integridade dos equipamentos.
+Diversos poluentes influenciam esses parâmetros, incluindo suor, urina, cabelos, óleos naturais da pele, insetos, folhas e formação de algas, conforme observa \citeonline{guiaTratamento}. Esses elementos alteram o pH da água e a concentração de cloro, variáveis fundamentais para garantir segurança aos usuários. Segundo \citeonline{leite2020plataforma}, o pH é um indicador que expressa a acidez ou alcalinidade do fluido, variando entre valores menores que 7 (ácidos) e maiores que 7 (alcalinos). A \autoref{fig:phNivel} apresenta a faixa recomendada para piscinas, entre 7,2 e 7,8, parâmetro indispensável para prevenir irritações e preservar a integridade dos equipamentos.
 
         \begin{figure}[H]
                 \centering
@@ -66,12 +66,12 @@ Diversos poluentes influenciam diretamente esses parâmetros, incluindo suor, ur
             	\caption*{Fonte: \citeonline{guiaTratamento}}
         \end{figure}
 
-Embora a limpeza física, obtida por escovas, redes ou aspiradores, remova apenas impurezas visíveis, ela é insuficiente para eliminar substâncias dissolvidas, como suor, urina e óleos, que permanecem em suspensão ou solução e ultrapassam a capacidade de retenção dos filtros \cite{guiaTratamento}.Por esse motivo, a manutenção adequada deve integrar procedimentos químicos eficazes, de modo a combater microrganismos e restabelecer o equilíbrio da água.
+A limpeza física, realizada por escovas, redes ou aspiradores, remove apenas impurezas visíveis, sendo insuficiente para eliminar substâncias dissolvidas, como suor, urina e óleos, que permanecem em suspensão ou solução e ultrapassam a capacidade de retenção dos filtros \cite{guiaTratamento}. Por esse motivo, a manutenção adequada deve integrar procedimentos químicos eficazes, de modo a combater microrganismos e restabelecer o equilíbrio da água.
 
-Além disso, uma piscina considerada limpa precisa atender a critérios objetivos, como a ausência de bactérias do grupo coliforme ou \textit{Staphylococcus aureus}\footnote{Bactéria coco Gram-positiva, frequentemente encontrada na pele e nas fossas nasais humanas, responsável por infecções de gravidade variável.}
-, boa visibilidade do fundo e superfície livre de sujeiras, conforme determinado por \citeonline{guiaTratamento} e pelas normas sanitárias vigentes. Esses requisitos reforçam que a manutenção envolve mais do que a aparência da água, exigindo uma análise sistemática dos parâmetros fisico-químicos.
+Uma piscina considerada limpa precisa atender critérios objetivos, como ausência de bactérias do grupo coliforme ou \textit{Staphylococcus aureus}\footnote{Bactéria coco Gram-positiva, frequentemente encontrada na pele e nas fossas nasais humanas, responsável por infecções de gravidade variável.}
+, boa visibilidade do fundo e superfície livre de sujeiras, conforme determinado por \citeonline{guiaTratamento} e pelas normas sanitárias vigentes. Esses requisitos reforçam que a manutenção envolve mais do que a aparência da água, exigindo análise sistemática dos parâmetros fisico-químicos.
 
-A determinação da quantidade de produtos necessários para o tratamento também dependem do conhecimento da área e do volume da piscina, que variam de acordo com seu formato geométrico. Como apresentado nas equações desta seção, diferentes fórmulas são aplicadas em piscinas retangulares, circulares ou ovais, incluindo casos em que o fundo é inclinado, nos quais se considera a profundidade média. Esses cálculos garantem precisão na dosagem e evitam desperdícios, além de evitar desequilíbrios químicos que comprometeriam o processo de desinfecção. O dimensionamento da piscina é fundamental para determinar a quantidade adequada de produtos químicos e garantir uma higienização eficiente, sem excessos ou falhas de tratamento. O cálculo da área e do volume varia conforme o formato da piscina, sendo possível aplicar diferentes fórmulas geométricas para cada tipo de estrutura.
+A determinação da quantidade de produtos necessários para o tratamento também depende do conhecimento da área e volume da piscina, que variam de acordo com seu formato geométrico. Diferentes fórmulas são aplicadas a piscinas retangulares, circulares ou ovais, incluindo casos em que o fundo é inclinado, nos quais se considera a profundidade média. Esses cálculos garantem precisão na dosagem e evitam desperdícios, além de evitar desequilíbrios químicos que comprometeriam o processo de desinfecção. O dimensionamento da piscina é fundamental para determinar a quantidade adequada de produtos químicos e garantir uma higienização eficiente, sem excessos ou falhas de tratamento. O cálculo da área e do volume varia conforme o formato da piscina, sendo possível aplicar diferentes fórmulas para cada tipo de estrutura.
 
  \subsubsection*{\textcolor{black}{Piscina Retangular}}
         
@@ -103,22 +103,22 @@ A determinação da quantidade de produtos necessários para o tratamento també
             h_m = \frac{h_{\text{maior}} + h_{\text{menor}}}{2}
             \]
 
-Com o volume da piscina devidamente determinado, é possível avançar para as etapas que compõem o tratamento químico da água. Segundo \citeonline{tccSilva} , o tratamento completo da água segue uma sequência de cinco etapas: oxidação, coagulação e floculação, decantação, filtração e correção do pH, semelhante aos processos utilizados em estações industriais de tratamento de água. Na oxidação, adiciona-se cloro para eliminar matéria orgânica e facilitar a remoção de metais como ferro e manganês. Em seguida, agentes coagulantes, como sulfato de alumínio ou cloreto férrico, desestabilizam partículas suspensas, que posteriormente se agrupam durante a fase de floculação. A decantação deposita essas partículas no fundo da piscina; após isso, o filtro retém as impurezas acumuladas. Por fim, realiza-se a correção do pH, garantindo estabilidade química e prevenindo tanto a corrosão das tubulações quanto danos aos usuários.
+Com o volume da piscina determinado, é possível avançar para etapas que compõem o tratamento químico da água. Segundo \citeonline{tccSilva} , o tratamento completo da água segue sequência de cinco etapas: oxidação, coagulação e floculação, decantação, filtração e correção do pH, semelhante aos processos utilizados em estações industriais de tratamento de água. Na oxidação, adiciona-se cloro para eliminar matéria orgânica e facilitar a remoção de metais como ferro e manganês. Em seguida, agentes coagulantes, como sulfato de alumínio ou cloreto férrico, desestabilizam partículas suspensas, que posteriormente se agrupam durante a fase de floculação. A decantação deposita essas partículas no fundo da piscina; após isso, o filtro retém as impurezas acumuladas. Por fim, realiza-se a correção do pH, garantindo estabilidade química e prevenindo corrosão das tubulações e danos aos usuários.
 
-Entretanto, a execução manual dessas etapas está sujeita a falhas operacionais que comprometem a eficácia teórica do processo. Segundo \citeonline{genco2004}, a aplicação de produtos químicos sem a devida precisão frequentemente resulta em sobredosagem ou uso incorreto, gerando efeitos adversos. O excesso de algicidas\footnote{São produtos químicos usados para matar ou prevenir o crescimento de algas em ambientes aquáticos}, por exemplo, pode provocar espuma na superfície, enquanto o uso inadequado de decantadores à base de sulfato de alumínio pode deixar resíduos em suspensão, turvando a água. Um risco ainda mais crítico é a mistura acidental ou proposital de compostos incompatíveis, que pode provocar reações químicas extremas durante o manuseio.
+Entretanto, a execução manual dessas etapas está sujeita a falhas que comprometem a eficácia do processo. Segundo \citeonline{genco2004}, a aplicação de produtos químicos sem devida precisão frequentemente resulta em sobredosagem ou uso incorreto, gerando efeitos adversos. O excesso de algicidas\footnote{Produtos químicos usados para matar ou prevenir o crescimento de algas em ambientes aquáticos}, por exemplo, pode provocar espuma na superfície, enquanto o uso inadequado de decantadores à base de sulfato de alumínio pode deixar resíduos em suspensão, turvando a água. Um risco ainda mais crítico é a mistura de compostos incompatíveis, que pode provocar reações químicas extremas durante o manuseio.
 
-Essas falhas no equilíbrio químico impactam diretamente o conforto dos usuários e a integridade da infraestrutura. A falta de controle rigoroso do pH gera desconforto imediato: valores abaixo de 7,2 causam irritação e aceleram a corrosão de equipamentos. Por outro lado, o pH acima de 7,8 reduz drasticamente a eficiência da desinfecção e favorece incrustações nas tubulações. Adicionalmente, a dosagem desbalanceada de oxidantes pode gerar subprodutos irritantes, responsáveis por odores fortes, frequentemente confundidos com excesso de produto.
+Falhas no equilíbrio químico impactam o conforto dos usuários e a integridade da infraestrutura. A falta de controle do pH gera desconforto imediato: valores abaixo de 7,2 causam irritação e aceleram a corrosão de equipamentos. Por outro lado, o pH acima de 7,8 reduz a eficiência da desinfecção e favorece incrustações nas tubulações. Adicionalmente, a dosagem desbalanceada de oxidantes pode gerar subprodutos irritantes, responsáveis por odores fortes, frequentemente confundidos com excesso de produto.
 
-No âmbito sanitário, a intermitência característica do tratamento manual cria janelas de contaminação. A ineficiência nos ciclos de filtragem e circulação, somada ao desequilíbrio químico, permite a proliferação de microrganismos e o aumento do risco de transmissão de doenças. Por fim, a imprecisão acarreta problemas estéticos, como a turbidez gerada pelo rápido desenvolvimento de algas ou alterações na cor da água devido à reação incorreta de produtos com metais presentes no tanque. 
+No âmbito sanitário, a intermitência característica do tratamento manual cria janelas de contaminação. A ineficiência nos ciclos de filtragem e circulação, somada ao desequilíbrio químico, permite proliferação de microrganismos e aumento do risco de transmissão de doenças. Por fim, a imprecisão acarreta problemas estéticos, como turbidez gerada pelo desenvolvimento de algas ou alterações na cor da água devido à reação de produtos com metais presentes no tanque. 
 
-Diante da complexidade e dos riscos apresentados pela manipulação incorreta, torna-se indispensável o conhecimento aprofundado dos insumos utilizados. A seção a seguir detalha os produtos químicos e acessórios empregados na limpeza, abordados na \autoref{subsec:produtos}, cujas características fundamentam as decisões de automação do sistema proposto.
+Diante dos riscos apresentados pela manipulação incorreta, torna-se indispensável o conhecimento dos insumos utilizados. A seção a seguir detalha os produtos químicos e acessórios empregados na limpeza, cujas características fundamentam as decisões de automação do sistema proposto.
 
-\subsection{PRODUTOS QUÍMICOS E ACESSÓRIOS USADOS NA LIMPEZA DE PISCINAS}
+\subsection{PRODUTOS QUÍMICOS E ACESSÓRIOS}
 \label{subsec:produtos}
 
-O tratamento adequado e corretamente executado durante a limpeza de uma piscina, tanto físico quanto químico, é essencial para assegurar a qualidade da água e prevenir infecções ou doenças de origem hídrica. Dessa forma, é fundamental compreender quais produtos utilizar, como aplicá-los corretamente e qual o método mais eficiente para a realização do tratamento físico.
+O tratamento adequado durante a limpeza de uma piscina, tanto físico quanto químico, é essencial para assegurar a qualidade da água e prevenir infecções ou doenças de origem hídrica. Dessa forma, é fundamental compreender quais produtos utilizar, como aplicá-los corretamente e qual o método mais eficiente para a realização do tratamento físico.
 
-A manutenção química da água dependem da correta escolha, dosagem e aplicação de produtos destinados ao controle dos parâmetros físico-químicos. Segundo \citeonline{guiaTratamento}, esses produtos atuam no ajuste do pH, na estabilização da alcalinidade, na desinfecção da água e na remoção de partículas e metais dissolvidos. A \autoref{tab:tabelaProdutos} apresenta uma tabela de dosagem que orienta a aplicação dos principais agentes químicos utilizados na rotina de manutenção.
+A manutenção química da água depende da correta escolha, dosagem e aplicação de produtos destinados ao controle dos parâmetros físico-químicos. Segundo \citeonline{guiaTratamento}, esses produtos atuam no ajuste do pH, estabilização da alcalinidade, desinfecção da água e remoção de partículas e metais dissolvidos. A \autoref{tab:tabelaProdutos} apresenta dosagens que orientam a aplicação dos principais agentes químicos utilizados na rotina de manutenção.
 
 \begin{table}[H]
     \centering
@@ -128,7 +128,7 @@ A manutenção química da água dependem da correta escolha, dosagem e aplicaç
     \caption*{Fonte: \citeonline{guiaTratamento}.}
 \end{table}
 
-Os produtos empregados no tratamento químico incluem:
+Produtos empregados no tratamento químico incluem:
 
 \begin{itemize}
     \item \textbf{Elevador de alcalinidade:} eleva a alcalinidade total, garantindo estabilidade ao pH.
@@ -140,7 +140,7 @@ Os produtos empregados no tratamento químico incluem:
     \item \textbf{Removedores de metais (Genquest, solução para água de poço):} eliminam manchamentos causados por íons metálicos.
 \end{itemize}
 
-A aplicação correta desses produtos depende da medição sistemática dos parâmetros da água. Para isso, utilizam-se estojos de análise específicos, capazes de identificar valores de pH, alcalinidade e teor de cloro. A Figura \ref{fig:estojoParametros} apresenta um exemplo de estojo de análise utilizado na avaliação da qualidade da água.
+A aplicação correta desses produtos depende da medição dos parâmetros da água. Para isso, utilizam-se estojos de análise específicos, capazes de identificar valores de pH, alcalinidade e teor de cloro. A Figura \ref{fig:estojoParametros} apresenta um exemplo de estojo de análise utilizado na avaliação da qualidade da água.
 
 \begin{figure}[H]
     \centering
@@ -150,42 +150,42 @@ A aplicação correta desses produtos depende da medição sistemática dos par�
     \caption*{Fonte: \citeonline{gencoEmpresa}.}
 \end{figure}
 
-Os valores obtidos nas análises orientam a escolha dos produtos a serem aplicados. Caso o pH esteja abaixo de 7,0, recomenda-se o uso de barrilha ou elevador de pH. Se a alcalinidade estiver reduzida, utiliza-se o elevador de alcalinidade. Quando o teor de cloro estiver baixo, adiciona-se cloro líquido ou granulado, conforme a dosagem apresentada anteriormente.
+Os valores obtidos nas análises orientam a escolha dos produtos a serem aplicados. Caso o pH esteja abaixo de 7,0, recomenda-se uso de barrilha ou elevador de pH. Se a alcalinidade estiver reduzida, utiliza-se o elevador de alcalinidade. Quando o teor de cloro estiver baixo, adiciona-se cloro líquido ou granulado, conforme dosagem apresentada.
 
 A turbidez é um dos principais indicadores da necessidade de tratamento químico. Em situações de água opaca, recomenda-se o uso de clarificantes. Quando a água apresenta partículas em suspensão, aplicam-se procedimentos de floculação ou decantação, geralmente realizados com sulfato de alumínio.
 
-Após a aplicação dos produtos, é necessário aguardar entre 6 e 12 horas antes de iniciar a aspiração do fundo da piscina, garantindo assim a eficácia das reações químicas.
+Após a aplicação dos produtos, é necessário aguardar entre 6 e 12 horas antes de iniciar a aspiração do fundo da piscina, garantindo eficácia das reações químicas.
 
 Com a compreensão desses produtos e procedimentos, evidencia-se a complexidade do tratamento manual, o que reforça a necessidade de soluções tecnológicas baseadas em automação residencial, assunto abordado na próxima seção.
 
-\section{FUNDAMENTOS DA AUTOMAÇÃO RESIDENCIAL}
+\section{AUTOMAÇÃO RESIDENCIAL}
 
-Após compreender os aspectos estruturais e os métodos tradicionais de manutenção de piscinas, torna-se necessário examinar os princípios da automação residencial, uma vez que o sistema proposto se insere nesse contexto tecnológico. Este tópico aborda a evolução histórica da automação aplicada ao ambiente doméstico, seus conceitos técnicos, componentes essenciais e protocolos de comunicação, que viabilizam o controle remoto e inteligente de diferentes dispositivos. Essa fundamentação permite compreender como as tecnologias emergentes podem ser aplicadas para aprimorar processos cotidianos, incluindo a manutenção automatizada de piscinas.
+Após compreender aspectos estruturais e métodos tradicionais de manutenção de piscinas, torna-se necessário examinar princípios de automação residencial, uma vez que o sistema proposto se insere nesse contexto tecnológico. Este tópico aborda a evolução histórica da automação aplicada ao ambiente doméstico, seus conceitos técnicos, componentes essenciais e protocolos de comunicação, que viabilizam o controle remoto e inteligente de diferentes dispositivos. Essa fundamentação permite compreender como tecnologias emergentes podem ser aplicadas para aprimorar processos cotidianos, incluindo a manutenção automatizada de piscinas.
 
-A automação residencial consiste na integração de sistemas tecnológicos destinados ao controle e à otimização de funções domésticas, como segurança, iluminação, climatização e comunicação. Essa integração, tem como propósito promover a qualidade de vida dos moradores e a racionalização no uso de recursos da habitação \cite{automacaoResidencialCap1}.
+Automação residencial consiste na integração de sistemas tecnológicos destinados ao controle e otimização de funções domésticas, como segurança, iluminação, climatização e comunicação. Essa integração tem como propósito promover qualidade de vida dos moradores e racionalização no uso de recursos da habitação \cite{automacaoResidencialCap1}.
 
-O principal objetivo da automação residencial é proporcionar comodidade e segurança aos usuários, por meio do acionamento remoto e da integração de dispositivos inteligentes \cite{automacaoTecnologiaPraticidade}. A automação residencial é composta por um conjunto de benefícios fundamentais que estruturam o conceito de casa inteligente. Entre seus principais pilares, destacam-se:
+O principal objetivo da automação residencial é proporcionar comodidade e segurança aos usuários, por meio do acionamento remoto e integração de dispositivos inteligentes \cite{automacaoTecnologiaPraticidade}. A automação residencial é composta por conjunto de benefícios fundamentais que estruturam o conceito de casa inteligente. Entre seus pilares, destacam-se:
 
 \begin{itemize}
     \item \textbf{Conforto:} tem como objetivo facilitar tarefas cotidianas, permitindo ao usuário controlar dispositivos como lâmpadas, ar-condicionados e sistemas de irrigação de forma remota \cite{automacaoTecnologiaPraticidade}.
     
-    \item \textbf{Segurança:} a integração de câmeras, fechaduras eletrônicas e sensores de presença possibilita o monitoramento remoto da residência, reforçando a proteção e a praticidade \cite{automacaoTecnologiaPraticidade}.
+    \item \textbf{Segurança:} a integração de câmeras, fechaduras eletrônicas e sensores de presença possibilita monitoramento remoto da residência, reforçando proteção e a praticidade \cite{automacaoTecnologiaPraticidade}.
     
-    \item \textbf{Economia:} a automação contribui para o uso racional de energia, com sistemas capazes de desligar lâmpadas automaticamente e ajustar a climatização conforme a necessidade, evitando desperdícios e promovendo maior eficiência energética \cite{automacaoTecnologiaPraticidade}.
+    \item \textbf{Economia:} a automação contribui para o uso racional de energia, com sistemas capazes de desligar lâmpadas automaticamente e ajustar climatização conforme necessidade, evitando desperdícios e promovendo eficiência energética \cite{automacaoTecnologiaPraticidade}.
 \end{itemize}
 
-Para que a automação funcione de forma adequada, é necessário que os dispositivos possuam conectividade, acesso à internet e capacidade de comunicação com um sistema central de controle, responsável pela coleta e troca de informações entre os equipamentos.
+Para que a automação funcione de forma adequada, é necessário que os dispositivos possuam conectividade, acesso à internet e capacidade de comunicação com sistema central de controle, responsável pela coleta e troca de informações entre equipamentos.
 
-Praticamente todos os aparelhos eletrônicos que possuem algum tipo de acionamento podem ser automatizados, como sistemas de iluminação, portões, climatização e segurança. Esses dispositivos são conectados a uma central de controle, que pode ser acessada por meio de um \textit{display touch}\footnote{\textit{Display touch}: superfície sensível ao toque que permite interação direta com o sistema.}, localizado na própria central, aplicativos para smartphones ou comandos de voz \cite{automacaoTecnologiaPraticidade}.
+Praticamente todos os aparelhos eletrônicos que possuem algum tipo de acionamento podem ser automatizados, como sistemas de iluminação, portões, climatização e segurança. Esses dispositivos são conectados a central de controle, que pode ser acessada por meio de \textit{display touch}\footnote{\textit{Display touch}: superfície sensível ao toque que permite interação direta com o sistema.}, localizado na própria central, aplicativos para \textit{smartphones} ou comandos de voz \cite{automacaoTecnologiaPraticidade}.
 
 
-\subsection{HISTÓRICO E EVOLUÇÃO DA AUTOMAÇÃO RESIDENCIAL}
+\subsection{HISTÓRICO E EVOLUÇÃO}
 
-A automação residencial, embora recente quando comparada a outras áreas tecnológicas, apresenta avanços significativos ao longo das últimas décadas. Na década de 1970, surgiram nos Estados Unidos os primeiros módulos inteligentes com base na transmissão de dados pela rede elétrica doméstica, utilizando a tecnologia PLC \textit{(Power Line Communication)} \cite{automacaoResidencialCap1}. Essa inovação marcou o início da integração entre dispositivos elétricos e sistemas de comunicação, permitindo que comandos simples fossem enviados por meio da fiação já existente.
+A automação residencial, embora recente quando comparada a outras áreas tecnológicas, apresenta avanços significativos ao longo das últimas décadas. Na década de 1970, surgiram nos Estados Unidos os primeiros módulos inteligentes com base na transmissão de dados pela rede elétrica doméstica, utilizando a tecnologia PLC \textit{(Power Line Communication)} \cite{automacaoResidencialCap1}. Essa inovação marcou o início da integração entre dispositivos elétricos e sistemas de comunicação, permitindo que comandos simples fossem enviados por meio da fiação existente.
 
-Com o avanço da informática, o aprimoramento dos sistemas embarcados e a popularização da internet, a automação residencial passou a incorporar dispositivos capazes de monitorar e controlar equipamentos à distância, consolidando o conceito contemporâneo de residência conectada. Esse movimento possibilitou o desenvolvimento de soluções cada vez mais acessíveis e eficientes, ampliando o uso de sistemas inteligentes em diferentes ambientes domésticos.
+Com o avanço da informática, aprimoramento dos sistemas embarcados e popularização da internet, a automação residencial passou a incorporar dispositivos capazes de monitorar e controlar equipamentos à distância, consolidando o conceito contemporâneo de residência conectada. Esse movimento possibilitou o desenvolvimento de soluções cada vez mais acessíveis e eficientes, ampliando o uso de sistemas inteligentes em diferentes ambientes domésticos.
 
-A \autoref{tab:tecnologias-automacao} apresenta a evolução de algumas das principais tecnologias utilizadas na automação residencial ao longo dos anos, evidenciando o crescimento expressivo de funcionalidades como monitoramento de segurança, controle de iluminação, sistemas de áudio distribuído e gerenciamento energético.
+A \autoref{tab:tecnologias-automacao} apresenta a evolução de algumas tecnologias utilizadas na automação residencial ao longo dos anos, evidenciando crescimento de funcionalidades como monitoramento de segurança, controle de iluminação, sistemas de áudio distribuído e gerenciamento energético.
 
 \begin{table}[H]
     \centering
@@ -198,8 +198,8 @@ A \autoref{tab:tecnologias-automacao} apresenta a evolução de algumas das prin
     \hline
     Cabeamento estruturado & 42\% & 61\% & 49\% & 53\% & 80\% \\
     Monitoramento de segurança & 18\% & 28\% & 29\% & 32\% & 81\% \\
-    Multiroom audio & 9\% & 12\% & 15\% & 16\% & 86\% \\
-    Home Theater & 9\% & 8\% & 11\% & 12\% & 86\% \\
+    \textit{Multiroom audio} & 9\% & 12\% & 15\% & 16\% & 86\% \\
+    \textit{Home Theater} & 9\% & 8\% & 11\% & 12\% & 86\% \\
     Controle de iluminação & 1\% & 2\% & 6\% & 8\% & 75\% \\
     Automação integrada & 0\% & 2\% & 6\% & 6\% & 70\% \\
     Gerenciamento de energia & 1\% & 5\% & 11\% & 11\% & 62\% \\
@@ -212,18 +212,18 @@ A \autoref{tab:tecnologias-automacao} apresenta a evolução de algumas das prin
     \textbf{Fonte:} \citeonline{automacaoResidencialCap1}.\\
 \end{table}
 
-Ao compreender a evolução histórica e o crescimento das tecnologias aplicadas ao ambiente doméstico, torna-se possível identificar os fundamentos que sustentam os sistemas automatizados contemporâneos. O avanço dessas soluções evidencia uma trajetória marcada pela ampliação da conectividade, pela integração entre diferentes dispositivos e pela busca crescente por eficiência, conforto e segurança.
+Ao compreender a evolução histórica e crescimento das tecnologias aplicadas ao ambiente doméstico, torna-se possível identificar os fundamentos que sustentam os sistemas automatizados contemporâneos. O avanço dessas soluções evidencia trajetória marcada pela ampliação da conectividade, integração entre diferentes dispositivos e busca crescente por eficiência, conforto e segurança.
 
-No próximo tópico, são apresentados os principais conceitos e componentes que constituem a base dos sistemas de automação, incluindo controladores, sensores, atuadores e protocolos de comunicação. Esses elementos são essenciais para compreender o funcionamento e a integração entre os dispositivos que possibilitam a automação em ambientes residenciais.
+No próximo tópico, são apresentados conceitos e componentes que constituem a base dos sistemas de automação, incluindo controladores, sensores, atuadores e protocolos de comunicação. Esses elementos são essenciais para compreender o funcionamento e a integração entre os dispositivos que possibilitam a automação em ambientes residenciais.
 
 
-\subsection{CONCEITOS TÉCNICOS DE AUTOMAÇÃO RESIDENCIAL}
+\subsection{CONCEITOS TÉCNICOS}
 
-Tecnicamente denominada domótica\footnote{\textit{Domótica}: termo que designa a integração de tecnologias destinadas ao controle inteligente de ambientes residenciais.}, a automação residencial tem como principal objetivo acionar, monitorar, integrar e controlar diferentes variáveis de uma residência, como iluminação, climatização, áudio e vídeo, a fim de promover eficiência, comodidade e segurança ao usuário \cite{oliveira2019domotica}. No Brasil, o termo mais utilizado é automação residencial, uma tradução derivada da expressão americana \textit{home automation}. Apesar disso, essa tradução não abrange plenamente a concepção de domótica, que envolve não apenas o controle remoto, mas a integração inteligente de sistemas.
+Tecnicamente denominada domótica\footnote{\textit{Domótica}: termo que designa a integração de tecnologias destinadas ao controle inteligente de ambientes residenciais.}, a automação residencial tem como objetivo acionar, monitorar, integrar e controlar diferentes variáveis de uma residência, como iluminação, climatização, áudio e vídeo, a fim de promover eficiência, comodidade e segurança ao usuário \cite{oliveira2019domotica}. No Brasil, o termo mais utilizado é automação residencial, tradução derivada da expressão americana \textit{home automation}. Apesar disso, essa tradução não abrange plenamente a concepção de domótica, que envolve não apenas controle remoto, mas a integração inteligente de sistemas.
 
-O uso de tecnologias residenciais tem crescido de maneira expressiva no país; entretanto, o setor da construção civil ainda não acompanha plenamente o ritmo de evolução observado em áreas como a indústria automotiva, que já emprega amplamente tecnologias embarcadas\footnote{\textit{Tecnologia embarcada}: computador especializado, composto por hardware e software dedicados, integrados a um sistema maior para execução de funções específicas.} \cite{hipolito2018automaccao}. Essa diferença evidencia a necessidade de maior disseminação dos conceitos técnicos que sustentam a automação no ambiente doméstico.
+O uso de tecnologias residenciais tem crescido no país; entretanto, o setor da construção civil ainda não acompanha o ritmo de evolução observado em áreas como a indústria automotiva, que emprega amplamente tecnologias embarcadas\footnote{\textit{Tecnologia embarcada}: computador especializado, composto por \textit{hardware} e \textit{software} dedicados, integrados a um sistema maior para execução de funções específicas.} \cite{hipolito2018automaccao}. Essa diferença evidencia necessidade de disseminação dos conceitos que sustentam a automação no ambiente doméstico.
 
-De acordo com \citeonline{accardi2012automaccao}, a forma como os componentes de um sistema residencial se comunicam depende diretamente da arquitetura adotada, que pode ser centralizada ou descentralizada. Em uma arquitetura centralizada, todos os dispositivos se conectam a um único controlador principal, responsável por processar e executar todas as ações do sistema; esse arranjo é ilustrado na \autoref{fig:arquiteturaCentralizada}. Essa configuração exige que o controlador possua alta capacidade de processamento e confiabilidade operacional.
+De acordo com \citeonline{accardi2012automaccao}, a forma como componentes de um sistema residencial se comunicam depende da arquitetura adotada, que pode ser centralizada ou descentralizada. Em uma arquitetura centralizada, todos os dispositivos se conectam a um controlador principal, responsável por processar e executar todas as ações do sistema; esse arranjo é ilustrado na \autoref{fig:arquiteturaCentralizada}. Essa configuração exige que o controlador possua alta capacidade de processamento e confiabilidade operacional.
 
 \begin{figure}[H]
     \centering
@@ -233,7 +233,7 @@ De acordo com \citeonline{accardi2012automaccao}, a forma como os componentes de
     \caption*{Fonte: \citeonline{hipolito2018automaccao}.}
 \end{figure}
 
-Na arquitetura descentralizada, diferentes controladores coexistem e se comunicam entre si por meio de um barramento de dados\footnote{\textit{Barramento de dados}: sistema de comunicação que permite a troca de informações entre dispositivos sem depender de um ponto central de controle.}, compartilhando o gerenciamento dos dispositivos interconectados; esse modelo encontra-se esquematizado na \autoref{fig:arquiteturaDescentralizada}. O modelo descentralizado distribui a responsabilidade entre múltiplos módulos, reduzindo a dependência de um único ponto de falha e aumentando a flexibilidade da instalação.
+Na arquitetura descentralizada, diferentes controladores coexistem e se comunicam por meio de barramento de dados\footnote{\textit{Barramento de dados}: sistema de comunicação que permite troca de informações entre dispositivos sem depender de ponto central de controle.}, compartilhando o gerenciamento dos dispositivos interconectados; esse modelo encontra-se esquematizado na \autoref{fig:arquiteturaDescentralizada}. O modelo descentralizado distribui a responsabilidade entre múltiplos módulos, reduzindo a dependência de único ponto de falha e aumentando a flexibilidade da instalação.
 
 \begin{figure}[H]
     \centering
@@ -243,23 +243,23 @@ Na arquitetura descentralizada, diferentes controladores coexistem e se comunica
     \caption*{Fonte: \citeonline{hipolito2018automaccao}.}
 \end{figure}
 
-A compreensão dessas arquiteturas é essencial para o desenvolvimento e a implementação de sistemas automatizados, pois define a maneira como os dispositivos se organizam, trocam informações e executam comandos. Nas seções seguintes, serão apresentados os principais conceitos e componentes técnicos que constituem a base dos sistemas de automação residencial, incluindo controladores, sensores, atuadores e protocolos de comunicação.
+A compreensão dessas arquiteturas é essencial para o desenvolvimento e implementação de sistemas automatizados, pois define a maneira como os dispositivos se organizam, trocam informações e executam comandos. Nas seções seguintes, serão apresentados conceitos e componentes técnicos que constituem a base dos sistemas de automação residencial, incluindo controladores, sensores, atuadores e protocolos de comunicação.
 
 
 
 \subsection{COMPONENTES BÁSICOS}
 
-A automação residencial é composta por diversos elementos que, em conjunto, permitem o controle eficiente dos dispositivos instalados no ambiente doméstico. Esses componentes vão desde sensores simples até centrais complexas de automação. A seguir, são apresentados os principais elementos que estruturam essa tecnologia.
+A automação residencial é composta por elementos que, em conjunto, permitem controle eficiente dos dispositivos instalados no ambiente doméstico. Esses componentes vão desde sensores simples até centrais complexas de automação. A seguir, são apresentados os principais elementos que estruturam essa tecnologia.
 
 \begin{itemize}
     \item \textbf{Camadas de dispositivos:}
     
     \begin{enumerate}
         \item \textbf{Sensores:} 
-        Segundo \citeonline{leite2020plataforma}, o sensor é um dispositivo sensível ao ambiente no qual está inserido, capaz de detectar alterações em variáveis como temperatura, luminosidade ou movimento. Sua função consiste em captar essas mudanças e convertê-las em sinais elétricos que possam ser interpretados por um controlador e posteriormente utilizados pela rede de automação.
+        Segundo \citeonline{leite2020plataforma}, sensor é um dispositivo sensível ao ambiente no qual está inserido, capaz de detectar alterações em variáveis como temperatura, luminosidade ou movimento. Sua função é captar essas mudanças e convertê-las em sinais elétricos que possam ser interpretados por um controlador e posteriormente utilizados pela rede de automação.
         
         \item \textbf{Atuadores:}
-        São dispositivos eletromecânicos acionados pelo sistema para executar funções específicas, como ativar lâmpadas, fechaduras magnéticas, motores, válvulas ou sirenes \citeonline{hipolito2018automaccao}. O atuador materializa a ação física determinada pela lógica programada.
+        Dispositivos eletromecânicos acionados pelo sistema para executar funções específicas, como ativar lâmpadas, fechaduras magnéticas, motores, válvulas ou sirenes \citeonline{hipolito2018automaccao}. O atuador materializa a ação física determinada pela lógica programada.
         
         \item \textbf{Controladores:}
         Responsáveis por monitorar os dados coletados pelos sensores e acionar os respectivos atuadores conforme a lógica definida. O controlador pode operar como módulo independente ou integrar-se a centrais mais complexas \cite{hipolito2018automaccao}.
