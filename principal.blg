@@ -1,109 +1,108 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2022/Debian)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: principal.aux
-Reallocating 'name_of_file' (item size: 1) to 16 items.
-Reallocating 'name_of_file' (item size: 1) to 13 items.
-Reallocating 'name_of_file' (item size: 1) to 12 items.
 The style file: abntex2-alf.bst
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated wiz_functions (elt_size=4) to 9000 items from 6000.
 Database file #1: abntex2-options.bib
 Database file #2: bibliografia.bib
 Warning--entry type for "automacao" isn't style-file defined
 --line 1 of file bibliografia.bib
 Warning--entry type for "CNI" isn't style-file defined
---line 17 of file bibliografia.bib
+--line 9 of file bibliografia.bib
 Warning--entry type for "aumentoAosAnos" isn't style-file defined
---line 33 of file bibliografia.bib
+--line 17 of file bibliografia.bib
 Warning--entry type for "cresceuBR" isn't style-file defined
---line 49 of file bibliografia.bib
+--line 25 of file bibliografia.bib
 Warning--entry type for "piscinaHistoria" isn't style-file defined
---line 131 of file bibliografia.bib
+--line 66 of file bibliografia.bib
 Warning--entry type for "piscinaOquee" isn't style-file defined
---line 147 of file bibliografia.bib
+--line 74 of file bibliografia.bib
 Warning--entry type for "piscineiroProfissional" isn't style-file defined
---line 261 of file bibliografia.bib
+--line 131 of file bibliografia.bib
 Warning--entry type for "refComponents" isn't style-file defined
---line 277 of file bibliografia.bib
+--line 139 of file bibliografia.bib
 Warning--entry type for "gencoEmpresa" isn't style-file defined
---line 309 of file bibliografia.bib
+--line 155 of file bibliografia.bib
 Warning--entry type for "linguagemProgramacao" isn't style-file defined
---line 325 of file bibliografia.bib
+--line 163 of file bibliografia.bib
 Warning--entry type for "de2006introduccao" isn't style-file defined
---line 343 of file bibliografia.bib
+--line 172 of file bibliografia.bib
 Warning--entry type for "moreiraprocessos" isn't style-file defined
---line 361 of file bibliografia.bib
+--line 181 of file bibliografia.bib
 Warning--entry type for "de2012introduccao" isn't style-file defined
---line 379 of file bibliografia.bib
+--line 190 of file bibliografia.bib
 Warning--entry type for "unesp_diagrama_casos_uso" isn't style-file defined
---line 397 of file bibliografia.bib
+--line 199 of file bibliografia.bib
 Warning--entry type for "siteComprei" isn't style-file defined
---line 417 of file bibliografia.bib
+--line 209 of file bibliografia.bib
 Warning--entry type for "siteComprei2" isn't style-file defined
---line 433 of file bibliografia.bib
+--line 217 of file bibliografia.bib
 Warning--entry type for "siteComprei3" isn't style-file defined
---line 449 of file bibliografia.bib
+--line 225 of file bibliografia.bib
 Warning--entry type for "siteCompreiPh" isn't style-file defined
---line 465 of file bibliografia.bib
+--line 233 of file bibliografia.bib
 Warning--entry type for "siteCompreiTurbidez" isn't style-file defined
---line 481 of file bibliografia.bib
+--line 241 of file bibliografia.bib
+Warning--entry type for "siteBombaAgua" isn't style-file defined
+--line 249 of file bibliografia.bib
 Warning--entry type for "siteComprei4" isn't style-file defined
---line 497 of file bibliografia.bib
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
+--line 257 of file bibliografia.bib
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
+Reallocated global_strs (elt_size=200001) to 20 items from 10.
+Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
 | Estilo bibliográfico abntex2-alf.bst versão v-1.9.7           |
 | Em caso de dúvidas ou problemas com este estilo procure |
 | http://www.abntex.net.br/                               |
 +---------------------------------------------------------+
-You've used 54 entries,
+You've used 55 entries,
             6714 wiz_defined-function locations,
-            1493 strings with 20333 characters,
-and the built_in function-call counts, 50680 in all, are:
-= -- 5139
-> -- 1173
+            1499 strings with 20497 characters,
+and the built_in function-call counts, 51289 in all, are:
+= -- 5184
+> -- 1188
 < -- 815
-+ -- 1266
-- -- 370
-* -- 3229
-:= -- 6727
-add.period$ -- 220
-call.type$ -- 54
-change.case$ -- 467
-chr.to.int$ -- 70
-cite$ -- 53
-duplicate$ -- 4050
-empty$ -- 2856
-format.name$ -- 1743
-if$ -- 10727
++ -- 1271
+- -- 375
+* -- 3265
+:= -- 6812
+add.period$ -- 225
+call.type$ -- 55
+change.case$ -- 475
+chr.to.int$ -- 71
+cite$ -- 54
+duplicate$ -- 4082
+empty$ -- 2914
+format.name$ -- 1766
+if$ -- 10873
 int.to.chr$ -- 2
 int.to.str$ -- 0
-missing$ -- 910
-newline$ -- 292
-num.names$ -- 265
-pop$ -- 1074
+missing$ -- 928
+newline$ -- 297
+num.names$ -- 270
+pop$ -- 1096
 preamble$ -- 1
-purify$ -- 186
+purify$ -- 189
 quote$ -- 0
-skip$ -- 4279
+skip$ -- 4313
 stack$ -- 1
-substring$ -- 1922
-swap$ -- 1515
+substring$ -- 1943
+swap$ -- 1529
 text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 75
 warning$ -- 0
-while$ -- 339
+while$ -- 345
 width$ -- 0
-write$ -- 837
-(There were 20 warnings)
+write$ -- 852
+(There were 21 warnings)

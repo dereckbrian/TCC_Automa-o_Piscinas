@@ -283,44 +283,44 @@ Nesse contexto, a próxima seção apresenta o desenvolvimento de sistema automa
 
 \section{FERRAMENTAS UTILIZADAS PARA AUTOMAÇÃO}
 
-Esta seção apresenta as principais ferramentas, dispositivos e tecnologias empregadas no desenvolvimento do sistema automatizado proposto, abrangendo tanto os componentes físicos de hardware quanto as plataformas de controle utilizadas na integração entre sensores, atuadores e algoritmos de decisão.
+Esta seção apresenta ferramentas, dispositivos e tecnologias empregadas no desenvolvimento do sistema automatizado proposto, abrangendo tanto componentes físicos de \textit{hardware} quanto plataformas de controle utilizadas na integração entre sensores, atuadores e algoritmos de decisão.
 
-\subsection{COMPONENTES FÍSICOS E DE CONTROLE (\textit{HARDWARE})}
+\subsection{COMPONENTES FÍSICOS E DE CONTROLE}
 
 O sistema de automação requer componentes capazes de processar informações, interagir com o ambiente físico, executar ações mecânicas e realizar medições em tempo real. Entre esses elementos estão plataformas de prototipagem, microcomputadores, sensores especializados e atuadores eletromecânicos.
 
 \subsubsection*{Arduino}
 
-Segundo \citeonline{silva2025automacao}, o Arduino é uma plataforma de prototipagem eletrônica de código aberto que permite o desenvolvimento de projetos simples ou complexos de forma acessível. Seu caráter open-source possibilitou a formação de uma comunidade global de desenvolvedores, tornando-o um dos elementos centrais da cultura maker. Essa cultura, por sua vez, deriva do movimento \textit{Do It Yourself} (DIY), que incentiva a criação de projetos próprios com o uso de ferramentas acessíveis, como impressoras 3D e microcontroladores \cite{brockveld2017cultura}.
+Segundo \citeonline{silva2025automacao}, \textit{Arduino} é uma plataforma de prototipagem eletrônica de código aberto que permite desenvolvimento de projetos simples ou complexos de forma acessível. Seu caráter \textit{open-source} possibilitou a formação de comunidade global de desenvolvedores, tornando-o um dos elementos centrais da cultura \textit{maker}. Essa cultura, deriva do movimento \textit{Do It Yourself} (DIY), que incentiva a criação de projetos próprios com uso de ferramentas acessíveis, como impressoras 3D e microcontroladores \cite{brockveld2017cultura}.
 
-A placa Arduino é composta por diversos componentes, sendo o microcontrolador o núcleo responsável pelo processamento das instruções. Conforme destaca Massimo Banzi, um dos criadores da plataforma, o Arduino é consideravelmente menos potente que um computador convencional, porém extremamente útil para construção de dispositivos interativos dada sua simplicidade, baixo custo e modularidade \cite{silva2025automacao}. 
+A placa \textit{Arduino} é composta por diversos componentes, conforme apresentado na Figura \ref{fig:arduinoDesenhos}, sendo o microcontrolador responsável pelo processamento das instruções. Conforme destaca Massimo Banzi, um dos criadores da plataforma, o \textit{Arduino} apresenta capacidade de processamento consideravelmente inferior à de um computador convencional, porém extremamente útil para construção de dispositivos interativos dada sua simplicidade, baixo custo e modularidade \cite{silva2025automacao}.
 
 \begin{figure}[H]
     \centering
     \caption{Placa Arduino Uno com pinos digitais e analógicos}
-    \label{fig:arduino}
+    \label{fig:arduinoDesenhos}
     \includegraphics[width=0.65\textwidth]{imagens/arduinoDesenho.png}
     \caption*{Fonte: \citeonline{silva2025automacao}.}
 \end{figure}
 
-A \autoref{fig:arduino} apresenta o Arduino Uno, que possui 14 pinos digitais e 6 pinos analógicos, permitindo a conexão com uma variedade de sensores e atuadores, possibilitando a interação direta entre o sistema e o ambiente físico. São alguns dos elementos que compõem o Arduino: a placa protoboard, que consiste em uma base utilizada para construir dispositivos eletrônicos temporários, sem a necessidade de soldagem, utilizando \textit{jumpers}\footnote{Condutor curto usado para fechar, abrir ou desviar parte de um circuito eletrônico} para a conexão \cite{de2012introduccao}.
+A \autoref{fig:arduino} apresenta o \textit{Arduino Uno}, que possui 14 pinos digitais e 6 pinos analógicos, permitindo conexão com variedade de sensores e atuadores, possibilitando interação direta entre sistema e ambiente físico. São alguns dos elementos que compõem o \textit{Arduino}: a protoboard, que consiste em base utilizada para construir dispositivos eletrônicos temporários, sem necessidade de soldagem, utilizando \textit{jumpers}\footnote{Condutor curto usado para fechar, abrir ou desviar parte de um circuito eletrônico} para conexão \cite{de2012introduccao}.
 
 
-\subsubsection*{Raspberry Pi}
+\subsubsection*{\textit{Raspberry Pi}}
 
-De acordo com \citeonline{juca2018aplicaccoes}, o Raspberry Pi é considerado um dos menores computadores do mundo, apresentando dimensões semelhantes às de um cartão de crédito. O dispositivo inclui porta \textit{HDMI}\footnote{\textit{High-Definition Multimedia Interface}: interface digital para transmissão de áudio e vídeo em alta definição.}, portas \textit{USB}\footnote{(\textit{Universal Serial Bus}) é um padrão universal para conectar, comunicar e fornecer energia entre computadores e periféricos (mouses, teclados, pen drives, etc.)}, pinos de conexão \textit{GPIO}\footnote{GPIO (\textit{General-Purpose Input/Output}) são portas configuráveis em microcontroladores (como Raspberry Pi e Arduino) que atuam como entradas (para ler sensores ou botões) ou saídas (para controlar LEDs e motores)}, entrada \textit{Ethernet}, conector P2 para áudio, módulo \textit{Wi-Fi} e \textit{Bluetooth} integrados.
+De acordo com \citeonline{juca2018aplicaccoes}, o \textit{Raspberry Pi} é um dos menores computadores do mundo, apresentando dimensões semelhantes às de um cartão de crédito. O dispositivo inclui porta \textit{HDMI}\footnote{\textit{High-Definition Multimedia Interface}: interface digital para transmissão de áudio e vídeo em alta definição.}, portas \textit{USB}\footnote{\textit{Universal Serial Bus} é um padrão universal para conectar, comunicar e fornecer energia entre computadores e periféricos (\textit{mouses}, teclados, \textit{pen drives}, etc.)}, pinos de conexão \textit{GPIO}\footnote{\textit{General-Purpose Input/Output} são portas configuráveis em microcontroladores (como \textit{Raspberry Pi} e \textit{Arduino}) que atuam como entradas (para ler sensores ou botões) ou saídas (para controlar \textit{LEDs} e motores)}, entrada \textit{Ethernet}, conector P2 para áudio, módulo \textit{Wi-Fi} e \textit{Bluetooth} integrados.
 
 \begin{figure}[H]
     \centering
     \caption{Raspberry Pi Modelo B+}
-    \label{fig:raspberry}
+    \label{fig:raspberry1}
     \includegraphics[width=0.55\textwidth]{imagens/raspberry.png}
     \caption*{Fonte: \citeonline{juca2018aplicaccoes}.}
 \end{figure}
 
-Como observado na Figura \ref{fig:raspberry}, o hardware do Raspberry Pi funciona de maneira integrada em uma única placa, o que reduz custos e possibilita que o dispositivo execute diversas funções de um computador convencional, como acesso à internet, edição de textos e reprodução de vídeos. Além disso, seus pinos \textit{GPIO} permitem interação com sensores, possibilitando aplicações em automação e sistemas embarcados.
+Como observado na Figura \ref{fig:raspberry1}, o \textit{hardware} do \textit{Raspberry Pi} funciona de maneira integrada em uma única placa, o que reduz custos e possibilita que o dispositivo execute diversas funções de um computador convencional, como acesso à internet, edição de textos e reprodução de vídeos. Além disso, seus pinos \textit{GPIO} permitem interação com sensores, possibilitando aplicações em automação e sistemas embarcados.
 
-Em outros contextos, o poder de processamento e a conectividade nativa do Raspberry Pi são explorados para desempenhar a função de \textit{Gateway} IoT. Ele atua como o elo entre a camada física (Arduino) e a camada de aplicação (Servidor Web), viabilizando a transmissão de dados e o controle remoto do sistema.
+Em outros contextos, o poder de processamento e conectividade nativa do \textit{Raspberry Pi} são explorados para desempenhar a função de \textit{Gateway} IoT. Ele atua como elo entre camada física (\textit{Arduino}) e a camada de aplicação (Servidor \textit{Web}), viabilizando a transmissão de dados e controle remoto do sistema.
 
 \subsubsection*{Sensores Específicos}
 
@@ -332,7 +332,7 @@ Os sensores desempenham papel fundamental na automação, pois realizam a leitur
     segundo \citeonline{leite2020plataforma}, identifica variações térmicas em equipamentos ou processos, permitindo ajustes automáticos conforme a condição medida.
 
     \item \textbf{Sensor de pH:}
-    mede o nível de acidez ou alcalinidade da água, informação essencial para o controle químico em piscinas, lagos ou reservatórios \cite{leite2020plataforma}.
+    mede o nível de acidez ou alcalinidade da água, informação essencial para controle químico em piscinas, lagos ou reservatórios \cite{leite2020plataforma}.
 
     \item \textbf{Sensor de Turbidez:}
     avalia o grau de turbidez de um líquido pela comparação entre um feixe de luz incidente e outro transmitido através de uma amostra \cite{cardoso2011sensor}.
@@ -344,71 +344,71 @@ Os sensores desempenham papel fundamental na automação, pois realizam a leitur
 
 \subsubsection*{Atuadores (Motores)}
 
-Os atuadores são responsáveis por executar ações físicas decorrentes das decisões tomadas pelo sistema. Em um ambiente automatizado, eles podem acionar bombas, válvulas, motores, travas ou iluminação, de acordo com os dados enviados pelos sensores ou com comandos diretos do usuário \cite{florencio2015central}.
+Os atuadores são responsáveis por executar ações físicas decorrentes das decisões tomadas pelo sistema. Em ambiente automatizado, podem acionar bombas, válvulas, motores, travas ou iluminação, de acordo com dados enviados pelos sensores ou comandos diretos do usuário \cite{florencio2015central}.
 
-No contexto da automação de piscinas, um exemplo de atuador é a bomba de água como a da Figura \ref{fig:bombaagua}. Quando o sensor de nível identifica redução significativa no volume do reservatório, o controlador aciona a bomba para restabelecer o nível adequado. Da mesma forma, o usuário pode ativar manualmente o sistema por meio de uma interface digital.
+No contexto da automação de piscinas, um exemplo de atuador é a bomba de água como a da Figura \ref{fig:bombaagua}. Quando o sensor de nível identifica redução significativa no volume do reservatório, o controlador aciona a bomba para restabelecer o nível adequado. Da mesma forma, o usuário pode ativar manualmente o sistema por meio de interface digital.
 
-As bombas de água utilizadas em sistemas residenciais funcionam, em sua maioria, de forma submersa, instaladas dentro do reservatório do filtro. Entre suas vantagens estão a facilidade de instalação e a operação silenciosa, uma vez que o corpo da bomba permanece submerso \cite{lucifabio2023aquario}.
+As bombas de água utilizadas em sistemas residenciais funcionam, em sua maioria, de forma submersa, instaladas dentro do reservatório do filtro. Entre suas vantagens estão a facilidade de instalação e operação silenciosa, uma vez que o corpo da bomba permanece submerso \cite{lucifabio2023aquario}.
 
 \begin{figure}[H]
     \centering
     \caption{Bomba de água utilizada majoritariamente em aquários}
     \label{fig:bombaagua}
-    \includegraphics[width=0.55\textwidth]{imagens/bombaAgua.png}
-    \caption*{Fonte: \citeonline{lucifabio2023aquario}.}
+    \includegraphics[width=0.55\textwidth]{imagens/bombaAguaPiscina.png}
+    \caption*{Fonte: \citeonline{siteBombaAgua}.}
 \end{figure}
 
-A compreensão dos componentes físicos utilizados no sistema permite visualizar como sensores, controladores e atuadores interagem para formar uma estrutura automatizada funcional. No capítulo seguinte, apresenta-se o desenvolvimento do sistema proposto, evidenciando a integração entre hardware e software necessária para aprimorar o processo de limpeza de piscinas residenciais.
+A compreensão dos componentes físicos utilizados no sistema permite visualizar como sensores, controladores e atuadores interagem para formar estrutura automatizada funcional. Na seções seguinte, apresenta-se o desenvolvimento do sistema proposto, evidenciando a integração entre \textit{hardware} e \textit{software} necessária para aprimorar o processo de limpeza de piscinas residenciais.
 
 
-\subsection{FERRAMENTAS DE SOFTWARE E METODOLOGIAS DE DESENVOLVIMENTO}
+\subsection{FERRAMENTAS DE \textit{SOFTWARE} E METODOLOGIAS DE DESENVOLVIMENTO}
 \label{cap:fundamentacaoSoftware}
 
-Linguagens de programação, segundo \citeonline{linguagemProgramacao}, constituem um conjunto de regras semânticas e sintáticas que permitem a comunicação de instruções a um computador. Por meio delas, o desenvolvedor define os dados utilizados, a forma de armazenamento e as ações que o sistema deve executar mediante condições específicas. Essas linguagens possibilitam a construção de programas, sites, aplicações móveis e diversos outros tipos de software.
+Linguagens de programação, segundo \citeonline{linguagemProgramacao}, constituem conjunto de regras semânticas e sintáticas que permitem a comunicação de instruções a um computador. Por meio delas, o desenvolvedor define os dados utilizados, forma de armazenamento e ações que o sistema deve executar mediante condições específicas. Essas linguagens possibilitam construção de programas, \textit{sites}, aplicações móveis e diversos outros tipos de \textit{software}.
 
-No desenvolvimento de sistemas modernos, observa-se a divisão entre front-end e back-end. O front-end corresponde à camada visual e interativa com a qual o usuário mantém contato direto. Essa camada pode ser construída com HTML, CSS e JavaScript, bem como com frameworks como React, que ampliam a produtividade e a modularidade do processo de desenvolvimento \cite{dadesenvolvimento}. Já o back-end, conforme \citeonline{calcca2022analise}, é responsável por toda a infraestrutura lógica que sustenta as ações realizadas no front-end, incluindo autenticação, comunicação com o banco de dados e processamento de operações internas.
+No desenvolvimento de sistemas modernos, observa-se divisão entre \textit{front-end} e \textit{back-end}. O \textit{front-end} corresponde à camada visual e interativa com a qual o usuário mantém contato direto. Essa camada pode ser construída com \textit{HTML}, \textit{CSS} e \textit{JavaScript}, bem como com \textit{frameworks} como \textit{React}, que ampliam a produtividade e modularidade do processo de desenvolvimento \cite{dadesenvolvimento}. Já o \textit{back-end}, conforme \citeonline{calcca2022analise}, é responsável por toda a infraestrutura lógica que sustenta as ações realizadas no \textit{front-end}, incluindo autenticação, comunicação com o banco de dados e processamento de operações internas.
 
 \subsubsection*{Java}
 
-A linguagem Java é amplamente utilizada no desenvolvimento de aplicações web e corporativas. Classificada como orientada a objetos e multiplataforma, apresenta desempenho, segurança e confiabilidade adequados para aplicações robustas, incluindo sistemas empresariais, tecnologias de servidor, aplicações móveis e soluções voltadas para big data \cite{calcca2022analise}.
+A linguagem Java é amplamente utilizada no desenvolvimento de aplicações \textit{web} e corporativas. Classificada como orientada a objetos e multiplataforma, apresenta desempenho, segurança e confiabilidade adequados para aplicações robustas, incluindo sistemas empresariais, tecnologias de servidor, aplicações móveis e soluções voltadas para \textit{big data} \cite{calcca2022analise}.
 
-\subsubsection*{Framework e Spring Boot}
+\subsubsection*{\textit{Framework} e \textit{Spring Boot}}
 
-Segundo \citeonline{calcca2022analise}, um framework consiste em um conjunto estruturado de componentes reutilizáveis que oferece ao desenvolvedor uma base pré-configurada, reduzindo a necessidade de criação de código do zero. Entre os frameworks Java, destaca-se o Spring Boot, desenvolvido com o intuido de  impulsionar o desenvolvimento de aplicações back-end ao simplificar configurações iniciais e disponibilizar módulos integrados. O Spring Boot também possui compatibilidade com o Spring Security, o que facilita a implementação de mecanismos de autenticação e controle de acesso.
+Segundo \citeonline{calcca2022analise}, um \textit{framework} consiste em conjunto estruturado de componentes reutilizáveis que oferece ao desenvolvedor base pré-configurada, reduzindo a necessidade de criação de código. Entre os \textit{frameworks} Java, destaca-se o \textit{Spring Boot}, desenvolvido com o intuido de impulsionar o desenvolvimento de aplicações \textit{back-end} ao simplificar configurações iniciais e disponibilizar módulos integrados. O \textit{Spring Boot} também possui compatibilidade com o \textit{Spring Security}, o que facilita a implementação de mecanismos de autenticação e controle de acesso.
 
-\subsubsection*{React}
+\subsubsection*{\textit{React}}
 
-De acordo com \citeonline{sousa2025desenvolvimento}, React é uma biblioteca JavaScript criada pelo Facebook, voltada para o desenvolvimento de interfaces web interativas. Sua arquitetura baseada em componentes reutilizáveis permite maior organização e reaproveitamento de código, reduzindo o tempo de desenvolvimento e promovendo maior consistência visual e funcional no front-end.
+De acordo com \citeonline{sousa2025desenvolvimento}, \textit{React} é uma biblioteca \textit{JavaScript} criada pelo \textit{Facebook}, voltada para o desenvolvimento de interfaces \textit{web} interativas. Sua arquitetura baseada em componentes reutilizáveis permite organização e reaproveitamento de código, reduzindo o tempo de desenvolvimento e promovendo consistência visual e funcional no \textit{front-end}.
 
 \subsubsection*{Ambiente de Desenvolvimento Integrado do Arduino}
 
-O Ambiente de Desenvolvimento Integrado (IDE) do Arduino é responsável por compilar e enviar instruções para a placa microcontrolada. A IDE traduz o código escrito em linguagem de alto nível para instruções compreendidas pelo microcontrolador, permitindo desde operações simples, como acionar um LED, até o controle de bombas e motores a partir de dados coletados por sensores \cite{silva2025automacao}.
+O Ambiente de Desenvolvimento Integrado (IDE) do \textit{Arduino} é responsável por compilar e enviar instruções para a placa microcontrolada. O IDE traduz código escrito em linguagem de alto nível para instruções compreendidas pelo microcontrolador, permitindo desde operações simples, como acionar um LED, até o controle de bombas e motores a partir de dados coletados por sensores \cite{silva2025automacao}.
 
-A interface da IDE é intuitiva, possibilitando que usuários com diferentes níveis de experiência desenvolvam seus projetos. Além disso, oferece ferramentas de compilação, verificação e comunicação com a placa, tornando-se essencial para a integração entre o ambiente digital e o físico.
+A interface do IDE é intuitiva, possibilitando que usuários com diferentes níveis de experiência desenvolvam seus projetos. Além disso, oferece ferramentas de compilação, verificação e comunicação com a placa, tornando-se essencial para a integração entre o ambiente digital e o físico.
 
 \subsubsection*{Banco de Dados}
 
-Segundo \citeonline{date2004introduccao}, um banco de dados é um sistema destinado ao armazenamento, organização e recuperação estruturada de informações. Ele permite inserir, consultar, atualizar e excluir registros conforme a necessidade da aplicação. Em um sistema de automação, o banco de dados pode armazenar parâmetros coletados por sensores, registros de operações, dados históricos e configurações do sistema, possibilitando um acompanhamento preciso do funcionamento do ambiente automatizado.
+Segundo \citeonline{date2004introduccao}, um banco de dados é um sistema destinado ao armazenamento, organização e recuperação estruturada de informações. Permite inserir, consultar, atualizar e excluir registros conforme necessidade da aplicação. Em um sistema de automação, o banco de dados pode armazenar parâmetros coletados por sensores, registros de operações, dados históricos e configurações do sistema, possibilitando acompanhamento preciso do funcionamento do ambiente automatizado.
 
-\subsubsection*{Engenharia de Software}
+\subsubsection*{Engenharia de \textit{Software}}
 
-A engenharia de software busca desenvolver sistemas de alta qualidade de maneira eficiente e econômica, aplicando princípios de engenharia ao processo de criação, manutenção e documentação do software \cite{de2006introduccao}. Esse processo envolve diferentes etapas do ciclo de vida do software, desde a concepção até a implantação, que incluem análise, projeto, implementação, testes e manutenção.
+A engenharia de software busca desenvolver sistemas de alta qualidade de maneira eficiente e econômica, aplicando princípios de engenharia ao processo de criação, manutenção e documentação do software \cite{de2006introduccao}. Esse processo envolve diferentes etapas do ciclo de vida do \textit{software}, desde a concepção até a implantação, que incluem análise, projeto, implementação, testes e manutenção.
 
 Os engenheiros de software devem empregar abordagens sistemáticas e metodologias adequadas ao problema, às restrições e aos recursos disponíveis, de modo a aumentar a probabilidade de sucesso do projeto e garantir que o software atenda às necessidades dos usuários dentro do prazo e orçamento estabelecidos.
 
-\subsubsection*{RUP (Rational Unified Process)}
+\subsubsection*{RUP (\textit{Rational Unified Process})}
 
-O Rational Unified Process (RUP), segundo \citeonline{piske2003rup}, é uma metodologia estruturada de desenvolvimento de software com base em práticas recomendadas (\textit{best practices}) e voltada à redução de riscos durante o projeto. O RUP caracteriza-se por ser iterativo e incremental: o sistema é desenvolvido em ciclos sucessivos, nos quais novas funcionalidades são incorporadas ao produto \cite{moreiraprocessos}.
+O Rational Unified Process (RUP), segundo \citeonline{piske2003rup}, é uma metodologia estruturada de desenvolvimento de \textit{software} com base em práticas recomendadas (\textit{best practices}) e voltada à redução de riscos durante o projeto. O RUP caracteriza-se por ser iterativo e incremental: o sistema é desenvolvido em ciclos sucessivos, nos quais novas funcionalidades são incorporadas ao produto \cite{moreiraprocessos}.
 
-De acordo com \citeonline{vasconcelosconcepccao}, o RUP é composto por quatro fases principais:
+De acordo com \citeonline{vasconcelosconcepccao}, o RUP é composto por quatro fases:
 \begin{itemize}
     \item \textbf{Concepção}: definição do problema, escopo e objetivos fundamentais;
     \item \textbf{Elaboração}: modelagem dos casos de uso e arquitetura inicial;
-    \item \textbf{Construção}: desenvolvimento e integração do software;
+    \item \textbf{Construção}: desenvolvimento e integração do \textit{software};
     \item \textbf{Transição}: testes práticos, avaliação de desempenho e ajustes finais.
 \end{itemize}
 
-A figura \ref{fig:RUP_Image} apresenta uma representação visual mais intuitiva das fases do RUP, constituída por um eixo horizontal que representa o tempo, sendo dividido nas diferentes fases do processo. O eixo vertical, por sua vez, representa os artefatos, que são documentos essenciais que auxiliam na estruturação e no acompanhamento do progresso do projeto \cite{allebrandt2004reengenharia}.
+A Figura \ref{fig:RUP_Image} apresenta representação visual intuitiva das fases do RUP, constituída por eixo horizontal que representa o tempo, dividido nas diferentes fases do processo. O eixo vertical, representa os artefatos, documentos essenciais que auxiliam na estruturação e acompanhamento do progresso do projeto \cite{allebrandt2004reengenharia}.
 
 \begin{figure}[H]
     \centering
@@ -418,15 +418,15 @@ A figura \ref{fig:RUP_Image} apresenta uma representação visual mais intuitiva
     \caption*{Fonte: \citeonline{allebrandt2004reengenharia}.}
 \end{figure}
 
-A adoção do RUP justifica-se pela necessidade de gerenciar a complexidade inerente à integração entre componentes de hardware (IoT) e software web. A abordagem iterativa e a ênfase na mitigação de riscos mostram-se essenciais para assegurar que desafios técnicos, como a comunicação serial e a calibração de sensores, sejam validados ainda nas fases iniciais (Elaboração), evitando retrabalho crítico. Dessa forma, a estrutura de fases apresentada fundamenta a organização cronológica do desenvolvimento do protótipo.
+A adoção do RUP justifica-se pela necessidade de gerenciar a complexidade inerente à integração entre componentes de \textit{hardware} (IoT) e \textit{software web}. A abordagem iterativa e ênfase na mitigação de riscos mostram-se essenciais para assegurar que desafios técnicos, como comunicação serial e calibração de sensores, sejam validados nas fases iniciais, evitando retrabalho crítico. Dessa forma, a estrutura de fases apresentada fundamenta a organização cronológica do desenvolvimento do protótipo.
 
 \subsubsection*{Linguagem UML}
 
-A Linguagem de Modelagem Unificada (UML) constitui um conjunto padronizado de notações gráficas destinado à representação visual de sistemas de software, sendo amplamente empregada para apoiar a especificação, a documentação e a compreensão tanto da estrutura quanto do comportamento dos sistemas \cite{castro2013paradigma}. Sua utilização favorece a construção de uma linguagem comum entre analistas, desenvolvedores e demais partes interessadas, reduzindo ambiguidades na interpretação dos requisitos e das soluções propostas \cite{bernhardt2023utilizaccao}.
+A Linguagem de Modelagem Unificada (UML) constitui conjunto padronizado de notações gráficas destinado à representação visual de sistemas de \textit{software}, sendo amplamente empregada para apoiar a especificação, documentação e compreensão da estrutura e comportamento dos sistemas \cite{castro2013paradigma}. Sua utilização favorece construção de linguagem comum entre analistas, desenvolvedores e demais partes interessadas, reduzindo ambiguidades na interpretação dos requisitos e soluções propostas \cite{bernhardt2023utilizaccao}.
 
-No contexto da Engenharia de Software, a UML desempenha papel fundamental nas fases iniciais do desenvolvimento, especialmente na análise e no projeto do sistema. Por meio de seus diferentes tipos de diagramas, torna-se possível representar desde aspectos funcionais, como as interações entre usuários e o sistema, até aspectos comportamentais e estruturais, contribuindo para a rastreabilidade entre requisitos, decisões arquiteturais e implementação.
+No contexto da Engenharia de \textit{Software}, a UML desempenha papel fundamental nas fases iniciais do desenvolvimento, especialmente na análise e projeto do sistema. Por meio de seus diferentes tipos de diagramas, torna-se possível representar desde aspectos funcionais, como interações entre usuários e o sistema, até aspectos comportamentais e estruturais, contribuindo para a rastreabilidade entre requisitos, decisões arquiteturais e implementação.
 
-Dentre os diagramas definidos pela UML, o Diagrama de Casos de Uso destaca-se por permitir a modelagem das funcionalidades do sistema sob a perspectiva do usuário, evidenciando os objetivos que este pretende alcançar ao interagir com a aplicação. Esse tipo de diagrama abstrai detalhes de implementação e concentra-se na relação entre atores e serviços oferecidos pelo sistema, sendo particularmente adequado para a validação de requisitos funcionais e para o alinhamento entre as expectativas dos usuários e as soluções técnicas propostas. A Figura \ref{fig:digramaExample} ilustra um exemplo de diagrama de casos de uso simplificado, conforme apresentado por \cite{unesp_diagrama_casos_uso}.
+Dentre os diagramas definidos pela UML, o Diagrama de Casos de Uso destaca-se por permitir modelagem das funcionalidades do sistema sob perspectiva do usuário, evidenciando os objetivos que este pretende alcançar ao interagir com a aplicação. Esse tipo de diagrama abstrai detalhes de implementação e concentra-se na relação entre atores e serviços oferecidos pelo sistema, sendo particularmente adequado para validação de requisitos funcionais e para alinhamento entre expectativas dos usuários e as soluções técnicas propostas. A Figura \ref{fig:digramaExample} ilustra exemplo de diagrama de casos de uso simplificado, conforme apresentado por \citeonline{unesp_diagrama_casos_uso}.
 
 \begin{figure}[H]
     \centering
@@ -436,8 +436,8 @@ Dentre os diagramas definidos pela UML, o Diagrama de Casos de Uso destaca-se po
     \caption*{Fonte: \citeonline{unesp_diagrama_casos_uso}.}
 \end{figure}
 
-De forma complementar, a UML também contempla diagramas voltados à representação do fluxo de atividades e da dinâmica de execução do sistema, os quais permitem compreender a lógica operacional associada às funcionalidades modeladas. Esses recursos tornam a UML particularmente adequada para projetos que envolvem sistemas interativos e automatizados, nos quais a clareza na definição de processos e decisões é essencial para garantir consistência entre análise, projeto e implementação.
+De forma complementar, a UML também contempla diagramas voltados à representação do fluxo de atividades e dinâmica do sistema, os quais permitem compreender a lógica operacional associada às funcionalidades modeladas. Esses recursos tornam a UML particularmente adequada a projetos que envolvem sistemas interativos e automatizados, nos quais a clareza na definição de processos e decisões é essencial para garantir consistência entre análise, projeto e implementação.
 
-Assim, a adoção da UML neste trabalho justifica-se por sua capacidade de fornecer uma visão estruturada e padronizada do sistema proposto, independentemente da tecnologia ou da metodologia de desenvolvimento empregada. O uso desses modelos contribui para a organização do processo de desenvolvimento e serve como base para a comparação com soluções existentes na literatura, aspecto aprofundado no capítulo dedicado aos trabalhos correlatos.
+Assim, a adoção da UML neste trabalho justifica-se por sua capacidade de fornecer visão estruturada e padronizada do sistema proposto, independentemente da tecnologia ou metodologia de desenvolvimento empregada. O uso desses modelos contribui para a organização do processo de desenvolvimento e serve como base para a comparação com soluções existentes na literatura, aspecto aprofundado no capítulo dedicado aos trabalhos correlatos.
 
             

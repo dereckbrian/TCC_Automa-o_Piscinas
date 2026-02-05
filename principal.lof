@@ -1,30 +1,30 @@
 \babel@toc {brazil}{}\relax 
 \babel@toc {brazil}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Primeiro registro histórico de piscina – “Grandes Banhos de Mohenjodaro”.}}{15}{figure.caption.12}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Componentes estruturais básicos de uma piscina.}}{16}{figure.caption.13}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Principais acessórios utilizados na limpeza física de piscinas.}}{17}{figure.caption.14}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Faixa de pH}}{18}{figure.caption.15}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Estojo para Análise de Parâmetros Químicos da Água}}{22}{figure.caption.20}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura centralizada de automação residencial}}{25}{figure.caption.22}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura descentralizada de automação residencial}}{26}{figure.caption.23}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Placa Arduino Uno com pinos digitais e analógicos}}{29}{figure.caption.25}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Raspberry Pi Modelo B+}}{30}{figure.caption.27}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Bomba de água utilizada majoritariamente em aquários}}{31}{figure.caption.30}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Fases do Rational Unified Process RUP.}}{34}{figure.caption.38}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de Diagrama de Casos de Uso}}{36}{figure.caption.40}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Caso de Uso do Sistema}}{44}{figure.caption.45}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Testes em bancada}}{47}{figure.caption.52}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Fluxograma de validação de dados e tomada de decisão do sistema}}{48}{figure.caption.53}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Modal de recomendação de dosagem}}{49}{figure.caption.54}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Protótipo final do sistema de automação montado.}}{53}{figure.caption.56}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Relé com optoacoplador.}}{54}{figure.caption.57}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Validação do sensor de pH.}}{55}{figure.caption.58}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Validação do sensor de temperatura.}}{56}{figure.caption.59}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Interface Web: Dashboard de monitoramento em tempo real.}}{57}{figure.caption.60}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Sensor de Temperatura MF58 (NTC 10K)}}{68}{figure.caption.66}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Sensor de Nível LC26M-40}}{69}{figure.caption.67}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Sensor de pH}}{70}{figure.caption.68}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Sensor de Turbidez ST100}}{70}{figure.caption.69}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Bomba Submersa JT100}}{71}{figure.caption.70}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Placa Arduino Uno R3 (Controlador Físico)}}{71}{figure.caption.71}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Raspberry Pi 3 Model B (Gateway)}}{72}{figure.caption.72}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Primeiro registro histórico de piscina – \textit {Grandes Banhos de Mohenjodaro}.\relax }}{15}{figure.caption.12}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Componentes estruturais básicos da piscina.\relax }}{16}{figure.caption.13}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Principais acessórios utilizados na limpeza física de piscinas.\relax }}{17}{figure.caption.14}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Faixa de pH\relax }}{18}{figure.caption.15}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Estojo para Análise de Parâmetros Químicos da Água\relax }}{22}{figure.caption.20}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Arquitetura centralizada de automação residencial\relax }}{25}{figure.caption.22}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Arquitetura descentralizada de automação residencial\relax }}{26}{figure.caption.23}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Placa Arduino Uno com pinos digitais e analógicos\relax }}{29}{figure.caption.25}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Raspberry Pi Modelo B+\relax }}{30}{figure.caption.27}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Bomba de água utilizada majoritariamente em aquários\relax }}{31}{figure.caption.30}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Fases do Rational Unified Process RUP.\relax }}{34}{figure.caption.38}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Exemplo de Diagrama de Casos de Uso\relax }}{36}{figure.caption.40}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Caso de Uso do Sistema\relax }}{44}{figure.caption.45}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Testes em bancada\relax }}{47}{figure.caption.52}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Fluxograma de validação de dados e tomada de decisão do sistema\relax }}{48}{figure.caption.53}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Modal de recomendação de dosagem\relax }}{49}{figure.caption.54}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Protótipo final do sistema de automação montado.\relax }}{53}{figure.caption.56}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Relé com optoacoplador.\relax }}{54}{figure.caption.57}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Validação do sensor de pH.\relax }}{55}{figure.caption.58}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Validação do sensor de temperatura.\relax }}{56}{figure.caption.59}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Interface Web: Dashboard de monitoramento em tempo real.\relax }}{57}{figure.caption.60}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Sensor de Temperatura MF58 (NTC 10K)\relax }}{68}{figure.caption.66}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Sensor de Nível LC26M-40\relax }}{69}{figure.caption.67}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Sensor de pH\relax }}{70}{figure.caption.68}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Sensor de Turbidez ST100\relax }}{70}{figure.caption.69}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Bomba Submersa JT100\relax }}{71}{figure.caption.70}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Placa Arduino Uno R3 (Controlador Físico)\relax }}{71}{figure.caption.71}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Raspberry Pi 3 Model B (Gateway)\relax }}{72}{figure.caption.72}%
