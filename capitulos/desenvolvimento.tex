@@ -2,29 +2,29 @@
 
 \section{Tipo de Pesquisa e Etapas de Construção}
 
-A pesquisa caracteriza-se como aplicada, de abordagem mista e de natureza exploratória e experimental. Inicialmente, foi realizado um estudo teórico sobre automação residencial, sensores, atuadores e controladores associados à Internet das Coisas (IoT), fundamentado nos autores apresentados no \autoref{cap:fundamentacao}. Essa etapa possibilitou a compreensão dos processos físico-químicos envolvidos no tratamento da água, das normas sanitárias aplicáveis e dos requisitos técnicos necessários para a integração entre hardware, software e dispositivos embarcados.
+A pesquisa caracteriza-se como aplicada, de abordagem mista e natureza exploratória e experimental. Inicialmente, foi realizado estudo teórico sobre automação residencial, sensores, atuadores e controladores associados à Internet das Coisas (IoT). Essa etapa possibilitou compreensão dos processos físico-químicos envolvidos no tratamento da água, normas sanitárias aplicáveis e requisitos técnicos necessários para integração entre \textit{hardware}, \textit{software} e dispositivos embarcados.
 
-O levantamento bibliográfico incluiu artigos científicos, manuais técnicos e normas da Associação Brasileira de Normas Técnicas (ABNT), assegurando base conceitual e técnica suficiente para orientar as decisões posteriores de arquitetura, modelagem e implementação do sistema. Os critérios adotados para a seleção das fontes contemplaram a atualidade das informações, priorizando publicações dos últimos dez anos para temas relacionados à tecnologia, automação residencial e Internet das Coisas (IoT); a relevância técnica, com a utilização de manuais de fabricantes e guias especializados para fundamentar os processos físico-químicos de tratamento da água; e a robustez teórica, com a seleção de autores consolidados e trabalhos acadêmicos reconhecidos nas áreas de Engenharia de Software e arquitetura de sistemas.
+O levantamento bibliográfico incluiu artigos científicos, manuais técnicos e normas da Associação Brasileira de Normas Técnicas (ABNT), assegurando base conceitual e técnica para orientar decisões posteriores de arquitetura, modelagem e implementação do sistema. Os critérios adotados para a seleção das fontes contemplaram: atualidade das informações, priorizando publicações dos últimos dez anos para temas relacionados à tecnologia, automação residencial e Internet das Coisas (IoT); relevância técnica, com a utilização de manuais de fabricantes e guias especializados para fundamentar processos físico-químicos de tratamento da água; e a robustez teórica, com seleção de autores e trabalhos acadêmicos reconhecidos nas áreas de Engenharia de \textit{Software} e arquitetura de sistemas.
 
-Essa etapa inicial permitiu mapear os requisitos técnicos necessários à integração entre hardware, software e dispositivos embarcados, fornecendo subsídios consistentes para orientar as decisões de projeto adotadas ao longo do desenvolvimento do sistema.
+Essa etapa permitiu mapear requisitos técnicos necessários à integração entre \textit{hardware}, \textit{software} e dispositivos embarcados, fornecendo subsídios para orientar decisões de projeto adotadas ao longo do desenvolvimento do sistema.
 
 \section{Processo de Desenvolvimento de Software}
 
-Neste projeto, adotou-se o \textit{Rational Unified Process} (RUP) como metodologia de desenvolvimento, em razão de sua estrutura iterativa e incremental, do foco na mitigação de riscos e da ênfase na modelagem e na documentação do software. Conforme apresentado na fundamentação teórica, o RUP organiza o processo de engenharia de software em quatro fases principais: Concepção, Elaboração, Construção e Transição. Cada fase possui objetivos específicos que orientam a evolução do sistema, assegurando a rastreabilidade entre requisitos, arquitetura e implementação.
+Neste projeto, adotou-se o \textit{Rational Unified Process} (RUP) como metodologia de desenvolvimento, em razão de sua estrutura iterativa e incremental, foco na mitigação de riscos e ênfase na modelagem e documentação do \textit{software}. Conforme apresentado na fundamentação teórica, o RUP organiza o processo de engenharia de \textit{software} em quatro fases: Concepção, Elaboração, Construção e Transição. Cada fase possui objetivos específicos que orientam a evolução do sistema, assegurando rastreabilidade entre requisitos, arquitetura e implementação.
 
-Considerando que o sistema desenvolvido envolve automação e dispositivos IoT, o ciclo de vida do desenvolvimento de hardware foi adaptado às fases do RUP. Nesse contexto, a definição e a seleção dos componentes eletrônicos ocorreram durante a fase de Concepção, enquanto a montagem física e a calibração dos sensores foram realizadas de forma integrada à fase de Construção, em paralelo à implementação do software.
+Considerando que o sistema desenvolvido envolve automação e dispositivos IoT, o ciclo de vida do desenvolvimento de \textit{hardware} foi adaptado às fases do RUP. Nesse contexto, a definição e seleção dos componentes eletrônicos ocorreram durante a fase de Concepção, enquanto a montagem física e calibração dos sensores foram realizadas de forma integrada à fase de Construção, em paralelo à implementação do software.
 
-A adoção dessa metodologia estabelece um fluxo contínuo de desenvolvimento, no qual cada artefato produzido em uma fase serve como base para a validação da fase subsequente. Assim, os requisitos levantados na fase de Concepção subsidiam a modelagem arquitetural realizada na fase de Elaboração, cujos diagramas orientam a implementação na fase de Construção. Por fim, a conformidade do sistema desenvolvido é verificada durante a fase de Transição, por meio de testes funcionais e ajustes finais.
+A adoção dessa metodologia estabelece fluxo contínuo de desenvolvimento, no qual cada artefato produzido em uma fase serve como base para validação da fase subsequente. Assim, requisitos levantados na fase de Concepção subsidiam a modelagem arquitetural realizada na fase de Elaboração, cujos diagramas orientam a implementação na fase de Construção. A conformidade do sistema desenvolvido é verificada durante a fase de Transição, por meio de testes funcionais e ajustes finais.
 
-As subseções seguintes descrevem detalhadamente cada uma dessas fases, destacando as atividades executadas e sua relação com os artefatos produzidos ao longo do processo.
+As subseções seguintes descrevem cada uma dessas fases, destacando as atividades executadas e sua relação com os artefatos produzidos ao longo do processo.
 
-\section{Fase de Concepção (\textit{Inception})}
+\section{Fase de Concepção}
 
-Na fase de Concepção foram definidos o problema de pesquisa, o escopo inicial do projeto e os requisitos fundamentais do sistema. O problema identificado refere-se às dificuldades enfrentadas pelos usuários no processo manual de manutenção de piscinas, decorrentes da necessidade de medições frequentes, cálculos físico-químicos, além do risco de desperdício de produtos ocasionado pela aplicação imprecisa das dosagens recomendadas.
+Na fase de Concepção foram definidos o problema de pesquisa, escopo inicial do projeto e requisitos fundamentais do sistema. O problema identificado refere-se às dificuldades enfrentadas pelos usuários no processo manual de manutenção de piscinas, decorrentes da necessidade de medições frequentes cálculos físico-químicos, além do risco de desperdício de produtos ocasionado pela aplicação imprecisa das dosagens recomendadas.
 
-Com o objetivo de mitigar essas limitações, o sistema foi concebido para automatizar a leitura contínua dos principais parâmetros físico-químicos da água, reduzir a subjetividade na avaliação da qualidade, atuar de forma autônoma na reposição de água com base no sensor de nível e disponibilizar interfaces remotas para monitoramento e acompanhamento do processo de manutenção.
+Com objetivo de mitigar essas limitações, o sistema foi concebido para automatizar a leitura contínua dos principais parâmetros físico-químicos da água, reduzir a subjetividade na avaliação da qualidade, atuar de forma autônoma na reposição de água com base no sensor de nível e disponibilizar interfaces remotas para monitoramento e acompanhamento do processo de manutenção.
 
-O levantamento de requisitos resultou na definição dos requisitos funcionais (RF) e não funcionais (RNF), apresentados nas Tabelas \ref{tab:req_funcionais} e \ref{tab:req_nao_funcionais}, respectivamente.
+O levantamento de requisitos resultou na definição dos requisitos funcionais (RF) e não funcionais (RNF), apresentados na Tabela \ref{tab:req_funcionais} e Tabela \ref{tab:req_nao_funcionais}, respectivamente.
 
 \begin{table}[H]
     \centering
@@ -34,15 +34,15 @@ O levantamento de requisitos resultou na definição dos requisitos funcionais (
     \toprule
     \textbf{Código} & \textbf{Descrição} \\
     \midrule
-    \textbf{RF01} & O sistema deve monitorar automaticamente os níveis de pH, turbidez, temperatura e nível da água. \\
+    \textbf{RF01} & O sistema deve monitorar automaticamente valores de pH, turbidez, temperatura e nível da água. \\
     \addlinespace
     \textbf{RF02} & O sistema deve acionar automaticamente a bomba de água conforme os parâmetros coletado pelo sensor de nível. \\
     \addlinespace
-    \textbf{RF03} & O sistema deve disponibilizar uma interface web para visualização dos parâmetros monitorados. \\
+    \textbf{RF03} & O sistema deve disponibilizar interface \textit{web} para visualização dos parâmetros monitorados. \\
     \addlinespace
-    \textbf{RF04} & O sistema deve permitir o cadastro e o armazenamento dos dados coletados no banco de dados. \\
+    \textbf{RF04} & O sistema deve permitir cadastro e armazenamento dos dados coletados. \\
     \addlinespace
-    \textbf{RF05} & O sistema deve emitir alertas quando algum parâmetro ultrapassar os limites estabelecidos. \\
+    \textbf{RF05} & O sistema deve emitir alertas quando algum parâmetro ultrapassar limites estabelecidos. \\
     \addlinespace
     \textbf{RF06} & O sistema deve gerar gráficos com base nos dados históricos dos parâmetros monitorados. \\
     \bottomrule
@@ -50,7 +50,7 @@ O levantamento de requisitos resultou na definição dos requisitos funcionais (
     \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-Para a validação dos requisitos definidos, foram estabelecidos critérios quantitativos de aceitação, considerando o desempenho esperado para um protótipo IoT. A precisão dos sensores (RF01) foi definida com margem de erro inferior a $\pm$5\% em relação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface web, não deve exceder oito segundos, caracterizando uma monitoração em tempo quase real. No que se refere à comunicação (RNF03), o sistema é considerado estável quando as requisições HTTP apresentam taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a seis segundos por requisição. O requisito de automação (RF02) é considerado atendido quando o acionamento do atuador ocorrer em até três segundos após a detecção da falta de água.
+Para validação dos requisitos definidos, foram estabelecidos critérios quantitativos de aceitação, considerando o desempenho esperado para um protótipo IoT. A precisão dos sensores (RF01) foi definida com margem de erro inferior a $\pm$5\% em relação a medições de referência. Quanto ao desempenho temporal, estabeleceu-se que o tempo de latência total, compreendido entre a aquisição do dado físico pelo microcontrolador e sua visualização na interface \textit{web}, não deve exceder oito segundos, caracterizando monitoração em tempo quase real. No que se refere à comunicação (RNF03), o sistema é considerado estável quando requisições HTTP apresentam taxa de sucesso superior a 95\% em operação contínua, com tempo de resposta do servidor inferior a seis segundos por requisição. O requisito de automação (RF02) é considerado atendido quando o acionamento do atuador ocorrer em até três segundos após detecção da falta de água.
 
 \begin{table}[H]
     \centering
@@ -60,19 +60,19 @@ Para a validação dos requisitos definidos, foram estabelecidos critérios quan
     \toprule
     \textbf{Código} & \textbf{Descrição} \\
     \midrule
-    \textbf{RNF01} & O sistema deve utilizar o banco de dados PostgreSQL para armazenamento das informações. \\
+    \textbf{RNF01} & O sistema deve utilizar SGBD \textit{PostgreSQL} para armazenamento das informações. \\
     \addlinespace
-    \textbf{RNF02} & A interface web deve ser responsiva e acessível em dispositivos móveis e desktops. \\
+    \textbf{RNF02} & A interface \textit{web} deve ser responsiva e acessível em dispositivos móveis e \textit{desktops}. \\
     \addlinespace
-    \textbf{RNF03} & A comunicação entre o gateway (Raspberry Pi) e o servidor deve ocorrer utilizando o protocolo HTTP. \\
+    \textbf{RNF03} & A comunicação entre \textit{gateway} (\textit{Raspberry Pi}) e servidor deve ocorrer utilizando protocolo HTTP. \\
     \addlinespace
-    \textbf{RNF04} & O sistema deve ser desenvolvido utilizando o framework Spring Boot no back-end e React no front-end. \\
+    \textbf{RNF04} & O sistema deve ser desenvolvido utilizando o \textit{framework Spring Boot} no \textit{back-end} e \textit{React} no \textit{front-end}. \\
     \bottomrule
     \end{tabularx}
     \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-Para atender ao escopo definido, adotou-se uma arquitetura distribuída de hardware e software. Na camada física, selecionou-se o Arduino Uno para a leitura dos sensores e o acionamento dos atuadores, enquanto o Raspberry Pi foi designado para a comunicação entre o microcontrolador, o servidor e a aplicação web. Na camada de software, definiu-se o uso do framework Spring Boot no back-end, em virtude de sua robustez na implementação de APIs REST, React para o desenvolvimento da interface web responsiva e PostgreSQL para a persistência e o gerenciamento dos dados coletados.
+Para atender ao escopo definido, adotou-se arquitetura distribuída de \textit{hardware} e \textit{software}. Na camada física, selecionou-se o \textit{Arduino Uno} para leitura dos sensores e o acionamento dos atuadores, enquanto o \textit{Raspberry Pi} foi designado para comunicação entre microcontrolador, servidor e  aplicação \textit{web}. Na camada de \textit{software}, definiu-se o uso do \textit{framework Spring Boot} no \textit{back-end}, em virtude de sua robustez na implementação de \textit{APIs REST}, \textit{React} para desenvolvimento da interface \textit{web} responsiva e \textit{PostgreSQL} para persistência e kgerenciamento dos dados coletados.
 \section{Fase de Elaboração (\textit{Elaboration})}
 
 Com o objetivo de mitigar riscos técnicos e validar as principais decisões arquiteturais do sistema, foram desenvolvidos protótipos funcionais parciais, conforme recomendado pelo Rational Unified Process (RUP). Nessa etapa, realizaram-se testes preliminares de integração entre os sensores, o microcontrolador Arduino e o Raspberry Pi, com foco na verificação da estabilidade da comunicação serial, da latência no envio de dados e da viabilidade da arquitetura proposta. Esses experimentos permitiram confirmar que a infraestrutura de hardware selecionada atende aos requisitos de desempenho estabelecidos na fase de Concepção.
