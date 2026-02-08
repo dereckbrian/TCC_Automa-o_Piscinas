@@ -73,15 +73,15 @@ Para validação dos requisitos definidos, foram estabelecidos critérios quanti
 \end{table}
 
 Para atender ao escopo definido, adotou-se arquitetura distribuída de \textit{hardware} e \textit{software}. Na camada física, selecionou-se o \textit{Arduino Uno} para leitura dos sensores e o acionamento dos atuadores, enquanto o \textit{Raspberry Pi} foi designado para comunicação entre microcontrolador, servidor e  aplicação \textit{web}. Na camada de \textit{software}, definiu-se o uso do \textit{framework Spring Boot} no \textit{back-end}, em virtude de sua robustez na implementação de \textit{APIs REST}, \textit{React} para desenvolvimento da interface \textit{web} responsiva e \textit{PostgreSQL} para persistência e kgerenciamento dos dados coletados.
-\section{Fase de Elaboração (\textit{Elaboration})}
 
-Com o objetivo de mitigar riscos técnicos e validar as principais decisões arquiteturais do sistema, foram desenvolvidos protótipos funcionais parciais, conforme recomendado pelo Rational Unified Process (RUP). Nessa etapa, realizaram-se testes preliminares de integração entre os sensores, o microcontrolador Arduino e o Raspberry Pi, com foco na verificação da estabilidade da comunicação serial, da latência no envio de dados e da viabilidade da arquitetura proposta. Esses experimentos permitiram confirmar que a infraestrutura de hardware selecionada atende aos requisitos de desempenho estabelecidos na fase de Concepção.
+\section{Fase de Elaboração}
+Com objetivo de mitigar riscos técnicos e validar decisões arquiteturais do sistema, foram desenvolvidos protótipos funcionais parciais, conforme recomendado pelo RUP. Nessa etapa, realizaram-se testes preliminares de integração entre sensores, o microcontrolador \textit{Arduino} e \textit{Raspberry Pi}, com foco na verificação da estabilidade da comunicação serial, latência no envio de dados e viabilidade da arquitetura proposta. Esses experimentos permitiram confirmar que a infraestrutura de \textit{hardware} selecionada atende aos requisitos de desempenho estabelecidos na fase de Concepção.
 
-Simultaneamente, foram definidos os principais artefatos estruturais do sistema, incluindo a modelagem dos casos de uso, a arquitetura de comunicação entre os dispositivos físicos e a especificação dos componentes embarcados que compõem o protótipo. Dessa forma, a fase de Elaboração estabelece a ligação entre os requisitos identificados na Concepção e a implementação conduzida na fase de Construção, assegurando que o sistema seja desenvolvido com base em uma arquitetura previamente validada e devidamente documentada.
+Simultaneamente, foram definidos artefatos estruturais do sistema, incluindo modelagem dos casos de uso, arquitetura de comunicação entre dispositivos físicos e especificação dos componentes embarcados que compõem o protótipo. Dessa forma, a fase de Elaboração estabelece ligação entre os requisitos identificados na Concepção e a implementação conduzida na fase de Construção, assegurando que o sistema seja desenvolvido com base em arquitetura previamente validada e devidamente documentada.
 
 \subsection*{Modelagem de Caso de Uso}
 
-A Figura \ref{fig:usecase} apresenta o Diagrama de Casos de Uso do sistema, detalhando as interações permitidas ao usuário, como a visualização de parâmetros e a configuração de alertas, bem como a integração dos dispositivos físicos com o back-end.
+A Figura \ref{fig:usecase} apresenta o Diagrama de Casos de Uso do sistema, detalhando interações permitidas ao usuário, como visualização de parâmetros e configuração de alertas, bem como integração dos dispositivos físicos com o \textit{back-end}.
 
 \begin{figure}[H]
     \centering
@@ -93,19 +93,19 @@ A Figura \ref{fig:usecase} apresenta o Diagrama de Casos de Uso do sistema, deta
 
 \subsection*{Arquitetura Geral do Sistema}
 
-O sistema foi concebido a partir de uma arquitetura distribuída, composta por sensores, um microcontrolador Arduino, um microcomputador Raspberry Pi, um back-end desenvolvido com o framework Spring Boot e uma interface web implementada em React. O fluxo principal de funcionamento do sistema ocorre conforme as seguintes etapas:
+O sistema foi concebido a partir de arquitetura distribuída, composta por sensores, microcontrolador \textit{Arduino}, um microcomputador \textit{Raspberry Pi}, \textit{back-end} desenvolvido com o \textit{framework Spring Boot} e uma interface \textit{web} implementada em \textit{React}. O fluxo de funcionamento do sistema ocorre conforme as etapas:
 
 \begin{enumerate}
-    \item Coleta dos dados pelos sensores conectados ao Arduino;
-    \item Transmissão das leituras do Arduino para o Raspberry Pi;
+    \item Coleta dos dados pelos sensores conectados ao \textit{Arduino};
+    \item Transmissão das leituras do \textit{Arduino} para o \textit{Raspberry Pi};
     \item Envio periódico das informações ao servidor por meio de requisições HTTP;
-    \item Armazenamento dos dados no banco de dados PostgreSQL;
-    \item Apresentação dos parâmetros ao usuário por meio da interface web.
+    \item Armazenamento dos dados utilizando o SGBD;
+    \item Apresentação dos parâmetros ao usuário por meio da interface \textit{web}.
 \end{enumerate}
 
-Essa arquitetura favorece a escalabilidade e o desacoplamento entre as camadas do sistema, em conformidade com os princípios discutidos no \autoref{cap:fundamentacao}. Entretanto, a distribuição dos componentes físicos introduz riscos operacionais relevantes, como a dependência da integridade funcional de múltiplos dispositivos. A falha de um único nó, seja um sensor ou um controlador, pode comprometer temporariamente o fluxo de dados.
+Essa arquitetura favorece escalabilidade e desacoplamento entre as camadas do sistema. Entretanto, a distribuição dos componentes físicos introduz riscos operacionais, como dependência da integridade funcional de múltiplos dispositivos. A falha de um nó, seja sensor ou controlador, pode comprometer o fluxo de dados.
 
-Além disso, a comunicação baseada em protocolos HTTP está sujeita a latências e instabilidades de rede, especialmente em infraestruturas domésticas, o que exige a implementação de mecanismos de tratamento de exceções, tentativas de reconexão automática e tolerância a falhas. Tais estratégias são fundamentais para garantir que o sistema seja capaz de recuperar sua operabilidade sem a necessidade de intervenção humana após falhas momentâneas de conectividade.
+Além disso, a comunicação baseada em protocolos HTTP está sujeita a latências e instabilidades de rede, especialmente em infraestruturas domésticas, o que exige implementação de mecanismos de tratamento de exceções, tentativas de reconexão automática e tolerância a falhas. Tais estratégias são fundamentais para garantir que o sistema seja capaz de recuperar operabilidade sem necessidade de intervenção humana após falhas momentâneas de conectividade.
 
 \subsection*{Componentes Utilizados no Sistema}
 
@@ -115,21 +115,21 @@ A seguir, são apresentados os principais componentes físicos selecionados para
 
 \subsubsection*{Sensores de Monitoramento}
 
-Para a medição da temperatura da água, optou-se pelo sensor NTC 10K (Modelo MF58), ilustrado na Figura \ref{fig:sensortemp} (Apêndice \ref{apendice:hardware}). O componente foi integrado ao circuito por meio de um divisor de tensão e conectado a uma entrada analógica do Arduino para leitura dos dados térmicos.
+Para medição da temperatura da água, optou-se pelo sensor NTC 10K (Modelo MF58), ilustrado na Figura \ref{fig:sensortemp} (Apêndice \ref{apendice:hardware}). O componente foi integrado ao circuito por meio de divisor de tensão e conectado a uma entrada analógica do \textit{Arduino} para leitura dos dados térmicos.
 
-O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, o dispositivo fornece um sinal digital (nível lógico alto ou baixo) diretamente ao microcontrolador, permitindo a identificação imediata de níveis críticos no reservatório.
+O monitoramento do nível da água é realizado pelo sensor LC26M-40, apresentado na Figura \ref{fig:sensorlevel} (Apêndice \ref{apendice:hardware}). Fabricado em polipropileno, fornece sinal digital (nível lógico alto ou baixo) diretamente ao microcontrolador, permitindo identificação imediata de níveis críticos no reservatório.
 
-A qualidade química da água é aferida por um Sensor de pH (Figura \ref{fig:sensorph}, Apêndice \ref{apendice:hardware}) e um Sensor de Turbidez Modelo ST100 (Figura \ref{fig:sensorturbidez}, Apêndice \ref{apendice:hardware}). O sensor de pH monitora a acidez e a alcalinidade, enquanto o sensor de turbidez identifica partículas em suspensão. Ambos geram sinais analógicos processados pelo Arduino e enviados ao servidor para análise e tomada de decisão.
+A qualidade química da água é aferida por Sensor de pH (Figura \ref{fig:sensorph}, Apêndice \ref{apendice:hardware}) e Sensor de Turbidez Modelo ST100 (Figura \ref{fig:sensorturbidez}, Apêndice \ref{apendice:hardware}). O sensor de pH monitora a acidez e alcalinidade, enquanto o sensor de turbidez identifica partículas em suspensão. Ambos geram sinais analógicos processados pelo \textit{Arduino} e enviados ao servidor para análise e tomada de decisão.
 
 \subsubsection*{Atuadores}
 
-Para o controle do fluxo de água, foi utilizado uma bomba submersa modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, este equipamento é responsável pelo controle de nível de água da psicina, sendo acionado quando o sensor de nível indicar leituras abaixo do limite configurado.
+Para controle do fluxo de água, foi utilizado bomba submersa modelo JT100 (3V a 5V), conforme detalhado na Figura \ref{fig:bombasub} (Apêndice \ref{apendice:hardware}). Com vazão entre 1000 e 1500 ml/min e elevação de até 1 metro, este equipamento é responsável pelo controle de nível de água da piscina, sendo acionado quando o sensor de nível indicar leituras abaixo do limite configurado.
 
 \subsubsection*{Controladores e Gateway}
 
-O controle direto de hardware é exercido pela placa Arduino Uno R3 (Figura \ref{fig:arduino}, Apêndice \ref{apendice:hardware}). Sua escolha deve-se à robustez nas leituras analógicas e à vasta disponibilidade de bibliotecas para controle dos atuadores em tempo real.
+O controle de \textit{hardware} é exercido pela placa \textit{Arduino Uno R3} (Figura \ref{fig:arduino}, Apêndice \ref{apendice:hardware}) sua escolha deve-se à robustez nas leituras analógicas e à vasta disponibilidade de bibliotecas para controle dos atuadores em tempo real.
 
-Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Model B, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador, ele gerencia a comunicação Serial com o Arduino e executa os \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico.
+Como elemento intermediário (\textit{Gateway}), utiliza-se o \textit{Raspberry Pi 3 Model B}, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador, gerencia a comunicação Serial com o \textit{Arduino} e executa \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico.
 
 \begin{table}[H]
     \centering
@@ -139,13 +139,13 @@ Como elemento intermediário (\textit{Gateway}), utiliza-se o Raspberry Pi 3 Mod
     \toprule
     \textbf{Componente} & \textbf{Função Principal} & \textbf{Tensão} & \textbf{Comunicação / Sinal} \\
     \midrule
-    Raspberry Pi 3 B & Gateway de comunicação e envio de dados ao servidor & 5\,V & Serial (USB) / Wi-Fi (HTTP) \\
+    \textit{Raspberry Pi 3 B} & \textit{Gateway} de comunicação e envio de dados ao servidor & 5\,V & Serial (USB) / \textit{Wi-Fi} (HTTP) \\
     \addlinespace
-    Arduino Uno R3 & Leitura de sensores e controle de atuadores & 5\,V  & Serial / I/O digital e analógico \\
+    \textit{Arduino Uno R3} & Leitura de sensores e controle de atuadores & 5\,V  & \textit{Serial} / I/O digital e analógico \\
     \addlinespace
     Sensor de Temperatura (NTC) & Monitoramento térmico da água & 5\,V & Analógico (divisor de tensão) \\
     \addlinespace
-    Sensor de Nível & Detecção de nível crítico do reservatório & 5\,V & Digital (On/Off) \\
+    Sensor de Nível & Detecção de nível do reservatório & 5\,V & Digital (\textit{On/Off}) \\
     \addlinespace
     Sensor de pH & Medição da acidez e alcalinidade da água & 5\,V & Analógico \\
     \addlinespace
