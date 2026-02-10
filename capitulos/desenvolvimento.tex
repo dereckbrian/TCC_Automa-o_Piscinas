@@ -129,7 +129,7 @@ Para controle do fluxo de água, foi utilizado bomba submersa modelo JT100 (3V a
 
 O controle de \textit{hardware} é exercido pela placa \textit{Arduino Uno R3} (Figura \ref{fig:arduino}, Apêndice \ref{apendice:hardware}) sua escolha deve-se à robustez nas leituras analógicas e à vasta disponibilidade de bibliotecas para controle dos atuadores em tempo real.
 
-Como elemento intermediário (\textit{Gateway}), utiliza-se o \textit{Raspberry Pi 3 Model B}, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador, gerencia a comunicação Serial com o \textit{Arduino} e executa \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico.
+Como elemento intermediário (\textit{Gateway}), utiliza-se o \textit{Raspberry Pi 3 Model B}, exibido na Figura \ref{fig:raspberry} (Apêndice \ref{apendice:hardware}). Equipado com processador, gerencia a comunicação Serial com o \textit{Arduino} e executa \textit{scripts} responsáveis pelo envio dos dados à API, isolando a lógica de rede da lógica de controle físico. As especificações técnicas dos componentes de \textit{hardware} selecionados estão detalhadas na Tabela \ref{tab:resumo_hardware}.
 
 \begin{table}[H]
     \centering
@@ -157,13 +157,13 @@ Como elemento intermediário (\textit{Gateway}), utiliza-se o \textit{Raspberry 
     \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-\section{Fase de Construção (\textit{Construction})}
+\section{Fase de Construção}
 
-Em conformidade com a metodologia RUP, a fase de Construção foi conduzida por meio de ciclos iterativos e incrementais, nos quais funcionalidades do sistema foram implementadas e validadas progressivamente. O desenvolvimento iniciou-se pela camada física, com a implementação e a validação individual dos sensores e atuadores conectados ao microcontrolador. Após a estabilização da aquisição dos dados, procedeu-se à implementação da camada lógica, englobando o back-end, o banco de dados e o front-end. 
+Em conformidade com a metodologia RUP, a fase de Construção foi conduzida por meio de ciclos iterativos e incrementais, nos quais funcionalidades do sistema foram implementadas e validadas progressivamente. O desenvolvimento iniciou-se pela camada física, com implementação e validação individual dos sensores e atuadores conectados ao microcontrolador. Após estabilização da aquisição dos dados, procedeu-se à implementação da camada lógica, englobando \textit{back-end}, o banco de dados e \textit{front-end}. 
 
-A etapa final concentrou-se na integração completa entre hardware e software, validando o fluxo de transmissão das informações, desde a coleta no ambiente físico até a apresentação na interface web.O desenvolvimento do sistema foi estruturado em duas camadas principais: a camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados; e a camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
+A etapa final concentrou-se na integração completa entre \textit{hardware} e \textit{software}, validando o fluxo de transmissão das informações, desde a coleta no ambiente físico até a apresentação na interface \textit{web}. O desenvolvimento do sistema foi estruturado em duas camadas, camada embarcada, responsável pela leitura, pré-processamento e envio dos dados coletados e camada de aplicação, encarregada de receber, armazenar e disponibilizar essas informações aos usuários.
 
-Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para realizar a leitura dos sensores analógicos e digitais, bem como o acionamento condicional dos atuadores. A montagem física e a organização dos componentes durante os testes de bancada podem ser visualizadas na Figura \ref{fig:testes_bancada}.
+Na camada embarcada, o \textit{Arduino} foi programado por meio de IDE nativa para realizar leitura dos sensores analógicos e digitais, bem como acionamento condicional dos atuadores. A montagem física e organização dos componentes durante os testes de bancada pode ser visualizada na Figura \ref{fig:testes_bancada}.
 
 \begin{figure}[H]
     \centering
@@ -173,9 +173,9 @@ Na camada embarcada, o Arduino foi programado por meio de sua IDE nativa para re
     \caption*{Fonte: Autoria própria (2025).}
 \end{figure}
 
-Conforme apresentado no Apêndice \ref{apendice:codigos}, a Seção \ref{cod:arduino} ilustra a rotina de coleta dos parâmetros da água e a lógica empregada para o controle dos dispositivos físicos.
+Conforme Apêndice \ref{apendice:codigos}, a Seção \ref{cod:arduino} ilustra a rotina de coleta dos parâmetros da água e a lógica empregada para controle dos dispositivos físicos.
 
-Com o intuito de  garantir a confiabilidade das informações coletadas e evitar o armazenamento de dados incorretos, foi desenvolvido um fluxo lógico de validação e normalização antes da persistência no banco de dados. A Figura \ref{fig:fluxo_logica} demonstra o algoritmo de decisão executado pelo sistema a cada ciclo de leitura.
+Com intuito de  garantir confiabilidade das informações coletadas e evitar armazenamento de dados incorretos, foi desenvolvido fluxo lógico de validação e normalização antes da persistência no banco de dados. A Figura \ref{fig:fluxo_logica} demonstra o fluxo de decisão executado pelo sistema a cada ciclo de leitura.
 
 \begin{figure}[H]
     \centering
@@ -185,9 +185,9 @@ Com o intuito de  garantir a confiabilidade das informações coletadas e evitar
     \caption*{Fonte: Autoria própria (2025).}
 \end{figure}
 
-O Raspberry Pi desempenhou a função de \textit{gateway} de comunicação do sistema. Um \textit{script} desenvolvido em Python foi responsável por estabelecer a comunicação serial com o microcontrolador, interpretar os dados recebidos e encaminhá-los ao servidor por meio de requisições HTTP do tipo POST. A lógica de implementação desse \textit{gateway}, incluindo os mecanismos de tratamento de falhas de comunicação e a serialização dos dados em formato JSON, encontra-se detalhada no Apêndice \ref{apendice:codigos}, Seção \ref{cod:python}.
+O \textit{Raspberry Pi} desempenhou função de \textit{gateway} de comunicação. Um \textit{script} desenvolvido em \textit{Python} foi responsável por estabelecer comunicação serial com o microcontrolador, interpretar dados recebidos e encaminhá-los ao servidor por meio de requisições HTTP do tipo \textit{POST}. A lógica de implementação desse \textit{gateway}, incluindo mecanismos de tratamento de falhas de comunicação e serialização dos dados em formato \textit{JSON}, encontra-se detalhada no Apêndice \ref{apendice:codigos}, Seção \ref{cod:python}.
 
-Na camada de aplicação, o \textit{back-end}, desenvolvido utilizando o \textit{framework} Spring Boot, centraliza a lógica de persistência e fornece os dados base para o sistema. Uma funcionalidade fundamental implementada foi a personalização do monitoramento: o sistema gerencia um perfil de usuário com as dimensões físicas da piscina e os limites de alerta. O \textit{back-end} utiliza esses parâmetros para calcular dinamicamente o volume exato (em litros) a cada requisição. A partir desse dado, a interface \textit{web} executa o algoritmo de recomendação de dosagem química, sugerindo correções precisas ao usuário, como evidenciado na Figura \ref{fig:imageModal}. O \textit{controller} responsável pelo cálculo de volume e persistência está apresentado no Apêndice \ref{apendice:codigos}, Seção \ref{cod:java}, enquanto a lógica de recomendação e alertas é detalhada na Seção \ref{cod:react_logic}. Essa arquitetura assegura a integridade, a consistência e a disponibilidade do histórico de monitoramento.
+Na camada de aplicação, o \textit{back-end}, desenvolvido utilizando \textit{framework} \textit{Spring Boo}t, centraliza a lógica de persistência e fornece dados base para o sistema. Uma funcionalidade fundamental implementada foi a personalização do monitoramento: o sistema gerencia perfil de usuário com dimensões físicas da piscina e limites de alerta. O \textit{back-end} utiliza esses parâmetros para calcular dinamicamente o volume exato a cada requisição. A partir desse dado, a interface \textit{web} executa algoritmo de recomendação de dosagem química, sugerindo correções precisas, como evidenciado na Figura \ref{fig:imageModal}. O \textit{controller} responsável pelo cálculo de volume e persistência está apresentado no Apêndice \ref{apendice:codigos}, Seção \ref{cod:java}, enquanto a lógica de recomendação e alertas é detalhada na Seção \ref{cod:react_logic}. Essa arquitetura assegura integridade, consistência e disponibilidade do histórico de monitoramento.
 
 \begin{figure}[H]
     \centering
@@ -197,13 +197,13 @@ Na camada de aplicação, o \textit{back-end}, desenvolvido utilizando o \textit
     \caption*{Fonte: Autoria própria (2025).}
 \end{figure}
 
-Por fim, a interface do usuário, desenvolvida em React, consome os dados fornecidos pela API para apresentar o estado atual da piscina em tempo quase real. A implementação da lógica de consumo da API e o gerenciamento de estado para visualização dos parâmetros e acionamento manual dos atuadores estão descritos no Apêndice \ref{apendice:codigos}, Seção \ref{cod:react}.
+A interface do usuário, desenvolvida em \textit{React}, consome dados fornecidos pela API para apresentar o estado atual da piscina em tempo quase real. A implementação da lógica de consumo da API e o gerenciamento de estado para visualização dos parâmetros e acionamento manual dos atuadores estão descritos no Apêndice \ref{apendice:codigos}, Seção \ref{cod:react}.
 
-Além do monitoramento passivo, a interface web foi dotada de lógica reativa para auxílio à tomada de decisão. Ao detectar que parâmetros críticos (como pH ou turbidez) estão fora dos limites estabelecidos, o sistema habilita uma funcionalidade interativa de cálculo de correção. Por meio dela, o usuário pode visualizar instantaneamente a sugestão de dosagem exata dos produtos químicos necessários (ex: quantidade de clarificante ou redutor de pH), calculada com base no volume específico da piscina parametrizado anteriormente.
+Além do monitoramento passivo, a interface \textit{web} foi dotada de lógica reativa para auxílio à tomada de decisão. Ao detectar que parâmetros críticos (como pH ou turbidez) estão fora dos limites estabelecidos, o sistema habilita funcionalidade interativa de cálculo de correção. Por meio dela, o usuário pode visualizar instantaneamente a sugestão de dosagem exata dos produtos químicos necessários (ex: quantidade de clarificante ou redutor de pH), calculada com base no volume específico da piscina.
 
-\section{Fase de Transição (\textit{Transition})}
+\section{Fase de Transição}
 
-Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos com o objetivo de validar seu desempenho, estabilidade e conformidade com os requisitos estabelecidos nas fases anteriores. Foram realizados testes unitários nos sensores, abrangendo a calibração do sensor NTC de temperatura e pH, a verificação da estabilidade do sensor de nível e simulações de condições críticas de funcionamento das bombas, de modo a prevenir situações de \textit{dry-run}. Paralelamente, testes de integração avaliaram o fluxo completo dos dados, desde a aquisição no ambiente físico até a apresentação das informações na interface web, conforme detalhado na Tabela \ref{tab:testes_realizados}. 
+Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos com objetivo de validar seu desempenho, estabilidade e conformidade com os requisitos estabelecidos nas fases anteriores. Foram realizados testes unitários nos sensores, abrangendo calibração do sensor NTC de temperatura e pH, verificação da estabilidade do sensor de nível e simulações de condições críticas de funcionamento das bombas, de modo a prevenir situações de \textit{dry-run}\footnote{Ensaio geral, simulação ou teste prático de um processo, apresentação ou sistema, realizado antes do evento real para identificar falhas sem consequências.}. Paralelamente, testes de integração avaliaram o fluxo completo dos dados, desde a aquisição no ambiente físico até a apresentação das informações na interface \textit{web}, conforme detalhado na Tabela \ref{tab:testes_realizados}. 
 
 \begin{table}[H]
     \centering
@@ -213,23 +213,23 @@ Na fase de Transição, o sistema desenvolvido foi submetido a testes práticos 
     \toprule
     \textbf{Teste Realizado} & \textbf{Objetivo do Teste} & \textbf{Critério/Resultado} \\
     \midrule
-    Calibração do Sensor NTC & Verificar a precisão térmica por comparação com termômetro de referência & Margem de erro aceitável ($<\pm 2^{\circ}$C) \\
+    Calibração do Sensor NTC & Verificar precisão térmica por comparação com termômetro de referência & Margem de erro aceitável ($<\pm 2^{\circ}$C) \\
     \addlinespace
-    Calibração do pH & Ajuste de ganho via \textit{trimpot} do módulo comparado com valor de referência & Erro absoluto médio $< 0,3$ pH \\
+    Calibração do pH & Ajuste de ganho via \textit{trimpot}\footnote{Um potenciômetro miniatura ajustável, utilizado para calibrações finas e ocasionais diretamente na placa de circuito impresso.} do módulo comparado com valor de referência & Erro absoluto médio $< 0,3$ pH \\
     \addlinespace
     Calibração de Turbidez & Definição dos limiares de tensão para água limpa e suja (sensor ST100) & Diferenciação clara (Limpa $> 4$V / Suja $< 1$V) \\
     \addlinespace
-    Estabilidade do Nível & Confirmar o acionamento da boia sem oscilações espúrias & \textit{Debounce} lógico funcional \\
+    Estabilidade do Nível & Confirmar acionamento da boia sem oscilações espúrias & \textit{Debounce}\footnote{ma técnica para garantir que uma função ou evento seja executado apenas uma vez após um determinado intervalo de tempo, ignorando chamadas repetidas e rápidas.} lógico funcional \\
     \addlinespace
-    Integração de Dados & Validar o fluxo completo Arduino $\rightarrow$ Raspberry Pi $\rightarrow$ Banco de Dados & Persistência verificada no PostgreSQL \\
+    Integração de Dados & Validar fluxo completo Arduino $\rightarrow$ Raspberry Pi $\rightarrow$ Banco de Dados & Persistência verificada no PostgreSQL \\
     \addlinespace
-    Latência da Interface & Medir o tempo entre a leitura do sensor e a atualização na interface web & Atualização em tempo quase real ($<$ 5s) \\
+    Latência da Interface & Medir tempo entre leitura do sensor e atualização na interface \textit{web} & Atualização em tempo quase real ($<$ 5s) \\
     \bottomrule
     \end{tabularx}
     \caption*{Fonte: Autoria própria (2025).}
 \end{table}
 
-Adicionalmente, foram realizados testes de responsividade da interface web e de confiabilidade da comunicação entre o servidor e os dispositivos embarcados. Os ajustes finais envolveram a correção de algoritmos de conversão dos sensores, a adequação de temporizações de leitura e transmissão, bem como melhorias na visualização gráfica dos dados apresentados ao usuário.
+Adicionalmente, foram realizados testes de responsividade da interface \textit{web} e de confiabilidade da comunicação entre servidor e dispositivos embarcados. Os ajustes finais envolveram correção de algoritmos de conversão dos sensores, adequação de temporizações de leitura e transmissão, bem como melhorias na visualização gráfica dos dados apresentados ao usuário.
 
 Embora os testes tenham validado a funcionalidade do sistema, observaram-se limitações decorrentes da escala reduzida do protótipo. A discussão detalhada sobre esses desafios e o desempenho quantitativo do sistema será apresentada a seguir.
 

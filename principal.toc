@@ -31,8 +31,8 @@
 \contentsline {section}{\numberline {4.2}Processo de Desenvolvimento de Software}{39}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Fase de Concepção}{40}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Fase de Elaboração}{42}{section.4.4}%
-\contentsline {section}{\numberline {4.5}Fase de Construção (\textit {Construction})}{45}{section.4.5}%
-\contentsline {section}{\numberline {4.6}Fase de Transição (\textit {Transition})}{49}{section.4.6}%
+\contentsline {section}{\numberline {4.5}Fase de Construção}{45}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Fase de Transição}{49}{section.4.6}%
 \setlength {\cftchapterindent }{0em} \setlength {\cftchapternumwidth }{\cftlastnumwidth }
 \contentsline {chapter}{\chapternumberline {5}\MakeUppercase []{Resultados e Discussão}}{51}{chapter.5}%
 \contentsline {section}{\numberline {5.1}Integração do Protótipo Físico}{51}{section.5.1}%
